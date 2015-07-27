@@ -10,6 +10,8 @@
 #import "MJRefresh.h"
 #import "Gson.h"
 
+#define EGURL @"http://195.198.1.195/index.php?m=api"
+
 @interface AFRequestState()
 @property NSMutableArray * NotfifyArray;
 
@@ -91,11 +93,25 @@
     static dispatch_once_t onceToken;
     
     dispatch_once(&onceToken, ^{
-        _om =[[AFHTTPRequestOperationManager alloc]initWithBaseURL:[NSURL URLWithString:@""]];
+        _om =[[AFHTTPRequestOperationManager alloc]init];
     });
     
     return _om;
 }
+
++(AFAppRequest*)sharedClient
+{
+    static AFAppRequest* _AFRequest = nil;
+    static dispatch_once_t onceToken;
+    
+    dispatch_once(&onceToken, ^{
+        _AFRequest=[[AFAppRequest alloc]init];
+    });
+    
+    return _AFRequest;
+}
+
+
 
 +(AFRequestState *)postRequestWithUrl:(NSString *)url param:(NSDictionary *)param succ:(void (^)(id))succ
 {
@@ -118,27 +134,28 @@
 
 +(AFRequestState *)postRequestWithUrl:(NSString *)url param:(NSDictionary *)param succ:(void (^)(id))succ fail:(void (^)(int errCode, NSError * err))fail resp:(Class)resp;
 {
-    
-//    NSMutableDictionary*sign=[AFAppRequest getURLSign:url];
-//    
-//    [sign addEntriesFromDictionary:param];
-//    
-//    AFRequestState * State = [AFRequestState new];
-//    
-//    [[self sharedClient] POST:url parameters:sign success:^(AFHTTPRequestOperation * operation, id responseObject)
-//     {
-//         [self handleResponse:responseObject Succ:succ Fail:fail Resp:resp State:State];
-//         
-//         
-//     } failure:^(AFHTTPRequestOperation *operation, NSError *error)
-//     {
-//         fail(0,error);
-//         [State setEnd];
-//     }];
-//    
-//    [State start];
-//    return State;
     AFRequestState * State = [AFRequestState new];
+    
+    AFHTTPRequestOperationManager*manager=[self sharedClient];
+    
+//    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    
+    manager.responseSerializer.acceptableContentTypes =[NSSet setWithObject:@"text/html"];
+    
+    [manager GET:url parameters:param success:^(AFHTTPRequestOperation * operation, id responseObject)
+     {
+         [self handleResponse:responseObject Succ:succ Fail:fail Resp:resp State:State];
+         NSLog(responseObject[@"msg"]);
+         
+         
+     } failure:^(AFHTTPRequestOperation *operation, NSError *error)
+     {
+         NSNumber * errcode = [NSNumber numberWithInteger:error.code];
+         fail([errcode intValue],error);
+         [State setEnd];
+     }];
+    
+    [State start];
     return State;
     
 }
@@ -147,9 +164,9 @@
 +(void)error_hanlde:(int)errCode Witherr:(NSError *)err {
     
     
-    if(errCode == 0)
+    if(errCode == 1)
     {
-        [MBProgressHUD creatembHub:@"网络超时，请检查网络连接是否正常"];
+        [MBProgressHUD creatembHub:@"用户名不存在"];
     }
     
     
