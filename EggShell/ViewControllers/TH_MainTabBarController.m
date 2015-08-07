@@ -40,13 +40,32 @@
     UINavigationController * nc4 = [[UINavigationController alloc] initWithRootViewController:mine_vc];
     
     self.viewControllers = @[nc1,nc2,nc3,nc4];
+    [self createTabBarItems];
     
 }
 
 -(void)createTabBarItems
 {
-    self.tabBar.backgroundColor = [UIColor greenColor];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]} forState:UIControlStateSelected];
+    NSArray * titleArray = @[@"首页",@"玩出范",@"公开课",@"我的"];
+    NSArray * unSelectArray = @[@"home", @"wanchufan", @"gongkaike00",@"wode"];
+    NSArray * selectArray = @[@"home01",@"wanchufan01",@"gongkaike01",@"wode01"];
+    
+    NSArray * items = self.tabBar.items;
+    for(int i = 0;i < items.count;i++)
+    {
+        UITabBarItem * item = items[i];
+        item = [items[i] initWithTitle:titleArray[i] image:[UIImage imageNamed:selectArray[i]] selectedImage:[UIImage imageNamed:unSelectArray[i]]];
+        
+    }
+    
+    self.tabBar.backgroundImage = [UIImage imageNamed:@"矩形-8-拷贝-3"];
+    
+    
+    
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

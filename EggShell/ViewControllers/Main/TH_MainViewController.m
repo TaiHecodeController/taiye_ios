@@ -23,6 +23,7 @@
 //    UITextField * searchField = [[UITextField alloc] initWithFrame:CGRectMake(50, 50, 200, 50)];
 //    searchField.background = [UIImage imageNamed:@"bg_new.png"];
 //    [self.view addSubview:searchField];
+    [self createNav];
     UINavigationBar * bar = self.navigationController.navigationBar;
     [self getBackView:bar];
     
@@ -33,7 +34,13 @@
     
     
     
+    
     // Do any additional setup after loading the view from its nib.
+}
+
+-(void)createNav
+{
+    
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
