@@ -28,11 +28,18 @@
 -(void)createViewcontrollers
 {
     TH_MainViewController * main_vc = [[TH_MainViewController alloc] init];
-    main_vc.view.backgroundColor = [UIColor redColor];
+    UINavigationController * nc1 = [[UINavigationController alloc] initWithRootViewController:main_vc];
+    
     TH_ActivityViewController * acti_vc = [[TH_ActivityViewController alloc] init];
+    UINavigationController * nc2 = [[UINavigationController alloc] initWithRootViewController:acti_vc];
+    
     TH_ClassViewController * class_vc = [[TH_ClassViewController alloc] init];
+    UINavigationController * nc3 = [[UINavigationController alloc] initWithRootViewController:class_vc];
+    
     TH_MineViewController * mine_vc = [[TH_MineViewController alloc] init];
-    self.viewControllers = @[main_vc,acti_vc,class_vc,mine_vc];
+    UINavigationController * nc4 = [[UINavigationController alloc] initWithRootViewController:mine_vc];
+    
+    self.viewControllers = @[nc1,nc2,nc3,nc4];
     
 }
 

@@ -37,6 +37,7 @@
 		04A483CB1B74FE06006FDB9D /* TH_MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A483C91B74FE06006FDB9D /* TH_MineViewController.m */; };
 		04A483CC1B74FE06006FDB9D /* TH_MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A483CA1B74FE06006FDB9D /* TH_MineViewController.xib */; };
 		04A483D01B750353006FDB9D /* bg_new.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A483CF1B750353006FDB9D /* bg_new.png */; };
+		04A483D71B751E77006FDB9D /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A483D61B751E77006FDB9D /* Utils.m */; };
 		CA3D16A93CCBDD012A68A6C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37454D869BE49FA62A71A04C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +109,8 @@
 		04A483C91B74FE06006FDB9D /* TH_MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_MineViewController.m; sourceTree = "<group>"; };
 		04A483CA1B74FE06006FDB9D /* TH_MineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TH_MineViewController.xib; sourceTree = "<group>"; };
 		04A483CF1B750353006FDB9D /* bg_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_new.png; sourceTree = "<group>"; };
+		04A483D51B751E77006FDB9D /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		04A483D61B751E77006FDB9D /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		37454D869BE49FA62A71A04C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C8CB3344C41F9F3DBAC076 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A209E6A9E258BA344FA95EF1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +167,7 @@
 		041650331B4D7141008C78BE /* EggShell */ = {
 			isa = PBXGroup;
 			children = (
+				04A483D41B751E5D006FDB9D /* tool */,
 				04A483B11B74FCE2006FDB9D /* ViewControllers */,
 				041650DC1B4D7718008C78BE /* NetWork */,
 				0416505A1B4D71D4008C78BE /* 3rd */,
@@ -325,6 +329,15 @@
 			path = Mine;
 			sourceTree = "<group>";
 		};
+		04A483D41B751E5D006FDB9D /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				04A483D51B751E77006FDB9D /* Utils.h */,
+				04A483D61B751E77006FDB9D /* Utils.m */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
 		B3CC7EB400379DA8CBAEF017 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -475,6 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				041650EE1B4D7C4E008C78BE /* MJRefreshFooterView.m in Sources */,
+				04A483D71B751E77006FDB9D /* Utils.m in Sources */,
 				04A483C51B74FDDD006FDB9D /* TH_ClassViewController.m in Sources */,
 				041650CA1B4D730F008C78BE /* MBProgressHUD+Show.m in Sources */,
 				041650DF1B4D795B008C78BE /* AFAppRequest.m in Sources */,
