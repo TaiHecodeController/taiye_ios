@@ -26,6 +26,17 @@
 		041650ED1B4D7C4E008C78BE /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 041650E61B4D7C4E008C78BE /* MJRefreshConst.m */; };
 		041650EE1B4D7C4E008C78BE /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041650E81B4D7C4E008C78BE /* MJRefreshFooterView.m */; };
 		041650EF1B4D7C4E008C78BE /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041650EA1B4D7C4E008C78BE /* MJRefreshHeaderView.m */; };
+		04237D901B66456F00768FAD /* LoginAndRegisterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04237D8F1B66456F00768FAD /* LoginAndRegisterRequest.m */; };
+		04A483B41B74FD1B006FDB9D /* TH_MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A483B31B74FD1B006FDB9D /* TH_MainTabBarController.m */; };
+		04A483B91B74FD71006FDB9D /* TH_MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A483B71B74FD71006FDB9D /* TH_MainViewController.m */; };
+		04A483BA1B74FD71006FDB9D /* TH_MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A483B81B74FD71006FDB9D /* TH_MainViewController.xib */; };
+		04A483BF1B74FDAE006FDB9D /* TH_ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A483BD1B74FDAE006FDB9D /* TH_ActivityViewController.m */; };
+		04A483C01B74FDAE006FDB9D /* TH_ActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A483BE1B74FDAE006FDB9D /* TH_ActivityViewController.xib */; };
+		04A483C51B74FDDD006FDB9D /* TH_ClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A483C31B74FDDD006FDB9D /* TH_ClassViewController.m */; };
+		04A483C61B74FDDD006FDB9D /* TH_ClassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A483C41B74FDDD006FDB9D /* TH_ClassViewController.xib */; };
+		04A483CB1B74FE06006FDB9D /* TH_MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A483C91B74FE06006FDB9D /* TH_MineViewController.m */; };
+		04A483CC1B74FE06006FDB9D /* TH_MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A483CA1B74FE06006FDB9D /* TH_MineViewController.xib */; };
+		04A483D01B750353006FDB9D /* bg_new.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A483CF1B750353006FDB9D /* bg_new.png */; };
 		CA3D16A93CCBDD012A68A6C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37454D869BE49FA62A71A04C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +91,23 @@
 		041650E91B4D7C4E008C78BE /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeaderView.h; sourceTree = "<group>"; };
 		041650EA1B4D7C4E008C78BE /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
 		041650F01B4D7F19008C78BE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		04237D8E1B66456F00768FAD /* LoginAndRegisterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginAndRegisterRequest.h; sourceTree = "<group>"; };
+		04237D8F1B66456F00768FAD /* LoginAndRegisterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAndRegisterRequest.m; sourceTree = "<group>"; };
+		04A483B21B74FD1B006FDB9D /* TH_MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_MainTabBarController.h; sourceTree = "<group>"; };
+		04A483B31B74FD1B006FDB9D /* TH_MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_MainTabBarController.m; sourceTree = "<group>"; };
+		04A483B61B74FD71006FDB9D /* TH_MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_MainViewController.h; sourceTree = "<group>"; };
+		04A483B71B74FD71006FDB9D /* TH_MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_MainViewController.m; sourceTree = "<group>"; };
+		04A483B81B74FD71006FDB9D /* TH_MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TH_MainViewController.xib; sourceTree = "<group>"; };
+		04A483BC1B74FDAE006FDB9D /* TH_ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_ActivityViewController.h; sourceTree = "<group>"; };
+		04A483BD1B74FDAE006FDB9D /* TH_ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_ActivityViewController.m; sourceTree = "<group>"; };
+		04A483BE1B74FDAE006FDB9D /* TH_ActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TH_ActivityViewController.xib; sourceTree = "<group>"; };
+		04A483C21B74FDDD006FDB9D /* TH_ClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_ClassViewController.h; sourceTree = "<group>"; };
+		04A483C31B74FDDD006FDB9D /* TH_ClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_ClassViewController.m; sourceTree = "<group>"; };
+		04A483C41B74FDDD006FDB9D /* TH_ClassViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TH_ClassViewController.xib; sourceTree = "<group>"; };
+		04A483C81B74FE06006FDB9D /* TH_MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_MineViewController.h; sourceTree = "<group>"; };
+		04A483C91B74FE06006FDB9D /* TH_MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_MineViewController.m; sourceTree = "<group>"; };
+		04A483CA1B74FE06006FDB9D /* TH_MineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TH_MineViewController.xib; sourceTree = "<group>"; };
+		04A483CF1B750353006FDB9D /* bg_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_new.png; sourceTree = "<group>"; };
 		37454D869BE49FA62A71A04C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C8CB3344C41F9F3DBAC076 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A209E6A9E258BA344FA95EF1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +143,7 @@
 		041650281B4D7141008C78BE = {
 			isa = PBXGroup;
 			children = (
+				04A483CF1B750353006FDB9D /* bg_new.png */,
 				041650331B4D7141008C78BE /* EggShell */,
 				0416504D1B4D7142008C78BE /* EggShellTests */,
 				041650321B4D7141008C78BE /* Products */,
@@ -135,6 +164,7 @@
 		041650331B4D7141008C78BE /* EggShell */ = {
 			isa = PBXGroup;
 			children = (
+				04A483B11B74FCE2006FDB9D /* ViewControllers */,
 				041650DC1B4D7718008C78BE /* NetWork */,
 				0416505A1B4D71D4008C78BE /* 3rd */,
 				041650381B4D7141008C78BE /* AppDelegate.h */,
@@ -219,6 +249,8 @@
 			children = (
 				041650DD1B4D795B008C78BE /* AFAppRequest.h */,
 				041650DE1B4D795B008C78BE /* AFAppRequest.m */,
+				04237D8E1B66456F00768FAD /* LoginAndRegisterRequest.h */,
+				04237D8F1B66456F00768FAD /* LoginAndRegisterRequest.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -238,6 +270,59 @@
 				041650EA1B4D7C4E008C78BE /* MJRefreshHeaderView.m */,
 			);
 			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		04A483B11B74FCE2006FDB9D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04A483C71B74FDF5006FDB9D /* Mine */,
+				04A483C11B74FDCE006FDB9D /* Class */,
+				04A483BB1B74FD99006FDB9D /* Activity */,
+				04A483B51B74FD4D006FDB9D /* Main */,
+				04A483B21B74FD1B006FDB9D /* TH_MainTabBarController.h */,
+				04A483B31B74FD1B006FDB9D /* TH_MainTabBarController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		04A483B51B74FD4D006FDB9D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				04A483B61B74FD71006FDB9D /* TH_MainViewController.h */,
+				04A483B71B74FD71006FDB9D /* TH_MainViewController.m */,
+				04A483B81B74FD71006FDB9D /* TH_MainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		04A483BB1B74FD99006FDB9D /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				04A483BC1B74FDAE006FDB9D /* TH_ActivityViewController.h */,
+				04A483BD1B74FDAE006FDB9D /* TH_ActivityViewController.m */,
+				04A483BE1B74FDAE006FDB9D /* TH_ActivityViewController.xib */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		04A483C11B74FDCE006FDB9D /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				04A483C21B74FDDD006FDB9D /* TH_ClassViewController.h */,
+				04A483C31B74FDDD006FDB9D /* TH_ClassViewController.m */,
+				04A483C41B74FDDD006FDB9D /* TH_ClassViewController.xib */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		04A483C71B74FDF5006FDB9D /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				04A483C81B74FE06006FDB9D /* TH_MineViewController.h */,
+				04A483C91B74FE06006FDB9D /* TH_MineViewController.m */,
+				04A483CA1B74FE06006FDB9D /* TH_MineViewController.xib */,
+			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
 		B3CC7EB400379DA8CBAEF017 /* Pods */ = {
@@ -332,8 +417,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				041650451B4D7142008C78BE /* LaunchScreen.xib in Resources */,
+				04A483CC1B74FE06006FDB9D /* TH_MineViewController.xib in Resources */,
 				041650421B4D7142008C78BE /* Images.xcassets in Resources */,
 				041650EB1B4D7C4E008C78BE /* MJRefresh.bundle in Resources */,
+				04A483C61B74FDDD006FDB9D /* TH_ClassViewController.xib in Resources */,
+				04A483C01B74FDAE006FDB9D /* TH_ActivityViewController.xib in Resources */,
+				04A483BA1B74FD71006FDB9D /* TH_MainViewController.xib in Resources */,
+				04A483D01B750353006FDB9D /* bg_new.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				041650EE1B4D7C4E008C78BE /* MJRefreshFooterView.m in Sources */,
+				04A483C51B74FDDD006FDB9D /* TH_ClassViewController.m in Sources */,
 				041650CA1B4D730F008C78BE /* MBProgressHUD+Show.m in Sources */,
 				041650DF1B4D795B008C78BE /* AFAppRequest.m in Sources */,
 				0416503D1B4D7142008C78BE /* TH_ViewController.m in Sources */,
@@ -395,9 +486,14 @@
 				0416503A1B4D7141008C78BE /* AppDelegate.m in Sources */,
 				041650371B4D7141008C78BE /* main.m in Sources */,
 				041650ED1B4D7C4E008C78BE /* MJRefreshConst.m in Sources */,
+				04237D901B66456F00768FAD /* LoginAndRegisterRequest.m in Sources */,
 				0416506A1B4D7240008C78BE /* Gson.m in Sources */,
+				04A483B91B74FD71006FDB9D /* TH_MainViewController.m in Sources */,
+				04A483CB1B74FE06006FDB9D /* TH_MineViewController.m in Sources */,
 				041650EC1B4D7C4E008C78BE /* MJRefreshBaseView.m in Sources */,
 				041650EF1B4D7C4E008C78BE /* MJRefreshHeaderView.m in Sources */,
+				04A483B41B74FD1B006FDB9D /* TH_MainTabBarController.m in Sources */,
+				04A483BF1B74FDAE006FDB9D /* TH_ActivityViewController.m in Sources */,
 				041650681B4D7240008C78BE /* GArrayAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
