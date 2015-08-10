@@ -64,6 +64,11 @@
 		94EDD4F41B7831DA00A00A78 /* ZXImagePickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDD4F31B7831DA00A00A78 /* ZXImagePickerVC.m */; };
 		94EDD4F81B783FA700A00A78 /* TH_FindPartTimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDD4F71B783FA700A00A78 /* TH_FindPartTimeVC.m */; };
 		CA3D16A93CCBDD012A68A6C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37454D869BE49FA62A71A04C /* libPods.a */; };
+		F05440B11B7848B000127A9B /* HYSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F05440B01B7848B000127A9B /* HYSegmentedControl.m */; };
+		F05440B41B7870B800127A9B /* jobTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F05440B31B7870B800127A9B /* jobTableViewCell.m */; };
+		F05440B71B7885F500127A9B /* UIBarButtonItem+DC.m in Sources */ = {isa = PBXBuildFile; fileRef = F05440B61B7885F500127A9B /* UIBarButtonItem+DC.m */; };
+		F05440B91B788DAB00127A9B /* findjobtest.plist in Resources */ = {isa = PBXBuildFile; fileRef = F05440B81B788DAB00127A9B /* findjobtest.plist */; };
+		F05440BC1B788FE000127A9B /* jobModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F05440BB1B788FE000127A9B /* jobModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,6 +197,15 @@
 		94EDD4F61B783FA700A00A78 /* TH_FindPartTimeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_FindPartTimeVC.h; sourceTree = "<group>"; };
 		94EDD4F71B783FA700A00A78 /* TH_FindPartTimeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_FindPartTimeVC.m; sourceTree = "<group>"; };
 		A209E6A9E258BA344FA95EF1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F05440AF1B7848B000127A9B /* HYSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSegmentedControl.h; sourceTree = "<group>"; };
+		F05440B01B7848B000127A9B /* HYSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSegmentedControl.m; sourceTree = "<group>"; };
+		F05440B21B7870B800127A9B /* jobTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jobTableViewCell.h; sourceTree = "<group>"; };
+		F05440B31B7870B800127A9B /* jobTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jobTableViewCell.m; sourceTree = "<group>"; };
+		F05440B51B7885F500127A9B /* UIBarButtonItem+DC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+DC.h"; sourceTree = "<group>"; };
+		F05440B61B7885F500127A9B /* UIBarButtonItem+DC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+DC.m"; sourceTree = "<group>"; };
+		F05440B81B788DAB00127A9B /* findjobtest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = findjobtest.plist; sourceTree = "<group>"; };
+		F05440BA1B788FE000127A9B /* jobModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jobModel.h; sourceTree = "<group>"; };
+		F05440BB1B788FE000127A9B /* jobModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jobModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +300,7 @@
 		0416505A1B4D71D4008C78BE /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				F05440AE1B7848B000127A9B /* HYSegmentedControl */,
 				94CB5B531B74CBBE00B23B9D /* libs */,
 				041650E01B4D7C4E008C78BE /* MJRefresh */,
 				041650A31B4D730F008C78BE /* MBProgressHUD */,
@@ -524,6 +539,11 @@
 			children = (
 				94CB5BA91B763AAC00B23B9D /* TH_FindJobVC.h */,
 				94CB5BAA1B763AAC00B23B9D /* TH_FindJobVC.m */,
+				F05440B21B7870B800127A9B /* jobTableViewCell.h */,
+				F05440B31B7870B800127A9B /* jobTableViewCell.m */,
+				F05440B81B788DAB00127A9B /* findjobtest.plist */,
+				F05440BA1B788FE000127A9B /* jobModel.h */,
+				F05440BB1B788FE000127A9B /* jobModel.m */,
 			);
 			path = FindJob;
 			sourceTree = "<group>";
@@ -549,6 +569,8 @@
 		94EDD4E11B78319A00A00A78 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F05440B51B7885F500127A9B /* UIBarButtonItem+DC.h */,
+				F05440B61B7885F500127A9B /* UIBarButtonItem+DC.m */,
 				94EDD4E21B78319A00A00A78 /* UIBarButtonItem+Extension.h */,
 				94EDD4E31B78319A00A00A78 /* UIBarButtonItem+Extension.m */,
 				94EDD4E41B78319A00A00A78 /* UILabel+Extension.h */,
@@ -587,6 +609,15 @@
 				52C8CB3344C41F9F3DBAC076 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F05440AE1B7848B000127A9B /* HYSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				F05440AF1B7848B000127A9B /* HYSegmentedControl.h */,
+				F05440B01B7848B000127A9B /* HYSegmentedControl.m */,
+			);
+			path = HYSegmentedControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -674,6 +705,7 @@
 				041650451B4D7142008C78BE /* LaunchScreen.xib in Resources */,
 				94CB5B911B74F0D500B23B9D /* HomeViews.xib in Resources */,
 				94CB5B891B74CC0600B23B9D /* LICENSE in Resources */,
+				F05440B91B788DAB00127A9B /* findjobtest.plist in Resources */,
 				041650421B4D7142008C78BE /* Images.xcassets in Resources */,
 				041650EB1B4D7C4E008C78BE /* MJRefresh.bundle in Resources */,
 			);
@@ -739,6 +771,7 @@
 				94CB5B9E1B76334000B23B9D /* TH_HomeVC.m in Sources */,
 				041650CA1B4D730F008C78BE /* MBProgressHUD+Show.m in Sources */,
 				041650DF1B4D795B008C78BE /* AFAppRequest.m in Sources */,
+				F05440B11B7848B000127A9B /* HYSegmentedControl.m in Sources */,
 				0416506B1B4D7240008C78BE /* GVarAdapter.m in Sources */,
 				94CB5B831B74CC0600B23B9D /* MJTypeEncoding.m in Sources */,
 				94CB5BA41B76343E00B23B9D /* TH_ClassVC.m in Sources */,
@@ -764,12 +797,15 @@
 				94CB5B8A1B74CC0600B23B9D /* readme.md in Sources */,
 				94EDD4F11B7831BB00A00A78 /* ZXLabel.m in Sources */,
 				94EDD4E91B78319A00A00A78 /* UILabel+Extension.m in Sources */,
+				F05440BC1B788FE000127A9B /* jobModel.m in Sources */,
+				F05440B41B7870B800127A9B /* jobTableViewCell.m in Sources */,
 				94CB5B861B74CC0600B23B9D /* NSObject+MJMember.m in Sources */,
 				94EDD4F81B783FA700A00A78 /* TH_FindPartTimeVC.m in Sources */,
 				94EDD4DF1B78302E00A00A78 /* THCustomNavigationController.m in Sources */,
 				94CB5B811B74CC0600B23B9D /* MJMethod.m in Sources */,
 				94CB5BA11B76342300B23B9D /* TH_SociallyVC.m in Sources */,
 				041650EC1B4D7C4E008C78BE /* MJRefreshBaseView.m in Sources */,
+				F05440B71B7885F500127A9B /* UIBarButtonItem+DC.m in Sources */,
 				94CB5B871B74CC0600B23B9D /* SGFocusImageFrame.m in Sources */,
 				041650EF1B4D7C4E008C78BE /* MJRefreshHeaderView.m in Sources */,
 				04A483B41B74FD1B006FDB9D /* TH_MainTabBarController.m in Sources */,
