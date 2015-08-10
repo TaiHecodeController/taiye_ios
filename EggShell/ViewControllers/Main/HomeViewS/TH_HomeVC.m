@@ -16,6 +16,8 @@
 #import "TH_FindPartTimeVC.h"
 #import "TH_FindPracticeVC.h"
 
+#import "JobAlertView.h"
+
 @interface TH_HomeVC ()<UIScrollViewDelegate,SGFocusImageFrameDelegate,THHomeVieWDelegate>
 {
     UIView * _navBackView;
@@ -89,6 +91,9 @@
 -(void)tap
 {
     [_searchView.searchTextField endEditing:YES];
+    JobAlertView * jb = [[JobAlertView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    [jb show];
+    
 }
 
 #pragma mark - - scorView
