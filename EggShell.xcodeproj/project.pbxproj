@@ -28,8 +28,10 @@
 		04237D901B66456F00768FAD /* LoginAndRegisterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04237D8F1B66456F00768FAD /* LoginAndRegisterRequest.m */; };
 		04A483B41B74FD1B006FDB9D /* TH_MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A483B31B74FD1B006FDB9D /* TH_MainTabBarController.m */; };
 		04A483D71B751E77006FDB9D /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A483D61B751E77006FDB9D /* Utils.m */; };
-		04A483E01B78AEB9006FDB9D /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A483DF1B78AEB9006FDB9D /* SearchView.m */; };
-		04A483E41B78AF01006FDB9D /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A483E31B78AF01006FDB9D /* SearchView.xib */; };
+		04EC1F0F1B78F5510009292E /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC1F0D1B78F5510009292E /* SearchView.m */; };
+		04EC1F101B78F5510009292E /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EC1F0E1B78F5510009292E /* SearchView.xib */; };
+		04EC1F121B78F60C0009292E /* JobAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EC1F111B78F60C0009292E /* JobAlertView.xib */; };
+		04EC1F151B78F6210009292E /* JobAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC1F141B78F6210009292E /* JobAlertView.m */; };
 		94CB5B7A1B74CC0600B23B9D /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B561B74CC0600B23B9D /* BaseModel.m */; };
 		94CB5B7B1B74CC0600B23B9D /* HomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B581B74CC0600B23B9D /* HomePageModel.m */; };
 		94CB5B7C1B74CC0600B23B9D /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B5B1B74CC0600B23B9D /* MJArgument.m */; };
@@ -126,9 +128,12 @@
 		04A483B31B74FD1B006FDB9D /* TH_MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TH_MainTabBarController.m; path = ../../../ViewControllers/TH_MainTabBarController.m; sourceTree = "<group>"; };
 		04A483D51B751E77006FDB9D /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		04A483D61B751E77006FDB9D /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
-		04A483DE1B78AEB9006FDB9D /* SearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchView.h; path = ../Mine/SearchView.h; sourceTree = "<group>"; };
-		04A483DF1B78AEB9006FDB9D /* SearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchView.m; path = ../Mine/SearchView.m; sourceTree = "<group>"; };
-		04A483E31B78AF01006FDB9D /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchView.xib; path = ../Mine/SearchView.xib; sourceTree = "<group>"; };
+		04EC1F0C1B78F5510009292E /* SearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchView.h; sourceTree = "<group>"; };
+		04EC1F0D1B78F5510009292E /* SearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchView.m; sourceTree = "<group>"; };
+		04EC1F0E1B78F5510009292E /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		04EC1F111B78F60C0009292E /* JobAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobAlertView.xib; sourceTree = SOURCE_ROOT; };
+		04EC1F131B78F6210009292E /* JobAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobAlertView.h; sourceTree = SOURCE_ROOT; };
+		04EC1F141B78F6210009292E /* JobAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobAlertView.m; sourceTree = SOURCE_ROOT; };
 		37454D869BE49FA62A71A04C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C8CB3344C41F9F3DBAC076 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		94CB5B551B74CC0600B23B9D /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -443,9 +448,9 @@
 		04A483D91B78AE19006FDB9D /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				04A483DE1B78AEB9006FDB9D /* SearchView.h */,
-				04A483DF1B78AEB9006FDB9D /* SearchView.m */,
-				04A483E31B78AF01006FDB9D /* SearchView.xib */,
+				04EC1F111B78F60C0009292E /* JobAlertView.xib */,
+				04EC1F131B78F6210009292E /* JobAlertView.h */,
+				04EC1F141B78F6210009292E /* JobAlertView.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -460,6 +465,9 @@
 		04A483DC1B78AE77006FDB9D /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				04EC1F0C1B78F5510009292E /* SearchView.h */,
+				04EC1F0D1B78F5510009292E /* SearchView.m */,
+				04EC1F0E1B78F5510009292E /* SearchView.xib */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -749,15 +757,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				041650451B4D7142008C78BE /* LaunchScreen.xib in Resources */,
+				04EC1F101B78F5510009292E /* SearchView.xib in Resources */,
 				94CB5B911B74F0D500B23B9D /* HomeViews.xib in Resources */,
-
-				04A483E41B78AF01006FDB9D /* SearchView.xib in Resources */,
-
 				94EBEC771B78714600764661 /* JobDescription.xib in Resources */,
-
 				94CB5B891B74CC0600B23B9D /* LICENSE in Resources */,
 				041650421B4D7142008C78BE /* Images.xcassets in Resources */,
 				041650EB1B4D7C4E008C78BE /* MJRefresh.bundle in Resources */,
+				04EC1F121B78F60C0009292E /* JobAlertView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,6 +828,7 @@
 				041650CA1B4D730F008C78BE /* MBProgressHUD+Show.m in Sources */,
 				041650DF1B4D795B008C78BE /* AFAppRequest.m in Sources */,
 				0416506B1B4D7240008C78BE /* GVarAdapter.m in Sources */,
+				04EC1F0F1B78F5510009292E /* SearchView.m in Sources */,
 				94CB5B831B74CC0600B23B9D /* MJTypeEncoding.m in Sources */,
 				94CB5BA41B76343E00B23B9D /* TH_ClassVC.m in Sources */,
 				041650691B4D7240008C78BE /* GObjAdapter.m in Sources */,
@@ -833,7 +840,6 @@
 				94CB5BA71B76345D00B23B9D /* TH_MineVC.m in Sources */,
 				94EDD4F01B7831BB00A00A78 /* ZXButton.m in Sources */,
 				94CB5B7D1B74CC0600B23B9D /* MJConst.m in Sources */,
-				04A483E01B78AEB9006FDB9D /* SearchView.m in Sources */,
 				94CB5B881B74CC0600B23B9D /* SGFocusImageItem.m in Sources */,
 				94EBEC751B78710B00764661 /* JobDescriptionlView.m in Sources */,
 				94CB5B841B74CC0600B23B9D /* NSObject+MJCoding.m in Sources */,
@@ -855,6 +861,7 @@
 				94CB5B811B74CC0600B23B9D /* MJMethod.m in Sources */,
 				94CB5BA11B76342300B23B9D /* TH_SociallyVC.m in Sources */,
 				041650EC1B4D7C4E008C78BE /* MJRefreshBaseView.m in Sources */,
+				04EC1F151B78F6210009292E /* JobAlertView.m in Sources */,
 				94CB5B871B74CC0600B23B9D /* SGFocusImageFrame.m in Sources */,
 				041650EF1B4D7C4E008C78BE /* MJRefreshHeaderView.m in Sources */,
 				04A483B41B74FD1B006FDB9D /* TH_MainTabBarController.m in Sources */,
