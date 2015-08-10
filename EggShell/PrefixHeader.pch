@@ -20,4 +20,10 @@
 #import <Foundation/Foundation.h>
 #import "Utils.h"
 #import "MBProgressHUD+Show.h"
+#import "SGFocusImageFrame.h"
+#import "HomePageModel.h"
+#import "MJExtension.h"
+#import "THCustomNavigationController.h"
+#define WIDETH  [UIScreen mainScreen].bounds.size.width
+#define HEIGHT   [UIScreen mainScreen].bounds.size.height
 #endif

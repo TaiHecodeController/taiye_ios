@@ -7,11 +7,10 @@
 //
 
 #import "TH_MainTabBarController.h"
-#import "TH_MainViewController.h"
-#import "TH_ActivityViewController.h"
-#import "TH_ClassViewController.h"
-#import "TH_MineViewController.h"
-
+#import "TH_SociallyVC.h"
+#import "TH_ClassVC.h"
+#import "TH_MineVC.h"
+#import "TH_HomeVC.h"
 @interface TH_MainTabBarController ()
 
 @end
@@ -20,32 +19,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tabBar.tintColor = [UIColor whiteColor];
     [self createViewcontrollers];
     [self createTabBarItems];
+
+    
     // Do any additional setup after loading the view.
 }
 
 -(void)createViewcontrollers
 {
-    TH_MainViewController * main_vc = [[TH_MainViewController alloc] init];
-    UINavigationController * nc1 = [[UINavigationController alloc] initWithRootViewController:main_vc];
+    TH_HomeVC * main_vc = [[TH_HomeVC alloc] init];
+   THCustomNavigationController * nc1 = [[THCustomNavigationController alloc] initWithRootViewController:main_vc];
     
-    TH_ActivityViewController * acti_vc = [[TH_ActivityViewController alloc] init];
-    UINavigationController * nc2 = [[UINavigationController alloc] initWithRootViewController:acti_vc];
+    TH_SociallyVC * acti_vc = [[TH_SociallyVC alloc] init];
+    THCustomNavigationController * nc2 = [[THCustomNavigationController alloc] initWithRootViewController:acti_vc];
     
-    TH_ClassViewController * class_vc = [[TH_ClassViewController alloc] init];
-    UINavigationController * nc3 = [[UINavigationController alloc] initWithRootViewController:class_vc];
+    TH_ClassVC * class_vc = [[TH_ClassVC alloc] init];
+    THCustomNavigationController * nc3 = [[THCustomNavigationController alloc] initWithRootViewController:class_vc];
     
-    TH_MineViewController * mine_vc = [[TH_MineViewController alloc] init];
-    UINavigationController * nc4 = [[UINavigationController alloc] initWithRootViewController:mine_vc];
+    TH_MineVC * mine_vc = [[TH_MineVC alloc] init];
+    THCustomNavigationController * nc4 = [[THCustomNavigationController alloc] initWithRootViewController:mine_vc];
     
     self.viewControllers = @[nc1,nc2,nc3,nc4];
-    [self createTabBarItems];
+//    [self createTabBarItems];
     
 }
 
 -(void)createTabBarItems
 {
+    self.tabBar.backgroundImage = [UIImage imageNamed:@"矩形-8-拷贝-3"];
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]} forState:UIControlStateSelected];
     NSArray * titleArray = @[@"首页",@"玩出范",@"公开课",@"我的"];
     NSArray * unSelectArray = @[@"home", @"wanchufan", @"gongkaike00",@"wode"];
@@ -55,11 +58,11 @@
     for(int i = 0;i < items.count;i++)
     {
         UITabBarItem * item = items[i];
-        item = [items[i] initWithTitle:titleArray[i] image:[UIImage imageNamed:selectArray[i]] selectedImage:[UIImage imageNamed:unSelectArray[i]]];
+        item = [items[i] initWithTitle:titleArray[i] image:[UIImage imageNamed:unSelectArray[i]] selectedImage:[UIImage imageNamed:selectArray[i]]];
         
     }
     
-    self.tabBar.backgroundImage = [UIImage imageNamed:@"矩形-8-拷贝-3"];
+    
     
     
     
