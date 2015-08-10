@@ -27,6 +27,8 @@ alloc_with_xib(JobAlertView)
         _selectedTick = [[UIImageView alloc] initWithFrame:self.selectBtn.bounds];
         _selectedTick.image = [UIImage imageNamed:@"duihaolan"];
         [self.selectBtn addSubview:_selectedTick];
+        self.layer.cornerRadius = 8;
+        self.layer.masksToBounds = YES;
     }
     return self;
 }
