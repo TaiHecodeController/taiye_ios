@@ -27,7 +27,8 @@
     
     [self.window makeKeyAndVisible];
     
-
+    UINavigationBar *bar = [UINavigationBar appearance];
+    [bar setBarTintColor:[UIColor colorWithRed:235/255.0 green:67/255.0 blue:67/255.0 alpha:1]];
     return YES;
 }
 
