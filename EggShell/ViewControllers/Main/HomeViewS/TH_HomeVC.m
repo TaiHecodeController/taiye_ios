@@ -193,6 +193,7 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     self.navigationController.navigationBarHidden = YES;
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {

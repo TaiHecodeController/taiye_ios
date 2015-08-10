@@ -1,24 +1,25 @@
 //
-//  TH_FindJobVC.m
+//  TH_FindPracticeVC.m
 //  EggShell
 //
-//  Created by 李李贤军 on 15/8/8.
+//  Created by 李李贤军 on 15/8/10.
 //  Copyright (c) 2015年 wsd. All rights reserved.
 //
 
-#import "TH_FindJobVC.h"
+#import "TH_FindPracticeVC.h"
 
-@interface TH_FindJobVC ()
+@interface TH_FindPracticeVC ()
 
 @end
 
-@implementation TH_FindJobVC
+@implementation TH_FindPracticeVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor =[UIColor whiteColor];
+    self.title = @"找实习";
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
-    self.title = @"全职职位";
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
