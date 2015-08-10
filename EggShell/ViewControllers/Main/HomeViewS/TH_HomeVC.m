@@ -210,13 +210,11 @@
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    if(scrollView.contentOffset.y / 250 >= 0.7)
-    {
-        return;
-    }
+//    if(scrollView.contentOffset.y / 250 >= 0.7)
+//    {
+//        return;
+//    }
     _searChBgView.alpha = scrollView.contentOffset.y / 250;
-    
-    
 }
 
 -(void)getBackView:(UIView *)superView

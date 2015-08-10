@@ -25,6 +25,8 @@ loading = NO; \
 return obj; \
 }
 
+#define APPID @""
+
 @interface Utils : NSObject
 
 @end

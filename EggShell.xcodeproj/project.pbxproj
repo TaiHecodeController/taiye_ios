@@ -123,9 +123,9 @@
 		04A483B31B74FD1B006FDB9D /* TH_MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TH_MainTabBarController.m; path = ../../../ViewControllers/TH_MainTabBarController.m; sourceTree = "<group>"; };
 		04A483D51B751E77006FDB9D /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		04A483D61B751E77006FDB9D /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
-		04A483DE1B78AEB9006FDB9D /* SearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchView.h; sourceTree = "<group>"; };
-		04A483DF1B78AEB9006FDB9D /* SearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchView.m; sourceTree = "<group>"; };
-		04A483E31B78AF01006FDB9D /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		04A483DE1B78AEB9006FDB9D /* SearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchView.h; path = ../Mine/SearchView.h; sourceTree = "<group>"; };
+		04A483DF1B78AEB9006FDB9D /* SearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchView.m; path = ../Mine/SearchView.m; sourceTree = "<group>"; };
+		04A483E31B78AF01006FDB9D /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchView.xib; path = ../Mine/SearchView.xib; sourceTree = "<group>"; };
 		37454D869BE49FA62A71A04C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C8CB3344C41F9F3DBAC076 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		94CB5B551B74CC0600B23B9D /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -435,6 +435,9 @@
 		04A483D91B78AE19006FDB9D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				04A483DE1B78AEB9006FDB9D /* SearchView.h */,
+				04A483DF1B78AEB9006FDB9D /* SearchView.m */,
+				04A483E31B78AF01006FDB9D /* SearchView.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -449,9 +452,6 @@
 		04A483DC1B78AE77006FDB9D /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				04A483DE1B78AEB9006FDB9D /* SearchView.h */,
-				04A483DF1B78AEB9006FDB9D /* SearchView.m */,
-				04A483E31B78AF01006FDB9D /* SearchView.xib */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
