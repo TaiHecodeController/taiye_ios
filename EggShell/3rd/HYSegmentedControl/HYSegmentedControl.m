@@ -114,7 +114,7 @@
         
         //底线
         UIView *lineView1 = [[UIView alloc]initWithFrame:CGRectMake(0.0f,HYSegmentedControl_Height - 1 - y, [UIScreen  mainScreen].bounds.size.width, 1.0f)];
-        lineView1.backgroundColor = THColor(221, 221, 221);
+        lineView1.backgroundColor = color(221, 221, 221);
         [_scrollView addSubview:lineView1];
         
         //

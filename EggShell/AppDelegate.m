@@ -12,6 +12,9 @@
 
 
 @interface AppDelegate ()
+{
+    NSString * _trackViewUrl;
+}
 
 @end
 
@@ -22,17 +25,69 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[TH_MainTabBarController alloc] init];
+    [self checkVersion];
     
     //rk——test
     
     [self.window makeKeyAndVisible];
     
-//    UINavigationBar *bar = [UINavigationBar appearance];
-//    [bar setBarTintColor:[UIColor whiteColor]];
-//    bar.translucent = NO;
-//    [bar setTintColor:[UIColor whiteColor]];
+
     sleep(1);
     return YES;
+}
+//版本检测
+-(void)checkVersion
+{
+    //1.同步请求json数据
+    NSError * error;
+    NSString * urlStr = [NSString stringWithFormat:@"http://itunes.apple.com/lookup?id=%@",APPID];
+    NSURL * url = [NSURL URLWithString:urlStr];
+    NSData * response = [NSURLConnection sendSynchronousRequest:[[NSURLRequest alloc] initWithURL:url] returningResponse:nil error:nil];
+    NSDictionary * appInfoDic = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingMutableContainers error:&error];
+    if(error)
+    {
+        NSLog(@"版本检测数据error,message:%@",error);
+        return;
+    }
+    
+    NSArray * resultsArray = [appInfoDic objectForKeyedSubscript:@"results"];
+    if(!resultsArray.count)
+    {
+        NSLog(@"版本检测数据error,resultsArray==nil");
+        return;
+    }
+    
+    NSDictionary * infoDic = [resultsArray objectAtIndex:0];
+    //2.需要version,trackViewUrl,trackName三个数据
+    NSString * latestVersion = [infoDic objectForKey:@"version"];
+    _trackViewUrl = [infoDic objectForKey:@"trackViewUrl"];//地址trackViewUrl
+    NSString * trackName = [infoDic objectForKey:@"trackName"];
+    
+    //3.获取此应用的版本号
+    NSDictionary * Local_infoDic = [[NSBundle mainBundle] infoDictionary];
+    NSString * currentVersion = [Local_infoDic objectForKey:@"CFBundleVersion"];
+    
+    double doubleCurrentVersion = [currentVersion doubleValue];
+    double doubleUpdateVersion = [latestVersion doubleValue];
+    
+    //两个点的，最后那个是无效的
+    if(doubleUpdateVersion > doubleCurrentVersion)
+    {
+        NSString * titleStr = [NSString stringWithFormat:@"检查更新:%@",trackName];
+        NSString * messageStr = [NSString stringWithFormat:@"发现版本(%@),是否升级?",latestVersion];
+        UIAlertView * alert = [[UIAlertView alloc] initWithTitle:titleStr message:messageStr delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"升级", nil];
+        [alert show];
+    }
+    
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex == 1)
+    {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:_trackViewUrl]];
+    }
+    
 }
 
 +(AppDelegate*)instance

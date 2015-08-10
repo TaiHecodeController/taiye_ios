@@ -30,7 +30,7 @@
         [self addSubview:_positionSecBtn];
         
         _positionLab = [[UILabel alloc]init];
-        _positionLab.textColor = UIColorFromRGBValue(000000);
+//        _positionLab.textColor = UIColorFromRGBValue(000000);
         _positionLab.font = [UIFont systemFontOfSize:16];
         [self addSubview:_positionLab];
         
@@ -55,7 +55,7 @@
         [self addSubview:_timeLab];
         
         _salaryLab = [[UILabel alloc]init];
-        _salaryLab.textColor = UIColorFromRGBValue(0xf44336);
+//        _salaryLab.textColor = UIColorFromRGBValue(0xf44336);
         _salaryLab.font = [UIFont systemFontOfSize:16];
         [self addSubview:_salaryLab];
         

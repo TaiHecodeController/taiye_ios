@@ -9,11 +9,20 @@
 #import "TH_HomeVC.h"
 #import "HomeView.h"
 #import "TH_FindJobVC.h"
+
+#import "SearchView.h"
+#import "AppDelegate.h"
+
 #import "TH_FindPartTimeVC.h"
 #import "TH_FindPracticeVC.h"
+
+#import "JobAlertView.h"
+
 @interface TH_HomeVC ()<UIScrollViewDelegate,SGFocusImageFrameDelegate,THHomeVieWDelegate>
 {
     UIView * _navBackView;
+    SearchView * _searchView;
+    
 }
 
 @property (nonatomic, strong)SGFocusImageFrame *bannerView;
@@ -35,9 +44,10 @@
     }
     return _arr;
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBarHidden = YES;
+    
     //状态栏
     [self setStatus];
     //ScroView
@@ -47,9 +57,7 @@
     [self quereData];
     //注册XIB
     [self createHomeView];
-    //搜索
-    [self createSearch];
-    //    UITextField * searchField = [[UITextField alloc] initWithFrame:CGRectMake(50, 50, 200, 50)];
+        //    UITextField * searchField = [[UITextField alloc] initWithFrame:CGRectMake(50, 50, 200, 50)];
     //    searchField.background = [UIImage imageNamed:@"bg_new.png"];
     //    [self.view addSubview:searchField];
     //    [self createNav];
@@ -65,16 +73,29 @@
 #pragma mark - - 搜素
 -(void)createSearch
 {
-    //    UIView * searChBgView =[[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, 64)];
-    //    searChBgView.backgroundColor =[UIColor colorWithRed:0 green:0 blue:0 alpha:0];
-    //    self.searChBgView = searChBgView;
-    //    [self.view addSubview:searChBgView];
-    //    HomeSearChView * homeSearchView =[[[NSBundle mainBundle] loadNibNamed:@"HomeSearchView" owner:self options:nil] lastObject];
-    //    homeSearchView.frame = CGRectMake(0, 25, WIDETH, 32);
-    //    homeSearchView.backgroundColor =[UIColor redColor];
-    //    [self.scro addSubview:homeSearchView];
+    
+    _searchView = [[SearchView alloc] initWithFrame:CGRectMake(0, 80, 330, 30)];
+    [self.tabBarController.view addSubview:_searchView];
+    
+    _searChBgView = [[UIView alloc] initWithFrame:_searchView.bounds];
+    _searChBgView.backgroundColor = [UIColor colorWithRed:40 / 255.0 green:42 / 255.0 blue:48 / 255.0 alpha:1];
+    _searChBgView.alpha = 0;
+    
+    [self.navigationController.view addSubview:_searChBgView];
+    //在navigation页面创建点击手势
+    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
+    [self.tabBarController.view addGestureRecognizer:tap];
     
 }
+//取消textField编辑状态，收回键盘
+-(void)tap
+{
+    [_searchView.searchTextField endEditing:YES];
+    JobAlertView * jb = [[JobAlertView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    [jb show];
+    
+}
+
 #pragma mark - - scorView
 -(void)createScro
 {
@@ -151,6 +172,7 @@
     }
 
 }
+
 #pragma mark - - 轮播图
 - (void)configBannerView
 {
@@ -190,22 +212,14 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
 }
--(void)viewWillAppear:(BOOL)animated
-{
-    self.navigationController.navigationBarHidden = YES;
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-}
+
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    //    _navBackView.alpha = scrollView.contentOffset.y / 500;
-    if (self.scro.contentOffset.y <=0) {
-        self.searChBgView.backgroundColor = [UIColor colorWithRed:53/255.0 green:56/255.0 blue:62/255.0 alpha:0.5];
-    }else
-    {
-        self.searChBgView.backgroundColor =[UIColor colorWithRed:0 green:0 blue:0 alpha:0];
-        
-    }
-    
+//    if(scrollView.contentOffset.y / 250 >= 0.7)
+//    {
+//        return;
+//    }
+    _searChBgView.alpha = scrollView.contentOffset.y / 250;
 }
 
 -(void)getBackView:(UIView *)superView
@@ -228,6 +242,26 @@
         [self getBackView:view];
     }
 }
+
+//删除搜索视图
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [_searChBgView removeFromSuperview];
+    [_searchView removeFromSuperview];
+
+    _searchView = nil;
+    _searChBgView = nil;
+}
+
+//隐藏导航栏,创建搜索视图
+-(void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden = YES;
+    //搜索
+    [self createSearch];
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

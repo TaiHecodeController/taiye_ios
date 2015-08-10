@@ -14,8 +14,15 @@
 
 @implementation TH_BaseVC
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+    self.view.backgroundColor =[UIColor whiteColor];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    self.navigationController.navigationBar.translucent = NO;
+
+
+
     // Do any additional setup after loading the view.
     
     
@@ -34,7 +41,8 @@
     [self.navigationController.navigationBar addSubview:btn1];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

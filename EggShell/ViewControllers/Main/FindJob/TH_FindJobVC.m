@@ -11,6 +11,8 @@
 #import "jobTableViewCell.h"
 #import "UIBarButtonItem+DC.h"
 #import "jobModel.h"
+#import "TH_JobDetailVC.h"
+
 
 #define bottomH 107
 
@@ -27,13 +29,13 @@
 @property (nonatomic, strong) UIView *corverView;
 @property (nonatomic, strong) UIView *alertView;
 
-
 @end
 
 @implementation TH_FindJobVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBar.translucent = YES;
     self.view.backgroundColor =[UIColor whiteColor];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     self.title = @"全职职位";
@@ -62,7 +64,7 @@
     [self.view addSubview:_segmentedControl];
     
     y += _segmentedControl.frame.size.height;
-    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, y, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - y - bottomH)];
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, y, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - y - bottomH )];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.backgroundColor = [UIColor clearColor];
@@ -76,7 +78,7 @@
     
     UIView *bottomLine = [[UIView alloc]init];
     bottomLine.frame = CGRectMake(10, 0, WIDETH, 1);
-    bottomLine.backgroundColor = THColor(221, 221, 221);
+    bottomLine.backgroundColor = color(221, 221, 221);
     [_bottomView addSubview:bottomLine];
     
     _apllyBtn = [[UIButton alloc]init];
@@ -87,7 +89,7 @@
     [_apllyBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_apllyBtn addTarget:self action:@selector(apllyBtnClick) forControlEvents:UIControlEventTouchUpInside];
     _apllyBtn.titleLabel.font = [UIFont systemFontOfSize:13];
-    _apllyBtn.backgroundColor = THColor(63, 172, 241);
+    _apllyBtn.backgroundColor = color(63, 172, 241);
     _apllyBtn.clipsToBounds = YES;
     _apllyBtn.layer.cornerRadius = 5;
     [_bottomView addSubview:_apllyBtn];
@@ -150,7 +152,7 @@
     UIButton *okBtn = [[UIButton alloc]init];
     [okBtn setTitle:@"确定" forState:UIControlStateNormal];
     [okBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    okBtn.backgroundColor = THColor(63, 172, 241);
+    okBtn.backgroundColor = color(63, 172, 241);
     CGFloat okBtnW =( 1- 0.34 * 2) * alertView.frame.size.width;
     okBtn.frame = CGRectMake(0.34 * alertView.frame.size.width, 100 , okBtnW, 30);
     okBtn.clipsToBounds = YES;
@@ -374,7 +376,6 @@
     
     [self removeCoverAndAlert];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
