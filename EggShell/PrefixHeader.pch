@@ -26,4 +26,6 @@
 #import "THCustomNavigationController.h"
 #define WIDETH  [UIScreen mainScreen].bounds.size.width
 #define HEIGHT   [UIScreen mainScreen].bounds.size.height
+//iOS7版本的适配
+#define iOS7 [[[UIDevice currentDevice]systemVersion]floatValue]>=7.0
 #endif

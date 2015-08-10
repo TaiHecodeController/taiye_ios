@@ -61,6 +61,8 @@
 		94EDD4F01B7831BB00A00A78 /* ZXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDD4ED1B7831BB00A00A78 /* ZXButton.m */; };
 		94EDD4F11B7831BB00A00A78 /* ZXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDD4EF1B7831BB00A00A78 /* ZXLabel.m */; };
 		94EDD4F41B7831DA00A00A78 /* ZXImagePickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDD4F31B7831DA00A00A78 /* ZXImagePickerVC.m */; };
+		94EDD4F81B783FA700A00A78 /* TH_FindPartTimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDD4F71B783FA700A00A78 /* TH_FindPartTimeVC.m */; };
+		94EDD4FF1B78403F00A00A78 /* TH_FindPracticeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDD4FE1B78403F00A00A78 /* TH_FindPracticeVC.m */; };
 		CA3D16A93CCBDD012A68A6C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37454D869BE49FA62A71A04C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -185,6 +187,10 @@
 		94EDD4EF1B7831BB00A00A78 /* ZXLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXLabel.m; sourceTree = "<group>"; };
 		94EDD4F21B7831DA00A00A78 /* ZXImagePickerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXImagePickerVC.h; sourceTree = "<group>"; };
 		94EDD4F31B7831DA00A00A78 /* ZXImagePickerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXImagePickerVC.m; sourceTree = "<group>"; };
+		94EDD4F61B783FA700A00A78 /* TH_FindPartTimeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_FindPartTimeVC.h; sourceTree = "<group>"; };
+		94EDD4F71B783FA700A00A78 /* TH_FindPartTimeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_FindPartTimeVC.m; sourceTree = "<group>"; };
+		94EDD4FD1B78403F00A00A78 /* TH_FindPracticeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TH_FindPracticeVC.h; path = ../../../../../../Documents/TH_FindPracticeVC.h; sourceTree = "<group>"; };
+		94EDD4FE1B78403F00A00A78 /* TH_FindPracticeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TH_FindPracticeVC.m; path = ../../../../../../Documents/TH_FindPracticeVC.m; sourceTree = "<group>"; };
 		A209E6A9E258BA344FA95EF1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -362,6 +368,8 @@
 			children = (
 				94CB5B9C1B76334000B23B9D /* TH_HomeVC.h */,
 				94CB5B9D1B76334000B23B9D /* TH_HomeVC.m */,
+				94EDD4F91B78400400A00A78 /* FindPractice */,
+				94EDD4F51B783F7800A00A78 /* FindPartTime */,
 				94CB5BA81B763A8100B23B9D /* FindJob */,
 				94CB5B8C1B74EF1800B23B9D /* HomeView */,
 			);
@@ -554,6 +562,24 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
+		94EDD4F51B783F7800A00A78 /* FindPartTime */ = {
+			isa = PBXGroup;
+			children = (
+				94EDD4F61B783FA700A00A78 /* TH_FindPartTimeVC.h */,
+				94EDD4F71B783FA700A00A78 /* TH_FindPartTimeVC.m */,
+			);
+			path = FindPartTime;
+			sourceTree = "<group>";
+		};
+		94EDD4F91B78400400A00A78 /* FindPractice */ = {
+			isa = PBXGroup;
+			children = (
+				94EDD4FD1B78403F00A00A78 /* TH_FindPracticeVC.h */,
+				94EDD4FE1B78403F00A00A78 /* TH_FindPracticeVC.m */,
+			);
+			path = FindPractice;
+			sourceTree = "<group>";
+		};
 		B3CC7EB400379DA8CBAEF017 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -720,6 +746,7 @@
 				041650CB1B4D730F008C78BE /* MBProgressHUD.m in Sources */,
 				041650671B4D7240008C78BE /* GAdapter.m in Sources */,
 				94CB5B7C1B74CC0600B23B9D /* MJArgument.m in Sources */,
+				94EDD4FF1B78403F00A00A78 /* TH_FindPracticeVC.m in Sources */,
 				94CB5B8F1B74EF3900B23B9D /* HomeView.m in Sources */,
 				94CB5BA71B76345D00B23B9D /* TH_MineVC.m in Sources */,
 				94EDD4F01B7831BB00A00A78 /* ZXButton.m in Sources */,
@@ -738,6 +765,7 @@
 				94EDD4F11B7831BB00A00A78 /* ZXLabel.m in Sources */,
 				94EDD4E91B78319A00A00A78 /* UILabel+Extension.m in Sources */,
 				94CB5B861B74CC0600B23B9D /* NSObject+MJMember.m in Sources */,
+				94EDD4F81B783FA700A00A78 /* TH_FindPartTimeVC.m in Sources */,
 				94EDD4DF1B78302E00A00A78 /* THCustomNavigationController.m in Sources */,
 				94CB5B811B74CC0600B23B9D /* MJMethod.m in Sources */,
 				94CB5BA11B76342300B23B9D /* TH_SociallyVC.m in Sources */,

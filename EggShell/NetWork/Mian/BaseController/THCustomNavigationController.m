@@ -17,9 +17,11 @@
 {
     UINavigationBar *navigationBar = [UINavigationBar appearance];
     
-    navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
+    navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blackColor]};
+//    navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIFont systemFontOfSize:16]};
+//    [self.navigationController.navigationBar setTitleTextAttributes:@{UITextAttributeTextColor: [UIColor whiteColor]}];
     [navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
-    navigationBar.shadowImage = [[UIImage alloc] init];
+
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
