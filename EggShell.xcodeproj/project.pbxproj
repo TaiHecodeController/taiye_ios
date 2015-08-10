@@ -750,11 +750,11 @@
 			files = (
 				041650451B4D7142008C78BE /* LaunchScreen.xib in Resources */,
 				94CB5B911B74F0D500B23B9D /* HomeViews.xib in Resources */,
-<<<<<<< Updated upstream
+
 				04A483E41B78AF01006FDB9D /* SearchView.xib in Resources */,
-=======
+
 				94EBEC771B78714600764661 /* JobDescription.xib in Resources */,
->>>>>>> Stashed changes
+
 				94CB5B891B74CC0600B23B9D /* LICENSE in Resources */,
 				041650421B4D7142008C78BE /* Images.xcassets in Resources */,
 				041650EB1B4D7C4E008C78BE /* MJRefresh.bundle in Resources */,
