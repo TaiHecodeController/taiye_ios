@@ -7,7 +7,7 @@
 //
 
 #import "THCustomNavigationController.h"
-#import "UIBarButtonItem+Extension.h"
+
 @interface THCustomNavigationController ()
 
 @end
@@ -18,8 +18,7 @@
     UINavigationBar *navigationBar = [UINavigationBar appearance];
     
     navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blackColor]};
-//    navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIFont systemFontOfSize:16]};
-//    [self.navigationController.navigationBar setTitleTextAttributes:@{UITextAttributeTextColor: [UIColor whiteColor]}];
+    navigationBar.titleTextAttributes = @{NSFontAttributeName :[UIFont systemFontOfSize:18]};
     [navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
 
 }

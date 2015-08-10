@@ -57,6 +57,9 @@
 		94CB5BA71B76345D00B23B9D /* TH_MineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5BA61B76345D00B23B9D /* TH_MineVC.m */; };
 		94CB5BAB1B763AAC00B23B9D /* TH_FindJobVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5BAA1B763AAC00B23B9D /* TH_FindJobVC.m */; };
 		94EAEAC31B78437A003C19DD /* TH_FindPracticeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EAEAC21B78437A003C19DD /* TH_FindPracticeVC.m */; };
+		94EBEC711B786A1700764661 /* TH_JobDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EBEC701B786A1700764661 /* TH_JobDetailVC.m */; };
+		94EBEC751B78710B00764661 /* JobDescriptionlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EBEC741B78710B00764661 /* JobDescriptionlView.m */; };
+		94EBEC771B78714600764661 /* JobDescription.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94EBEC761B78714600764661 /* JobDescription.xib */; };
 		94EDD4DF1B78302E00A00A78 /* THCustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDD4DE1B78302E00A00A78 /* THCustomNavigationController.m */; };
 		94EDD4E81B78319A00A00A78 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDD4E31B78319A00A00A78 /* UIBarButtonItem+Extension.m */; };
 		94EDD4E91B78319A00A00A78 /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDD4E51B78319A00A00A78 /* UILabel+Extension.m */; };
@@ -180,6 +183,11 @@
 		94CB5BAA1B763AAC00B23B9D /* TH_FindJobVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_FindJobVC.m; sourceTree = "<group>"; };
 		94EAEAC11B78437A003C19DD /* TH_FindPracticeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_FindPracticeVC.h; sourceTree = "<group>"; };
 		94EAEAC21B78437A003C19DD /* TH_FindPracticeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_FindPracticeVC.m; sourceTree = "<group>"; };
+		94EBEC6F1B786A1700764661 /* TH_JobDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_JobDetailVC.h; sourceTree = "<group>"; };
+		94EBEC701B786A1700764661 /* TH_JobDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_JobDetailVC.m; sourceTree = "<group>"; };
+		94EBEC731B78710B00764661 /* JobDescriptionlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDescriptionlView.h; sourceTree = "<group>"; };
+		94EBEC741B78710B00764661 /* JobDescriptionlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDescriptionlView.m; sourceTree = "<group>"; };
+		94EBEC761B78714600764661 /* JobDescription.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDescription.xib; sourceTree = "<group>"; };
 		94EDD4DD1B78302E00A00A78 /* THCustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCustomNavigationController.h; sourceTree = "<group>"; };
 		94EDD4DE1B78302E00A00A78 /* THCustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCustomNavigationController.m; sourceTree = "<group>"; };
 		94EDD4E21B78319A00A00A78 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
@@ -570,6 +578,7 @@
 		94CB5BA81B763A8100B23B9D /* FindJob */ = {
 			isa = PBXGroup;
 			children = (
+				94EBEC6E1B786A0100764661 /* JobDetails */,
 				94CB5BA91B763AAC00B23B9D /* TH_FindJobVC.h */,
 				94CB5BAA1B763AAC00B23B9D /* TH_FindJobVC.m */,
 			);
@@ -583,6 +592,26 @@
 				94EAEAC21B78437A003C19DD /* TH_FindPracticeVC.m */,
 			);
 			path = FindPractice;
+			sourceTree = "<group>";
+		};
+		94EBEC6E1B786A0100764661 /* JobDetails */ = {
+			isa = PBXGroup;
+			children = (
+				94EBEC721B78707700764661 /* JobDetailView */,
+				94EBEC6F1B786A1700764661 /* TH_JobDetailVC.h */,
+				94EBEC701B786A1700764661 /* TH_JobDetailVC.m */,
+			);
+			path = JobDetails;
+			sourceTree = "<group>";
+		};
+		94EBEC721B78707700764661 /* JobDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				94EBEC731B78710B00764661 /* JobDescriptionlView.h */,
+				94EBEC761B78714600764661 /* JobDescription.xib */,
+				94EBEC741B78710B00764661 /* JobDescriptionlView.m */,
+			);
+			path = JobDetailView;
 			sourceTree = "<group>";
 		};
 		94EDD4E01B78310900A00A78 /* CustomController */ = {
@@ -721,7 +750,11 @@
 			files = (
 				041650451B4D7142008C78BE /* LaunchScreen.xib in Resources */,
 				94CB5B911B74F0D500B23B9D /* HomeViews.xib in Resources */,
+<<<<<<< Updated upstream
 				04A483E41B78AF01006FDB9D /* SearchView.xib in Resources */,
+=======
+				94EBEC771B78714600764661 /* JobDescription.xib in Resources */,
+>>>>>>> Stashed changes
 				94CB5B891B74CC0600B23B9D /* LICENSE in Resources */,
 				041650421B4D7142008C78BE /* Images.xcassets in Resources */,
 				041650EB1B4D7C4E008C78BE /* MJRefresh.bundle in Resources */,
@@ -802,6 +835,7 @@
 				94CB5B7D1B74CC0600B23B9D /* MJConst.m in Sources */,
 				04A483E01B78AEB9006FDB9D /* SearchView.m in Sources */,
 				94CB5B881B74CC0600B23B9D /* SGFocusImageItem.m in Sources */,
+				94EBEC751B78710B00764661 /* JobDescriptionlView.m in Sources */,
 				94CB5B841B74CC0600B23B9D /* NSObject+MJCoding.m in Sources */,
 				94CB5BAB1B763AAC00B23B9D /* TH_FindJobVC.m in Sources */,
 				0416503A1B4D7141008C78BE /* AppDelegate.m in Sources */,
@@ -811,6 +845,7 @@
 				04237D901B66456F00768FAD /* LoginAndRegisterRequest.m in Sources */,
 				0416506A1B4D7240008C78BE /* Gson.m in Sources */,
 				94CB5B851B74CC0600B23B9D /* NSObject+MJKeyValue.m in Sources */,
+				94EBEC711B786A1700764661 /* TH_JobDetailVC.m in Sources */,
 				94CB5B8A1B74CC0600B23B9D /* readme.md in Sources */,
 				94EDD4F11B7831BB00A00A78 /* ZXLabel.m in Sources */,
 				94EDD4E91B78319A00A00A78 /* UILabel+Extension.m in Sources */,

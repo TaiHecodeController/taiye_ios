@@ -7,7 +7,7 @@
 //
 
 #import "TH_FindJobVC.h"
-
+#import "TH_JobDetailVC.h"
 @interface TH_FindJobVC ()
 
 @end
@@ -16,11 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor =[UIColor whiteColor];
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
-    self.title = @"全职职位";
+    UIButton * btn =[[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 111)];
+    [btn addTarget:self action:@selector(bb) forControlEvents:UIControlEventTouchUpInside];
+    btn.backgroundColor =[UIColor grayColor];
+    [self.view addSubview:btn];
+        self.title = @"全职职位";
 }
-
+-(void)bb
+{
+    TH_JobDetailVC * job = [[TH_JobDetailVC alloc] init];
+    [self.navigationController pushViewController:job animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
