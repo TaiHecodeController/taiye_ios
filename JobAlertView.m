@@ -24,7 +24,7 @@ alloc_with_xib(JobAlertView)
     self = [super initWithFrame:frame];
     if(self)
     {
-        _selectedTick = [[UIImageView alloc] initWithFrame:self.selectBtn.bounds];
+        _selectedTick = [[UIImageView alloc] initWithFrame:CGRectMake(2, 2, self.selectBtn.frame.size.width - 5, self.selectBtn.frame.size.height - 5)];
         _selectedTick.image = [UIImage imageNamed:@"duihaolan"];
         [self.selectBtn addSubview:_selectedTick];
         self.layer.cornerRadius = 8;
@@ -42,6 +42,7 @@ alloc_with_xib(JobAlertView)
         _selectedTick.hidden = YES;
     }
     sender.selected = !sender.selected;
+    
     
 }
 - (IBAction)cancelClick:(UIButton *)sender {
