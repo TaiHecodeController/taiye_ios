@@ -27,3 +27,7 @@ out/
 .svn
 
 EggShell.xcodeproj/
+
+*.xccheckout
+
+*.xccheckout

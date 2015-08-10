@@ -42,7 +42,7 @@
     THCustomNavigationController * nc4 = [[THCustomNavigationController alloc] initWithRootViewController:mine_vc];
     
     self.viewControllers = @[nc1,nc2,nc3,nc4];
-//    [self createTabBarItems];
+    [self createTabBarItems];
     
 }
 

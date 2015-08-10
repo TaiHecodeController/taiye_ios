@@ -9,8 +9,13 @@
 #import "TH_HomeVC.h"
 #import "HomeView.h"
 #import "TH_FindJobVC.h"
+
 #import "SearchView.h"
 #import "AppDelegate.h"
+
+#import "TH_FindPartTimeVC.h"
+#import "TH_FindPracticeVC.h"
+
 @interface TH_HomeVC ()<UIScrollViewDelegate,SGFocusImageFrameDelegate,THHomeVieWDelegate>
 {
     UIView * _navBackView;
@@ -121,13 +126,15 @@
         }
         case THHomeViewButtonTypeFindPartTime:
         {
+            TH_FindPartTimeVC * partTime = [[TH_FindPartTimeVC alloc] init];
             NSLog(@"找兼职");
-            [self.navigationController pushViewController:home animated:YES];
+            [self.navigationController pushViewController:partTime animated:YES];
             break;
         }
         case THHomeViewButtonTypeInternshipSearch:
         {NSLog(@"找实习");
-            [self.navigationController pushViewController:home animated:YES];
+            TH_FindPracticeVC * partTime = [[TH_FindPracticeVC alloc] init];
+            [self.navigationController pushViewController:partTime animated:YES];
             break;
         }
         case THHomeViewButtonTypeInformationDesk:
@@ -200,7 +207,6 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
 }
-
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
