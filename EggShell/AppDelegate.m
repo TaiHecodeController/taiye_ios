@@ -13,7 +13,7 @@
 
 @interface AppDelegate ()
 {
-    NSString * _trackViewUrl
+    NSString * _trackViewUrl;
 }
 
 @end
@@ -54,6 +54,7 @@
     if(!resultsArray.count)
     {
         NSLog(@"版本检测数据error,resultsArray==nil");
+        return;
     }
     
     NSDictionary * infoDic = [resultsArray objectAtIndex:0];
