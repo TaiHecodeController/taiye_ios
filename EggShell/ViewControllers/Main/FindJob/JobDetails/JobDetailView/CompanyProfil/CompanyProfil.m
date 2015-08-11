@@ -10,10 +10,17 @@
 
 @implementation CompanyProfil
 
+-(void)awakeFromNib
+{
+    
+}
+
 
 - (IBAction)companyClick:(UIButton *)sender {
+    if ([self.companyDelegate respondsToSelector:@selector(CompanyProfilView:)]) {
+        [self.companyDelegate CompanyProfilView:self];
+    }
     
-    [self.companyDelegate CompanyProfilView:self];
 }
 
 @end
