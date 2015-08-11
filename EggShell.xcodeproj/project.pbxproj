@@ -35,6 +35,8 @@
 		048F30BB1B7A4537004AA9B2 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30B61B7A4537004AA9B2 /* FMResultSet.m */; };
 		048F30C11B7A462C004AA9B2 /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30C01B7A462C004AA9B2 /* DataBase.m */; };
 		048F30C31B7A542B004AA9B2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 048F30C21B7A542B004AA9B2 /* libsqlite3.dylib */; };
+		048F30CC1B7A6527004AA9B2 /* MineEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30CA1B7A6527004AA9B2 /* MineEditVC.m */; };
+		048F30CD1B7A6527004AA9B2 /* MineEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048F30CB1B7A6527004AA9B2 /* MineEditVC.xib */; };
 		04A0CD421B7A104900EBCF01 /* SearchJobVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CD411B7A104900EBCF01 /* SearchJobVC.m */; };
 		04A0CD451B7A110B00EBCF01 /* HeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A0CD441B7A110B00EBCF01 /* HeadView.xib */; };
 		04A0CD481B7A111D00EBCF01 /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CD471B7A111D00EBCF01 /* HeadView.m */; };
@@ -175,6 +177,9 @@
 		048F30BF1B7A462C004AA9B2 /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
 		048F30C01B7A462C004AA9B2 /* DataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBase.m; sourceTree = "<group>"; };
 		048F30C21B7A542B004AA9B2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		048F30C91B7A6527004AA9B2 /* MineEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineEditVC.h; sourceTree = "<group>"; };
+		048F30CA1B7A6527004AA9B2 /* MineEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineEditVC.m; sourceTree = "<group>"; };
+		048F30CB1B7A6527004AA9B2 /* MineEditVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineEditVC.xib; sourceTree = "<group>"; };
 		04A0CD401B7A104900EBCF01 /* SearchJobVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchJobVC.h; sourceTree = "<group>"; };
 		04A0CD411B7A104900EBCF01 /* SearchJobVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchJobVC.m; sourceTree = "<group>"; };
 		04A0CD441B7A110B00EBCF01 /* HeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadView.xib; sourceTree = "<group>"; };
@@ -316,7 +321,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
 				048F30C31B7A542B004AA9B2 /* libsqlite3.dylib in Frameworks */,
 				F0D7C05B1B79CC6400836DD2 /* libz.dylib in Frameworks */,
 				F0D7C0591B79CC5700836DD2 /* SystemConfiguration.framework in Frameworks */,
@@ -562,11 +566,9 @@
 			isa = PBXGroup;
 			children = (
 				941F0FA71B79A58000719F5B /* CoursePlay */,
-
 				F0D7C05C1B79CCEF00836DD2 /* MoviePlayerViewController.h */,
 				F0D7C05D1B79CCEF00836DD2 /* MoviePlayerViewController.m */,
 				F0D7C04A1B79C7B400836DD2 /* libpolyvSDK */,
-
 				94CB5BA21B76343E00B23B9D /* TH_ClassVC.h */,
 				94CB5BA31B76343E00B23B9D /* TH_ClassVC.m */,
 				F0D7C0291B7994DB00836DD2 /* OpenClassCell.h */,
@@ -582,6 +584,9 @@
 				94D9000C1B799BE000F6FD36 /* MineView */,
 				94CB5BA51B76345D00B23B9D /* TH_MineVC.h */,
 				94CB5BA61B76345D00B23B9D /* TH_MineVC.m */,
+				048F30C91B7A6527004AA9B2 /* MineEditVC.h */,
+				048F30CA1B7A6527004AA9B2 /* MineEditVC.m */,
+				048F30CB1B7A6527004AA9B2 /* MineEditVC.xib */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -1011,6 +1016,7 @@
 				941F0FC21B79A71700719F5B /* Course PlayCell.xib in Resources */,
 				041650451B4D7142008C78BE /* LaunchScreen.xib in Resources */,
 				04EC1F241B791B660009292E /* moreJobTableViewCell.xib in Resources */,
+				048F30CD1B7A6527004AA9B2 /* MineEditVC.xib in Resources */,
 				04EC1F101B78F5510009292E /* SearchView.xib in Resources */,
 				94CB5B911B74F0D500B23B9D /* HomeViews.xib in Resources */,
 				94D9000A1B79996600F6FD36 /* JobDescription.xib in Resources */,
@@ -1117,6 +1123,7 @@
 				0416503A1B4D7141008C78BE /* AppDelegate.m in Sources */,
 				041650371B4D7141008C78BE /* main.m in Sources */,
 				048F30A81B7A1562004AA9B2 /* HotSearch.m in Sources */,
+				048F30CC1B7A6527004AA9B2 /* MineEditVC.m in Sources */,
 				94CB5B7F1B74CC0600B23B9D /* MJIvar.m in Sources */,
 				041650ED1B4D7C4E008C78BE /* MJRefreshConst.m in Sources */,
 				941F0FAF1B79A5A200719F5B /* THCoursePlayVC.m in Sources */,

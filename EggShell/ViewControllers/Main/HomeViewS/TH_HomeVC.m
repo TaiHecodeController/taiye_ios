@@ -20,6 +20,7 @@
 #import "TH_ClassVC.h"
 
 #import "SearchJobVC.h"
+#import "DataBase.h"
 
 @interface TH_HomeVC ()<UIScrollViewDelegate,SGFocusImageFrameDelegate,THHomeVieWDelegate>
 {

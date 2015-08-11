@@ -69,7 +69,7 @@
 -(void)createTableView
 {
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, hotSearch.frame.origin.y + hotSearch.frame.size.height, WIDETH, HEIGHT / 3)];
-    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];

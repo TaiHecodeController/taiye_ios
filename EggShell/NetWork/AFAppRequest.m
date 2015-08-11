@@ -140,7 +140,6 @@
     
 //    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     
-    manager.responseSerializer.acceptableContentTypes =[NSSet setWithObject:@"text/html"];
     
     [manager GET:url parameters:param success:^(AFHTTPRequestOperation * operation, id responseObject)
      {
