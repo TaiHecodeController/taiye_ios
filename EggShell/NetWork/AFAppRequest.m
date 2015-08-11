@@ -136,10 +136,9 @@
 {
     AFRequestState * State = [AFRequestState new];
     
-    AFHTTPRequestOperationManager*manager=[self sharedClient];
+    AFHTTPRequestOperationManager*manager=[self sharedManager];
     
-//    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
-    
+
     
     [manager GET:url parameters:param success:^(AFHTTPRequestOperation * operation, id responseObject)
      {
@@ -167,6 +166,7 @@
     {
         [MBProgressHUD creatembHub:@"用户名不存在"];
     }
+    
     
     
 }

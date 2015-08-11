@@ -106,7 +106,8 @@
 		F0D7C0571B79CC4800836DD2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D7C0561B79CC4800836DD2 /* MobileCoreServices.framework */; };
 		F0D7C0591B79CC5700836DD2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D7C0581B79CC5700836DD2 /* SystemConfiguration.framework */; };
 		F0D7C05B1B79CC6400836DD2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D7C05A1B79CC6400836DD2 /* libz.dylib */; };
-		F0D7C05E1B79CCEF00836DD2 /* MoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D7C05D1B79CCEF00836DD2 /* MoviePlayerViewController.m */; };
+		F0D7C0611B79EB3300836DD2 /* OpenClassVideoListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D7C0601B79EB3300836DD2 /* OpenClassVideoListRequest.m */; };
+		F0D7C06D1B79F92300836DD2 /* OpenClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D7C06C1B79F92300836DD2 /* OpenClassModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -312,8 +313,11 @@
 		F0D7C0561B79CC4800836DD2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		F0D7C0581B79CC5700836DD2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F0D7C05A1B79CC6400836DD2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		F0D7C05C1B79CCEF00836DD2 /* MoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePlayerViewController.h; sourceTree = "<group>"; };
-		F0D7C05D1B79CCEF00836DD2 /* MoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePlayerViewController.m; sourceTree = "<group>"; };
+		F0D7C05F1B79EB3300836DD2 /* OpenClassVideoListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenClassVideoListRequest.h; sourceTree = "<group>"; };
+		F0D7C0601B79EB3300836DD2 /* OpenClassVideoListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenClassVideoListRequest.m; sourceTree = "<group>"; };
+		F0D7C06B1B79F92300836DD2 /* OpenClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenClassModel.h; path = libpolyvSDK/OpenClassModel.h; sourceTree = "<group>"; };
+		F0D7C06C1B79F92300836DD2 /* OpenClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenClassModel.m; path = libpolyvSDK/OpenClassModel.m; sourceTree = "<group>"; };
+		F0D7C06E1B7A009A00836DD2 /* libPods-SDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-SDWebImage.a"; path = "Pods/../build/Debug-iphoneos/libPods-SDWebImage.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -343,6 +347,7 @@
 		0237599393BF78A52DFB0C38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F0D7C06E1B7A009A00836DD2 /* libPods-SDWebImage.a */,
 				048F30C21B7A542B004AA9B2 /* libsqlite3.dylib */,
 				F0D7C05A1B79CC6400836DD2 /* libz.dylib */,
 				F0D7C0581B79CC5700836DD2 /* SystemConfiguration.framework */,
@@ -465,6 +470,8 @@
 				041650DE1B4D795B008C78BE /* AFAppRequest.m */,
 				04237D8F1B66456F00768FAD /* LoginAndRegisterRequest.m */,
 				04237D8E1B66456F00768FAD /* LoginAndRegisterRequest.h */,
+				F0D7C05F1B79EB3300836DD2 /* OpenClassVideoListRequest.h */,
+				F0D7C0601B79EB3300836DD2 /* OpenClassVideoListRequest.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -573,6 +580,8 @@
 				94CB5BA31B76343E00B23B9D /* TH_ClassVC.m */,
 				F0D7C0291B7994DB00836DD2 /* OpenClassCell.h */,
 				F0D7C02A1B7994DB00836DD2 /* OpenClassCell.m */,
+				F0D7C06B1B79F92300836DD2 /* OpenClassModel.h */,
+				F0D7C06C1B79F92300836DD2 /* OpenClassModel.m */,
 			);
 			name = OpenClass;
 			path = Class;
@@ -1095,7 +1104,6 @@
 				041650CA1B4D730F008C78BE /* MBProgressHUD+Show.m in Sources */,
 				041650DF1B4D795B008C78BE /* AFAppRequest.m in Sources */,
 				F05440B11B7848B000127A9B /* HYSegmentedControl.m in Sources */,
-				F0D7C05E1B79CCEF00836DD2 /* MoviePlayerViewController.m in Sources */,
 				0416506B1B4D7240008C78BE /* GVarAdapter.m in Sources */,
 				048F30B71B7A4537004AA9B2 /* FMDatabase.m in Sources */,
 				04EC1F0F1B78F5510009292E /* SearchView.m in Sources */,
@@ -1146,11 +1154,13 @@
 				048F30BA1B7A4537004AA9B2 /* FMDatabaseQueue.m in Sources */,
 				041650EC1B4D7C4E008C78BE /* MJRefreshBaseView.m in Sources */,
 				F05440B71B7885F500127A9B /* UIBarButtonItem+DC.m in Sources */,
+				F0D7C06D1B79F92300836DD2 /* OpenClassModel.m in Sources */,
 				04EC1F151B78F6210009292E /* JobAlertView.m in Sources */,
 				94CB5B871B74CC0600B23B9D /* SGFocusImageFrame.m in Sources */,
 				941F0FC11B79A71700719F5B /* Course PlayCell.m in Sources */,
 				041650EF1B4D7C4E008C78BE /* MJRefreshHeaderView.m in Sources */,
 				04A483B41B74FD1B006FDB9D /* TH_MainTabBarController.m in Sources */,
+				F0D7C0611B79EB3300836DD2 /* OpenClassVideoListRequest.m in Sources */,
 				04EC1F251B791B660009292E /* TH_JobDetailVC.m in Sources */,
 				94CB5B9B1B7632E800B23B9D /* TH_BaseVC.m in Sources */,
 				94CB5B7A1B74CC0600B23B9D /* BaseModel.m in Sources */,
@@ -1280,6 +1290,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EggShell/ViewControllers/Class/libpolyvSDK",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1300,6 +1311,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EggShell/ViewControllers/Class/libpolyvSDK",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -13,7 +13,15 @@
 #import "jobModel.h"
 #import "TH_JobDetailVC.h"
 #import "OpenClassCell.h"
-#import "MoviePlayerViewController.h"
+//#import "MoviePlayerViewController.h"
+#import "THCoursePlayVC.h"
+
+#import "OpenClassVideoListRequest.h"
+#import "OpenClassModel.h"
+#import "UIImageView+WebCache.h"
+
+
+
 
 #define bottomH 107
 
@@ -24,7 +32,7 @@
 @property (nonatomic, strong) HYSegmentedControl *segmentedControl;
 @property (nonatomic, assign) int currentIndex;
 @property (nonatomic, strong) UICollectionView *collectionView;
-@property (nonatomic, strong)NSMutableArray *subclassArr;
+@property (nonatomic, strong)NSMutableArray *openClassList;
 
 @end
 
@@ -45,6 +53,8 @@
 //    self.navigationItem.rightBarButtonItem = [UIBarButtonItem barBtnItemWithNormalImageName:@"liebiao" hightImageName:nil action:@selector(rightClick) target:self];
 //    
 //    [self addRightBtn2_NormalImageName:@"sousuo001" hightImageName:nil action:@selector(rightClick2) target:self];
+    
+    
     
     [self initView];
     
@@ -67,15 +77,25 @@
     _segmentedControl = [[HYSegmentedControl alloc] initWithOriginY:y Titles:@[@"视频课程", @"语音课程"]  IconNames:iconArr delegate:self] ;
     [self.view addSubview:_segmentedControl];
     
-    
-    
-
-    
 }
 
 - (void)querData
 {
     
+    [OpenClassVideoListRequest requestWithSucc:^(NSArray *DataDic) {
+        
+        _openClassList = [NSMutableArray arrayWithArray:DataDic];
+        
+        [_collectionView reloadData];
+//     OpenClassModel *model = DataDic[0];
+//     THLog(@"vimage:%@",model.vimage);
+//        OpenClassModel.vimage
+        
+//        OpenClassModel *model = [[OpenClassModel alloc] initWithDictionary:DataDic];
+//        
+//        THLog(@"DataDic:%@",model);
+        
+    } resp:[OpenClassModel class]];
 }
 
 #pragma mark -- configConllectionView
@@ -166,7 +186,7 @@
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     //    return _subclassArr.count;
-    return 10;
+    return _openClassList.count;
 }
 
 //构建单元格
@@ -175,14 +195,32 @@
    
     OpenClassCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"RK_collectionViewCell" forIndexPath:indexPath];
     
-//    cell.backgroundColor = [UIColor redColor];
-    cell.coverView.image = [UIImage imageNamed:@"remen"];
-    cell.nameLab.text = @"王伟光";
-    [cell.redXinBtn setImage:[UIImage imageNamed:@"zan"] forState:UIControlStateNormal];
-    [cell.redXinBtn setTitle:@"300" forState:UIControlStateNormal];
-    [cell.priceBtn setImage:[UIImage imageNamed:@"qian"] forState:UIControlStateNormal];
-    [cell.priceBtn setTitle:@"9元" forState:UIControlStateNormal];
-    cell.companyLab.text = @"中国惠普";
+   
+    
+    if (_currentIndex == 0)
+    {
+        OpenClassModel *model = _openClassList[indexPath.row];
+        
+        [cell.coverView sd_setImageWithURL:[NSURL URLWithString:model.vimage] placeholderImage:[UIImage imageNamed:@"remen"]];
+        cell.nameLab.text = model.video_teacher;
+        [cell.redXinBtn setImage:[UIImage imageNamed:@"zan"] forState:UIControlStateNormal];
+        [cell.redXinBtn setTitle:@"300" forState:UIControlStateNormal];
+        [cell.priceBtn setImage:[UIImage imageNamed:@"qian"] forState:UIControlStateNormal];
+        [cell.priceBtn setTitle:@"9元" forState:UIControlStateNormal];
+        cell.companyLab.text = @"中国惠普";
+    }
+    else
+    {
+         OpenClassModel *model = _openClassList[indexPath.row];
+        
+        [cell.coverView sd_setImageWithURL:[NSURL URLWithString:model.vimage] placeholderImage:[UIImage imageNamed:@"remen"]];
+        cell.nameLab.text = model.video_teacher;
+        [cell.redXinBtn setImage:[UIImage imageNamed:@"zan"] forState:UIControlStateNormal];
+        [cell.redXinBtn setTitle:@"300" forState:UIControlStateNormal];
+        [cell.priceBtn setImage:[UIImage imageNamed:@"qian"] forState:UIControlStateNormal];
+        [cell.priceBtn setTitle:@"9元" forState:UIControlStateNormal];
+        cell.companyLab.text = @"中国惠普";
+    }
     
     return cell;
 }
@@ -204,14 +242,17 @@
 //UICollectionView被选中时调用的方法
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    //播放视频
-    NSURL *Url = [NSURL URLWithString:@"00018093b103eb7fe795cf4cebab8871_0"];
+    OpenClassModel *model = _openClassList[indexPath.row];
+//    播放视频
+//    NSURL *Url = [NSURL URLWithString:@"00018093b103eb7fe795cf4cebab8871_0"];
+     NSURL *Url = [NSURL URLWithString:model.video_id];
     if (!Url) {
         return;
     }
-    MoviePlayerViewController *moviePlayer =    [[MoviePlayerViewController alloc] initNetworkMoviePlayerViewControllerWithURL:Url movieTitle:@"标题"];
+    THCoursePlayVC *moviePlayer =    [[THCoursePlayVC alloc] initNetworkMoviePlayerViewControllerWithURL:Url movieTitle:model.video_name];
     
-    [self.navigationController presentViewController:moviePlayer animated:YES completion:nil];
+//    [self.navigationController presentViewController:moviePlayer animated:YES completion:nil];
+    [self.navigationController pushViewController:moviePlayer animated:YES];
 }
 
 
@@ -228,7 +269,7 @@
         //        [dataArray addObject:@"4"];
         //        [dataArray addObject:@"5"];
         
-//        [_tableView reloadData];
+        [_collectionView reloadData];
 //                _tableView.hidden = YES;
         //        _gridView.hidden = NO;
     }
@@ -242,7 +283,7 @@
         //        [dataArray addObject:@"44"];
         //        [dataArray addObject:@"55"];
         
-//        [_tableView reloadData];
+        [_collectionView reloadData];
         //        _gridView.hidden = YES;
         //        _tableView.hidden = NO;
     }
@@ -254,6 +295,7 @@
     if (sender.tag == 1000)
     {
         THLog(@"名师风采被点击%ld",(long)sender.tag);
+        
     }
     else if (sender.tag == 1001)
     {
@@ -263,6 +305,18 @@
     {
         THLog(@"名师风采被点击%ld",(long)sender.tag);
     }
+    
+    //    播放视频
+    NSURL *Url = [NSURL URLWithString:@"00018093b103eb7fe795cf4cebab8871_0"];
+    if (!Url) {
+        return;
+    }
+    
+    THCoursePlayVC *moviePlayer =    [[THCoursePlayVC alloc] initNetworkMoviePlayerViewControllerWithURL:Url movieTitle:@"英语完型填空"];
+    
+    //    [self.navigationController presentViewController:moviePlayer animated:YES completion:nil];
+    [self.navigationController pushViewController:moviePlayer animated:YES];
+
 }
 
 - (void)didReceiveMemoryWarning {

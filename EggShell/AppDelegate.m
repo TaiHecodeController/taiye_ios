@@ -10,8 +10,6 @@
 #import "TH_MainTabBarController.h"
 #import "LoginAndRegisterRequest.h"
 
-
-
 @interface AppDelegate ()
 {
     NSString * _trackViewUrl;
@@ -27,6 +25,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[TH_MainTabBarController alloc] init];
     [self checkVersion];
+    
+   
     //rk——test
     
     //初始化保利视频
