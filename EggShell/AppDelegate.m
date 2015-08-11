@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TH_MainTabBarController.h"
-
+#import "LoginAndRegisterRequest.h"
 
 
 @interface AppDelegate ()
@@ -27,6 +27,7 @@
     self.window.rootViewController = [[TH_MainTabBarController alloc] init];
     [self checkVersion];
     
+   
     //rk——test
     
     //初始化保利视频
