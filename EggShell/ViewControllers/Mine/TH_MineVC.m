@@ -7,7 +7,7 @@
 //
 
 #import "TH_MineVC.h"
-
+#import "MineVeiw.h"
 @interface TH_MineVC ()
 
 @end
@@ -17,8 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"我的";
+    [self createView];
     }
-
+-(void)createView
+{
+    MineVeiw * MinVew = [MineVeiw RegisterMineView];
+    
+    [self.view addSubview:MinVew];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
