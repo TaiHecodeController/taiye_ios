@@ -32,10 +32,10 @@
 @end
 
 @implementation TH_FindJobVC
--(void)viewWillAppear:(BOOL)animated
-{
-self.navigationController.navigationBar.translucent = YES;
-}
+//-(void)viewWillAppear:(BOOL)animated
+//{
+//self.navigationController.navigationBar.translucent = YES;
+//}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
