@@ -26,6 +26,18 @@
 		041650EE1B4D7C4E008C78BE /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041650E81B4D7C4E008C78BE /* MJRefreshFooterView.m */; };
 		041650EF1B4D7C4E008C78BE /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041650EA1B4D7C4E008C78BE /* MJRefreshHeaderView.m */; };
 		04237D901B66456F00768FAD /* LoginAndRegisterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04237D8F1B66456F00768FAD /* LoginAndRegisterRequest.m */; };
+		048F30A81B7A1562004AA9B2 /* HotSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30A71B7A1562004AA9B2 /* HotSearch.m */; };
+		048F30AA1B7A1577004AA9B2 /* HotSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048F30A91B7A1577004AA9B2 /* HotSearch.xib */; };
+		048F30B71B7A4537004AA9B2 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30AD1B7A4537004AA9B2 /* FMDatabase.m */; };
+		048F30B81B7A4537004AA9B2 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30AF1B7A4537004AA9B2 /* FMDatabaseAdditions.m */; };
+		048F30B91B7A4537004AA9B2 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30B11B7A4537004AA9B2 /* FMDatabasePool.m */; };
+		048F30BA1B7A4537004AA9B2 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30B31B7A4537004AA9B2 /* FMDatabaseQueue.m */; };
+		048F30BB1B7A4537004AA9B2 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30B61B7A4537004AA9B2 /* FMResultSet.m */; };
+		048F30C11B7A462C004AA9B2 /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30C01B7A462C004AA9B2 /* DataBase.m */; };
+		048F30C31B7A542B004AA9B2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 048F30C21B7A542B004AA9B2 /* libsqlite3.dylib */; };
+		04A0CD421B7A104900EBCF01 /* SearchJobVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CD411B7A104900EBCF01 /* SearchJobVC.m */; };
+		04A0CD451B7A110B00EBCF01 /* HeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A0CD441B7A110B00EBCF01 /* HeadView.xib */; };
+		04A0CD481B7A111D00EBCF01 /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CD471B7A111D00EBCF01 /* HeadView.m */; };
 		04A483B41B74FD1B006FDB9D /* TH_MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A483B31B74FD1B006FDB9D /* TH_MainTabBarController.m */; };
 		04A483D71B751E77006FDB9D /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A483D61B751E77006FDB9D /* Utils.m */; };
 		04EC1F0F1B78F5510009292E /* SearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC1F0D1B78F5510009292E /* SearchView.m */; };
@@ -147,6 +159,28 @@
 		041650F01B4D7F19008C78BE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		04237D8E1B66456F00768FAD /* LoginAndRegisterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginAndRegisterRequest.h; sourceTree = "<group>"; };
 		04237D8F1B66456F00768FAD /* LoginAndRegisterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAndRegisterRequest.m; sourceTree = "<group>"; };
+		048F30A61B7A1562004AA9B2 /* HotSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotSearch.h; sourceTree = "<group>"; };
+		048F30A71B7A1562004AA9B2 /* HotSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotSearch.m; sourceTree = "<group>"; };
+		048F30A91B7A1577004AA9B2 /* HotSearch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotSearch.xib; sourceTree = "<group>"; };
+		048F30AC1B7A4537004AA9B2 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		048F30AD1B7A4537004AA9B2 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		048F30AE1B7A4537004AA9B2 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		048F30AF1B7A4537004AA9B2 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		048F30B01B7A4537004AA9B2 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		048F30B11B7A4537004AA9B2 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		048F30B21B7A4537004AA9B2 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		048F30B31B7A4537004AA9B2 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		048F30B41B7A4537004AA9B2 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		048F30B51B7A4537004AA9B2 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		048F30B61B7A4537004AA9B2 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		048F30BF1B7A462C004AA9B2 /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
+		048F30C01B7A462C004AA9B2 /* DataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBase.m; sourceTree = "<group>"; };
+		048F30C21B7A542B004AA9B2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		04A0CD401B7A104900EBCF01 /* SearchJobVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchJobVC.h; sourceTree = "<group>"; };
+		04A0CD411B7A104900EBCF01 /* SearchJobVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchJobVC.m; sourceTree = "<group>"; };
+		04A0CD441B7A110B00EBCF01 /* HeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadView.xib; sourceTree = "<group>"; };
+		04A0CD461B7A111D00EBCF01 /* HeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadView.h; sourceTree = "<group>"; };
+		04A0CD471B7A111D00EBCF01 /* HeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadView.m; sourceTree = "<group>"; };
 		04A483B21B74FD1B006FDB9D /* TH_MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TH_MainTabBarController.h; path = ../../../ViewControllers/TH_MainTabBarController.h; sourceTree = "<group>"; };
 		04A483B31B74FD1B006FDB9D /* TH_MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TH_MainTabBarController.m; path = ../../../ViewControllers/TH_MainTabBarController.m; sourceTree = "<group>"; };
 		04A483D51B751E77006FDB9D /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
@@ -286,6 +320,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+				048F30C31B7A542B004AA9B2 /* libsqlite3.dylib in Frameworks */,
 				F0D7C05B1B79CC6400836DD2 /* libz.dylib in Frameworks */,
 				F0D7C0591B79CC5700836DD2 /* SystemConfiguration.framework in Frameworks */,
 				F0D7C0571B79CC4800836DD2 /* MobileCoreServices.framework in Frameworks */,
@@ -308,6 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				F0D7C06E1B7A009A00836DD2 /* libPods-SDWebImage.a */,
+				048F30C21B7A542B004AA9B2 /* libsqlite3.dylib */,
 				F0D7C05A1B79CC6400836DD2 /* libz.dylib */,
 				F0D7C0581B79CC5700836DD2 /* SystemConfiguration.framework */,
 				F0D7C0561B79CC4800836DD2 /* MobileCoreServices.framework */,
@@ -382,6 +419,7 @@
 		0416505A1B4D71D4008C78BE /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				048F30AB1B7A4537004AA9B2 /* fmdb */,
 				F05440AE1B7848B000127A9B /* HYSegmentedControl */,
 				94CB5B531B74CBBE00B23B9D /* libs */,
 				041650E01B4D7C4E008C78BE /* MJRefresh */,
@@ -451,6 +489,47 @@
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
+		048F30AB1B7A4537004AA9B2 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				048F30AC1B7A4537004AA9B2 /* FMDatabase.h */,
+				048F30AD1B7A4537004AA9B2 /* FMDatabase.m */,
+				048F30AE1B7A4537004AA9B2 /* FMDatabaseAdditions.h */,
+				048F30AF1B7A4537004AA9B2 /* FMDatabaseAdditions.m */,
+				048F30B01B7A4537004AA9B2 /* FMDatabasePool.h */,
+				048F30B11B7A4537004AA9B2 /* FMDatabasePool.m */,
+				048F30B21B7A4537004AA9B2 /* FMDatabaseQueue.h */,
+				048F30B31B7A4537004AA9B2 /* FMDatabaseQueue.m */,
+				048F30B41B7A4537004AA9B2 /* FMDB.h */,
+				048F30B51B7A4537004AA9B2 /* FMResultSet.h */,
+				048F30B61B7A4537004AA9B2 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		04A0CD3F1B7A0FFE00EBCF01 /* SearchJob */ = {
+			isa = PBXGroup;
+			children = (
+				04A0CD401B7A104900EBCF01 /* SearchJobVC.h */,
+				04A0CD411B7A104900EBCF01 /* SearchJobVC.m */,
+				04A0CD431B7A10F800EBCF01 /* SubViews */,
+			);
+			path = SearchJob;
+			sourceTree = "<group>";
+		};
+		04A0CD431B7A10F800EBCF01 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				04A0CD441B7A110B00EBCF01 /* HeadView.xib */,
+				04A0CD461B7A111D00EBCF01 /* HeadView.h */,
+				04A0CD471B7A111D00EBCF01 /* HeadView.m */,
+				048F30A61B7A1562004AA9B2 /* HotSearch.h */,
+				048F30A71B7A1562004AA9B2 /* HotSearch.m */,
+				048F30A91B7A1577004AA9B2 /* HotSearch.xib */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		04A483B11B74FCE2006FDB9D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,6 +546,7 @@
 			children = (
 				94CB5B9C1B76334000B23B9D /* TH_HomeVC.h */,
 				94CB5B9D1B76334000B23B9D /* TH_HomeVC.m */,
+				04A0CD3F1B7A0FFE00EBCF01 /* SearchJob */,
 				94EAEAC01B784347003C19DD /* FindPractice */,
 				94EDD4F51B783F7800A00A78 /* FindPartTime */,
 				94CB5BA81B763A8100B23B9D /* FindJob */,
@@ -516,6 +596,8 @@
 			children = (
 				04A483D51B751E77006FDB9D /* Utils.h */,
 				04A483D61B751E77006FDB9D /* Utils.m */,
+				048F30BF1B7A462C004AA9B2 /* DataBase.h */,
+				048F30C01B7A462C004AA9B2 /* DataBase.m */,
 			);
 			name = tool;
 			path = ../../tool;
@@ -944,7 +1026,9 @@
 				94D900181B799D2F00F6FD36 /* MineView.xib in Resources */,
 				941F0FC71B79BF5E00719F5B /* CourePlaytitle.xib in Resources */,
 				041650EB1B4D7C4E008C78BE /* MJRefresh.bundle in Resources */,
+				04A0CD451B7A110B00EBCF01 /* HeadView.xib in Resources */,
 				04EC1F121B78F60C0009292E /* JobAlertView.xib in Resources */,
+				048F30AA1B7A1577004AA9B2 /* HotSearch.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1011,11 +1095,13 @@
 				041650DF1B4D795B008C78BE /* AFAppRequest.m in Sources */,
 				F05440B11B7848B000127A9B /* HYSegmentedControl.m in Sources */,
 				0416506B1B4D7240008C78BE /* GVarAdapter.m in Sources */,
+				048F30B71B7A4537004AA9B2 /* FMDatabase.m in Sources */,
 				04EC1F0F1B78F5510009292E /* SearchView.m in Sources */,
 				94CB5B831B74CC0600B23B9D /* MJTypeEncoding.m in Sources */,
 				94CB5BA41B76343E00B23B9D /* TH_ClassVC.m in Sources */,
 				041650691B4D7240008C78BE /* GObjAdapter.m in Sources */,
 				041650CB1B4D730F008C78BE /* MBProgressHUD.m in Sources */,
+				04A0CD481B7A111D00EBCF01 /* HeadView.m in Sources */,
 				041650671B4D7240008C78BE /* GAdapter.m in Sources */,
 				94CB5B7C1B74CC0600B23B9D /* MJArgument.m in Sources */,
 				94EAEAC31B78437A003C19DD /* TH_FindPracticeVC.m in Sources */,
@@ -1023,14 +1109,18 @@
 				94CB5BA71B76345D00B23B9D /* TH_MineVC.m in Sources */,
 				94EDD4F01B7831BB00A00A78 /* ZXButton.m in Sources */,
 				94CB5B7D1B74CC0600B23B9D /* MJConst.m in Sources */,
+				048F30C11B7A462C004AA9B2 /* DataBase.m in Sources */,
 				F0D7C02B1B7994DB00836DD2 /* OpenClassCell.m in Sources */,
 				04EC1F231B791B660009292E /* moreJobTableViewCell.m in Sources */,
+				048F30BB1B7A4537004AA9B2 /* FMResultSet.m in Sources */,
 				94CB5B881B74CC0600B23B9D /* SGFocusImageItem.m in Sources */,
 				94CB5B841B74CC0600B23B9D /* NSObject+MJCoding.m in Sources */,
 				94CB5BAB1B763AAC00B23B9D /* TH_FindJobVC.m in Sources */,
 				94D900061B79992000F6FD36 /* CompanyProfil.m in Sources */,
+				048F30B81B7A4537004AA9B2 /* FMDatabaseAdditions.m in Sources */,
 				0416503A1B4D7141008C78BE /* AppDelegate.m in Sources */,
 				041650371B4D7141008C78BE /* main.m in Sources */,
+				048F30A81B7A1562004AA9B2 /* HotSearch.m in Sources */,
 				94CB5B7F1B74CC0600B23B9D /* MJIvar.m in Sources */,
 				041650ED1B4D7C4E008C78BE /* MJRefreshConst.m in Sources */,
 				941F0FAF1B79A5A200719F5B /* THCoursePlayVC.m in Sources */,
@@ -1039,15 +1129,18 @@
 				94D9000B1B79996600F6FD36 /* JobDescriptionlView.m in Sources */,
 				94CB5B851B74CC0600B23B9D /* NSObject+MJKeyValue.m in Sources */,
 				94CB5B8A1B74CC0600B23B9D /* readme.md in Sources */,
+				04A0CD421B7A104900EBCF01 /* SearchJobVC.m in Sources */,
 				94EDD4F11B7831BB00A00A78 /* ZXLabel.m in Sources */,
 				94EDD4E91B78319A00A00A78 /* UILabel+Extension.m in Sources */,
 				F05440BC1B788FE000127A9B /* jobModel.m in Sources */,
+				048F30B91B7A4537004AA9B2 /* FMDatabasePool.m in Sources */,
 				F05440B41B7870B800127A9B /* jobTableViewCell.m in Sources */,
 				94CB5B861B74CC0600B23B9D /* NSObject+MJMember.m in Sources */,
 				94EDD4F81B783FA700A00A78 /* TH_FindPartTimeVC.m in Sources */,
 				94EDD4DF1B78302E00A00A78 /* THCustomNavigationController.m in Sources */,
 				94CB5B811B74CC0600B23B9D /* MJMethod.m in Sources */,
 				94CB5BA11B76342300B23B9D /* TH_SociallyVC.m in Sources */,
+				048F30BA1B7A4537004AA9B2 /* FMDatabaseQueue.m in Sources */,
 				041650EC1B4D7C4E008C78BE /* MJRefreshBaseView.m in Sources */,
 				F05440B71B7885F500127A9B /* UIBarButtonItem+DC.m in Sources */,
 				F0D7C06D1B79F92300836DD2 /* OpenClassModel.m in Sources */,

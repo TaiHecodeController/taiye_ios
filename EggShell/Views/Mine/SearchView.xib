@@ -10,7 +10,7 @@
             <rect key="frame" x="0.0" y="0.0" width="381" height="65"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" background="soushuokuang" disabledBackground="sousuokuang" translatesAutoresizingMaskIntoConstraints="NO" id="A4a-2v-uoy">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" background="soushuokuang1-1" translatesAutoresizingMaskIntoConstraints="NO" id="A4a-2v-uoy">
                     <rect key="frame" x="65" y="28" width="278" height="30"/>
                     <rect key="contentStretch" x="0.10000000000000002" y="0.0" width="1" height="1"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -64,8 +64,7 @@
     <resources>
         <image name="jiantou" width="11" height="6"/>
         <image name="soushuoicon" width="16" height="17"/>
-        <image name="soushuokuang" width="280" height="31"/>
-        <image name="sousuokuang" width="16" height="16"/>
+        <image name="soushuokuang1-1" width="280" height="31"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

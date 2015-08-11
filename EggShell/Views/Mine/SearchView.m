@@ -29,9 +29,12 @@ alloc_with_xib(SearchView)
 
 - (IBAction)citylistClick:(UIButton *)sender {
     
+    
 }
 
 - (IBAction)scarchIconClick:(id)sender {
+    self.searchClick();
+    
     
 }
 @end
