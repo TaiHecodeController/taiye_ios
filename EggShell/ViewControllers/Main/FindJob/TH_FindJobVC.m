@@ -55,7 +55,7 @@
 - (void)initView
 {
 
-    CGFloat y = 66;
+    CGFloat y = 0;
     CGFloat margin = 10;
     
     NSArray *iconArr = @[@[@"quancheng_Unselected",@"quancheng_Selected"],@[@"fujin_unSelected",@"fujin_Selected"]];
@@ -72,7 +72,7 @@
     [self.view addSubview:_tableView];
     
     _bottomView = [[UIView alloc]init];
-    _bottomView.frame = CGRectMake(0, HEIGHT - bottomH, WIDETH, bottomH);
+    _bottomView.frame = CGRectMake(0, HEIGHT - bottomH - 66, WIDETH, bottomH);
     _bottomView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_bottomView];
     
