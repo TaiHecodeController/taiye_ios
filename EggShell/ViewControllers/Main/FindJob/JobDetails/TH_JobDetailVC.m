@@ -39,6 +39,7 @@
 {
     UIScrollView * scro = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, HEIGHT)];
     self.scro = scro;
+    self.scro.showsVerticalScrollIndicator = NO;
     [self.view addSubview:scro];
 }
 -(void)createDetailView
@@ -139,7 +140,27 @@
 
     return 78;
 }
-
+-(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView  * heatView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, 43)];
+   
+    UIView * lineVew = [[UIView alloc] initWithFrame:CGRectMake(15, 15, 2, 15)];
+    lineVew.backgroundColor = color(244, 67, 54);
+    [heatView addSubview:lineVew];
+    UILabel * RelatedLable = [[UILabel alloc] initWithFrame:CGRectMake(21, 15, 100, 13)];
+    RelatedLable.text = @"该公司更多职位";
+    RelatedLable.textColor = color(100, 100, 100);
+    RelatedLable.font =[UIFont systemFontOfSize:13];
+    [heatView addSubview:RelatedLable];
+    UIView * linebgViw = [[UIView alloc] initWithFrame:CGRectMake(15, 40, WIDETH-15, 0.5)];
+    linebgViw.backgroundColor = color(200, 200, 200);
+    [heatView addSubview:linebgViw];
+    return heatView;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 43;
+}
 -(void)setStatus
 {
     UIButton * rightCollectBtn = [[UIButton alloc] initWithFrame:CGRectMake(WIDETH - 10, 12, 20, 20)];

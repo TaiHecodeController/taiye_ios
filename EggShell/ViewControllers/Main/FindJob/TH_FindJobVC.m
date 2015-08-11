@@ -36,6 +36,7 @@
 //{
 //self.navigationController.navigationBar.translucent = YES;
 //}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
