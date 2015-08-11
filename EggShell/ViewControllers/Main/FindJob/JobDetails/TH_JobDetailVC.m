@@ -11,6 +11,13 @@
 #import "moreJobTableViewCell.h"
 #import "CompanyProfil.h"
 @interface TH_JobDetailVC ()<UITableViewDataSource,UITableViewDelegate,comanyProFileDelegate>
+{
+    //纪录展开之前的frame
+    CGRect lab_recordFrame;
+    CGRect btn_recordFrame;
+    CGRect tableView_recordFrame;
+    CGRect company_recordFrame;
+}
 @property(nonatomic,strong)UITableView * tableView;
 @property(nonatomic,strong)UIScrollView * scro;
 @end
@@ -22,36 +29,95 @@
         self.title = @"职位详情";
     self.view.backgroundColor = [UIColor whiteColor];
     [self setStatus];
+    [self createscro];
     [self createTableView];
     [self createDetailView];
 
 }
+-(void)createscro
+{
+    UIScrollView * scro = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, HEIGHT)];
+    self.scro = scro;
+    [self.view addSubview:scro];
+}
 -(void)createDetailView
 {
     JobDescriptionlView * jobDescription = [JobDescriptionlView setJobDescriptionView];
-       jobDescription.frame = CGRectMake(0, -510, WIDETH, 350);
-    [self.tableView addSubview:jobDescription];
+       jobDescription.frame = CGRectMake(0, 0, WIDETH, 350);
+    [self.scro addSubview:jobDescription];
         CompanyProfil * company =  [[[NSBundle mainBundle] loadNibNamed:@"CompanyProfile" owner:self options:nil]lastObject];
-        company.frame = CGRectMake(0, -160, WIDETH, 160);
-        [self.tableView addSubview:company];
+    company.frame = CGRectMake(0, 350, WIDETH, 160);
+
+    [self.scro addSubview:company];
     company.companyDelegate = self;
 
 }
 -(void)CompanyProfilView:(CompanyProfil *)companyView
 {
-
-    NSLog(@"点击展开");
+    
+    NSLog(@"hdhcdkj");
+    
+    
+    if(!companyView.showAll.isSelected)
+    {
+        NSString * description = companyView.detailLable.text;
+        CGSize textSize = [description sizeWithFont:[UIFont systemFontOfSize:13] constrainedToSize:CGSizeMake(340, 2000)];
+        
+        [UIView animateWithDuration:0.05 animations:^{
+            company_recordFrame = companyView.frame;
+            
+            //company的frame
+            companyView.frame = CGRectMake(0, 350, companyView.frame.size.width, companyView.frame.size.height + textSize.height - 50);
+            
+            //改变label的frame
+            lab_recordFrame = companyView.detailLable.frame;
+            companyView.detailLable.frame = CGRectMake(companyView.detailLable.frame.origin.x, companyView.detailLable.frame.origin.y, textSize.width, textSize.height);
+            companyView.detailLable.numberOfLines = 0;
+            
+            
+            //按钮的frame
+            btn_recordFrame = companyView.showAll.frame;
+            companyView.showAll.frame = CGRectMake(companyView.showAll.frame.origin.x, companyView.detailLable.frame.origin.y + companyView.detailLable.frame.size.height + 10, companyView.showAll.frame.size.width, companyView.showAll.frame.size.height);
+            
+            
+            
+            tableView_recordFrame = self.tableView.frame;
+            //tableView的frame
+            self.tableView.frame = CGRectMake(0, companyView.frame.size.height + companyView.frame.origin.y, self.tableView.frame.size.width, self.tableView.frame.size.height);
+        }];
+        
+        
+    }else
+    {
+        [UIView animateWithDuration:.05 animations:^{
+            //收起的时候还原控件位置
+            companyView.detailLable.frame = lab_recordFrame;
+            companyView.detailLable.numberOfLines = 4;
+            
+            companyView.showAll.frame = btn_recordFrame;
+            companyView.frame = company_recordFrame;
+            self.tableView.frame = tableView_recordFrame;
+        }];
+        
+        
+    }
+    companyView.showAll.selected = !companyView.showAll.selected;
+    
+   
+    
+    
     
     
 }
 -(void)createTableView
 {
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, HEIGHT) style:UITableViewStylePlain];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 510, WIDETH, HEIGHT) style:UITableViewStylePlain];
     tableView.delegate = self;
     tableView.dataSource = self;
-    tableView.contentInset = UIEdgeInsetsMake(510, 0, 0, 0);
+    
     self.tableView = tableView;
-    [self.view addSubview:tableView];
+    [self.scro addSubview:tableView];
+    self.scro.contentSize = CGSizeMake(WIDETH, 510+self.tableView.frame.size.height + 44);
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

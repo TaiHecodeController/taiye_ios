@@ -83,8 +83,8 @@
     
     [self.navigationController.view addSubview:_searChBgView];
     //在navigation页面创建点击手势
-    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
-    [self.tabBarController.view addGestureRecognizer:tap];
+//    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
+//    [self.tabBarController.view addGestureRecognizer:tap];
     
 }
 //取消textField编辑状态，收回键盘
