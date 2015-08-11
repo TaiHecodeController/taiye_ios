@@ -19,6 +19,8 @@
 #import "JobAlertView.h"
 #import "TH_ClassVC.h"
 
+#import "SearchJobVC.h"
+
 @interface TH_HomeVC ()<UIScrollViewDelegate,SGFocusImageFrameDelegate,THHomeVieWDelegate>
 {
     UIView * _navBackView;
@@ -67,6 +69,10 @@
     _searchView = [[SearchView alloc] initWithFrame:CGRectMake(0, 80, 330, 30)];
     [self.tabBarController.view addSubview:_searchView];
     
+    _searchView.searchClick = ^
+    {
+        [self.navigationController pushViewController:[[SearchJobVC alloc] init] animated:YES];
+    };
     _searChBgView = [[UIView alloc] initWithFrame:_searchView.bounds];
     _searChBgView.backgroundColor = [UIColor colorWithRed:40 / 255.0 green:42 / 255.0 blue:48 / 255.0 alpha:1];
     _searChBgView.alpha = 0;
@@ -257,7 +263,6 @@
     [self createSearch];
     
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -15,5 +15,5 @@
 @property (weak, nonatomic) IBOutlet UITextField *searchTextField;
 @property (weak, nonatomic) IBOutlet UILabel *cityName;
 @property (weak, nonatomic) IBOutlet UILabel *placeholderLab;
-
+@property(strong,nonatomic)void(^searchClick)();
 @end
