@@ -7,7 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef enum
+{   THMineViewButtonTypeHeadPortraitBtn,
+    THMineViewButtonTypeEditInformationBtn,
+    THMineViewButtonTypeDeliveryJobsBtn,
+    THMineViewButtonTypeCollectionJobs,
+    THMineViewButtonTypeResume,
+    THMineViewButtonTypeChannelsCooperation,
+    THMineViewButtonTypeAboutEggshellBtn,
+    THMineViewButtonTypesignOut
+    
+}THMineViewButtonType;
+@class MineVeiw;
+@protocol THMineViewDelegate <NSObject>
+-(void)homeView:(MineVeiw*)mineView DidClickButton:(THMineViewButtonType)button;
 
+@end
 @interface MineVeiw : UIView
 +(MineVeiw*)RegisterMineView;
+-(void)mineViewSetButtonTag;
+@property(nonatomic,strong)id<THMineViewDelegate> mineDelegate;
 @end

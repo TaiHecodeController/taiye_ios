@@ -54,6 +54,8 @@
 		941F0FC21B79A71700719F5B /* Course PlayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 941F0FC01B79A71700719F5B /* Course PlayCell.xib */; };
 		941F0FC51B79BF3F00719F5B /* CourePlayTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F0FC41B79BF3F00719F5B /* CourePlayTitle.m */; };
 		941F0FC71B79BF5E00719F5B /* CourePlaytitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 941F0FC61B79BF5E00719F5B /* CourePlaytitle.xib */; };
+		941F0FCB1B79F01000719F5B /* TH_EditInformationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F0FCA1B79F01000719F5B /* TH_EditInformationVC.m */; };
+		941F0FCF1B7A03BE00719F5B /* TH_EnterpriseDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F0FCE1B7A03BE00719F5B /* TH_EnterpriseDetailVC.m */; };
 		94CB5B7A1B74CC0600B23B9D /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B561B74CC0600B23B9D /* BaseModel.m */; };
 		94CB5B7B1B74CC0600B23B9D /* HomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B581B74CC0600B23B9D /* HomePageModel.m */; };
 		94CB5B7C1B74CC0600B23B9D /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B5B1B74CC0600B23B9D /* MJArgument.m */; };
@@ -211,6 +213,10 @@
 		941F0FC31B79BF3F00719F5B /* CourePlayTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourePlayTitle.h; sourceTree = "<group>"; };
 		941F0FC41B79BF3F00719F5B /* CourePlayTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourePlayTitle.m; sourceTree = "<group>"; };
 		941F0FC61B79BF5E00719F5B /* CourePlaytitle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourePlaytitle.xib; sourceTree = "<group>"; };
+		941F0FC91B79F01000719F5B /* TH_EditInformationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_EditInformationVC.h; sourceTree = "<group>"; };
+		941F0FCA1B79F01000719F5B /* TH_EditInformationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_EditInformationVC.m; sourceTree = "<group>"; };
+		941F0FCD1B7A03BE00719F5B /* TH_EnterpriseDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_EnterpriseDetailVC.h; sourceTree = "<group>"; };
+		941F0FCE1B7A03BE00719F5B /* TH_EnterpriseDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_EnterpriseDetailVC.m; sourceTree = "<group>"; };
 		94CB5B551B74CC0600B23B9D /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		94CB5B561B74CC0600B23B9D /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		94CB5B571B74CC0600B23B9D /* HomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageModel.h; sourceTree = "<group>"; };
@@ -548,6 +554,7 @@
 		04A483B51B74FD4D006FDB9D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				941F0FCC1B7A039F00719F5B /* EnterpriseDetail */,
 				94CB5B9C1B76334000B23B9D /* TH_HomeVC.h */,
 				94CB5B9D1B76334000B23B9D /* TH_HomeVC.m */,
 				04A0CD3F1B7A0FFE00EBCF01 /* SearchJob */,
@@ -590,6 +597,7 @@
 		04A483C71B74FDF5006FDB9D /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				941F0FC81B79EFEC00719F5B /* EditInformation */,
 				94D9000C1B799BE000F6FD36 /* MineView */,
 				94CB5BA51B76345D00B23B9D /* TH_MineVC.h */,
 				94CB5BA61B76345D00B23B9D /* TH_MineVC.m */,
@@ -699,6 +707,24 @@
 				941F0FC61B79BF5E00719F5B /* CourePlaytitle.xib */,
 			);
 			path = CoursePlayview;
+			sourceTree = "<group>";
+		};
+		941F0FC81B79EFEC00719F5B /* EditInformation */ = {
+			isa = PBXGroup;
+			children = (
+				941F0FC91B79F01000719F5B /* TH_EditInformationVC.h */,
+				941F0FCA1B79F01000719F5B /* TH_EditInformationVC.m */,
+			);
+			path = EditInformation;
+			sourceTree = "<group>";
+		};
+		941F0FCC1B7A039F00719F5B /* EnterpriseDetail */ = {
+			isa = PBXGroup;
+			children = (
+				941F0FCD1B7A03BE00719F5B /* TH_EnterpriseDetailVC.h */,
+				941F0FCE1B7A03BE00719F5B /* TH_EnterpriseDetailVC.m */,
+			);
+			path = EnterpriseDetail;
 			sourceTree = "<group>";
 		};
 		94CB5B531B74CBBE00B23B9D /* libs */ = {
@@ -1107,8 +1133,10 @@
 				0416506B1B4D7240008C78BE /* GVarAdapter.m in Sources */,
 				048F30B71B7A4537004AA9B2 /* FMDatabase.m in Sources */,
 				04EC1F0F1B78F5510009292E /* SearchView.m in Sources */,
+				941F0FCF1B7A03BE00719F5B /* TH_EnterpriseDetailVC.m in Sources */,
 				94CB5B831B74CC0600B23B9D /* MJTypeEncoding.m in Sources */,
 				94CB5BA41B76343E00B23B9D /* TH_ClassVC.m in Sources */,
+				941F0FCB1B79F01000719F5B /* TH_EditInformationVC.m in Sources */,
 				041650691B4D7240008C78BE /* GObjAdapter.m in Sources */,
 				041650CB1B4D730F008C78BE /* MBProgressHUD.m in Sources */,
 				04A0CD481B7A111D00EBCF01 /* HeadView.m in Sources */,
