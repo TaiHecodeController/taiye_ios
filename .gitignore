@@ -33,3 +33,5 @@ EggShell.xcodeproj/
 *.xccheckout
 
 *.xccheckout
+
+*.pbxproj

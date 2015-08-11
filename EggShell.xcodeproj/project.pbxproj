@@ -47,6 +47,11 @@
 		04EC1F231B791B660009292E /* moreJobTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC1F1D1B791B660009292E /* moreJobTableViewCell.m */; };
 		04EC1F241B791B660009292E /* moreJobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EC1F1E1B791B660009292E /* moreJobTableViewCell.xib */; };
 		04EC1F251B791B660009292E /* TH_JobDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC1F201B791B660009292E /* TH_JobDetailVC.m */; };
+		941F0FAF1B79A5A200719F5B /* THCoursePlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F0FAE1B79A5A200719F5B /* THCoursePlayVC.m */; };
+		941F0FC11B79A71700719F5B /* Course PlayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F0FBF1B79A71700719F5B /* Course PlayCell.m */; };
+		941F0FC21B79A71700719F5B /* Course PlayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 941F0FC01B79A71700719F5B /* Course PlayCell.xib */; };
+		941F0FC51B79BF3F00719F5B /* CourePlayTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F0FC41B79BF3F00719F5B /* CourePlayTitle.m */; };
+		941F0FC71B79BF5E00719F5B /* CourePlaytitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 941F0FC61B79BF5E00719F5B /* CourePlaytitle.xib */; };
 		94CB5B7A1B74CC0600B23B9D /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B561B74CC0600B23B9D /* BaseModel.m */; };
 		94CB5B7B1B74CC0600B23B9D /* HomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B581B74CC0600B23B9D /* HomePageModel.m */; };
 		94CB5B7C1B74CC0600B23B9D /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B5B1B74CC0600B23B9D /* MJArgument.m */; };
@@ -77,6 +82,8 @@
 		94D900061B79992000F6FD36 /* CompanyProfil.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D900021B7998C200F6FD36 /* CompanyProfil.m */; };
 		94D9000A1B79996600F6FD36 /* JobDescription.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94D900081B79996600F6FD36 /* JobDescription.xib */; };
 		94D9000B1B79996600F6FD36 /* JobDescriptionlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D900091B79996600F6FD36 /* JobDescriptionlView.m */; };
+		94D900161B799CC900F6FD36 /* MineVeiw.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D900151B799CC900F6FD36 /* MineVeiw.m */; };
+		94D900181B799D2F00F6FD36 /* MineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94D900171B799D2F00F6FD36 /* MineView.xib */; };
 		94EAEAC31B78437A003C19DD /* TH_FindPracticeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EAEAC21B78437A003C19DD /* TH_FindPracticeVC.m */; };
 		94EDD4DF1B78302E00A00A78 /* THCustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDD4DE1B78302E00A00A78 /* THCustomNavigationController.m */; };
 		94EDD4E81B78319A00A00A78 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDD4E31B78319A00A00A78 /* UIBarButtonItem+Extension.m */; };
@@ -92,6 +99,12 @@
 		F05440B71B7885F500127A9B /* UIBarButtonItem+DC.m in Sources */ = {isa = PBXBuildFile; fileRef = F05440B61B7885F500127A9B /* UIBarButtonItem+DC.m */; };
 		F05440B91B788DAB00127A9B /* findjobtest.plist in Resources */ = {isa = PBXBuildFile; fileRef = F05440B81B788DAB00127A9B /* findjobtest.plist */; };
 		F05440BC1B788FE000127A9B /* jobModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F05440BB1B788FE000127A9B /* jobModel.m */; };
+		F0D7C02B1B7994DB00836DD2 /* OpenClassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D7C02A1B7994DB00836DD2 /* OpenClassCell.m */; };
+		F0D7C0551B79C7B400836DD2 /* libpolyvSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D7C04C1B79C7B400836DD2 /* libpolyvSDK.a */; };
+		F0D7C0571B79CC4800836DD2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D7C0561B79CC4800836DD2 /* MobileCoreServices.framework */; };
+		F0D7C0591B79CC5700836DD2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D7C0581B79CC5700836DD2 /* SystemConfiguration.framework */; };
+		F0D7C05B1B79CC6400836DD2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D7C05A1B79CC6400836DD2 /* libz.dylib */; };
+		F0D7C05E1B79CCEF00836DD2 /* MoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D7C05D1B79CCEF00836DD2 /* MoviePlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,6 +197,14 @@
 		04EC1F201B791B660009292E /* TH_JobDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_JobDetailVC.m; sourceTree = "<group>"; };
 		37454D869BE49FA62A71A04C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C8CB3344C41F9F3DBAC076 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		941F0FAD1B79A5A200719F5B /* THCoursePlayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCoursePlayVC.h; sourceTree = "<group>"; };
+		941F0FAE1B79A5A200719F5B /* THCoursePlayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCoursePlayVC.m; sourceTree = "<group>"; };
+		941F0FBE1B79A71700719F5B /* Course PlayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Course PlayCell.h"; sourceTree = "<group>"; };
+		941F0FBF1B79A71700719F5B /* Course PlayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Course PlayCell.m"; sourceTree = "<group>"; };
+		941F0FC01B79A71700719F5B /* Course PlayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Course PlayCell.xib"; sourceTree = "<group>"; };
+		941F0FC31B79BF3F00719F5B /* CourePlayTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourePlayTitle.h; sourceTree = "<group>"; };
+		941F0FC41B79BF3F00719F5B /* CourePlayTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourePlayTitle.m; sourceTree = "<group>"; };
+		941F0FC61B79BF5E00719F5B /* CourePlaytitle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourePlaytitle.xib; sourceTree = "<group>"; };
 		94CB5B551B74CC0600B23B9D /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		94CB5B561B74CC0600B23B9D /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		94CB5B571B74CC0600B23B9D /* HomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageModel.h; sourceTree = "<group>"; };
@@ -240,6 +261,9 @@
 		94D900071B79995E00F6FD36 /* JobDescriptionlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDescriptionlView.h; sourceTree = "<group>"; };
 		94D900081B79996600F6FD36 /* JobDescription.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDescription.xib; sourceTree = "<group>"; };
 		94D900091B79996600F6FD36 /* JobDescriptionlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDescriptionlView.m; sourceTree = "<group>"; };
+		94D900141B799CC900F6FD36 /* MineVeiw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineVeiw.h; sourceTree = "<group>"; };
+		94D900151B799CC900F6FD36 /* MineVeiw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineVeiw.m; sourceTree = "<group>"; };
+		94D900171B799D2F00F6FD36 /* MineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineView.xib; sourceTree = "<group>"; };
 		94EAEAC11B78437A003C19DD /* TH_FindPracticeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_FindPracticeVC.h; sourceTree = "<group>"; };
 		94EAEAC21B78437A003C19DD /* TH_FindPracticeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_FindPracticeVC.m; sourceTree = "<group>"; };
 		94EDD4DD1B78302E00A00A78 /* THCustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCustomNavigationController.h; sourceTree = "<group>"; };
@@ -268,6 +292,23 @@
 		F05440B81B788DAB00127A9B /* findjobtest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = findjobtest.plist; sourceTree = "<group>"; };
 		F05440BA1B788FE000127A9B /* jobModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jobModel.h; sourceTree = "<group>"; };
 		F05440BB1B788FE000127A9B /* jobModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jobModel.m; sourceTree = "<group>"; };
+		F0D7C0291B7994DB00836DD2 /* OpenClassCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenClassCell.h; sourceTree = "<group>"; };
+		F0D7C02A1B7994DB00836DD2 /* OpenClassCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenClassCell.m; sourceTree = "<group>"; };
+		F0D7C04B1B79C7B400836DD2 /* DownloadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadDelegate.h; sourceTree = "<group>"; };
+		F0D7C04C1B79C7B400836DD2 /* libpolyvSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpolyvSDK.a; sourceTree = "<group>"; };
+		F0D7C04D1B79C7B400836DD2 /* PLVAssetData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLVAssetData.h; sourceTree = "<group>"; };
+		F0D7C04E1B79C7B400836DD2 /* PLVData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLVData.h; sourceTree = "<group>"; };
+		F0D7C04F1B79C7B400836DD2 /* PLVKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLVKit.h; sourceTree = "<group>"; };
+		F0D7C0501B79C7B400836DD2 /* PLVMoviePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLVMoviePlayerController.h; sourceTree = "<group>"; };
+		F0D7C0511B79C7B400836DD2 /* PLVResumableUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLVResumableUpload.h; sourceTree = "<group>"; };
+		F0D7C0521B79C7B400836DD2 /* PolyvSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolyvSettings.h; sourceTree = "<group>"; };
+		F0D7C0531B79C7B400836DD2 /* PolyvUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolyvUtil.h; sourceTree = "<group>"; };
+		F0D7C0541B79C7B400836DD2 /* VideoDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDownloader.h; sourceTree = "<group>"; };
+		F0D7C0561B79CC4800836DD2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F0D7C0581B79CC5700836DD2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F0D7C05A1B79CC6400836DD2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F0D7C05C1B79CCEF00836DD2 /* MoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePlayerViewController.h; sourceTree = "<group>"; };
+		F0D7C05D1B79CCEF00836DD2 /* MoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePlayerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,8 +316,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
 				048F30C31B7A542B004AA9B2 /* libsqlite3.dylib in Frameworks */,
+				F0D7C05B1B79CC6400836DD2 /* libz.dylib in Frameworks */,
+				F0D7C0591B79CC5700836DD2 /* SystemConfiguration.framework in Frameworks */,
+				F0D7C0571B79CC4800836DD2 /* MobileCoreServices.framework in Frameworks */,
 				CA3D16A93CCBDD012A68A6C9 /* libPods.a in Frameworks */,
+				F0D7C0551B79C7B400836DD2 /* libpolyvSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +340,9 @@
 			isa = PBXGroup;
 			children = (
 				048F30C21B7A542B004AA9B2 /* libsqlite3.dylib */,
+				F0D7C05A1B79CC6400836DD2 /* libz.dylib */,
+				F0D7C0581B79CC5700836DD2 /* SystemConfiguration.framework */,
+				F0D7C0561B79CC4800836DD2 /* MobileCoreServices.framework */,
 				37454D869BE49FA62A71A04C /* libPods.a */,
 			);
 			name = Frameworks;
@@ -512,8 +561,16 @@
 		04A483C11B74FDCE006FDB9D /* OpenClass */ = {
 			isa = PBXGroup;
 			children = (
+				941F0FA71B79A58000719F5B /* CoursePlay */,
+
+				F0D7C05C1B79CCEF00836DD2 /* MoviePlayerViewController.h */,
+				F0D7C05D1B79CCEF00836DD2 /* MoviePlayerViewController.m */,
+				F0D7C04A1B79C7B400836DD2 /* libpolyvSDK */,
+
 				94CB5BA21B76343E00B23B9D /* TH_ClassVC.h */,
 				94CB5BA31B76343E00B23B9D /* TH_ClassVC.m */,
+				F0D7C0291B7994DB00836DD2 /* OpenClassCell.h */,
+				F0D7C02A1B7994DB00836DD2 /* OpenClassCell.m */,
 			);
 			name = OpenClass;
 			path = Class;
@@ -522,6 +579,7 @@
 		04A483C71B74FDF5006FDB9D /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				94D9000C1B799BE000F6FD36 /* MineView */,
 				94CB5BA51B76345D00B23B9D /* TH_MineVC.h */,
 				94CB5BA61B76345D00B23B9D /* TH_MineVC.m */,
 			);
@@ -604,6 +662,29 @@
 				04EC1F1E1B791B660009292E /* moreJobTableViewCell.xib */,
 			);
 			path = moreJobCell;
+			sourceTree = "<group>";
+		};
+		941F0FA71B79A58000719F5B /* CoursePlay */ = {
+			isa = PBXGroup;
+			children = (
+				941F0FB01B79A5CD00719F5B /* CoursePlayview */,
+				941F0FAD1B79A5A200719F5B /* THCoursePlayVC.h */,
+				941F0FAE1B79A5A200719F5B /* THCoursePlayVC.m */,
+			);
+			path = CoursePlay;
+			sourceTree = "<group>";
+		};
+		941F0FB01B79A5CD00719F5B /* CoursePlayview */ = {
+			isa = PBXGroup;
+			children = (
+				941F0FBE1B79A71700719F5B /* Course PlayCell.h */,
+				941F0FBF1B79A71700719F5B /* Course PlayCell.m */,
+				941F0FC01B79A71700719F5B /* Course PlayCell.xib */,
+				941F0FC31B79BF3F00719F5B /* CourePlayTitle.h */,
+				941F0FC41B79BF3F00719F5B /* CourePlayTitle.m */,
+				941F0FC61B79BF5E00719F5B /* CourePlaytitle.xib */,
+			);
+			path = CoursePlayview;
 			sourceTree = "<group>";
 		};
 		94CB5B531B74CBBE00B23B9D /* libs */ = {
@@ -735,6 +816,16 @@
 			path = CompanyProfil;
 			sourceTree = "<group>";
 		};
+		94D9000C1B799BE000F6FD36 /* MineView */ = {
+			isa = PBXGroup;
+			children = (
+				94D900141B799CC900F6FD36 /* MineVeiw.h */,
+				94D900151B799CC900F6FD36 /* MineVeiw.m */,
+				94D900171B799D2F00F6FD36 /* MineView.xib */,
+			);
+			path = MineView;
+			sourceTree = "<group>";
+		};
 		94E32F8A1B79957F00257C0F /* JobDetailView */ = {
 			isa = PBXGroup;
 			children = (
@@ -816,6 +907,23 @@
 				F05440B01B7848B000127A9B /* HYSegmentedControl.m */,
 			);
 			path = HYSegmentedControl;
+			sourceTree = "<group>";
+		};
+		F0D7C04A1B79C7B400836DD2 /* libpolyvSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F0D7C04B1B79C7B400836DD2 /* DownloadDelegate.h */,
+				F0D7C04C1B79C7B400836DD2 /* libpolyvSDK.a */,
+				F0D7C04D1B79C7B400836DD2 /* PLVAssetData.h */,
+				F0D7C04E1B79C7B400836DD2 /* PLVData.h */,
+				F0D7C04F1B79C7B400836DD2 /* PLVKit.h */,
+				F0D7C0501B79C7B400836DD2 /* PLVMoviePlayerController.h */,
+				F0D7C0511B79C7B400836DD2 /* PLVResumableUpload.h */,
+				F0D7C0521B79C7B400836DD2 /* PolyvSettings.h */,
+				F0D7C0531B79C7B400836DD2 /* PolyvUtil.h */,
+				F0D7C0541B79C7B400836DD2 /* VideoDownloader.h */,
+			);
+			path = libpolyvSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -900,6 +1008,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				941F0FC21B79A71700719F5B /* Course PlayCell.xib in Resources */,
 				041650451B4D7142008C78BE /* LaunchScreen.xib in Resources */,
 				04EC1F241B791B660009292E /* moreJobTableViewCell.xib in Resources */,
 				04EC1F101B78F5510009292E /* SearchView.xib in Resources */,
@@ -909,6 +1018,8 @@
 				F05440B91B788DAB00127A9B /* findjobtest.plist in Resources */,
 				94D900051B7998C200F6FD36 /* CompanyProfile.xib in Resources */,
 				041650421B4D7142008C78BE /* Images.xcassets in Resources */,
+				94D900181B799D2F00F6FD36 /* MineView.xib in Resources */,
+				941F0FC71B79BF5E00719F5B /* CourePlaytitle.xib in Resources */,
 				041650EB1B4D7C4E008C78BE /* MJRefresh.bundle in Resources */,
 				04A0CD451B7A110B00EBCF01 /* HeadView.xib in Resources */,
 				04EC1F121B78F60C0009292E /* JobAlertView.xib in Resources */,
@@ -964,6 +1075,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94EDD4EA1B78319A00A00A78 /* UIView+Extension.m in Sources */,
+				941F0FC51B79BF3F00719F5B /* CourePlayTitle.m in Sources */,
 				94CB5B801B74CC0600B23B9D /* MJMember.m in Sources */,
 				94CB5B821B74CC0600B23B9D /* MJType.m in Sources */,
 				041650EE1B4D7C4E008C78BE /* MJRefreshFooterView.m in Sources */,
@@ -977,6 +1089,7 @@
 				041650CA1B4D730F008C78BE /* MBProgressHUD+Show.m in Sources */,
 				041650DF1B4D795B008C78BE /* AFAppRequest.m in Sources */,
 				F05440B11B7848B000127A9B /* HYSegmentedControl.m in Sources */,
+				F0D7C05E1B79CCEF00836DD2 /* MoviePlayerViewController.m in Sources */,
 				0416506B1B4D7240008C78BE /* GVarAdapter.m in Sources */,
 				048F30B71B7A4537004AA9B2 /* FMDatabase.m in Sources */,
 				04EC1F0F1B78F5510009292E /* SearchView.m in Sources */,
@@ -993,6 +1106,7 @@
 				94EDD4F01B7831BB00A00A78 /* ZXButton.m in Sources */,
 				94CB5B7D1B74CC0600B23B9D /* MJConst.m in Sources */,
 				048F30C11B7A462C004AA9B2 /* DataBase.m in Sources */,
+				F0D7C02B1B7994DB00836DD2 /* OpenClassCell.m in Sources */,
 				04EC1F231B791B660009292E /* moreJobTableViewCell.m in Sources */,
 				048F30BB1B7A4537004AA9B2 /* FMResultSet.m in Sources */,
 				94CB5B881B74CC0600B23B9D /* SGFocusImageItem.m in Sources */,
@@ -1005,6 +1119,7 @@
 				048F30A81B7A1562004AA9B2 /* HotSearch.m in Sources */,
 				94CB5B7F1B74CC0600B23B9D /* MJIvar.m in Sources */,
 				041650ED1B4D7C4E008C78BE /* MJRefreshConst.m in Sources */,
+				941F0FAF1B79A5A200719F5B /* THCoursePlayVC.m in Sources */,
 				04237D901B66456F00768FAD /* LoginAndRegisterRequest.m in Sources */,
 				0416506A1B4D7240008C78BE /* Gson.m in Sources */,
 				94D9000B1B79996600F6FD36 /* JobDescriptionlView.m in Sources */,
@@ -1026,11 +1141,13 @@
 				F05440B71B7885F500127A9B /* UIBarButtonItem+DC.m in Sources */,
 				04EC1F151B78F6210009292E /* JobAlertView.m in Sources */,
 				94CB5B871B74CC0600B23B9D /* SGFocusImageFrame.m in Sources */,
+				941F0FC11B79A71700719F5B /* Course PlayCell.m in Sources */,
 				041650EF1B4D7C4E008C78BE /* MJRefreshHeaderView.m in Sources */,
 				04A483B41B74FD1B006FDB9D /* TH_MainTabBarController.m in Sources */,
 				04EC1F251B791B660009292E /* TH_JobDetailVC.m in Sources */,
 				94CB5B9B1B7632E800B23B9D /* TH_BaseVC.m in Sources */,
 				94CB5B7A1B74CC0600B23B9D /* BaseModel.m in Sources */,
+				94D900161B799CC900F6FD36 /* MineVeiw.m in Sources */,
 				041650681B4D7240008C78BE /* GArrayAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1153,7 +1270,13 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EggShell/PrefixHeader.pch";
 				INFOPLIST_FILE = EggShell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EggShell/ViewControllers/Class/libpolyvSDK",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -1167,7 +1290,13 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EggShell/PrefixHeader.pch";
 				INFOPLIST_FILE = EggShell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EggShell/ViewControllers/Class/libpolyvSDK",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
