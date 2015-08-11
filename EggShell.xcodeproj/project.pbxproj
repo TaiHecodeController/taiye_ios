@@ -87,6 +87,12 @@
 		F05440B71B7885F500127A9B /* UIBarButtonItem+DC.m in Sources */ = {isa = PBXBuildFile; fileRef = F05440B61B7885F500127A9B /* UIBarButtonItem+DC.m */; };
 		F05440B91B788DAB00127A9B /* findjobtest.plist in Resources */ = {isa = PBXBuildFile; fileRef = F05440B81B788DAB00127A9B /* findjobtest.plist */; };
 		F05440BC1B788FE000127A9B /* jobModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F05440BB1B788FE000127A9B /* jobModel.m */; };
+		F0D7C02B1B7994DB00836DD2 /* OpenClassCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D7C02A1B7994DB00836DD2 /* OpenClassCell.m */; };
+		F0D7C0551B79C7B400836DD2 /* libpolyvSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D7C04C1B79C7B400836DD2 /* libpolyvSDK.a */; };
+		F0D7C0571B79CC4800836DD2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D7C0561B79CC4800836DD2 /* MobileCoreServices.framework */; };
+		F0D7C0591B79CC5700836DD2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D7C0581B79CC5700836DD2 /* SystemConfiguration.framework */; };
+		F0D7C05B1B79CC6400836DD2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D7C05A1B79CC6400836DD2 /* libz.dylib */; };
+		F0D7C05E1B79CCEF00836DD2 /* MoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D7C05D1B79CCEF00836DD2 /* MoviePlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -252,6 +258,23 @@
 		F05440B81B788DAB00127A9B /* findjobtest.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = findjobtest.plist; sourceTree = "<group>"; };
 		F05440BA1B788FE000127A9B /* jobModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jobModel.h; sourceTree = "<group>"; };
 		F05440BB1B788FE000127A9B /* jobModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jobModel.m; sourceTree = "<group>"; };
+		F0D7C0291B7994DB00836DD2 /* OpenClassCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenClassCell.h; sourceTree = "<group>"; };
+		F0D7C02A1B7994DB00836DD2 /* OpenClassCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenClassCell.m; sourceTree = "<group>"; };
+		F0D7C04B1B79C7B400836DD2 /* DownloadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadDelegate.h; sourceTree = "<group>"; };
+		F0D7C04C1B79C7B400836DD2 /* libpolyvSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpolyvSDK.a; sourceTree = "<group>"; };
+		F0D7C04D1B79C7B400836DD2 /* PLVAssetData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLVAssetData.h; sourceTree = "<group>"; };
+		F0D7C04E1B79C7B400836DD2 /* PLVData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLVData.h; sourceTree = "<group>"; };
+		F0D7C04F1B79C7B400836DD2 /* PLVKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLVKit.h; sourceTree = "<group>"; };
+		F0D7C0501B79C7B400836DD2 /* PLVMoviePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLVMoviePlayerController.h; sourceTree = "<group>"; };
+		F0D7C0511B79C7B400836DD2 /* PLVResumableUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLVResumableUpload.h; sourceTree = "<group>"; };
+		F0D7C0521B79C7B400836DD2 /* PolyvSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolyvSettings.h; sourceTree = "<group>"; };
+		F0D7C0531B79C7B400836DD2 /* PolyvUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolyvUtil.h; sourceTree = "<group>"; };
+		F0D7C0541B79C7B400836DD2 /* VideoDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDownloader.h; sourceTree = "<group>"; };
+		F0D7C0561B79CC4800836DD2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F0D7C0581B79CC5700836DD2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F0D7C05A1B79CC6400836DD2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F0D7C05C1B79CCEF00836DD2 /* MoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePlayerViewController.h; sourceTree = "<group>"; };
+		F0D7C05D1B79CCEF00836DD2 /* MoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePlayerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,7 +282,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0D7C05B1B79CC6400836DD2 /* libz.dylib in Frameworks */,
+				F0D7C0591B79CC5700836DD2 /* SystemConfiguration.framework in Frameworks */,
+				F0D7C0571B79CC4800836DD2 /* MobileCoreServices.framework in Frameworks */,
 				CA3D16A93CCBDD012A68A6C9 /* libPods.a in Frameworks */,
+				F0D7C0551B79C7B400836DD2 /* libpolyvSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +303,9 @@
 		0237599393BF78A52DFB0C38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F0D7C05A1B79CC6400836DD2 /* libz.dylib */,
+				F0D7C0581B79CC5700836DD2 /* SystemConfiguration.framework */,
+				F0D7C0561B79CC4800836DD2 /* MobileCoreServices.framework */,
 				37454D869BE49FA62A71A04C /* libPods.a */,
 			);
 			name = Frameworks;
@@ -452,8 +482,15 @@
 			isa = PBXGroup;
 			children = (
 				941F0FA71B79A58000719F5B /* CoursePlay */,
+
+				F0D7C05C1B79CCEF00836DD2 /* MoviePlayerViewController.h */,
+				F0D7C05D1B79CCEF00836DD2 /* MoviePlayerViewController.m */,
+				F0D7C04A1B79C7B400836DD2 /* libpolyvSDK */,
+
 				94CB5BA21B76343E00B23B9D /* TH_ClassVC.h */,
 				94CB5BA31B76343E00B23B9D /* TH_ClassVC.m */,
+				F0D7C0291B7994DB00836DD2 /* OpenClassCell.h */,
+				F0D7C02A1B7994DB00836DD2 /* OpenClassCell.m */,
 			);
 			name = OpenClass;
 			path = Class;
@@ -790,6 +827,23 @@
 			path = HYSegmentedControl;
 			sourceTree = "<group>";
 		};
+		F0D7C04A1B79C7B400836DD2 /* libpolyvSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F0D7C04B1B79C7B400836DD2 /* DownloadDelegate.h */,
+				F0D7C04C1B79C7B400836DD2 /* libpolyvSDK.a */,
+				F0D7C04D1B79C7B400836DD2 /* PLVAssetData.h */,
+				F0D7C04E1B79C7B400836DD2 /* PLVData.h */,
+				F0D7C04F1B79C7B400836DD2 /* PLVKit.h */,
+				F0D7C0501B79C7B400836DD2 /* PLVMoviePlayerController.h */,
+				F0D7C0511B79C7B400836DD2 /* PLVResumableUpload.h */,
+				F0D7C0521B79C7B400836DD2 /* PolyvSettings.h */,
+				F0D7C0531B79C7B400836DD2 /* PolyvUtil.h */,
+				F0D7C0541B79C7B400836DD2 /* VideoDownloader.h */,
+			);
+			path = libpolyvSDK;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -951,6 +1005,7 @@
 				041650CA1B4D730F008C78BE /* MBProgressHUD+Show.m in Sources */,
 				041650DF1B4D795B008C78BE /* AFAppRequest.m in Sources */,
 				F05440B11B7848B000127A9B /* HYSegmentedControl.m in Sources */,
+				F0D7C05E1B79CCEF00836DD2 /* MoviePlayerViewController.m in Sources */,
 				0416506B1B4D7240008C78BE /* GVarAdapter.m in Sources */,
 				04EC1F0F1B78F5510009292E /* SearchView.m in Sources */,
 				94CB5B831B74CC0600B23B9D /* MJTypeEncoding.m in Sources */,
@@ -964,6 +1019,7 @@
 				94CB5BA71B76345D00B23B9D /* TH_MineVC.m in Sources */,
 				94EDD4F01B7831BB00A00A78 /* ZXButton.m in Sources */,
 				94CB5B7D1B74CC0600B23B9D /* MJConst.m in Sources */,
+				F0D7C02B1B7994DB00836DD2 /* OpenClassCell.m in Sources */,
 				04EC1F231B791B660009292E /* moreJobTableViewCell.m in Sources */,
 				94CB5B881B74CC0600B23B9D /* SGFocusImageItem.m in Sources */,
 				94CB5B841B74CC0600B23B9D /* NSObject+MJCoding.m in Sources */,
@@ -1121,7 +1177,13 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EggShell/PrefixHeader.pch";
 				INFOPLIST_FILE = EggShell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EggShell/ViewControllers/Class/libpolyvSDK",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -1135,7 +1197,13 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EggShell/PrefixHeader.pch";
 				INFOPLIST_FILE = EggShell/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EggShell/ViewControllers/Class/libpolyvSDK",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};

@@ -29,6 +29,9 @@
     
     //rk——test
     
+    //初始化保利视频
+//    [self initPloyVideo];
+    
     [self.window makeKeyAndVisible];
     
 
@@ -89,6 +92,13 @@
     }
     
 }
+
+- (void)initPloyVideo
+{
+//    polyvSettings = [[PolyvSettings alloc] init];
+//    [polyvSettings initVideoSettings:@"ylzOkbgQcn" Readtoken:@"AAiK2jiX0t-BAnX4n6CrX-xV0TfqPUML" Writetoken:@"ZDYlp4fGF8g100D-TYug02Z14idkcelP" UserId:@"00018093b1"];
+}
+
 
 +(AppDelegate*)instance
 {
