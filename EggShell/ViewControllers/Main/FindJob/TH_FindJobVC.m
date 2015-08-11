@@ -32,13 +32,16 @@
 @end
 
 @implementation TH_FindJobVC
-
+-(void)viewWillAppear:(BOOL)animated
+{
+self.navigationController.navigationBar.translucent = YES;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBar.translucent = YES;
+    
     self.view.backgroundColor =[UIColor whiteColor];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
-    self.title = @"全职职位";
+  
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem barBtnItemWithNormalImageName:@"liebiao" hightImageName:nil action:@selector(rightClick) target:self];
     
@@ -55,7 +58,7 @@
 - (void)initView
 {
 
-    CGFloat y = 66;
+    CGFloat y = 0;
     CGFloat margin = 10;
     
     NSArray *iconArr = @[@[@"quancheng_Unselected",@"quancheng_Selected"],@[@"fujin_unSelected",@"fujin_Selected"]];
@@ -72,7 +75,7 @@
     [self.view addSubview:_tableView];
     
     _bottomView = [[UIView alloc]init];
-    _bottomView.frame = CGRectMake(0, HEIGHT - bottomH, WIDETH, bottomH);
+    _bottomView.frame = CGRectMake(0, HEIGHT - bottomH - 66, WIDETH, bottomH);
     _bottomView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_bottomView];
     
@@ -313,7 +316,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    if (tableView.editing) {
+        [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    }
+    else
+    {
+    TH_JobDetailVC * detail = [[TH_JobDetailVC alloc] init];
+    [self.navigationController pushViewController:detail animated:YES];
+    }
 }
 
 #pragma mark -- respondEvent

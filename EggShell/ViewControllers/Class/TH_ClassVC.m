@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"公开课";
     // Do any additional setup after loading the view.
 }
 

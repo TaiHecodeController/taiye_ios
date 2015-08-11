@@ -17,6 +17,7 @@
 #import "TH_FindPracticeVC.h"
 
 #import "JobAlertView.h"
+#import "TH_ClassVC.h"
 
 @interface TH_HomeVC ()<UIScrollViewDelegate,SGFocusImageFrameDelegate,THHomeVieWDelegate>
 {
@@ -57,18 +58,7 @@
     [self quereData];
     //注册XIB
     [self createHomeView];
-        //    UITextField * searchField = [[UITextField alloc] initWithFrame:CGRectMake(50, 50, 200, 50)];
-    //    searchField.background = [UIImage imageNamed:@"bg_new.png"];
-    //    [self.view addSubview:searchField];
-    //    [self createNav];
-    //    UINavigationBar * bar = self.navigationController.navigationBar;
-    //    [self getBackView:bar];
-    //
-    //    UIScrollView * scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, [UIScreen mainScreen].bounds.size.height)];
-    //    scrollView.contentSize = CGSizeMake(320, 800);
-    //    scrollView.delegate = self;
-    //    [self.view addSubview:scrollView];
-  
+     
 }
 #pragma mark - - 搜素
 -(void)createSearch
@@ -83,8 +73,8 @@
     
     [self.navigationController.view addSubview:_searChBgView];
     //在navigation页面创建点击手势
-    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
-    [self.tabBarController.view addGestureRecognizer:tap];
+//    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
+//    [self.tabBarController.view addGestureRecognizer:tap];
     
 }
 //取消textField编辑状态，收回键盘
@@ -125,21 +115,25 @@
         case THHomeViewButtonTypeFindJob:
         {
             NSLog(@"找工作");
-            
+            TH_FindJobVC * home =[[TH_FindJobVC alloc] init];
+            home.title = @"找全职";
             [self.navigationController pushViewController:home animated:YES];
             break;
         }
         case THHomeViewButtonTypeFindPartTime:
         {
-            TH_FindPartTimeVC * partTime = [[TH_FindPartTimeVC alloc] init];
+            TH_FindJobVC * home =[[TH_FindJobVC alloc] init];
+            home.title = @"找兼职";
             NSLog(@"找兼职");
-            [self.navigationController pushViewController:partTime animated:YES];
+            [self.navigationController pushViewController:home animated:YES];
             break;
         }
         case THHomeViewButtonTypeInternshipSearch:
         {NSLog(@"找实习");
-            TH_FindPracticeVC * partTime = [[TH_FindPracticeVC alloc] init];
-            [self.navigationController pushViewController:partTime animated:YES];
+            TH_FindJobVC * home =[[TH_FindJobVC alloc] init];
+            home.title = @"找实习";
+
+            [self.navigationController pushViewController:home animated:YES];
             break;
         }
         case THHomeViewButtonTypeInformationDesk:
@@ -164,7 +158,9 @@
         }
           case THHomeViewButtonTypeOpenClass:
         {NSLog(@"公开课");
-            [self.navigationController pushViewController:home animated:YES];
+            TH_ClassVC * class =  [[TH_ClassVC alloc] init];
+        
+            [self.navigationController pushViewController:class animated:YES];
             break;
         }
         default:
