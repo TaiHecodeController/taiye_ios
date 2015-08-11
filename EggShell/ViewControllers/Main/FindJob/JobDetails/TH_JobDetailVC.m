@@ -10,6 +10,7 @@
 #import "JobDescriptionlView.h"
 #import "moreJobTableViewCell.h"
 #import "CompanyProfil.h"
+
 @interface TH_JobDetailVC ()<UITableViewDataSource,UITableViewDelegate,comanyProFileDelegate>
 {
     //纪录展开之前的frame

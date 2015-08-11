@@ -14,7 +14,8 @@
 
 @implementation TH_BaseVC
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     self.view.backgroundColor =[UIColor whiteColor];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
@@ -23,9 +24,25 @@
 
 
     // Do any additional setup after loading the view.
+    
+    
 }
 
-- (void)didReceiveMemoryWarning {
+
+
+- (void)addRightBtn2_NormalImageName:(NSString *)nIcon hightImageName:(NSString *)hIcon action:(SEL)action target:(id)target
+{
+    UIButton *btn1 = [[UIButton alloc] init];
+    [btn1 setImage:[UIImage imageNamed:nIcon] forState:UIControlStateNormal];
+    [btn1 setImage:[UIImage imageNamed:hIcon] forState:UIControlStateHighlighted];
+    btn1.frame = (CGRect){{WIDETH - 0.186 * WIDETH, (44 - btn1.currentImage.size.height)/2},btn1.currentImage.size};
+    [btn1 addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+//    return btn1;
+    [self.navigationController.navigationBar addSubview:btn1];
+}
+
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

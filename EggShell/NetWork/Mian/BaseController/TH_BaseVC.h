@@ -10,4 +10,7 @@
 
 @interface TH_BaseVC : UIViewController
 
+//添加右侧第二个按钮
+- (void)addRightBtn2_NormalImageName:(NSString *)nIcon hightImageName:(NSString *)hIcon action:(SEL)action target:(id)target;
+
 @end
