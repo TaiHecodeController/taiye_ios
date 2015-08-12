@@ -222,8 +222,8 @@
 		941F0FDB1B7AE6D200719F5B /* JobWishlistCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobWishlistCell.xib; sourceTree = "<group>"; };
 		941F0FDE1B7AE94E00719F5B /* TH_DeliveryJobVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_DeliveryJobVC.h; sourceTree = "<group>"; };
 		941F0FDF1B7AE94E00719F5B /* TH_DeliveryJobVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_DeliveryJobVC.m; sourceTree = "<group>"; };
-		941F0FE11B7AE96400719F5B /* MineEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineEditVC.m; sourceTree = "<group>"; };
-		941F0FE31B7AE96F00719F5B /* MineEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineEditVC.h; sourceTree = "<group>"; };
+		941F0FE11B7AE96400719F5B /* MineEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MineEditVC.m; path = ../MineEditVC.m; sourceTree = "<group>"; };
+		941F0FE31B7AE96F00719F5B /* MineEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MineEditVC.h; path = ../MineEditVC.h; sourceTree = "<group>"; };
 		941F0FE41B7AE97600719F5B /* MineEditVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineEditVC.xib; sourceTree = "<group>"; };
 		94CB5B551B74CC0600B23B9D /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		94CB5B561B74CC0600B23B9D /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
@@ -606,8 +606,6 @@
 				941F0FD41B7AE55300719F5B /* DeliveryJob */,
 				941F0FD01B7AE50F00719F5B /* JobWishlist */,
 				941F0FC81B79EFEC00719F5B /* EditInformation */,
-				941F0FE31B7AE96F00719F5B /* MineEditVC.h */,
-				941F0FE11B7AE96400719F5B /* MineEditVC.m */,
 				94D9000C1B799BE000F6FD36 /* MineView */,
 				94CB5BA51B76345D00B23B9D /* TH_MineVC.h */,
 				94CB5BA61B76345D00B23B9D /* TH_MineVC.m */,
@@ -719,6 +717,8 @@
 		941F0FC81B79EFEC00719F5B /* EditInformation */ = {
 			isa = PBXGroup;
 			children = (
+				941F0FE11B7AE96400719F5B /* MineEditVC.m */,
+				941F0FE31B7AE96F00719F5B /* MineEditVC.h */,
 				941F0FE41B7AE97600719F5B /* MineEditVC.xib */,
 			);
 			path = EditInformation;
