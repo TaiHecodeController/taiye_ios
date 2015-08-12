@@ -35,6 +35,9 @@
 		048F30BB1B7A4537004AA9B2 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30B61B7A4537004AA9B2 /* FMResultSet.m */; };
 		048F30C11B7A462C004AA9B2 /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30C01B7A462C004AA9B2 /* DataBase.m */; };
 		048F30C31B7A542B004AA9B2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 048F30C21B7A542B004AA9B2 /* libsqlite3.dylib */; };
+		048F30DD1B7B87B6004AA9B2 /* MineEditInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048F30DC1B7B87B6004AA9B2 /* MineEditInfoView.xib */; };
+		048F30E01B7B88B5004AA9B2 /* MineEditInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30DF1B7B88B5004AA9B2 /* MineEditInfoView.m */; };
+		048F30E31B7B895F004AA9B2 /* MineEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30E21B7B895F004AA9B2 /* MineEditVC.m */; };
 		04A0CD421B7A104900EBCF01 /* SearchJobVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CD411B7A104900EBCF01 /* SearchJobVC.m */; };
 		04A0CD451B7A110B00EBCF01 /* HeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A0CD441B7A110B00EBCF01 /* HeadView.xib */; };
 		04A0CD481B7A111D00EBCF01 /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A0CD471B7A111D00EBCF01 /* HeadView.m */; };
@@ -57,8 +60,6 @@
 		941F0FDC1B7AE6D200719F5B /* JobWishlistCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F0FDA1B7AE6D200719F5B /* JobWishlistCell.m */; };
 		941F0FDD1B7AE6D200719F5B /* JobWishlistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 941F0FDB1B7AE6D200719F5B /* JobWishlistCell.xib */; };
 		941F0FE01B7AE94E00719F5B /* TH_DeliveryJobVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F0FDF1B7AE94E00719F5B /* TH_DeliveryJobVC.m */; };
-		941F0FE21B7AE96400719F5B /* MineEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F0FE11B7AE96400719F5B /* MineEditVC.m */; };
-		941F0FE51B7AE97600719F5B /* MineEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 941F0FE41B7AE97600719F5B /* MineEditVC.xib */; };
 		94CB5B7A1B74CC0600B23B9D /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B561B74CC0600B23B9D /* BaseModel.m */; };
 		94CB5B7B1B74CC0600B23B9D /* HomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B581B74CC0600B23B9D /* HomePageModel.m */; };
 		94CB5B7C1B74CC0600B23B9D /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B5B1B74CC0600B23B9D /* MJArgument.m */; };
@@ -183,6 +184,11 @@
 		048F30BF1B7A462C004AA9B2 /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
 		048F30C01B7A462C004AA9B2 /* DataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBase.m; sourceTree = "<group>"; };
 		048F30C21B7A542B004AA9B2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		048F30DC1B7B87B6004AA9B2 /* MineEditInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MineEditInfoView.xib; path = ../../../../../../Documents/MineEditInfoView.xib; sourceTree = "<group>"; };
+		048F30DE1B7B88B5004AA9B2 /* MineEditInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MineEditInfoView.h; path = ../../../../../../Documents/MineEditInfoView.h; sourceTree = "<group>"; };
+		048F30DF1B7B88B5004AA9B2 /* MineEditInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MineEditInfoView.m; path = ../../../../../../Documents/MineEditInfoView.m; sourceTree = "<group>"; };
+		048F30E11B7B895F004AA9B2 /* MineEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineEditVC.h; sourceTree = "<group>"; };
+		048F30E21B7B895F004AA9B2 /* MineEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineEditVC.m; sourceTree = "<group>"; };
 		04A0CD401B7A104900EBCF01 /* SearchJobVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchJobVC.h; sourceTree = "<group>"; };
 		04A0CD411B7A104900EBCF01 /* SearchJobVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchJobVC.m; sourceTree = "<group>"; };
 		04A0CD441B7A110B00EBCF01 /* HeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadView.xib; sourceTree = "<group>"; };
@@ -222,9 +228,6 @@
 		941F0FDB1B7AE6D200719F5B /* JobWishlistCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobWishlistCell.xib; sourceTree = "<group>"; };
 		941F0FDE1B7AE94E00719F5B /* TH_DeliveryJobVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_DeliveryJobVC.h; sourceTree = "<group>"; };
 		941F0FDF1B7AE94E00719F5B /* TH_DeliveryJobVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_DeliveryJobVC.m; sourceTree = "<group>"; };
-		941F0FE11B7AE96400719F5B /* MineEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MineEditVC.m; path = ../MineEditVC.m; sourceTree = "<group>"; };
-		941F0FE31B7AE96F00719F5B /* MineEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MineEditVC.h; path = ../MineEditVC.h; sourceTree = "<group>"; };
-		941F0FE41B7AE97600719F5B /* MineEditVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineEditVC.xib; sourceTree = "<group>"; };
 		94CB5B551B74CC0600B23B9D /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		94CB5B561B74CC0600B23B9D /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		94CB5B571B74CC0600B23B9D /* HomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageModel.h; sourceTree = "<group>"; };
@@ -717,9 +720,11 @@
 		941F0FC81B79EFEC00719F5B /* EditInformation */ = {
 			isa = PBXGroup;
 			children = (
-				941F0FE11B7AE96400719F5B /* MineEditVC.m */,
-				941F0FE31B7AE96F00719F5B /* MineEditVC.h */,
-				941F0FE41B7AE97600719F5B /* MineEditVC.xib */,
+				048F30DC1B7B87B6004AA9B2 /* MineEditInfoView.xib */,
+				048F30DE1B7B88B5004AA9B2 /* MineEditInfoView.h */,
+				048F30DF1B7B88B5004AA9B2 /* MineEditInfoView.m */,
+				048F30E11B7B895F004AA9B2 /* MineEditVC.h */,
+				048F30E21B7B895F004AA9B2 /* MineEditVC.m */,
 			);
 			path = EditInformation;
 			sourceTree = "<group>";
@@ -1091,6 +1096,7 @@
 				94D9000A1B79996600F6FD36 /* JobDescription.xib in Resources */,
 				94CB5B891B74CC0600B23B9D /* LICENSE in Resources */,
 				F05440B91B788DAB00127A9B /* findjobtest.plist in Resources */,
+				048F30DD1B7B87B6004AA9B2 /* MineEditInfoView.xib in Resources */,
 				94D900051B7998C200F6FD36 /* CompanyProfile.xib in Resources */,
 				041650421B4D7142008C78BE /* Images.xcassets in Resources */,
 				94D900181B799D2F00F6FD36 /* MineView.xib in Resources */,
@@ -1100,7 +1106,6 @@
 				04A0CD451B7A110B00EBCF01 /* HeadView.xib in Resources */,
 				04EC1F121B78F60C0009292E /* JobAlertView.xib in Resources */,
 				048F30AA1B7A1577004AA9B2 /* HotSearch.xib in Resources */,
-				941F0FE51B7AE97600719F5B /* MineEditVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1178,8 +1183,8 @@
 				041650CB1B4D730F008C78BE /* MBProgressHUD.m in Sources */,
 				04A0CD481B7A111D00EBCF01 /* HeadView.m in Sources */,
 				041650671B4D7240008C78BE /* GAdapter.m in Sources */,
-				941F0FE21B7AE96400719F5B /* MineEditVC.m in Sources */,
 				94CB5B7C1B74CC0600B23B9D /* MJArgument.m in Sources */,
+				048F30E01B7B88B5004AA9B2 /* MineEditInfoView.m in Sources */,
 				94EAEAC31B78437A003C19DD /* TH_FindPracticeVC.m in Sources */,
 				94CB5B8F1B74EF3900B23B9D /* HomeView.m in Sources */,
 				94CB5BA71B76345D00B23B9D /* TH_MineVC.m in Sources */,
@@ -1194,6 +1199,7 @@
 				94CB5BAB1B763AAC00B23B9D /* TH_FindJobVC.m in Sources */,
 				94D900061B79992000F6FD36 /* CompanyProfil.m in Sources */,
 				048F30B81B7A4537004AA9B2 /* FMDatabaseAdditions.m in Sources */,
+				048F30E31B7B895F004AA9B2 /* MineEditVC.m in Sources */,
 				0416503A1B4D7141008C78BE /* AppDelegate.m in Sources */,
 				041650371B4D7141008C78BE /* main.m in Sources */,
 				048F30A81B7A1562004AA9B2 /* HotSearch.m in Sources */,
