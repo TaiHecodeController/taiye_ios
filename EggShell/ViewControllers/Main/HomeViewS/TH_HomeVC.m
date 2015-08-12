@@ -67,7 +67,9 @@
 -(void)createSearch
 {
     
-    _searchView = [[SearchView alloc] initWithFrame:CGRectMake(0, 80, 330, 30)];
+    
+    _searchView = [[[NSBundle mainBundle] loadNibNamed:@"SearchView" owner:self options:nil] firstObject];
+    _searchView.frame = CGRectMake(0, 0, WIDETH, 64);
     [self.tabBarController.view addSubview:_searchView];
     
     _searchView.searchClick = ^

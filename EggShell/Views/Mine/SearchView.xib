@@ -10,37 +10,41 @@
             <rect key="frame" x="0.0" y="0.0" width="381" height="65"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" background="soushuokuang1-1" translatesAutoresizingMaskIntoConstraints="NO" id="A4a-2v-uoy">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" background="soushuokuang1-1" translatesAutoresizingMaskIntoConstraints="NO" id="A4a-2v-uoy">
                     <rect key="frame" x="65" y="28" width="278" height="30"/>
                     <rect key="contentStretch" x="0.10000000000000002" y="0.0" width="1" height="1"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="北京" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxu-Pt-tDj">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXN-u5-I3Q">
+                    <rect key="frame" x="315" y="32" width="16" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="CKz-Tx-wWW"/>
+                        <constraint firstAttribute="width" constant="16" id="qJm-Ah-7Zw"/>
+                    </constraints>
+                    <state key="normal" image="soushuoicon">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="scarchIconClick:" destination="Qbj-ZQ-8Ct" eventType="touchUpInside" id="Ofz-yW-PjS"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="北京" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxu-Pt-tDj">
                     <rect key="frame" x="8" y="30" width="35" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jiantou" translatesAutoresizingMaskIntoConstraints="NO" id="aX9-y0-Uwf">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="jiantou" translatesAutoresizingMaskIntoConstraints="NO" id="aX9-y0-Uwf">
                     <rect key="frame" x="45" y="33" width="12" height="18"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrO-FD-hIe">
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrO-FD-hIe">
                     <rect key="frame" x="11" y="26" width="46" height="30"/>
                     <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="citylistClick:" destination="Qbj-ZQ-8Ct" eventType="touchUpInside" id="9Jg-1S-PI4"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXN-u5-I3Q">
-                    <rect key="frame" x="315" y="32" width="16" height="22"/>
-                    <state key="normal" image="soushuoicon">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="scarchIconClick:" destination="Qbj-ZQ-8Ct" eventType="touchUpInside" id="Ofz-yW-PjS"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="搜职位" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGP-wr-7Eg">
@@ -51,6 +55,25 @@
                 </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="aX9-y0-Uwf" secondAttribute="bottom" constant="14" id="0Tw-NW-Cem"/>
+                <constraint firstAttribute="trailing" secondItem="A4a-2v-uoy" secondAttribute="trailing" constant="38" id="26r-lS-A9B"/>
+                <constraint firstAttribute="bottom" secondItem="fXN-u5-I3Q" secondAttribute="bottom" constant="11" id="4If-9c-XQR"/>
+                <constraint firstItem="DrO-FD-hIe" firstAttribute="leading" secondItem="Qbj-ZQ-8Ct" secondAttribute="leading" constant="11" id="4rz-km-Jot"/>
+                <constraint firstAttribute="bottom" secondItem="Yxu-Pt-tDj" secondAttribute="bottom" constant="14" id="9QL-gJ-ORX"/>
+                <constraint firstItem="aX9-y0-Uwf" firstAttribute="leading" secondItem="Yxu-Pt-tDj" secondAttribute="trailing" constant="2" id="Blx-TG-1vS"/>
+                <constraint firstItem="A4a-2v-uoy" firstAttribute="top" secondItem="Qbj-ZQ-8Ct" secondAttribute="top" constant="28" id="F2G-r7-7tZ"/>
+                <constraint firstAttribute="trailing" secondItem="fXN-u5-I3Q" secondAttribute="trailing" constant="50" id="GbX-h3-pKq"/>
+                <constraint firstAttribute="bottom" secondItem="DrO-FD-hIe" secondAttribute="bottom" constant="9" id="Ksj-DP-Q2U"/>
+                <constraint firstItem="fXN-u5-I3Q" firstAttribute="top" secondItem="Qbj-ZQ-8Ct" secondAttribute="top" constant="32" id="O01-f2-5sJ"/>
+                <constraint firstItem="DrO-FD-hIe" firstAttribute="top" secondItem="Qbj-ZQ-8Ct" secondAttribute="top" constant="26" id="S5X-xA-mMF"/>
+                <constraint firstAttribute="bottom" secondItem="A4a-2v-uoy" secondAttribute="bottom" constant="7" id="Spk-ef-adg"/>
+                <constraint firstItem="Yxu-Pt-tDj" firstAttribute="leading" secondItem="Qbj-ZQ-8Ct" secondAttribute="leading" constant="8" id="Whb-fq-qJX"/>
+                <constraint firstItem="Yxu-Pt-tDj" firstAttribute="top" secondItem="Qbj-ZQ-8Ct" secondAttribute="top" constant="30" id="jBQ-zE-gBw"/>
+                <constraint firstItem="aX9-y0-Uwf" firstAttribute="top" secondItem="Qbj-ZQ-8Ct" secondAttribute="top" constant="33" id="jvi-vk-OMd"/>
+                <constraint firstItem="A4a-2v-uoy" firstAttribute="leading" secondItem="DrO-FD-hIe" secondAttribute="trailing" constant="8" id="pcI-5q-t0J"/>
+                <constraint firstItem="A4a-2v-uoy" firstAttribute="leading" secondItem="aX9-y0-Uwf" secondAttribute="trailing" constant="8" id="rlJ-El-Si1"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
