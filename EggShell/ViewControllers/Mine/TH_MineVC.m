@@ -9,7 +9,8 @@
 #import "TH_MineVC.h"
 #import "MineVeiw.h"
 #import "MineEditVC.h"
-#import "TH_EditInformationVC.h"
+#import "TH_DeliveryJobVC.h"
+#import "TH_JobWishlistVC.h"
 @interface TH_MineVC ()<THMineViewDelegate>
 @property(nonatomic,strong)UIScrollView * scro;
 @end
@@ -58,20 +59,20 @@
         }
         case THMineViewButtonTypeDeliveryJobsBtn:
         {NSLog(@"投递职位");
-            TH_EditInformationVC * edit = [[TH_EditInformationVC alloc] init];
+            TH_DeliveryJobVC * edit = [[TH_DeliveryJobVC alloc] init];
             [self.navigationController pushViewController:edit animated:YES];
             break;
         }
         case THMineViewButtonTypeCollectionJobs:
         {NSLog(@"收藏职位");
-            TH_EditInformationVC * edit = [[TH_EditInformationVC alloc] init];
+            TH_JobWishlistVC * edit = [[TH_JobWishlistVC alloc] init];
             [self.navigationController pushViewController:edit animated:YES];
             break;
         }
         case THMineViewButtonTypeResume:
         {NSLog(@"简历管理");
-            TH_EditInformationVC * edit = [[TH_EditInformationVC alloc] init];
-            [self.navigationController pushViewController:edit animated:YES];
+//            TH_EditInformationVC * edit = [[TH_EditInformationVC alloc] init];
+//            [self.navigationController pushViewController:edit animated:YES];
             break;
         }
         case THMineViewButtonTypeAboutEggshellBtn:
@@ -80,15 +81,15 @@
         }
         case THMineViewButtonTypeChannelsCooperation :
         {NSLog(@"合作渠道");
-            TH_EditInformationVC * edit = [[TH_EditInformationVC alloc] init];
-            [self.navigationController pushViewController:edit animated:YES];
+//            TH_EditInformationVC * edit = [[TH_EditInformationVC alloc] init];
+//            [self.navigationController pushViewController:edit animated:YES];
             break;
         }
         case THMineViewButtonTypesignOut:
         {
             NSLog(@"退出登录");
-            TH_EditInformationVC * edit = [[TH_EditInformationVC alloc] init];
-            [self.navigationController pushViewController:edit animated:YES];
+//            TH_EditInformationVC * edit = [[TH_EditInformationVC alloc] init];
+//            [self.navigationController pushViewController:edit animated:YES];
             break;
         }
             

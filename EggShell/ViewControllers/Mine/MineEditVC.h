@@ -14,5 +14,10 @@
 @property (weak, nonatomic) IBOutlet UITextView *sex;
 @property (weak, nonatomic) IBOutlet UITextView *city;
 @property (weak, nonatomic) IBOutlet UITextView *Introduce;
+@property (weak, nonatomic) IBOutlet UITextView *birthDay;
+@property (weak, nonatomic) IBOutlet UITextView *email;
+@property (weak, nonatomic) IBOutlet UITextView *QQNum;
+@property (weak, nonatomic) IBOutlet UIImageView *LvImage;
+@property (weak, nonatomic) IBOutlet UITextView *registerTime;
 
 @end
