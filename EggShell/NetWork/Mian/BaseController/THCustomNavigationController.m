@@ -16,10 +16,12 @@
 + (void)initialize
 {
     UINavigationBar *navigationBar = [UINavigationBar appearance];
-    
+    [navigationBar setBarTintColor:color(253, 253, 253)];
     navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blackColor]};
     navigationBar.titleTextAttributes = @{NSFontAttributeName :[UIFont systemFontOfSize:18]};
     [navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    navigationBar.shadowImage = [UIImage imageNamed:@"矩形-4"];
+
 
 }
 - (void)viewDidLoad {

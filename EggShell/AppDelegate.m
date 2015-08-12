@@ -34,7 +34,7 @@
     
     [self.window makeKeyAndVisible];
     
-
+    
     sleep(1);
     return YES;
 }

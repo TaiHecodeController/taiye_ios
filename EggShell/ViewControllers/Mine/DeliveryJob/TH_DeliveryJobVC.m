@@ -1,22 +1,21 @@
 //
-//  TH_EditInformationVC.m
+//  TH_DeliveryJobVC.m
 //  EggShell
 //
-//  Created by 李李贤军 on 15/8/11.
+//  Created by 李李贤军 on 15/8/12.
 //  Copyright (c) 2015年 wsd. All rights reserved.
 //
 
-#import "TH_EditInformationVC.h"
+#import "TH_DeliveryJobVC.h"
 
-@interface TH_EditInformationVC ()
+@interface TH_DeliveryJobVC ()
 
 @end
 
-@implementation TH_EditInformationVC
+@implementation TH_DeliveryJobVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"编辑资料";
     // Do any additional setup after loading the view.
 }
 
