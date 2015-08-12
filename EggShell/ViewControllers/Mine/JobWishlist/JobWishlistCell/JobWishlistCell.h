@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface JobWishlistCell : UITableViewCell
-
++(JobWishlistCell*)RegisterJobWishListCell;
 @end

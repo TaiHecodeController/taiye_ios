@@ -1,18 +1,18 @@
 //
-//  MineEditVC.m
+//  EditAddressVC.m
 //  EggShell
 //
 //  Created by mac on 15/8/12.
 //  Copyright (c) 2015年 wsd. All rights reserved.
 //
 
-#import "MineEditVC.h"
+#import "EditAddressVC.h"
 
-@interface MineEditVC ()
+@interface EditAddressVC ()
 
 @end
 
-@implementation MineEditVC
+@implementation EditAddressVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,5 +33,17 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)cityClick:(id)sender {
+}
+
+- (IBAction)finishClick:(UIButton *)sender {
+}
+
+- (IBAction)replaceClick:(UIButton *)sender {
+}
+- (IBAction)provinceClick:(UIButton *)sender {
+}
+
 
 @end

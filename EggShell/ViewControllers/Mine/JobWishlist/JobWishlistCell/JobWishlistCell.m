@@ -19,5 +19,9 @@
 
     // Configure the view for the selected state
 }
++(JobWishlistCell*)RegisterJobWishListCell
+{
+    return [[[NSBundle mainBundle] loadNibNamed:@"JobWishlistCell" owner:self options:nil] lastObject];
 
+}
 @end
