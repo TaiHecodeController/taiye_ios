@@ -24,7 +24,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[TH_MainTabBarController alloc] init];
-    [self checkVersion];
+//    [self checkVersion];
     
    
     //rk——test
