@@ -26,6 +26,8 @@
 		041650EE1B4D7C4E008C78BE /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041650E81B4D7C4E008C78BE /* MJRefreshFooterView.m */; };
 		041650EF1B4D7C4E008C78BE /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041650EA1B4D7C4E008C78BE /* MJRefreshHeaderView.m */; };
 		04237D901B66456F00768FAD /* LoginAndRegisterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04237D8F1B66456F00768FAD /* LoginAndRegisterRequest.m */; };
+		04718D791B7B9481008214CB /* EditAddressVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718D771B7B9481008214CB /* EditAddressVC.m */; };
+		04718D7A1B7B9481008214CB /* EditAddressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04718D781B7B9481008214CB /* EditAddressVC.xib */; };
 		048F30A81B7A1562004AA9B2 /* HotSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30A71B7A1562004AA9B2 /* HotSearch.m */; };
 		048F30AA1B7A1577004AA9B2 /* HotSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048F30A91B7A1577004AA9B2 /* HotSearch.xib */; };
 		048F30B71B7A4537004AA9B2 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30AD1B7A4537004AA9B2 /* FMDatabase.m */; };
@@ -167,6 +169,9 @@
 		041650F01B4D7F19008C78BE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		04237D8E1B66456F00768FAD /* LoginAndRegisterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginAndRegisterRequest.h; sourceTree = "<group>"; };
 		04237D8F1B66456F00768FAD /* LoginAndRegisterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAndRegisterRequest.m; sourceTree = "<group>"; };
+		04718D761B7B9481008214CB /* EditAddressVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditAddressVC.h; sourceTree = "<group>"; };
+		04718D771B7B9481008214CB /* EditAddressVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditAddressVC.m; sourceTree = "<group>"; };
+		04718D781B7B9481008214CB /* EditAddressVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditAddressVC.xib; sourceTree = "<group>"; };
 		048F30A61B7A1562004AA9B2 /* HotSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotSearch.h; sourceTree = "<group>"; };
 		048F30A71B7A1562004AA9B2 /* HotSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotSearch.m; sourceTree = "<group>"; };
 		048F30A91B7A1577004AA9B2 /* HotSearch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotSearch.xib; sourceTree = "<group>"; };
@@ -510,6 +515,16 @@
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
+		04718D751B7B9442008214CB /* EditAddress */ = {
+			isa = PBXGroup;
+			children = (
+				04718D761B7B9481008214CB /* EditAddressVC.h */,
+				04718D771B7B9481008214CB /* EditAddressVC.m */,
+				04718D781B7B9481008214CB /* EditAddressVC.xib */,
+			);
+			path = EditAddress;
+			sourceTree = "<group>";
+		};
 		048F30AB1B7A4537004AA9B2 /* fmdb */ = {
 			isa = PBXGroup;
 			children = (
@@ -725,6 +740,7 @@
 				048F30DF1B7B88B5004AA9B2 /* MineEditInfoView.m */,
 				048F30E11B7B895F004AA9B2 /* MineEditVC.h */,
 				048F30E21B7B895F004AA9B2 /* MineEditVC.m */,
+				04718D751B7B9442008214CB /* EditAddress */,
 			);
 			path = EditInformation;
 			sourceTree = "<group>";
@@ -1091,6 +1107,7 @@
 				941F0FC21B79A71700719F5B /* Course PlayCell.xib in Resources */,
 				041650451B4D7142008C78BE /* LaunchScreen.xib in Resources */,
 				04EC1F241B791B660009292E /* moreJobTableViewCell.xib in Resources */,
+				04718D7A1B7B9481008214CB /* EditAddressVC.xib in Resources */,
 				04EC1F101B78F5510009292E /* SearchView.xib in Resources */,
 				94CB5B911B74F0D500B23B9D /* HomeViews.xib in Resources */,
 				94D9000A1B79996600F6FD36 /* JobDescription.xib in Resources */,
@@ -1192,6 +1209,7 @@
 				94CB5B7D1B74CC0600B23B9D /* MJConst.m in Sources */,
 				048F30C11B7A462C004AA9B2 /* DataBase.m in Sources */,
 				F0D7C02B1B7994DB00836DD2 /* OpenClassCell.m in Sources */,
+				04718D791B7B9481008214CB /* EditAddressVC.m in Sources */,
 				04EC1F231B791B660009292E /* moreJobTableViewCell.m in Sources */,
 				048F30BB1B7A4537004AA9B2 /* FMResultSet.m in Sources */,
 				94CB5B881B74CC0600B23B9D /* SGFocusImageItem.m in Sources */,

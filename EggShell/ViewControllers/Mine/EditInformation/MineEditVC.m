@@ -8,10 +8,12 @@
 
 #import "MineEditVC.h"
 #import "MineEditInfoView.h"
+#import "EditAddressVC.h"
 
 @interface MineEditVC ()
 {
     MineEditInfoView * EdView;
+    UITapGestureRecognizer * cityTapGes;
 }
 
 @end
@@ -49,7 +51,8 @@
         EdView.name.tag = 100;
         EdView.sex.editable = YES;
         EdView.sex.tag = 101;
-        EdView.city.editable = YES;
+        cityTapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cityTap)];
+        [EdView.city addGestureRecognizer:cityTapGes];
         EdView.city.tag = 102;
         EdView.Introduce.editable = YES;
         EdView.Introduce.tag = 103;
@@ -65,7 +68,7 @@
         //保存
         EdView.name.editable = NO;
         EdView.sex.editable = NO;
-        EdView.city.editable = NO;
+        [EdView.city removeGestureRecognizer:cityTapGes];
         EdView.Introduce.editable = NO;
         EdView.birthDay.editable = NO;
         EdView.email.editable = NO;
@@ -76,6 +79,12 @@
     }
     
     
+}
+
+-(void)cityTap
+{
+    EditAddressVC * eavc = [[EditAddressVC alloc] init];
+    [self.navigationController pushViewController:eavc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
