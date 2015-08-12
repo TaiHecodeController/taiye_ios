@@ -138,8 +138,6 @@
     
     AFHTTPRequestOperationManager*manager=[self sharedManager];
     
-
-    
     [manager GET:url parameters:param success:^(AFHTTPRequestOperation * operation, id responseObject)
      {
          [self handleResponse:responseObject Succ:succ Fail:fail Resp:resp State:State];

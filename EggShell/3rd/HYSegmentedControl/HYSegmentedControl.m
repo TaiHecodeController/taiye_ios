@@ -113,9 +113,14 @@
         }
         
         //底线
-        UIView *lineView1 = [[UIView alloc]initWithFrame:CGRectMake(0.0f,HYSegmentedControl_Height - 1 - y, [UIScreen  mainScreen].bounds.size.width, 1.0f)];
+        UIView *lineView1 = [[UIView alloc]initWithFrame:CGRectMake(0.0f,HYSegmentedControl_Height - 0.5 - y, [UIScreen  mainScreen].bounds.size.width, 0.5)];
         lineView1.backgroundColor = color(221, 221, 221);
         [_scrollView addSubview:lineView1];
+        
+        //中线
+        UIView *lineView2 = [[UIView alloc]initWithFrame:CGRectMake((WIDETH - 0.5) / 2,11, 0.5, 18)];
+        lineView2.backgroundColor = UIColorFromRGBValue(0xdddddd);
+        [_scrollView addSubview:lineView2];
         
         //
         //  bottom lineView
