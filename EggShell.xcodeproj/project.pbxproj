@@ -59,6 +59,9 @@
 		941F0FE01B7AE94E00719F5B /* TH_DeliveryJobVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F0FDF1B7AE94E00719F5B /* TH_DeliveryJobVC.m */; };
 		941F0FE21B7AE96400719F5B /* MineEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F0FE11B7AE96400719F5B /* MineEditVC.m */; };
 		941F0FE51B7AE97600719F5B /* MineEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 941F0FE41B7AE97600719F5B /* MineEditVC.xib */; };
+		941F0FE81B7B0ED600719F5B /* JobWishlistHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F0FE71B7B0ED600719F5B /* JobWishlistHeadView.m */; };
+		941F0FEA1B7B0F1800719F5B /* JobWishList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 941F0FE91B7B0F1800719F5B /* JobWishList.xib */; };
+		941F0FEE1B7B30B600719F5B /* TH_LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F0FED1B7B30B600719F5B /* TH_LoginVC.m */; };
 		94CB5B7A1B74CC0600B23B9D /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B561B74CC0600B23B9D /* BaseModel.m */; };
 		94CB5B7B1B74CC0600B23B9D /* HomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B581B74CC0600B23B9D /* HomePageModel.m */; };
 		94CB5B7C1B74CC0600B23B9D /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B5B1B74CC0600B23B9D /* MJArgument.m */; };
@@ -225,6 +228,11 @@
 		941F0FE11B7AE96400719F5B /* MineEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MineEditVC.m; path = ../MineEditVC.m; sourceTree = "<group>"; };
 		941F0FE31B7AE96F00719F5B /* MineEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MineEditVC.h; path = ../MineEditVC.h; sourceTree = "<group>"; };
 		941F0FE41B7AE97600719F5B /* MineEditVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineEditVC.xib; sourceTree = "<group>"; };
+		941F0FE61B7B0ED600719F5B /* JobWishlistHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobWishlistHeadView.h; sourceTree = "<group>"; };
+		941F0FE71B7B0ED600719F5B /* JobWishlistHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobWishlistHeadView.m; sourceTree = "<group>"; };
+		941F0FE91B7B0F1800719F5B /* JobWishList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobWishList.xib; sourceTree = "<group>"; };
+		941F0FEC1B7B30B600719F5B /* TH_LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_LoginVC.h; sourceTree = "<group>"; };
+		941F0FED1B7B30B600719F5B /* TH_LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_LoginVC.m; sourceTree = "<group>"; };
 		94CB5B551B74CC0600B23B9D /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		94CB5B561B74CC0600B23B9D /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		94CB5B571B74CC0600B23B9D /* HomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageModel.h; sourceTree = "<group>"; };
@@ -603,6 +611,7 @@
 		04A483C71B74FDF5006FDB9D /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				941F0FEB1B7B309500719F5B /* Login */,
 				941F0FD41B7AE55300719F5B /* DeliveryJob */,
 				941F0FD01B7AE50F00719F5B /* JobWishlist */,
 				941F0FC81B79EFEC00719F5B /* EditInformation */,
@@ -758,8 +767,20 @@
 				941F0FD91B7AE6D200719F5B /* JobWishlistCell.h */,
 				941F0FDA1B7AE6D200719F5B /* JobWishlistCell.m */,
 				941F0FDB1B7AE6D200719F5B /* JobWishlistCell.xib */,
+				941F0FE61B7B0ED600719F5B /* JobWishlistHeadView.h */,
+				941F0FE71B7B0ED600719F5B /* JobWishlistHeadView.m */,
+				941F0FE91B7B0F1800719F5B /* JobWishList.xib */,
 			);
 			path = JobWishlistCell;
+			sourceTree = "<group>";
+		};
+		941F0FEB1B7B309500719F5B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				941F0FEC1B7B30B600719F5B /* TH_LoginVC.h */,
+				941F0FED1B7B30B600719F5B /* TH_LoginVC.m */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		94CB5B531B74CBBE00B23B9D /* libs */ = {
@@ -1094,6 +1115,7 @@
 				94D900051B7998C200F6FD36 /* CompanyProfile.xib in Resources */,
 				041650421B4D7142008C78BE /* Images.xcassets in Resources */,
 				94D900181B799D2F00F6FD36 /* MineView.xib in Resources */,
+				941F0FEA1B7B0F1800719F5B /* JobWishList.xib in Resources */,
 				941F0FC71B79BF5E00719F5B /* CourePlaytitle.xib in Resources */,
 				041650EB1B4D7C4E008C78BE /* MJRefresh.bundle in Resources */,
 				941F0FDD1B7AE6D200719F5B /* JobWishlistCell.xib in Resources */,
@@ -1178,6 +1200,7 @@
 				041650CB1B4D730F008C78BE /* MBProgressHUD.m in Sources */,
 				04A0CD481B7A111D00EBCF01 /* HeadView.m in Sources */,
 				041650671B4D7240008C78BE /* GAdapter.m in Sources */,
+				941F0FE81B7B0ED600719F5B /* JobWishlistHeadView.m in Sources */,
 				941F0FE21B7AE96400719F5B /* MineEditVC.m in Sources */,
 				94CB5B7C1B74CC0600B23B9D /* MJArgument.m in Sources */,
 				94EAEAC31B78437A003C19DD /* TH_FindPracticeVC.m in Sources */,
@@ -1208,6 +1231,7 @@
 				04A0CD421B7A104900EBCF01 /* SearchJobVC.m in Sources */,
 				94EDD4F11B7831BB00A00A78 /* ZXLabel.m in Sources */,
 				94EDD4E91B78319A00A00A78 /* UILabel+Extension.m in Sources */,
+				941F0FEE1B7B30B600719F5B /* TH_LoginVC.m in Sources */,
 				F05440BC1B788FE000127A9B /* jobModel.m in Sources */,
 				048F30B91B7A4537004AA9B2 /* FMDatabasePool.m in Sources */,
 				F05440B41B7870B800127A9B /* jobTableViewCell.m in Sources */,

@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef enum
+{
+    JobButtontype
+}typeBtn;
+@class JobWishlistCell;
+@protocol JobWishlistCellDeleDate <NSObject>
 
+-(void)JobWishlistCellBtn:(JobWishlistCell*)jobCell didBtn:(typeBtn)sender;
+
+@end
 @interface JobWishlistCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIButton *jobBtn;
+
 +(JobWishlistCell*)RegisterJobWishListCell;
+-(void)sestbtn;
+@property(nonatomic,strong)id<JobWishlistCellDeleDate>jobDeleGate;
 @end
