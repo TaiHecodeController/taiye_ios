@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *ChannelsCooperation;
 
 @property (weak, nonatomic) IBOutlet UIButton *signOut;
+@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 
 
 @end
@@ -33,6 +34,7 @@
     self.AboutEggshellBtn.tag = THMineViewButtonTypeAboutEggshellBtn;
     self.ChannelsCooperation.tag = THMineViewButtonTypeChannelsCooperation;
     self.signOut.tag =  THMineViewButtonTypesignOut;
+    self.loginBtn.tag = THMineViewButtonTypeLogin;
    
 }
 +(MineVeiw*)RegisterMineView

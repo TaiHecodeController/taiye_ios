@@ -15,7 +15,8 @@ typedef enum
     THMineViewButtonTypeResume,
     THMineViewButtonTypeChannelsCooperation,
     THMineViewButtonTypeAboutEggshellBtn,
-    THMineViewButtonTypesignOut
+    THMineViewButtonTypesignOut,
+    THMineViewButtonTypeLogin,
     
 }THMineViewButtonType;
 @class MineVeiw;

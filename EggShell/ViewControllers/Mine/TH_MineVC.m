@@ -59,13 +59,14 @@
         }
         case THMineViewButtonTypeDeliveryJobsBtn:
         {NSLog(@"投递职位");
-            TH_DeliveryJobVC * edit = [[TH_DeliveryJobVC alloc] init];
-            [self.navigationController pushViewController:edit animated:YES];
-            break;
+            TH_JobWishlistVC * edit = [[TH_JobWishlistVC alloc] init];
+            edit.title = @"投递职位";
+            [self.navigationController pushViewController:edit animated:YES];            break;
         }
         case THMineViewButtonTypeCollectionJobs:
         {NSLog(@"收藏职位");
             TH_JobWishlistVC * edit = [[TH_JobWishlistVC alloc] init];
+            edit.title = @"收藏职位";
             [self.navigationController pushViewController:edit animated:YES];
             break;
         }
@@ -92,6 +93,14 @@
 //            [self.navigationController pushViewController:edit animated:YES];
             break;
         }
+        case THMineViewButtonTypeLogin:
+        {
+            NSLog(@"退出登录");
+            //            TH_EditInformationVC * edit = [[TH_EditInformationVC alloc] init];
+            //            [self.navigationController pushViewController:edit animated:YES];
+            break;
+        }
+
             
             
         default:

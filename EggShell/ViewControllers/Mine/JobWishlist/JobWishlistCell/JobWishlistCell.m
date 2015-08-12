@@ -13,6 +13,17 @@
 - (void)awakeFromNib {
     // Initialization code
 }
+-(void)sestbtn
+{
+    self.jobBtn.tag = JobButtontype;
+}
+- (IBAction)btnClick:(UIButton *)sender {
+ self.jobBtn.selected = !self.jobBtn.selected;
+    if([self.jobDeleGate respondsToSelector:@selector(JobWishlistCellBtn:didBtn:)])
+    {
+    [self.jobDeleGate JobWishlistCellBtn:self didBtn:(typeBtn)sender.tag];
+    }
+}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
