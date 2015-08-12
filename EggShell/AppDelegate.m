@@ -34,7 +34,8 @@
     
     [self.window makeKeyAndVisible];
     
-
+    UINavigationBar *bar = [UINavigationBar appearance];
+    [bar setBarTintColor:color(235, 67, 67)];
     sleep(1);
     return YES;
 }
