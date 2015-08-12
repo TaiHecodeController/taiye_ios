@@ -19,7 +19,7 @@
 #import "OpenClassVideoListRequest.h"
 #import "OpenClassModel.h"
 #import "UIImageView+WebCache.h"
-
+//#import "MJRefresh.h"
 
 
 
@@ -33,6 +33,10 @@
 @property (nonatomic, assign) int currentIndex;
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong)NSMutableArray *openClassList;
+@property (nonatomic, assign)CGFloat headViewMaxY;
+
+//@property (nonatomic, strong)MJRefreshHeaderView *header;
+//@property (nonatomic, strong)MJRefreshFooterView *footer;
 
 @end
 
@@ -114,6 +118,7 @@
     UILabel *msfcLab = [[UILabel alloc]initWithFrame:CGRectMake(margin, minimargin, msfcSize.width, msfcSize.height)];
     msfcLab.text = @"名师风采";
     msfcLab.font = [UIFont systemFontOfSize:15];
+    msfcLab.textColor = UIColorFromRGB(000000);
     [headView addSubview:msfcLab];
     
     UIView *lineView = [[UIView alloc]init];
@@ -121,15 +126,19 @@
     lineView.frame = CGRectMake(0, CGRectGetMaxY(msfcLab.frame) + minimargin, WIDETH, 0.5);
     [headView addSubview:lineView];
     
+    
     int count = 3;
-    CGFloat qsBtnMargin = ((WIDETH - 3 * 90) / (count + 1));
+    //边距
+    CGFloat qsBtnMargin = 20;
+    //宽高
+    CGFloat qsBtnW = 0.24 * WIDETH;
+    CGFloat qsBtnH = qsBtnW;
+    //中间距离
+    CGFloat middleMargin = (WIDETH - (count * qsBtnW) - 2 * qsBtnMargin) / (count - 1);
     for (int i = 0; i < count; i++)
     {
         UIButton *qsBtn = [[UIButton alloc]init];
-        
-        CGFloat qsBtnW = 90;
-        CGFloat qsBtnH = 90;
-        CGFloat qsBtnX = qsBtnMargin + i * (qsBtnW + qsBtnMargin);
+        CGFloat qsBtnX = qsBtnMargin + i * (qsBtnW + middleMargin);
         CGFloat qsBtnY = CGRectGetMaxY(lineView.frame) + 15;
         qsBtn.frame = CGRectMake(qsBtnX, qsBtnY, qsBtnW, qsBtnH);
         qsBtn.tag = 1000 + i;
@@ -137,7 +146,10 @@
 //        qsBtn.backgroundColor = [UIColor blackColor];
         [qsBtn setBackgroundImage:[UIImage imageNamed:@"laoshi1"] forState:UIControlStateNormal];
         [headView addSubview:qsBtn];
+        _headViewMaxY = CGRectGetMaxY(qsBtn.frame);
+        
     }
+    headView.frame = CGRectMake(0, y, WIDETH, _headViewMaxY + 15);
     
     UIView *marginView = [[UIView alloc]init];
     marginView.backgroundColor = color(243, 243, 241);
@@ -161,9 +173,9 @@
     lineView1.frame = CGRectMake(0, CGRectGetHeight(collectionHeadView.frame) - 0.5, WIDETH, 0.5);
     [collectionHeadView addSubview:lineView1];
 
-    
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
-    flowLayout.itemSize = CGSizeMake(155, 120);
+//    flowLayout.itemSize = CGSizeMake(155, 120);
+    flowLayout.itemSize = CGSizeMake(0.413 * WIDETH, 120);
     _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(margin, CGRectGetMaxY(collectionHeadView.frame), WIDETH - 2 * margin, HEIGHT - CGRectGetMaxY(collectionHeadView.frame) - 44 - 66) collectionViewLayout:flowLayout];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
@@ -173,7 +185,26 @@
     //注册cell 头视图
     [_collectionView registerClass:[OpenClassCell class] forCellWithReuseIdentifier:@"RK_collectionViewCell"];
     [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"RK_headView"];
+    
+    //下拉刷新
+//    _footer = [MJRefreshFooterView footer];
+//    _footer.scrollView = self.collectionView;
+//    _footer.delegate = self;
 }
+
+#pragma mark -- MJRefresh
+//- (void)refreshViewBeginRefreshing:(MJRefreshBaseView *)refreshView
+//{
+//    if( refreshView == _header ){
+//
+//        THLog(@"");
+//    }
+//    else{
+//
+//        THLog(@"上拉加载更多");
+//    }
+//}
+
 
 #pragma mark -UICollectionViewDataSource
 //指定组的个数 ，一个大组！！不是一排，是N多排组成的一个大组(与下面区分)
@@ -185,8 +216,8 @@
 //指定单元格的个数 ，这个是一个组里面有多少单元格，e.g : 一个单元格就是一张图片
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    //    return _subclassArr.count;
     return _openClassList.count;
+//    return 10;
 }
 
 //构建单元格
@@ -203,6 +234,8 @@
         
         [cell.coverView sd_setImageWithURL:[NSURL URLWithString:model.vimage] placeholderImage:[UIImage imageNamed:@"remen"]];
         cell.nameLab.text = model.video_teacher;
+//        cell.coverView.image = [UIImage imageNamed:@"remen"];
+//        cell.nameLab.text = @"王老师";
         [cell.redXinBtn setImage:[UIImage imageNamed:@"zan"] forState:UIControlStateNormal];
         [cell.redXinBtn setTitle:@"300" forState:UIControlStateNormal];
         [cell.priceBtn setImage:[UIImage imageNamed:@"qian"] forState:UIControlStateNormal];
@@ -215,6 +248,8 @@
         
         [cell.coverView sd_setImageWithURL:[NSURL URLWithString:model.vimage] placeholderImage:[UIImage imageNamed:@"remen"]];
         cell.nameLab.text = model.video_teacher;
+//        cell.coverView.image = [UIImage imageNamed:@"remen"];
+//        cell.nameLab.text = @"王老师";
         [cell.redXinBtn setImage:[UIImage imageNamed:@"zan"] forState:UIControlStateNormal];
         [cell.redXinBtn setTitle:@"300" forState:UIControlStateNormal];
         [cell.priceBtn setImage:[UIImage imageNamed:@"qian"] forState:UIControlStateNormal];

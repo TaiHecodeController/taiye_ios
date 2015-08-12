@@ -37,11 +37,13 @@
         _redXinBtn = [[UIButton alloc]init];
         _redXinBtn.titleLabel.font = [UIFont systemFontOfSize:11];
         [_redXinBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        _redXinBtn.imageEdgeInsets = UIEdgeInsetsMake(0, -3, 0, 0);
         [self addSubview:_redXinBtn];
         
         _priceBtn = [[UIButton alloc]init];
         _priceBtn.titleLabel.font = [UIFont systemFontOfSize:11];
         [_priceBtn setTitleColor:UIColorFromRGB(0x37acf4) forState:UIControlStateNormal];
+        _priceBtn.imageEdgeInsets = UIEdgeInsetsMake(0, -3, 0, 0);
         [self addSubview:_priceBtn];
         
         _companyLab = [[UILabel alloc]init];
@@ -66,9 +68,9 @@
     CGSize nameSize = [_nameLab.text sizeWithFont:_nameLab.font];
     _nameLab.frame = CGRectMake(0, y, nameSize.width, nameSize.height);
     
-    _redXinBtn.frame = CGRectMake(CGRectGetMaxX(_nameLab.frame) + 25,y, 35, 12);
+    _redXinBtn.frame = CGRectMake(CGRectGetMaxX(_nameLab.frame) + 0.067 * WIDETH,y + 3, 0.093 * WIDETH, 0.032 * WIDETH);
     
-    _priceBtn.frame = CGRectMake(CGRectGetMaxX(_redXinBtn.frame) + 25, y, 30, 12);
+    _priceBtn.frame = CGRectMake(CGRectGetMaxX(_redXinBtn.frame) + 0.04 * WIDETH, y + 3, 0.093 * WIDETH, 0.032 * WIDETH);
     
     CGSize comSize = [_companyLab.text sizeWithFont:_companyLab.font];
     _companyLab.frame = CGRectMake(0, CGRectGetMaxY(_nameLab.frame) + 5, comSize.width, comSize.height);
