@@ -10,6 +10,7 @@
 #import "MineEditVC.h"
 #import "TH_JobWishlistVC.h"
 #import "TH_LoginVC.h"
+#import "TH_AboutEggshellVC.h"
 @interface TH_MineVC ()<THMineViewDelegate>
 @property(nonatomic,strong)UIScrollView * scro;
 @end
@@ -77,6 +78,9 @@
         }
         case THMineViewButtonTypeAboutEggshellBtn:
         {NSLog(@"关于蛋壳儿");
+            TH_AboutEggshellVC * aboutAgger = [[TH_AboutEggshellVC alloc] init];
+            aboutAgger.title = @"关于蛋壳儿";
+            [self.navigationController pushViewController:aboutAgger animated:YES];
             break;
         }
         case THMineViewButtonTypeChannelsCooperation :

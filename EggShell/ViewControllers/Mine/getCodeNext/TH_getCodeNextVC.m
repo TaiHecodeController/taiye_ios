@@ -7,7 +7,8 @@
 //
 
 #import "TH_getCodeNextVC.h"
-#import "TH_HomeVC.h"
+#import "TH_MainTabBarController.h"
+#import "AppDelegate.h"
 @interface TH_getCodeNextVC ()
 @property(nonatomic,strong)UIScrollView * scro;
 @end
@@ -78,10 +79,11 @@
 }
 -(void)resetpasswordClick
 {
-    TH_HomeVC * home = [[TH_HomeVC alloc] init];
-    home.hidesBottomBarWhenPushed = NO;
-    
-    [self.navigationController pushViewController:home animated:YES];
+    self.navigationController.navigationBarHidden =  YES ;
+    TH_MainTabBarController * home = [[TH_MainTabBarController alloc] init];
+   
+    home.modalTransitionStyle = UIModalPresentationPageSheet;
+    [self presentViewController:home animated:YES completion:nil];
 }
 
 -(void)createScro

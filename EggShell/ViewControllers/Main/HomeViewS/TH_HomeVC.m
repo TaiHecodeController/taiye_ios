@@ -23,7 +23,12 @@
 #import "DataBase.h"
 #import "CompanyDetailVC.h"
 
+
 #import "WriteResumeViewController.h"
+
+#import "TH_PlayFanVC.h"
+#import "TH_InformationDeskVC.h"
+
 
 @interface TH_HomeVC ()<UIScrollViewDelegate,SGFocusImageFrameDelegate,THHomeVieWDelegate>
 {
@@ -149,7 +154,9 @@
         }
         case THHomeViewButtonTypeInformationDesk:
         {NSLog(@"信息台");
-            [self.navigationController pushViewController:home animated:YES];
+            TH_InformationDeskVC * information = [[TH_InformationDeskVC alloc] init];
+            information.title = @"信息台";
+            [self.navigationController pushViewController:information animated:YES];
             break;
         }
         case THHomeViewButtonTypeResumeWriting:
@@ -160,7 +167,9 @@
         }
         case THHomeViewButtonTypePlayFan:
         {NSLog(@"玩出范");
-            [self.navigationController pushViewController:home animated:YES];
+            TH_PlayFanVC * play =[[ TH_PlayFanVC alloc] init];
+            play.title = @"玩出范";
+            [self.navigationController pushViewController:play animated:YES];
             break;
         }
         case THHomeViewButtonTypeMicroSocial:
