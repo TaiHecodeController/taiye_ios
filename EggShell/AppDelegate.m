@@ -29,7 +29,7 @@
 
 
 //    [self checkVersion];
-    self.window.rootViewController = [[WriteResumeViewController alloc] init];
+//    self.window.rootViewController = [[WriteResumeViewController alloc] init];
    
     //rk——test
     
