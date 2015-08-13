@@ -21,6 +21,7 @@
 
 #import "SearchJobVC.h"
 #import "DataBase.h"
+#import "CompanyDetailVC.h"
 
 @interface TH_HomeVC ()<UIScrollViewDelegate,SGFocusImageFrameDelegate,THHomeVieWDelegate>
 {
@@ -67,9 +68,7 @@
 -(void)createSearch
 {
     
-    
-    _searchView = [[[NSBundle mainBundle] loadNibNamed:@"SearchView" owner:self options:nil] firstObject];
-    _searchView.frame = CGRectMake(0, 0, WIDETH, 64);
+    _searchView = [[SearchView alloc] initWithFrame:CGRectMake(0, 80, 330, 30)];
     [self.tabBarController.view addSubview:_searchView];
     
     _searchView.searchClick = ^
@@ -162,7 +161,8 @@
         }
         case THHomeViewButtonTypeMicroSocial:
         {NSLog(@"微社交");
-            [self.navigationController pushViewController:home animated:YES];
+            CompanyDetailVC * detail = [[CompanyDetailVC alloc] init];
+            [self.navigationController pushViewController:detail animated:YES];
             break;
         }
           case THHomeViewButtonTypeOpenClass:

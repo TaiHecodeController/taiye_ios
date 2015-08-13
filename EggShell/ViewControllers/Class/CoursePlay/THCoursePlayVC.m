@@ -17,8 +17,6 @@
 //课程标题cell
 #import "Course PlayCell.h"
 #import "CourePlayTitle.h"
-#import "UIBarButtonItem+DC.h"
-
 
 #define TopViewHeight 44
 //#define BottomViewHeight 72
@@ -172,14 +170,6 @@ typedef NS_ENUM(NSInteger, GestureType){
 //        [self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
 //    }
 //    self.view.backgroundColor = [UIColor blackColor];
-    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    backBtn.frame = CGRectMake(0, 0, 44, 44);
-    
-    [backBtn setImage:[UIImage imageNamed:@"fanhui"] forState:UIControlStateNormal];
-    [backBtn addTarget:self action:@selector(leftClick) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
-    self.navigationItem.backBarButtonItem = backItem;
-    
     [self createTopView];
     //    [self createBottomView];
     [self createAvPlayer];
@@ -222,7 +212,6 @@ typedef NS_ENUM(NSInteger, GestureType){
     [self createCourePlay];
     [self createTableView];
 }
-
 #pragma mark -- 添加课程标题列表
 -(void)createCourePlay
 {
@@ -282,12 +271,7 @@ typedef NS_ENUM(NSInteger, GestureType){
     [super viewWillDisappear:animated];
     //    [MobClick endLogPageView:@"视频播放"];
     
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    
+    [self popView];
 }
 
 - (void)createAvPlayer{
@@ -521,7 +505,7 @@ typedef NS_ENUM(NSInteger, GestureType){
     _remainingTimeLable.textAlignment = NSTextAlignmentCenter;
     [_bottomView addSubview:_remainingTimeLable];
     
-//    [self.view addSubview:_bottomView];
+    [self.view addSubview:_bottomView];
     
     [_fastBackwardBtn setHidden:YES];
     [_fastForeardBtn setHidden:YES];
@@ -541,7 +525,7 @@ typedef NS_ENUM(NSInteger, GestureType){
     _brightnessProgress.progressImage = [UIImage imageNamed:@"video_num_front.png"];
     _brightnessProgress.progress = [UIScreen mainScreen].brightness;
     [_brightnessView addSubview:_brightnessProgress];
-//    [self.view addSubview:_brightnessView];
+    [self.view addSubview:_brightnessView];
     _brightnessView.alpha = 0;
 }
 
@@ -565,7 +549,7 @@ typedef NS_ENUM(NSInteger, GestureType){
     _progressTimeLable_bottom.shadowOffset = CGSizeMake(1.0, 1.0);
     [_progressTimeView addSubview:_progressTimeLable_bottom];
     
-//    [self.view addSubview:_progressTimeView];
+    [self.view addSubview:_progressTimeView];
 }
 - (void)updateProfressTimeLable{
     double currentTime = floor(_movieLength *_movieProgressSlider.value);
@@ -846,8 +830,8 @@ typedef NS_ENUM(NSInteger, GestureType){
 - (void)removeObserversFromVideoPlayerItem
 {
     [_player.currentItem removeObserver:self forKeyPath:@"status"];
-//    [_player.currentItem removeObserver:self forKeyPath:@"playbackBufferEmpty"];
-//    [_player.currentItem removeObserver:self forKeyPath:@"playbackLikelyToKeepUp"];
+    [_player.currentItem removeObserver:self forKeyPath:@"playbackBufferEmpty"];
+    [_player.currentItem removeObserver:self forKeyPath:@"playbackLikelyToKeepUp"];
     //    [_player.currentItem removeObserver:self forKeyPath:@"loadedTimeRanges"];
 }
 
@@ -895,13 +879,6 @@ typedef NS_ENUM(NSInteger, GestureType){
     _gestureType = GestureTypeOfNone;
     _progressTimeView.hidden = YES;
     [self scrubberIsScrolling];
-}
-
-- (void)leftClick
-{
-    [self popView];
-    
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark touch event
@@ -1015,10 +992,6 @@ typedef NS_ENUM(NSInteger, GestureType){
 - (void)returnBtnClick
 {
     THLog(@"returnBtnClick被点击");
-//    CGAffineTransform landscapeTransform = CGAffineTransformMakeRotation(M_PI / 2);
-//    self.PLvideoPlayer.view.transform = landscapeTransform;
-//    self.PLvideoPlayer.view.frame = CGRectMake(0, 0, 320, 568);
-    
 }
 
 - (void)downBtnClick
@@ -1026,12 +999,12 @@ typedef NS_ENUM(NSInteger, GestureType){
     THLog(@"downBtnClick被点击");
 }
 //横屏
-- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-    return (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight);
-}
-- (NSUInteger)supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskLandscapeRight;
-}
+//- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+//    return (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight);
+//}
+//- (NSUInteger)supportedInterfaceOrientations {
+//    return UIInterfaceOrientationMaskLandscapeRight;
+//}
 
 //- (void)dealloc{
 //    NSLog(@"dealloc");

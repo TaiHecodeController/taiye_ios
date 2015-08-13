@@ -19,7 +19,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *signOut;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 
-
 @end
 @implementation MineVeiw
 -(void)mineViewSetButtonTag;
@@ -36,6 +35,7 @@
     self.signOut.tag =  THMineViewButtonTypesignOut;
     self.loginBtn.tag = THMineViewButtonTypeLogin;
    
+   
 }
 +(MineVeiw*)RegisterMineView
 {
@@ -45,8 +45,7 @@
 - (IBAction)mineViewBtnClick:(UIButton*)sender {
     if ([self.mineDelegate respondsToSelector:@selector(homeView:DidClickButton:)]) {
     [self.mineDelegate homeView:self DidClickButton:(THMineViewButtonType)sender.tag];
-    NSLog(@"kjsdjfbvs");
-    }
+        }
 }
 
 

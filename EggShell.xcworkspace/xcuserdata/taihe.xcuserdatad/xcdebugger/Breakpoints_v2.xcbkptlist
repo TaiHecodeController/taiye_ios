@@ -42,11 +42,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EggShell/ViewControllers/Class/CoursePlay/THCoursePlayVC.m"
-            timestampString = "461054120.366935"
+            timestampString = "460973083.173243"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "613"
-            endingLineNumber = "613"
+            startingLineNumber = "576"
+            endingLineNumber = "576"
+            landmarkName = "-alertView:clickedButtonAtIndex:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EggShell/ViewControllers/Class/CoursePlay/THCoursePlayVC.m"
+            timestampString = "460973086.68966"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "597"
+            endingLineNumber = "597"
             landmarkName = "-observeValueForKeyPath:ofObject:change:context:"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,12 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EggShell/ViewControllers/Class/CoursePlay/THCoursePlayVC.m"
-            timestampString = "461054120.366935"
+            timestampString = "460973092.829969"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "857"
-            endingLineNumber = "857"
-            landmarkName = "-scrubbingDidBegin"
+            startingLineNumber = "700"
+            endingLineNumber = "700"
+            landmarkName = "-becomeActive"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,12 +90,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EggShell/ViewControllers/Class/CoursePlay/THCoursePlayVC.m"
-            timestampString = "461054120.366935"
+            timestampString = "460973094.24658"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "864"
-            endingLineNumber = "864"
-            landmarkName = "-scrubberIsScrolling"
+            startingLineNumber = "706"
+            endingLineNumber = "706"
+            landmarkName = "-resignActive"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -90,11 +106,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EggShell/ViewControllers/Class/CoursePlay/THCoursePlayVC.m"
-            timestampString = "461054120.366935"
+            timestampString = "460973096.360541"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "848"
-            endingLineNumber = "848"
+            startingLineNumber = "711"
+            endingLineNumber = "711"
+            landmarkName = "-pauseBtnClick"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EggShell/ViewControllers/Class/CoursePlay/THCoursePlayVC.m"
+            timestampString = "460973098.644511"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "724"
+            endingLineNumber = "724"
+            landmarkName = "-fastAction:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EggShell/ViewControllers/Class/CoursePlay/THCoursePlayVC.m"
+            timestampString = "460973099.743802"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "732"
+            endingLineNumber = "732"
+            landmarkName = "-forWordOrBackWardMovieAction:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EggShell/ViewControllers/Class/CoursePlay/THCoursePlayVC.m"
+            timestampString = "460973113.385589"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "832"
+            endingLineNumber = "832"
             landmarkName = "-removeObserversFromVideoPlayerItem"
             landmarkType = "5">
          </BreakpointContent>
@@ -106,12 +170,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EggShell/ViewControllers/Class/CoursePlay/THCoursePlayVC.m"
-            timestampString = "461054120.366935"
+            timestampString = "460973114.522243"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "911"
-            endingLineNumber = "911"
-            landmarkName = "-touchesMoved:withEvent:"
+            startingLineNumber = "841"
+            endingLineNumber = "841"
+            landmarkName = "-scrubbingDidBegin"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -122,108 +186,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EggShell/ViewControllers/Class/CoursePlay/THCoursePlayVC.m"
-            timestampString = "461054120.366935"
+            timestampString = "460973116.996987"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "957"
-            endingLineNumber = "957"
-            landmarkName = "-touchesBegan:withEvent:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EggShell/ViewControllers/Class/CoursePlay/THCoursePlayVC.m"
-            timestampString = "461054120.366935"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "961"
-            endingLineNumber = "961"
-            landmarkName = "-touchesEnded:withEvent:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EggShell/ViewControllers/Class/CoursePlay/THCoursePlayVC.m"
-            timestampString = "461054120.366935"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "998"
-            endingLineNumber = "998"
-            landmarkName = "-hidenControlBar"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[THCoursePlayVC hidenControlBar]"
-                  moduleName = "EggShell"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/taihe/Desktop/taiye_ios/EggShell/ViewControllers/Class/CoursePlay/THCoursePlayVC.m"
-                  timestampString = "461054261.81902"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "998"
-                  endingLineNumber = "998"
-                  offsetFromSymbolStart = "41">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__33-[THCoursePlayVC hidenControlBar]_block_invoke"
-                  moduleName = "EggShell"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/taihe/Desktop/taiye_ios/EggShell/ViewControllers/Class/CoursePlay/THCoursePlayVC.m"
-                  timestampString = "461054261.819154"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "998"
-                  endingLineNumber = "998"
-                  offsetFromSymbolStart = "15">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EggShell/ViewControllers/Class/CoursePlay/THCoursePlayVC.m"
-            timestampString = "461054120.366935"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "966"
-            endingLineNumber = "966"
-            landmarkName = "-touchesEnded:withEvent:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EggShell/ViewControllers/Class/CoursePlay/THCoursePlayVC.m"
-            timestampString = "461054120.366935"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "902"
-            endingLineNumber = "902"
-            landmarkName = "-leftClick"
+            startingLineNumber = "848"
+            endingLineNumber = "848"
+            landmarkName = "-scrubberIsScrolling"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

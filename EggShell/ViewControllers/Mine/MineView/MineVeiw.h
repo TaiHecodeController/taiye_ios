@@ -17,7 +17,7 @@ typedef enum
     THMineViewButtonTypeAboutEggshellBtn,
     THMineViewButtonTypesignOut,
     THMineViewButtonTypeLogin,
-    
+        
 }THMineViewButtonType;
 @class MineVeiw;
 @protocol THMineViewDelegate <NSObject>

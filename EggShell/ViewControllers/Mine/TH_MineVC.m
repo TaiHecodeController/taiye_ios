@@ -5,12 +5,11 @@
 //  Created by 李李贤军 on 15/8/8.
 //  Copyright (c) 2015年 wsd. All rights reserved.
 //
-
 #import "TH_MineVC.h"
 #import "MineVeiw.h"
 #import "MineEditVC.h"
-#import "TH_DeliveryJobVC.h"
 #import "TH_JobWishlistVC.h"
+#import "TH_LoginVC.h"
 @interface TH_MineVC ()<THMineViewDelegate>
 @property(nonatomic,strong)UIScrollView * scro;
 @end
@@ -53,8 +52,8 @@
         }
         case THMineViewButtonTypeEditInformationBtn:
         {NSLog(@"编辑资料");
-            MineEditVC * edit = [[MineEditVC alloc] init];
-            [self.navigationController pushViewController:edit animated:YES];
+            MineEditVC * edits = [[MineEditVC alloc] init];
+            [self.navigationController pushViewController:edits animated:YES];
             break;
         }
         case THMineViewButtonTypeDeliveryJobsBtn:
@@ -82,26 +81,25 @@
         }
         case THMineViewButtonTypeChannelsCooperation :
         {NSLog(@"合作渠道");
-//            TH_EditInformationVC * edit = [[TH_EditInformationVC alloc] init];
-//            [self.navigationController pushViewController:edit animated:YES];
+            TH_LoginVC * login = [[TH_LoginVC alloc] init];
+            [self.navigationController pushViewController:login animated:YES];
             break;
         }
         case THMineViewButtonTypesignOut:
         {
-            NSLog(@"退出登录");
-//            TH_EditInformationVC * edit = [[TH_EditInformationVC alloc] init];
-//            [self.navigationController pushViewController:edit animated:YES];
+             NSLog(@"退出登录");
+            TH_LoginVC * login = [[TH_LoginVC alloc] init];
+            [self.navigationController pushViewController:login animated:YES];
             break;
         }
         case THMineViewButtonTypeLogin:
         {
-            NSLog(@"退出登录");
-            //            TH_EditInformationVC * edit = [[TH_EditInformationVC alloc] init];
-            //            [self.navigationController pushViewController:edit animated:YES];
+        
+            
+            TH_LoginVC * login = [[TH_LoginVC alloc] init];
+            [self.navigationController pushViewController:login animated:YES];
             break;
         }
-
-            
             
         default:
             break;

@@ -23,7 +23,6 @@
 
 
 
-
 #define bottomH 107
 
 
@@ -54,6 +53,7 @@
 //    self.view.backgroundColor = color(243, 243, 241);
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     
+    
 //    self.navigationItem.rightBarButtonItem = [UIBarButtonItem barBtnItemWithNormalImageName:@"liebiao" hightImageName:nil action:@selector(rightClick) target:self];
 //    
 //    [self addRightBtn2_NormalImageName:@"sousuo001" hightImageName:nil action:@selector(rightClick2) target:self];
@@ -69,7 +69,6 @@
     [self hySegmentedControlSelectAtIndex:0];
     
 }
-
 
 - (void)initView
 {
@@ -181,7 +180,6 @@
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
     _collectionView.backgroundColor = [UIColor clearColor];
-    _collectionView.showsVerticalScrollIndicator = NO;
     [self.view addSubview:_collectionView];
     
     //注册cell 头视图
@@ -206,6 +204,7 @@
 //        THLog(@"上拉加载更多");
 //    }
 //}
+
 
 #pragma mark -UICollectionViewDataSource
 //指定组的个数 ，一个大组！！不是一排，是N多排组成的一个大组(与下面区分)
