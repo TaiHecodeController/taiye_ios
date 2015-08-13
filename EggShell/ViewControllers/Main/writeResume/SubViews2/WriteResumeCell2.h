@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface WriteResumeCell2 : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIButton *stateBtn;
+@property (weak, nonatomic) IBOutlet UILabel *nameLab;
 
 @end

@@ -11,6 +11,7 @@
 #import "TH_JobWishlistVC.h"
 #import "TH_LoginVC.h"
 #import "TH_AboutEggshellVC.h"
+#import "AppDelegate.h"
 @interface TH_MineVC ()<THMineViewDelegate>
 @property(nonatomic,strong)UIScrollView * scro;
 @end
@@ -92,8 +93,12 @@
         case THMineViewButtonTypesignOut:
         {
              NSLog(@"退出登录");
-            TH_LoginVC * login = [[TH_LoginVC alloc] init];
-            [self.navigationController pushViewController:login animated:YES];
+            self.navigationController.navigationBarHidden = YES;
+            AppDelegate * appDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
+            appDelegate.mainTabBar = [[TH_MainTabBarController alloc] init];
+            
+            appDelegate.mainTabBar.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+            [self presentViewController:appDelegate.mainTabBar animated:YES completion:nil];
             break;
         }
         case THMineViewButtonTypeLogin:

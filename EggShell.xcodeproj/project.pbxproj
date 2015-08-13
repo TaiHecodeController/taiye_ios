@@ -26,19 +26,7 @@
 		041650EE1B4D7C4E008C78BE /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041650E81B4D7C4E008C78BE /* MJRefreshFooterView.m */; };
 		041650EF1B4D7C4E008C78BE /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041650EA1B4D7C4E008C78BE /* MJRefreshHeaderView.m */; };
 		04237D901B66456F00768FAD /* LoginAndRegisterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04237D8F1B66456F00768FAD /* LoginAndRegisterRequest.m */; };
-		04718D9F1B7CB129008214CB /* ManagerResumeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718D9D1B7CB129008214CB /* ManagerResumeVC.m */; };
-		04718DA01B7CB129008214CB /* ManagerResumeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04718D9E1B7CB129008214CB /* ManagerResumeVC.xib */; };
-		04718DA31B7CD886008214CB /* WriteResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718DA21B7CD886008214CB /* WriteResumeViewController.m */; };
 		04718DA71B7CDA26008214CB /* ZCControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718DA61B7CDA26008214CB /* ZCControl.m */; };
-		04718DAC1B7CE030008214CB /* WriteResumeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718DAA1B7CE030008214CB /* WriteResumeCell.m */; };
-		04718DAD1B7CE030008214CB /* WriteResumeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04718DAB1B7CE030008214CB /* WriteResumeCell.xib */; };
-		04718DB11B7CEF4A008214CB /* ExceptCityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718DAF1B7CEF4A008214CB /* ExceptCityCell.m */; };
-		04718DB21B7CEF4A008214CB /* ExceptCityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04718DB01B7CEF4A008214CB /* ExceptCityCell.xib */; };
-		04718DB61B7D0408008214CB /* NameAndSexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718DB41B7D0408008214CB /* NameAndSexCell.m */; };
-		04718DB71B7D0408008214CB /* NameAndSexCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04718DB51B7D0408008214CB /* NameAndSexCell.xib */; };
-		04718DBA1B7D1734008214CB /* WriteResumeVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718DB91B7D1734008214CB /* WriteResumeVC2.m */; };
-		04718DBF1B7D17DF008214CB /* WriteResumeCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718DBD1B7D17DF008214CB /* WriteResumeCell2.m */; };
-		04718DC01B7D17DF008214CB /* WriteResumeCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04718DBE1B7D17DF008214CB /* WriteResumeCell2.xib */; };
 		048F30A81B7A1562004AA9B2 /* HotSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30A71B7A1562004AA9B2 /* HotSearch.m */; };
 		048F30AA1B7A1577004AA9B2 /* HotSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048F30A91B7A1577004AA9B2 /* HotSearch.xib */; };
 		048F30B71B7A4537004AA9B2 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30AD1B7A4537004AA9B2 /* FMDatabase.m */; };
@@ -94,6 +82,21 @@
 		94313DCA1B7CAB62005D0A9A /* AboutEgger.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94313DC51B7CAB62005D0A9A /* AboutEgger.xib */; };
 		94313DCB1B7CAB62005D0A9A /* AboutEggerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DC71B7CAB62005D0A9A /* AboutEggerView.m */; };
 		94313DCC1B7CAB62005D0A9A /* TH_AboutEggshellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DC91B7CAB62005D0A9A /* TH_AboutEggshellVC.m */; };
+		94313DD11B7CAD6E005D0A9A /* MineVeiw.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DCF1B7CAD6E005D0A9A /* MineVeiw.m */; };
+		94313DD21B7CAD6E005D0A9A /* MineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94313DD01B7CAD6E005D0A9A /* MineView.xib */; };
+		94313DE91B7CB5C9005D0A9A /* ManagerResumeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DD51B7CB5C9005D0A9A /* ManagerResumeVC.m */; };
+		94313DEA1B7CB5C9005D0A9A /* ManagerResumeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94313DD61B7CB5C9005D0A9A /* ManagerResumeVC.xib */; };
+		94313DEB1B7CB5C9005D0A9A /* ExceptCityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DD91B7CB5C9005D0A9A /* ExceptCityCell.m */; };
+		94313DEC1B7CB5C9005D0A9A /* ExceptCityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94313DDA1B7CB5C9005D0A9A /* ExceptCityCell.xib */; };
+		94313DED1B7CB5C9005D0A9A /* NameAndSexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DDC1B7CB5C9005D0A9A /* NameAndSexCell.m */; };
+		94313DEE1B7CB5C9005D0A9A /* NameAndSexCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94313DDD1B7CB5C9005D0A9A /* NameAndSexCell.xib */; };
+		94313DEF1B7CB5C9005D0A9A /* WriteResumeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DDF1B7CB5C9005D0A9A /* WriteResumeCell.m */; };
+		94313DF01B7CB5C9005D0A9A /* WriteResumeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94313DE01B7CB5C9005D0A9A /* WriteResumeCell.xib */; };
+		94313DF11B7CB5C9005D0A9A /* WriteResumeCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DE31B7CB5C9005D0A9A /* WriteResumeCell2.m */; };
+		94313DF21B7CB5C9005D0A9A /* WriteResumeCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94313DE41B7CB5C9005D0A9A /* WriteResumeCell2.xib */; };
+		94313DF31B7CB5C9005D0A9A /* WriteResumeVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DE61B7CB5C9005D0A9A /* WriteResumeVC2.m */; };
+		94313DF41B7CB5C9005D0A9A /* WriteResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DE81B7CB5C9005D0A9A /* WriteResumeViewController.m */; };
+		94313DF71B7CB610005D0A9A /* TH_HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DF51B7CB610005D0A9A /* TH_HomeVC.m */; };
 		94CB5B7A1B74CC0600B23B9D /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B561B74CC0600B23B9D /* BaseModel.m */; };
 		94CB5B7B1B74CC0600B23B9D /* HomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B581B74CC0600B23B9D /* HomePageModel.m */; };
 		94CB5B7C1B74CC0600B23B9D /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B5B1B74CC0600B23B9D /* MJArgument.m */; };
@@ -115,7 +118,6 @@
 		94CB5B8F1B74EF3900B23B9D /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B8E1B74EF3900B23B9D /* HomeView.m */; };
 		94CB5B911B74F0D500B23B9D /* HomeViews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94CB5B901B74F0D500B23B9D /* HomeViews.xib */; };
 		94CB5B9B1B7632E800B23B9D /* TH_BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B9A1B7632E800B23B9D /* TH_BaseVC.m */; };
-		94CB5B9E1B76334000B23B9D /* TH_HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B9D1B76334000B23B9D /* TH_HomeVC.m */; };
 		94CB5BA11B76342300B23B9D /* TH_SociallyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5BA01B76342300B23B9D /* TH_SociallyVC.m */; };
 		94CB5BA41B76343E00B23B9D /* TH_ClassVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5BA31B76343E00B23B9D /* TH_ClassVC.m */; };
 		94CB5BA71B76345D00B23B9D /* TH_MineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5BA61B76345D00B23B9D /* TH_MineVC.m */; };
@@ -124,8 +126,6 @@
 		94D900061B79992000F6FD36 /* CompanyProfil.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D900021B7998C200F6FD36 /* CompanyProfil.m */; };
 		94D9000A1B79996600F6FD36 /* JobDescription.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94D900081B79996600F6FD36 /* JobDescription.xib */; };
 		94D9000B1B79996600F6FD36 /* JobDescriptionlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D900091B79996600F6FD36 /* JobDescriptionlView.m */; };
-		94D900161B799CC900F6FD36 /* MineVeiw.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D900151B799CC900F6FD36 /* MineVeiw.m */; };
-		94D900181B799D2F00F6FD36 /* MineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94D900171B799D2F00F6FD36 /* MineView.xib */; };
 		94EAEAC31B78437A003C19DD /* TH_FindPracticeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EAEAC21B78437A003C19DD /* TH_FindPracticeVC.m */; };
 		94EDD4DF1B78302E00A00A78 /* THCustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDD4DE1B78302E00A00A78 /* THCustomNavigationController.m */; };
 		94EDD4E81B78319A00A00A78 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDD4E31B78319A00A00A78 /* UIBarButtonItem+Extension.m */; };
@@ -202,27 +202,8 @@
 		041650F01B4D7F19008C78BE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		04237D8E1B66456F00768FAD /* LoginAndRegisterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginAndRegisterRequest.h; sourceTree = "<group>"; };
 		04237D8F1B66456F00768FAD /* LoginAndRegisterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAndRegisterRequest.m; sourceTree = "<group>"; };
-		04718D9C1B7CB129008214CB /* ManagerResumeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerResumeVC.h; sourceTree = "<group>"; };
-		04718D9D1B7CB129008214CB /* ManagerResumeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerResumeVC.m; sourceTree = "<group>"; };
-		04718D9E1B7CB129008214CB /* ManagerResumeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManagerResumeVC.xib; sourceTree = "<group>"; };
-		04718DA11B7CD886008214CB /* WriteResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteResumeViewController.h; sourceTree = "<group>"; };
-		04718DA21B7CD886008214CB /* WriteResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteResumeViewController.m; sourceTree = "<group>"; };
 		04718DA51B7CDA26008214CB /* ZCControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCControl.h; sourceTree = "<group>"; };
 		04718DA61B7CDA26008214CB /* ZCControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCControl.m; sourceTree = "<group>"; };
-		04718DA91B7CE030008214CB /* WriteResumeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteResumeCell.h; sourceTree = "<group>"; };
-		04718DAA1B7CE030008214CB /* WriteResumeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteResumeCell.m; sourceTree = "<group>"; };
-		04718DAB1B7CE030008214CB /* WriteResumeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WriteResumeCell.xib; sourceTree = "<group>"; };
-		04718DAE1B7CEF4A008214CB /* ExceptCityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExceptCityCell.h; sourceTree = "<group>"; };
-		04718DAF1B7CEF4A008214CB /* ExceptCityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExceptCityCell.m; sourceTree = "<group>"; };
-		04718DB01B7CEF4A008214CB /* ExceptCityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExceptCityCell.xib; sourceTree = "<group>"; };
-		04718DB31B7D0408008214CB /* NameAndSexCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameAndSexCell.h; sourceTree = "<group>"; };
-		04718DB41B7D0408008214CB /* NameAndSexCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameAndSexCell.m; sourceTree = "<group>"; };
-		04718DB51B7D0408008214CB /* NameAndSexCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NameAndSexCell.xib; sourceTree = "<group>"; };
-		04718DB81B7D1734008214CB /* WriteResumeVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteResumeVC2.h; sourceTree = "<group>"; };
-		04718DB91B7D1734008214CB /* WriteResumeVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteResumeVC2.m; sourceTree = "<group>"; };
-		04718DBC1B7D17DF008214CB /* WriteResumeCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteResumeCell2.h; sourceTree = "<group>"; };
-		04718DBD1B7D17DF008214CB /* WriteResumeCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteResumeCell2.m; sourceTree = "<group>"; };
-		04718DBE1B7D17DF008214CB /* WriteResumeCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WriteResumeCell2.xib; sourceTree = "<group>"; };
 		048F30A61B7A1562004AA9B2 /* HotSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotSearch.h; sourceTree = "<group>"; };
 		048F30A71B7A1562004AA9B2 /* HotSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotSearch.m; sourceTree = "<group>"; };
 		048F30A91B7A1577004AA9B2 /* HotSearch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotSearch.xib; sourceTree = "<group>"; };
@@ -320,6 +301,30 @@
 		94313DC71B7CAB62005D0A9A /* AboutEggerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutEggerView.m; sourceTree = "<group>"; };
 		94313DC81B7CAB62005D0A9A /* TH_AboutEggshellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_AboutEggshellVC.h; sourceTree = "<group>"; };
 		94313DC91B7CAB62005D0A9A /* TH_AboutEggshellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_AboutEggshellVC.m; sourceTree = "<group>"; };
+		94313DCE1B7CAD6E005D0A9A /* MineVeiw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineVeiw.h; sourceTree = "<group>"; };
+		94313DCF1B7CAD6E005D0A9A /* MineVeiw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineVeiw.m; sourceTree = "<group>"; };
+		94313DD01B7CAD6E005D0A9A /* MineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineView.xib; sourceTree = "<group>"; };
+		94313DD41B7CB5C9005D0A9A /* ManagerResumeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerResumeVC.h; sourceTree = "<group>"; };
+		94313DD51B7CB5C9005D0A9A /* ManagerResumeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerResumeVC.m; sourceTree = "<group>"; };
+		94313DD61B7CB5C9005D0A9A /* ManagerResumeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManagerResumeVC.xib; sourceTree = "<group>"; };
+		94313DD81B7CB5C9005D0A9A /* ExceptCityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExceptCityCell.h; sourceTree = "<group>"; };
+		94313DD91B7CB5C9005D0A9A /* ExceptCityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExceptCityCell.m; sourceTree = "<group>"; };
+		94313DDA1B7CB5C9005D0A9A /* ExceptCityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExceptCityCell.xib; sourceTree = "<group>"; };
+		94313DDB1B7CB5C9005D0A9A /* NameAndSexCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameAndSexCell.h; sourceTree = "<group>"; };
+		94313DDC1B7CB5C9005D0A9A /* NameAndSexCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameAndSexCell.m; sourceTree = "<group>"; };
+		94313DDD1B7CB5C9005D0A9A /* NameAndSexCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NameAndSexCell.xib; sourceTree = "<group>"; };
+		94313DDE1B7CB5C9005D0A9A /* WriteResumeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteResumeCell.h; sourceTree = "<group>"; };
+		94313DDF1B7CB5C9005D0A9A /* WriteResumeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteResumeCell.m; sourceTree = "<group>"; };
+		94313DE01B7CB5C9005D0A9A /* WriteResumeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WriteResumeCell.xib; sourceTree = "<group>"; };
+		94313DE21B7CB5C9005D0A9A /* WriteResumeCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteResumeCell2.h; sourceTree = "<group>"; };
+		94313DE31B7CB5C9005D0A9A /* WriteResumeCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteResumeCell2.m; sourceTree = "<group>"; };
+		94313DE41B7CB5C9005D0A9A /* WriteResumeCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WriteResumeCell2.xib; sourceTree = "<group>"; };
+		94313DE51B7CB5C9005D0A9A /* WriteResumeVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteResumeVC2.h; sourceTree = "<group>"; };
+		94313DE61B7CB5C9005D0A9A /* WriteResumeVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteResumeVC2.m; sourceTree = "<group>"; };
+		94313DE71B7CB5C9005D0A9A /* WriteResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteResumeViewController.h; sourceTree = "<group>"; };
+		94313DE81B7CB5C9005D0A9A /* WriteResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteResumeViewController.m; sourceTree = "<group>"; };
+		94313DF51B7CB610005D0A9A /* TH_HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_HomeVC.m; sourceTree = "<group>"; };
+		94313DF61B7CB610005D0A9A /* TH_HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_HomeVC.h; sourceTree = "<group>"; };
 		94CB5B551B74CC0600B23B9D /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		94CB5B561B74CC0600B23B9D /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		94CB5B571B74CC0600B23B9D /* HomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageModel.h; sourceTree = "<group>"; };
@@ -360,8 +365,6 @@
 		94CB5B901B74F0D500B23B9D /* HomeViews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViews.xib; sourceTree = "<group>"; };
 		94CB5B991B7632E800B23B9D /* TH_BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_BaseVC.h; sourceTree = "<group>"; };
 		94CB5B9A1B7632E800B23B9D /* TH_BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_BaseVC.m; sourceTree = "<group>"; };
-		94CB5B9C1B76334000B23B9D /* TH_HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TH_HomeVC.h; path = HomeViewS/TH_HomeVC.h; sourceTree = "<group>"; };
-		94CB5B9D1B76334000B23B9D /* TH_HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TH_HomeVC.m; path = HomeViewS/TH_HomeVC.m; sourceTree = "<group>"; };
 		94CB5B9F1B76342300B23B9D /* TH_SociallyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_SociallyVC.h; sourceTree = "<group>"; };
 		94CB5BA01B76342300B23B9D /* TH_SociallyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_SociallyVC.m; sourceTree = "<group>"; };
 		94CB5BA21B76343E00B23B9D /* TH_ClassVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_ClassVC.h; sourceTree = "<group>"; };
@@ -376,9 +379,6 @@
 		94D900071B79995E00F6FD36 /* JobDescriptionlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDescriptionlView.h; sourceTree = "<group>"; };
 		94D900081B79996600F6FD36 /* JobDescription.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobDescription.xib; sourceTree = "<group>"; };
 		94D900091B79996600F6FD36 /* JobDescriptionlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDescriptionlView.m; sourceTree = "<group>"; };
-		94D900141B799CC900F6FD36 /* MineVeiw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineVeiw.h; sourceTree = "<group>"; };
-		94D900151B799CC900F6FD36 /* MineVeiw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineVeiw.m; sourceTree = "<group>"; };
-		94D900171B799D2F00F6FD36 /* MineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineView.xib; sourceTree = "<group>"; };
 		94EAEAC11B78437A003C19DD /* TH_FindPracticeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_FindPracticeVC.h; sourceTree = "<group>"; };
 		94EAEAC21B78437A003C19DD /* TH_FindPracticeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_FindPracticeVC.m; sourceTree = "<group>"; };
 		94EDD4DD1B78302E00A00A78 /* THCustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCustomNavigationController.h; sourceTree = "<group>"; };
@@ -605,22 +605,6 @@
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
-		04718D9B1B7CB0BB008214CB /* writeResume */ = {
-			isa = PBXGroup;
-			children = (
-				04718DBB1B7D1788008214CB /* SubViews2 */,
-				04718DA81B7CE008008214CB /* SubViews */,
-				04718D9C1B7CB129008214CB /* ManagerResumeVC.h */,
-				04718D9D1B7CB129008214CB /* ManagerResumeVC.m */,
-				04718D9E1B7CB129008214CB /* ManagerResumeVC.xib */,
-				04718DA11B7CD886008214CB /* WriteResumeViewController.h */,
-				04718DA21B7CD886008214CB /* WriteResumeViewController.m */,
-				04718DB81B7D1734008214CB /* WriteResumeVC2.h */,
-				04718DB91B7D1734008214CB /* WriteResumeVC2.m */,
-			);
-			path = writeResume;
-			sourceTree = "<group>";
-		};
 		04718DA41B7CDA26008214CB /* UI类 */ = {
 			isa = PBXGroup;
 			children = (
@@ -628,32 +612,6 @@
 				04718DA61B7CDA26008214CB /* ZCControl.m */,
 			);
 			path = "UI类";
-			sourceTree = "<group>";
-		};
-		04718DA81B7CE008008214CB /* SubViews */ = {
-			isa = PBXGroup;
-			children = (
-				04718DA91B7CE030008214CB /* WriteResumeCell.h */,
-				04718DAA1B7CE030008214CB /* WriteResumeCell.m */,
-				04718DAB1B7CE030008214CB /* WriteResumeCell.xib */,
-				04718DAE1B7CEF4A008214CB /* ExceptCityCell.h */,
-				04718DAF1B7CEF4A008214CB /* ExceptCityCell.m */,
-				04718DB01B7CEF4A008214CB /* ExceptCityCell.xib */,
-				04718DB31B7D0408008214CB /* NameAndSexCell.h */,
-				04718DB41B7D0408008214CB /* NameAndSexCell.m */,
-				04718DB51B7D0408008214CB /* NameAndSexCell.xib */,
-			);
-			path = SubViews;
-			sourceTree = "<group>";
-		};
-		04718DBB1B7D1788008214CB /* SubViews2 */ = {
-			isa = PBXGroup;
-			children = (
-				04718DBC1B7D17DF008214CB /* WriteResumeCell2.h */,
-				04718DBD1B7D17DF008214CB /* WriteResumeCell2.m */,
-				04718DBE1B7D17DF008214CB /* WriteResumeCell2.xib */,
-			);
-			path = SubViews2;
 			sourceTree = "<group>";
 		};
 		048F30AB1B7A4537004AA9B2 /* fmdb */ = {
@@ -713,13 +671,13 @@
 		04A483B51B74FD4D006FDB9D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				94313DF51B7CB610005D0A9A /* TH_HomeVC.m */,
+				94313DF61B7CB610005D0A9A /* TH_HomeVC.h */,
+				94313DD31B7CB5C9005D0A9A /* writeResume */,
 				94313DB01B7CAAED005D0A9A /* InformationDesk */,
 				94313DAC1B7CAAB5005D0A9A /* PlayFan */,
-				04718D9B1B7CB0BB008214CB /* writeResume */,
 				94313D3A1B7B6C19005D0A9A /* CompanyDetail */,
 				941F0FCC1B7A039F00719F5B /* EnterpriseDetail */,
-				94CB5B9C1B76334000B23B9D /* TH_HomeVC.h */,
-				94CB5B9D1B76334000B23B9D /* TH_HomeVC.m */,
 				04A0CD3F1B7A0FFE00EBCF01 /* SearchJob */,
 				94EAEAC01B784347003C19DD /* FindPractice */,
 				94EDD4F51B783F7800A00A78 /* FindPartTime */,
@@ -758,10 +716,10 @@
 		04A483C71B74FDF5006FDB9D /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				94313DCD1B7CAD6E005D0A9A /* MineView */,
 				94313DC41B7CAB62005D0A9A /* AboutEggshell */,
 				941F10291B7B400D00719F5B /* Login */,
 				941F101A1B7B3D1D00719F5B /* EditInformation */,
-				94D9000C1B799BE000F6FD36 /* MineView */,
 				94CB5BA51B76345D00B23B9D /* TH_MineVC.h */,
 				94CB5BA61B76345D00B23B9D /* TH_MineVC.m */,
 			);
@@ -1067,6 +1025,58 @@
 			path = AboutEggshell;
 			sourceTree = "<group>";
 		};
+		94313DCD1B7CAD6E005D0A9A /* MineView */ = {
+			isa = PBXGroup;
+			children = (
+				94313DCE1B7CAD6E005D0A9A /* MineVeiw.h */,
+				94313DCF1B7CAD6E005D0A9A /* MineVeiw.m */,
+				94313DD01B7CAD6E005D0A9A /* MineView.xib */,
+			);
+			path = MineView;
+			sourceTree = "<group>";
+		};
+		94313DD31B7CB5C9005D0A9A /* writeResume */ = {
+			isa = PBXGroup;
+			children = (
+				94313DD41B7CB5C9005D0A9A /* ManagerResumeVC.h */,
+				94313DD51B7CB5C9005D0A9A /* ManagerResumeVC.m */,
+				94313DD61B7CB5C9005D0A9A /* ManagerResumeVC.xib */,
+				94313DD71B7CB5C9005D0A9A /* SubViews */,
+				94313DE11B7CB5C9005D0A9A /* SubViews2 */,
+				94313DE51B7CB5C9005D0A9A /* WriteResumeVC2.h */,
+				94313DE61B7CB5C9005D0A9A /* WriteResumeVC2.m */,
+				94313DE71B7CB5C9005D0A9A /* WriteResumeViewController.h */,
+				94313DE81B7CB5C9005D0A9A /* WriteResumeViewController.m */,
+			);
+			path = writeResume;
+			sourceTree = "<group>";
+		};
+		94313DD71B7CB5C9005D0A9A /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				94313DD81B7CB5C9005D0A9A /* ExceptCityCell.h */,
+				94313DD91B7CB5C9005D0A9A /* ExceptCityCell.m */,
+				94313DDA1B7CB5C9005D0A9A /* ExceptCityCell.xib */,
+				94313DDB1B7CB5C9005D0A9A /* NameAndSexCell.h */,
+				94313DDC1B7CB5C9005D0A9A /* NameAndSexCell.m */,
+				94313DDD1B7CB5C9005D0A9A /* NameAndSexCell.xib */,
+				94313DDE1B7CB5C9005D0A9A /* WriteResumeCell.h */,
+				94313DDF1B7CB5C9005D0A9A /* WriteResumeCell.m */,
+				94313DE01B7CB5C9005D0A9A /* WriteResumeCell.xib */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		94313DE11B7CB5C9005D0A9A /* SubViews2 */ = {
+			isa = PBXGroup;
+			children = (
+				94313DE21B7CB5C9005D0A9A /* WriteResumeCell2.h */,
+				94313DE31B7CB5C9005D0A9A /* WriteResumeCell2.m */,
+				94313DE41B7CB5C9005D0A9A /* WriteResumeCell2.xib */,
+			);
+			path = SubViews2;
+			sourceTree = "<group>";
+		};
 		94CB5B531B74CBBE00B23B9D /* libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -1194,16 +1204,6 @@
 				94D900031B7998C200F6FD36 /* CompanyProfile.xib */,
 			);
 			path = CompanyProfil;
-			sourceTree = "<group>";
-		};
-		94D9000C1B799BE000F6FD36 /* MineView */ = {
-			isa = PBXGroup;
-			children = (
-				94D900141B799CC900F6FD36 /* MineVeiw.h */,
-				94D900151B799CC900F6FD36 /* MineVeiw.m */,
-				94D900171B799D2F00F6FD36 /* MineView.xib */,
-			);
-			path = MineView;
 			sourceTree = "<group>";
 		};
 		94E32F8A1B79957F00257C0F /* JobDetailView */ = {
@@ -1388,35 +1388,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94313DF21B7CB5C9005D0A9A /* WriteResumeCell2.xib in Resources */,
 				941F0FC21B79A71700719F5B /* Course PlayCell.xib in Resources */,
-				04718DB71B7D0408008214CB /* NameAndSexCell.xib in Resources */,
 				041650451B4D7142008C78BE /* LaunchScreen.xib in Resources */,
+				94313DEE1B7CB5C9005D0A9A /* NameAndSexCell.xib in Resources */,
 				04EC1F241B791B660009292E /* moreJobTableViewCell.xib in Resources */,
 				941F10251B7B3D1D00719F5B /* EditAddressVC.xib in Resources */,
 				04EC1F101B78F5510009292E /* SearchView.xib in Resources */,
-				04718DB21B7CEF4A008214CB /* ExceptCityCell.xib in Resources */,
 				94CB5B911B74F0D500B23B9D /* HomeViews.xib in Resources */,
 				94D9000A1B79996600F6FD36 /* JobDescription.xib in Resources */,
 				941F10171B7B3BCC00719F5B /* JobWishlistCell.xib in Resources */,
 				94CB5B891B74CC0600B23B9D /* LICENSE in Resources */,
 				F05440B91B788DAB00127A9B /* findjobtest.plist in Resources */,
 				941F10151B7B3BCC00719F5B /* JobWishList.xib in Resources */,
-				04718DA01B7CB129008214CB /* ManagerResumeVC.xib in Resources */,
 				94D900051B7998C200F6FD36 /* CompanyProfile.xib in Resources */,
 				041650421B4D7142008C78BE /* Images.xcassets in Resources */,
-				94D900181B799D2F00F6FD36 /* MineView.xib in Resources */,
 				94313DC21B7CAAED005D0A9A /* InformationDeskCell.xib in Resources */,
 				94313DBF1B7CAAED005D0A9A /* infDestDetailView.xib in Resources */,
+				94313DF01B7CB5C9005D0A9A /* WriteResumeCell.xib in Resources */,
 				941F0FC71B79BF5E00719F5B /* CourePlaytitle.xib in Resources */,
 				041650EB1B4D7C4E008C78BE /* MJRefresh.bundle in Resources */,
 				04A0CD451B7A110B00EBCF01 /* HeadView.xib in Resources */,
 				94313D351B7B46C2005D0A9A /* LoginView.xib in Resources */,
-				04718DC01B7D17DF008214CB /* WriteResumeCell2.xib in Resources */,
+				94313DEC1B7CB5C9005D0A9A /* ExceptCityCell.xib in Resources */,
 				04EC1F121B78F60C0009292E /* JobAlertView.xib in Resources */,
-				04718DAD1B7CE030008214CB /* WriteResumeCell.xib in Resources */,
+				94313DD21B7CAD6E005D0A9A /* MineView.xib in Resources */,
 				048F30AA1B7A1577004AA9B2 /* HotSearch.xib in Resources */,
 				941F10271B7B3D1D00719F5B /* MineEditInfoView.xib in Resources */,
 				94313DCA1B7CAB62005D0A9A /* AboutEgger.xib in Resources */,
+				94313DEA1B7CB5C9005D0A9A /* ManagerResumeVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1468,6 +1468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94EDD4EA1B78319A00A00A78 /* UIView+Extension.m in Sources */,
+				94313DEF1B7CB5C9005D0A9A /* WriteResumeCell.m in Sources */,
 				941F0FC51B79BF3F00719F5B /* CourePlayTitle.m in Sources */,
 				F0E9825D1B7C665A00898354 /* THCoursePlayVC.m in Sources */,
 				94CB5B801B74CC0600B23B9D /* MJMember.m in Sources */,
@@ -1475,41 +1476,38 @@
 				041650EE1B4D7C4E008C78BE /* MJRefreshFooterView.m in Sources */,
 				94CB5B7B1B74CC0600B23B9D /* HomePageModel.m in Sources */,
 				04A483D71B751E77006FDB9D /* Utils.m in Sources */,
-				04718DB61B7D0408008214CB /* NameAndSexCell.m in Sources */,
 				94CB5B8B1B74CC0600B23B9D /* SMPageControl.m in Sources */,
 				94EDD4E81B78319A00A00A78 /* UIBarButtonItem+Extension.m in Sources */,
 				94EDD4F41B7831DA00A00A78 /* ZXImagePickerVC.m in Sources */,
 				94CB5B7E1B74CC0600B23B9D /* MJFoundation.m in Sources */,
-				94CB5B9E1B76334000B23B9D /* TH_HomeVC.m in Sources */,
 				041650CA1B4D730F008C78BE /* MBProgressHUD+Show.m in Sources */,
-				04718DB11B7CEF4A008214CB /* ExceptCityCell.m in Sources */,
 				041650DF1B4D795B008C78BE /* AFAppRequest.m in Sources */,
 				F05440B11B7848B000127A9B /* HYSegmentedControl.m in Sources */,
 				94313DC31B7CAAED005D0A9A /* TH_InformationDeskVC.m in Sources */,
 				94313D401B7B6C19005D0A9A /* CompanyDetailVC.m in Sources */,
-				04718DBF1B7D17DF008214CB /* WriteResumeCell2.m in Sources */,
 				0416506B1B4D7240008C78BE /* GVarAdapter.m in Sources */,
-				04718D9F1B7CB129008214CB /* ManagerResumeVC.m in Sources */,
 				941F102C1B7B400D00719F5B /* TH_LoginVC.m in Sources */,
 				94313D7B1B7C1F2A005D0A9A /* TH_ForgotPasswordVC.m in Sources */,
 				048F30B71B7A4537004AA9B2 /* FMDatabase.m in Sources */,
 				04EC1F0F1B78F5510009292E /* SearchView.m in Sources */,
+				94313DED1B7CB5C9005D0A9A /* NameAndSexCell.m in Sources */,
 				941F0FCF1B7A03BE00719F5B /* TH_EnterpriseDetailVC.m in Sources */,
+				94313DEB1B7CB5C9005D0A9A /* ExceptCityCell.m in Sources */,
+				94313DF11B7CB5C9005D0A9A /* WriteResumeCell2.m in Sources */,
 				94313DC01B7CAAED005D0A9A /* TH_InformationDeskDetailVC.m in Sources */,
 				94CB5B831B74CC0600B23B9D /* MJTypeEncoding.m in Sources */,
 				04718DA71B7CDA26008214CB /* ZCControl.m in Sources */,
-				04718DBA1B7D1734008214CB /* WriteResumeVC2.m in Sources */,
 				94313D7F1B7C24B1005D0A9A /* TH_getCodeNextVC.m in Sources */,
 				94CB5BA41B76343E00B23B9D /* TH_ClassVC.m in Sources */,
 				041650691B4D7240008C78BE /* GObjAdapter.m in Sources */,
 				041650CB1B4D730F008C78BE /* MBProgressHUD.m in Sources */,
-				04718DA31B7CD886008214CB /* WriteResumeViewController.m in Sources */,
 				04A0CD481B7A111D00EBCF01 /* HeadView.m in Sources */,
 				94313DC11B7CAAED005D0A9A /* InformationDeskCell.m in Sources */,
 				041650671B4D7240008C78BE /* GAdapter.m in Sources */,
 				94CB5B7C1B74CC0600B23B9D /* MJArgument.m in Sources */,
 				94EAEAC31B78437A003C19DD /* TH_FindPracticeVC.m in Sources */,
 				94CB5B8F1B74EF3900B23B9D /* HomeView.m in Sources */,
+				94313DE91B7CB5C9005D0A9A /* ManagerResumeVC.m in Sources */,
 				94CB5BA71B76345D00B23B9D /* TH_MineVC.m in Sources */,
 				94EDD4F01B7831BB00A00A78 /* ZXButton.m in Sources */,
 				94CB5B7D1B74CC0600B23B9D /* MJConst.m in Sources */,
@@ -1522,7 +1520,6 @@
 				94313D391B7B5731005D0A9A /* TH_RegisterVC.m in Sources */,
 				94CB5BAB1B763AAC00B23B9D /* TH_FindJobVC.m in Sources */,
 				94D900061B79992000F6FD36 /* CompanyProfil.m in Sources */,
-				04718DAC1B7CE030008214CB /* WriteResumeCell.m in Sources */,
 				048F30B81B7A4537004AA9B2 /* FMDatabaseAdditions.m in Sources */,
 				0416503A1B4D7141008C78BE /* AppDelegate.m in Sources */,
 				041650371B4D7141008C78BE /* main.m in Sources */,
@@ -1532,6 +1529,7 @@
 				04237D901B66456F00768FAD /* LoginAndRegisterRequest.m in Sources */,
 				94313DAF1B7CAAB5005D0A9A /* TH_PlayFanVC.m in Sources */,
 				0416506A1B4D7240008C78BE /* Gson.m in Sources */,
+				94313DD11B7CAD6E005D0A9A /* MineVeiw.m in Sources */,
 				94D9000B1B79996600F6FD36 /* JobDescriptionlView.m in Sources */,
 				94313DCB1B7CAB62005D0A9A /* AboutEggerView.m in Sources */,
 				94CB5B851B74CC0600B23B9D /* NSObject+MJKeyValue.m in Sources */,
@@ -1552,8 +1550,11 @@
 				94EDD4F81B783FA700A00A78 /* TH_FindPartTimeVC.m in Sources */,
 				94EDD4DF1B78302E00A00A78 /* THCustomNavigationController.m in Sources */,
 				94CB5B811B74CC0600B23B9D /* MJMethod.m in Sources */,
+				94313DF31B7CB5C9005D0A9A /* WriteResumeVC2.m in Sources */,
 				94CB5BA11B76342300B23B9D /* TH_SociallyVC.m in Sources */,
+				94313DF71B7CB610005D0A9A /* TH_HomeVC.m in Sources */,
 				048F30BA1B7A4537004AA9B2 /* FMDatabaseQueue.m in Sources */,
+				94313DF41B7CB5C9005D0A9A /* WriteResumeViewController.m in Sources */,
 				041650EC1B4D7C4E008C78BE /* MJRefreshBaseView.m in Sources */,
 				F05440B71B7885F500127A9B /* UIBarButtonItem+DC.m in Sources */,
 				F0D7C06D1B79F92300836DD2 /* OpenClassModel.m in Sources */,
@@ -1569,7 +1570,6 @@
 				04EC1F251B791B660009292E /* TH_JobDetailVC.m in Sources */,
 				94CB5B9B1B7632E800B23B9D /* TH_BaseVC.m in Sources */,
 				94CB5B7A1B74CC0600B23B9D /* BaseModel.m in Sources */,
-				94D900161B799CC900F6FD36 /* MineVeiw.m in Sources */,
 				941F10161B7B3BCC00719F5B /* JobWishlistCell.m in Sources */,
 				041650681B4D7240008C78BE /* GArrayAdapter.m in Sources */,
 				941F10181B7B3BCC00719F5B /* JobWishlistHeadView.m in Sources */,

@@ -65,7 +65,7 @@
 }
 -(void)createTbleView{
 
-    UITableView * tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 40, WIDETH, HEIGHT-40-64-49) style:UITableViewStylePlain];
+    UITableView * tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 40, WIDETH, HEIGHT-40-49) style:UITableViewStylePlain];
     tableView.dataSource = self;
     tableView.delegate = self;
     self.tableView = tableView;

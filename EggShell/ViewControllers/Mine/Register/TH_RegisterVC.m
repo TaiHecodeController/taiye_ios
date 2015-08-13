@@ -79,7 +79,7 @@
     [self.scro addSubview:passwordBgView];
     
     //验证码
-    UIView *securityCodeBgView = [[UIView alloc] initWithFrame:CGRectMake(15, 125, (WIDETH - 40)/4.0*3, 45)];
+    UIView *securityCodeBgView = [[UIView alloc] initWithFrame:CGRectMake(15, 125, (WIDETH - 40)/4.0*3-10, 45)];
     securityCodeBgView.layer.borderColor = color(221, 221, 221).CGColor;
     securityCodeBgView.layer.borderWidth = 0.5;
     securityCodeBgView.layer.cornerRadius = 3;
@@ -93,7 +93,7 @@
     securityLineView.backgroundColor = color(221, 221, 221);
     [securityCodeBgView addSubview:securityLineView];
     
-    UITextField * securiedTextField = [[UITextField alloc] initWithFrame:CGRectMake(80, 0, WIDETH- 30 - 80, 45)];
+    UITextField * securiedTextField = [[UITextField alloc] initWithFrame:CGRectMake(80, 0, WIDETH- 30 - 80-10, 45)];
     securiedTextField.placeholder = @"请输入验证码";
     securiedTextField.font =[UIFont systemFontOfSize:13];
     securiedTextField.textColor  = color(200, 200, 200);
@@ -101,11 +101,11 @@
     
     [self.scro addSubview:securityCodeBgView];
     
-    UIView * securityCodeRightBgView = [[UIView alloc] initWithFrame:CGRectMake(WIDETH-((WIDETH - 40)/4.0+15), 125, (WIDETH - 40)/4.0*1, 45)];
+    UIView * securityCodeRightBgView = [[UIView alloc] initWithFrame:CGRectMake(WIDETH-((WIDETH - 40)/4.0+25), 125, (WIDETH - 40)/4.0*1+10, 45)];
     securityCodeRightBgView.backgroundColor = [UIColor greenColor];
     securityCodeRightBgView.layer.cornerRadius = 3;
     securityCodeRightBgView.layer.masksToBounds = YES;
-    UIButton * securityCodeBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, (WIDETH - 40)/4.0*1, 45)];
+    UIButton * securityCodeBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, (WIDETH - 40)/4.0*1+10, 45)];
      [securityCodeBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
    
     [securityCodeBtn setBackgroundImage:[UIImage imageNamed:@"lvs"] forState:UIControlStateNormal];

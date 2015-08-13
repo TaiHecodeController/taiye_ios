@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface WriteResumeVC2 : UIViewController
+@property (strong,nonatomic)UILabel * resumeNameLab;
 
 @end

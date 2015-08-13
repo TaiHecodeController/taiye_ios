@@ -10,6 +10,7 @@
 #import "WriteResumeCell.h"
 #import "ExceptCityCell.h"
 #import "NameAndSexCell.h"
+#import "WriteResumeVC2.h"
 
 @interface WriteResumeViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -97,40 +98,38 @@
 
 -(void)nextClick
 {
-    for(int i = 0;i < self.jobCellArray.count;i++)
-    {
-        if(i==4)
-        {
-            continue;
-        }else
-        {
-            WriteResumeCell * cell = self.jobCellArray[i];
-            NSLog(@"%@",cell.contentTextField.text);
-        }
-        
-    }
-    
-    for(int i = 0;i < self.jobCellArray2.count;i++)
-    {
-        if(i==0)
-        {
-            continue;
-        }else
-        {
-            WriteResumeCell * cell = self.jobCellArray[i];
-            NSLog(@"%@",cell.contentTextField.text);
-        }
-        
-    }
-    
+//    for(int i = 0;i < self.jobCellArray.count;i++)
+//    {
+//        if(i==4)
+//        {
+//            continue;
+//        }else
+//        {
+//            WriteResumeCell * cell = self.jobCellArray[i];
+//            NSLog(@"%@",cell.contentTextField.text);
+//        }
+//        
+//    }
+//    
+//    for(int i = 0;i < self.jobCellArray2.count;i++)
+//    {
+//        if(i==0)
+//        {
+//            continue;
+//        }else
+//        {
+//            WriteResumeCell * cell = self.jobCellArray[i];
+//            NSLog(@"%@",cell.contentTextField.text);
+//        }
+//        
+//    }
+    WriteResumeVC2 * wrvc2 = [[WriteResumeVC2 alloc] init];
+    [self.navigationController pushViewController:wrvc2 animated:YES];
     
 
 }
 
--(void)tap
-{
-    
-}
+
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
