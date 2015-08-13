@@ -28,6 +28,7 @@
     self.window.rootViewController = self.mainTabBar;
 
 
+
 //    [self checkVersion];
 //    self.window.rootViewController = [[WriteResumeViewController alloc] init];
    

@@ -32,6 +32,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"写简历";
     self.jobCellArray = [NSMutableArray arrayWithCapacity:0];
     self.jobCellArray2 = [NSMutableArray arrayWithCapacity:0];
     [self createData];
@@ -53,7 +54,7 @@
 {
     //最底层ScrollView
     UIScrollView *back_sv = [[UIScrollView alloc] initWithFrame:self.view.bounds];
-    back_sv.contentSize = CGSizeMake(WIDETH, 754);
+    back_sv.contentSize = CGSizeMake(WIDETH, 754 + 64);
     back_sv.backgroundColor = [UIColor colorWithRed:243 / 255.0 green:243 / 255.0 blue:241 / 255.0 alpha:1];
     [self.view addSubview:back_sv];
     [back_sv addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)]];
