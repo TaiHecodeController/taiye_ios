@@ -23,6 +23,8 @@
 #import "DataBase.h"
 #import "CompanyDetailVC.h"
 
+#import "WriteResumeViewController.h"
+
 @interface TH_HomeVC ()<UIScrollViewDelegate,SGFocusImageFrameDelegate,THHomeVieWDelegate>
 {
     UIView * _navBackView;
@@ -152,7 +154,8 @@
         }
         case THHomeViewButtonTypeResumeWriting:
         {NSLog(@"写简历");
-            [self.navigationController pushViewController:home animated:YES];
+            WriteResumeViewController * writeVC = [[WriteResumeViewController alloc] init];
+            [self.navigationController pushViewController:writeVC animated:YES];
             break;
         }
         case THHomeViewButtonTypePlayFan:
