@@ -84,6 +84,16 @@
 		94313D411B7B6C19005D0A9A /* CompanyMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313D3F1B7B6C19005D0A9A /* CompanyMessageView.m */; };
 		94313D7B1B7C1F2A005D0A9A /* TH_ForgotPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313D7A1B7C1F2A005D0A9A /* TH_ForgotPasswordVC.m */; };
 		94313D7F1B7C24B1005D0A9A /* TH_getCodeNextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313D7E1B7C24B1005D0A9A /* TH_getCodeNextVC.m */; };
+		94313DAF1B7CAAB5005D0A9A /* TH_PlayFanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DAE1B7CAAB5005D0A9A /* TH_PlayFanVC.m */; };
+		94313DBE1B7CAAED005D0A9A /* infDestDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DB41B7CAAED005D0A9A /* infDestDetailView.m */; };
+		94313DBF1B7CAAED005D0A9A /* infDestDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94313DB51B7CAAED005D0A9A /* infDestDetailView.xib */; };
+		94313DC01B7CAAED005D0A9A /* TH_InformationDeskDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DB71B7CAAED005D0A9A /* TH_InformationDeskDetailVC.m */; };
+		94313DC11B7CAAED005D0A9A /* InformationDeskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DBA1B7CAAED005D0A9A /* InformationDeskCell.m */; };
+		94313DC21B7CAAED005D0A9A /* InformationDeskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94313DBB1B7CAAED005D0A9A /* InformationDeskCell.xib */; };
+		94313DC31B7CAAED005D0A9A /* TH_InformationDeskVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DBD1B7CAAED005D0A9A /* TH_InformationDeskVC.m */; };
+		94313DCA1B7CAB62005D0A9A /* AboutEgger.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94313DC51B7CAB62005D0A9A /* AboutEgger.xib */; };
+		94313DCB1B7CAB62005D0A9A /* AboutEggerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DC71B7CAB62005D0A9A /* AboutEggerView.m */; };
+		94313DCC1B7CAB62005D0A9A /* TH_AboutEggshellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DC91B7CAB62005D0A9A /* TH_AboutEggshellVC.m */; };
 		94CB5B7A1B74CC0600B23B9D /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B561B74CC0600B23B9D /* BaseModel.m */; };
 		94CB5B7B1B74CC0600B23B9D /* HomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B581B74CC0600B23B9D /* HomePageModel.m */; };
 		94CB5B7C1B74CC0600B23B9D /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B5B1B74CC0600B23B9D /* MJArgument.m */; };
@@ -293,6 +303,23 @@
 		94313D7A1B7C1F2A005D0A9A /* TH_ForgotPasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_ForgotPasswordVC.m; sourceTree = "<group>"; };
 		94313D7D1B7C24B1005D0A9A /* TH_getCodeNextVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_getCodeNextVC.h; sourceTree = "<group>"; };
 		94313D7E1B7C24B1005D0A9A /* TH_getCodeNextVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_getCodeNextVC.m; sourceTree = "<group>"; };
+		94313DAD1B7CAAB5005D0A9A /* TH_PlayFanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_PlayFanVC.h; sourceTree = "<group>"; };
+		94313DAE1B7CAAB5005D0A9A /* TH_PlayFanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_PlayFanVC.m; sourceTree = "<group>"; };
+		94313DB31B7CAAED005D0A9A /* infDestDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infDestDetailView.h; sourceTree = "<group>"; };
+		94313DB41B7CAAED005D0A9A /* infDestDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infDestDetailView.m; sourceTree = "<group>"; };
+		94313DB51B7CAAED005D0A9A /* infDestDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infDestDetailView.xib; sourceTree = "<group>"; };
+		94313DB61B7CAAED005D0A9A /* TH_InformationDeskDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_InformationDeskDetailVC.h; sourceTree = "<group>"; };
+		94313DB71B7CAAED005D0A9A /* TH_InformationDeskDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_InformationDeskDetailVC.m; sourceTree = "<group>"; };
+		94313DB91B7CAAED005D0A9A /* InformationDeskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationDeskCell.h; sourceTree = "<group>"; };
+		94313DBA1B7CAAED005D0A9A /* InformationDeskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationDeskCell.m; sourceTree = "<group>"; };
+		94313DBB1B7CAAED005D0A9A /* InformationDeskCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationDeskCell.xib; sourceTree = "<group>"; };
+		94313DBC1B7CAAED005D0A9A /* TH_InformationDeskVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_InformationDeskVC.h; sourceTree = "<group>"; };
+		94313DBD1B7CAAED005D0A9A /* TH_InformationDeskVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_InformationDeskVC.m; sourceTree = "<group>"; };
+		94313DC51B7CAB62005D0A9A /* AboutEgger.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutEgger.xib; sourceTree = "<group>"; };
+		94313DC61B7CAB62005D0A9A /* AboutEggerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutEggerView.h; sourceTree = "<group>"; };
+		94313DC71B7CAB62005D0A9A /* AboutEggerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutEggerView.m; sourceTree = "<group>"; };
+		94313DC81B7CAB62005D0A9A /* TH_AboutEggshellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_AboutEggshellVC.h; sourceTree = "<group>"; };
+		94313DC91B7CAB62005D0A9A /* TH_AboutEggshellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_AboutEggshellVC.m; sourceTree = "<group>"; };
 		94CB5B551B74CC0600B23B9D /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		94CB5B561B74CC0600B23B9D /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		94CB5B571B74CC0600B23B9D /* HomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageModel.h; sourceTree = "<group>"; };
@@ -686,6 +713,8 @@
 		04A483B51B74FD4D006FDB9D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				94313DB01B7CAAED005D0A9A /* InformationDesk */,
+				94313DAC1B7CAAB5005D0A9A /* PlayFan */,
 				04718D9B1B7CB0BB008214CB /* writeResume */,
 				94313D3A1B7B6C19005D0A9A /* CompanyDetail */,
 				941F0FCC1B7A039F00719F5B /* EnterpriseDetail */,
@@ -729,6 +758,7 @@
 		04A483C71B74FDF5006FDB9D /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				94313DC41B7CAB62005D0A9A /* AboutEggshell */,
 				941F10291B7B400D00719F5B /* Login */,
 				941F101A1B7B3D1D00719F5B /* EditInformation */,
 				94D9000C1B799BE000F6FD36 /* MineView */,
@@ -973,6 +1003,68 @@
 			);
 			name = getCodeNext;
 			path = ../getCodeNext;
+			sourceTree = "<group>";
+		};
+		94313DAC1B7CAAB5005D0A9A /* PlayFan */ = {
+			isa = PBXGroup;
+			children = (
+				94313DAD1B7CAAB5005D0A9A /* TH_PlayFanVC.h */,
+				94313DAE1B7CAAB5005D0A9A /* TH_PlayFanVC.m */,
+			);
+			path = PlayFan;
+			sourceTree = "<group>";
+		};
+		94313DB01B7CAAED005D0A9A /* InformationDesk */ = {
+			isa = PBXGroup;
+			children = (
+				94313DB11B7CAAED005D0A9A /* InformationDeskDetail */,
+				94313DB81B7CAAED005D0A9A /* InformationDeskView */,
+				94313DBC1B7CAAED005D0A9A /* TH_InformationDeskVC.h */,
+				94313DBD1B7CAAED005D0A9A /* TH_InformationDeskVC.m */,
+			);
+			path = InformationDesk;
+			sourceTree = "<group>";
+		};
+		94313DB11B7CAAED005D0A9A /* InformationDeskDetail */ = {
+			isa = PBXGroup;
+			children = (
+				94313DB21B7CAAED005D0A9A /* infDestDetailView */,
+				94313DB61B7CAAED005D0A9A /* TH_InformationDeskDetailVC.h */,
+				94313DB71B7CAAED005D0A9A /* TH_InformationDeskDetailVC.m */,
+			);
+			path = InformationDeskDetail;
+			sourceTree = "<group>";
+		};
+		94313DB21B7CAAED005D0A9A /* infDestDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				94313DB31B7CAAED005D0A9A /* infDestDetailView.h */,
+				94313DB41B7CAAED005D0A9A /* infDestDetailView.m */,
+				94313DB51B7CAAED005D0A9A /* infDestDetailView.xib */,
+			);
+			path = infDestDetailView;
+			sourceTree = "<group>";
+		};
+		94313DB81B7CAAED005D0A9A /* InformationDeskView */ = {
+			isa = PBXGroup;
+			children = (
+				94313DB91B7CAAED005D0A9A /* InformationDeskCell.h */,
+				94313DBA1B7CAAED005D0A9A /* InformationDeskCell.m */,
+				94313DBB1B7CAAED005D0A9A /* InformationDeskCell.xib */,
+			);
+			path = InformationDeskView;
+			sourceTree = "<group>";
+		};
+		94313DC41B7CAB62005D0A9A /* AboutEggshell */ = {
+			isa = PBXGroup;
+			children = (
+				94313DC51B7CAB62005D0A9A /* AboutEgger.xib */,
+				94313DC61B7CAB62005D0A9A /* AboutEggerView.h */,
+				94313DC71B7CAB62005D0A9A /* AboutEggerView.m */,
+				94313DC81B7CAB62005D0A9A /* TH_AboutEggshellVC.h */,
+				94313DC91B7CAB62005D0A9A /* TH_AboutEggshellVC.m */,
+			);
+			path = AboutEggshell;
 			sourceTree = "<group>";
 		};
 		94CB5B531B74CBBE00B23B9D /* libs */ = {
@@ -1313,6 +1405,8 @@
 				94D900051B7998C200F6FD36 /* CompanyProfile.xib in Resources */,
 				041650421B4D7142008C78BE /* Images.xcassets in Resources */,
 				94D900181B799D2F00F6FD36 /* MineView.xib in Resources */,
+				94313DC21B7CAAED005D0A9A /* InformationDeskCell.xib in Resources */,
+				94313DBF1B7CAAED005D0A9A /* infDestDetailView.xib in Resources */,
 				941F0FC71B79BF5E00719F5B /* CourePlaytitle.xib in Resources */,
 				041650EB1B4D7C4E008C78BE /* MJRefresh.bundle in Resources */,
 				04A0CD451B7A110B00EBCF01 /* HeadView.xib in Resources */,
@@ -1322,6 +1416,7 @@
 				04718DAD1B7CE030008214CB /* WriteResumeCell.xib in Resources */,
 				048F30AA1B7A1577004AA9B2 /* HotSearch.xib in Resources */,
 				941F10271B7B3D1D00719F5B /* MineEditInfoView.xib in Resources */,
+				94313DCA1B7CAB62005D0A9A /* AboutEgger.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1390,6 +1485,7 @@
 				04718DB11B7CEF4A008214CB /* ExceptCityCell.m in Sources */,
 				041650DF1B4D795B008C78BE /* AFAppRequest.m in Sources */,
 				F05440B11B7848B000127A9B /* HYSegmentedControl.m in Sources */,
+				94313DC31B7CAAED005D0A9A /* TH_InformationDeskVC.m in Sources */,
 				94313D401B7B6C19005D0A9A /* CompanyDetailVC.m in Sources */,
 				04718DBF1B7D17DF008214CB /* WriteResumeCell2.m in Sources */,
 				0416506B1B4D7240008C78BE /* GVarAdapter.m in Sources */,
@@ -1399,6 +1495,7 @@
 				048F30B71B7A4537004AA9B2 /* FMDatabase.m in Sources */,
 				04EC1F0F1B78F5510009292E /* SearchView.m in Sources */,
 				941F0FCF1B7A03BE00719F5B /* TH_EnterpriseDetailVC.m in Sources */,
+				94313DC01B7CAAED005D0A9A /* TH_InformationDeskDetailVC.m in Sources */,
 				94CB5B831B74CC0600B23B9D /* MJTypeEncoding.m in Sources */,
 				04718DA71B7CDA26008214CB /* ZCControl.m in Sources */,
 				04718DBA1B7D1734008214CB /* WriteResumeVC2.m in Sources */,
@@ -1408,6 +1505,7 @@
 				041650CB1B4D730F008C78BE /* MBProgressHUD.m in Sources */,
 				04718DA31B7CD886008214CB /* WriteResumeViewController.m in Sources */,
 				04A0CD481B7A111D00EBCF01 /* HeadView.m in Sources */,
+				94313DC11B7CAAED005D0A9A /* InformationDeskCell.m in Sources */,
 				041650671B4D7240008C78BE /* GAdapter.m in Sources */,
 				94CB5B7C1B74CC0600B23B9D /* MJArgument.m in Sources */,
 				94EAEAC31B78437A003C19DD /* TH_FindPracticeVC.m in Sources */,
@@ -1432,8 +1530,10 @@
 				94CB5B7F1B74CC0600B23B9D /* MJIvar.m in Sources */,
 				041650ED1B4D7C4E008C78BE /* MJRefreshConst.m in Sources */,
 				04237D901B66456F00768FAD /* LoginAndRegisterRequest.m in Sources */,
+				94313DAF1B7CAAB5005D0A9A /* TH_PlayFanVC.m in Sources */,
 				0416506A1B4D7240008C78BE /* Gson.m in Sources */,
 				94D9000B1B79996600F6FD36 /* JobDescriptionlView.m in Sources */,
+				94313DCB1B7CAB62005D0A9A /* AboutEggerView.m in Sources */,
 				94CB5B851B74CC0600B23B9D /* NSObject+MJKeyValue.m in Sources */,
 				941F10191B7B3BCC00719F5B /* TH_JobWishlistVC.m in Sources */,
 				941F10281B7B3D1D00719F5B /* MineEditVC.m in Sources */,
@@ -1446,6 +1546,7 @@
 				94EDD4E91B78319A00A00A78 /* UILabel+Extension.m in Sources */,
 				F05440BC1B788FE000127A9B /* jobModel.m in Sources */,
 				048F30B91B7A4537004AA9B2 /* FMDatabasePool.m in Sources */,
+				94313DCC1B7CAB62005D0A9A /* TH_AboutEggshellVC.m in Sources */,
 				F05440B41B7870B800127A9B /* jobTableViewCell.m in Sources */,
 				94CB5B861B74CC0600B23B9D /* NSObject+MJMember.m in Sources */,
 				94EDD4F81B783FA700A00A78 /* TH_FindPartTimeVC.m in Sources */,
@@ -1462,6 +1563,7 @@
 				94313D411B7B6C19005D0A9A /* CompanyMessageView.m in Sources */,
 				941F10241B7B3D1D00719F5B /* EditAddressVC.m in Sources */,
 				041650EF1B4D7C4E008C78BE /* MJRefreshHeaderView.m in Sources */,
+				94313DBE1B7CAAED005D0A9A /* infDestDetailView.m in Sources */,
 				04A483B41B74FD1B006FDB9D /* TH_MainTabBarController.m in Sources */,
 				F0D7C0611B79EB3300836DD2 /* OpenClassVideoListRequest.m in Sources */,
 				04EC1F251B791B660009292E /* TH_JobDetailVC.m in Sources */,
