@@ -47,7 +47,6 @@
 		04EC1F231B791B660009292E /* moreJobTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC1F1D1B791B660009292E /* moreJobTableViewCell.m */; };
 		04EC1F241B791B660009292E /* moreJobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EC1F1E1B791B660009292E /* moreJobTableViewCell.xib */; };
 		04EC1F251B791B660009292E /* TH_JobDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC1F201B791B660009292E /* TH_JobDetailVC.m */; };
-		941F0FAF1B79A5A200719F5B /* THCoursePlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F0FAE1B79A5A200719F5B /* THCoursePlayVC.m */; };
 		941F0FC11B79A71700719F5B /* Course PlayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F0FBF1B79A71700719F5B /* Course PlayCell.m */; };
 		941F0FC21B79A71700719F5B /* Course PlayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 941F0FC01B79A71700719F5B /* Course PlayCell.xib */; };
 		941F0FC51B79BF3F00719F5B /* CourePlayTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F0FC41B79BF3F00719F5B /* CourePlayTitle.m */; };
@@ -126,6 +125,7 @@
 		F0D7C05B1B79CC6400836DD2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D7C05A1B79CC6400836DD2 /* libz.dylib */; };
 		F0D7C0611B79EB3300836DD2 /* OpenClassVideoListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D7C0601B79EB3300836DD2 /* OpenClassVideoListRequest.m */; };
 		F0D7C06D1B79F92300836DD2 /* OpenClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D7C06C1B79F92300836DD2 /* OpenClassModel.m */; };
+		F0E9825D1B7C665A00898354 /* THCoursePlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E9825C1B7C665A00898354 /* THCoursePlayVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,8 +218,6 @@
 		04EC1F201B791B660009292E /* TH_JobDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_JobDetailVC.m; sourceTree = "<group>"; };
 		37454D869BE49FA62A71A04C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C8CB3344C41F9F3DBAC076 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		941F0FAD1B79A5A200719F5B /* THCoursePlayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCoursePlayVC.h; sourceTree = "<group>"; };
-		941F0FAE1B79A5A200719F5B /* THCoursePlayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCoursePlayVC.m; sourceTree = "<group>"; };
 		941F0FBE1B79A71700719F5B /* Course PlayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Course PlayCell.h"; sourceTree = "<group>"; };
 		941F0FBF1B79A71700719F5B /* Course PlayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Course PlayCell.m"; sourceTree = "<group>"; };
 		941F0FC01B79A71700719F5B /* Course PlayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Course PlayCell.xib"; sourceTree = "<group>"; };
@@ -368,6 +366,8 @@
 		F0D7C06B1B79F92300836DD2 /* OpenClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenClassModel.h; path = libpolyvSDK/OpenClassModel.h; sourceTree = "<group>"; };
 		F0D7C06C1B79F92300836DD2 /* OpenClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenClassModel.m; path = libpolyvSDK/OpenClassModel.m; sourceTree = "<group>"; };
 		F0D7C06E1B7A009A00836DD2 /* libPods-SDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-SDWebImage.a"; path = "Pods/../build/Debug-iphoneos/libPods-SDWebImage.a"; sourceTree = "<group>"; };
+		F0E9825B1B7C665A00898354 /* THCoursePlayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCoursePlayVC.h; sourceTree = "<group>"; };
+		F0E9825C1B7C665A00898354 /* THCoursePlayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCoursePlayVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -732,9 +732,9 @@
 		941F0FA71B79A58000719F5B /* CoursePlay */ = {
 			isa = PBXGroup;
 			children = (
+				F0E9825B1B7C665A00898354 /* THCoursePlayVC.h */,
+				F0E9825C1B7C665A00898354 /* THCoursePlayVC.m */,
 				941F0FB01B79A5CD00719F5B /* CoursePlayview */,
-				941F0FAD1B79A5A200719F5B /* THCoursePlayVC.h */,
-				941F0FAE1B79A5A200719F5B /* THCoursePlayVC.m */,
 			);
 			path = CoursePlay;
 			sourceTree = "<group>";
@@ -1282,6 +1282,7 @@
 			files = (
 				94EDD4EA1B78319A00A00A78 /* UIView+Extension.m in Sources */,
 				941F0FC51B79BF3F00719F5B /* CourePlayTitle.m in Sources */,
+				F0E9825D1B7C665A00898354 /* THCoursePlayVC.m in Sources */,
 				94CB5B801B74CC0600B23B9D /* MJMember.m in Sources */,
 				94CB5B821B74CC0600B23B9D /* MJType.m in Sources */,
 				041650EE1B4D7C4E008C78BE /* MJRefreshFooterView.m in Sources */,
@@ -1330,7 +1331,6 @@
 				048F30A81B7A1562004AA9B2 /* HotSearch.m in Sources */,
 				94CB5B7F1B74CC0600B23B9D /* MJIvar.m in Sources */,
 				041650ED1B4D7C4E008C78BE /* MJRefreshConst.m in Sources */,
-				941F0FAF1B79A5A200719F5B /* THCoursePlayVC.m in Sources */,
 				04237D901B66456F00768FAD /* LoginAndRegisterRequest.m in Sources */,
 				0416506A1B4D7240008C78BE /* Gson.m in Sources */,
 				94D9000B1B79996600F6FD36 /* JobDescriptionlView.m in Sources */,

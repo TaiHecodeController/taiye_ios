@@ -4,7 +4,7 @@
 //
 //  Created by 李李贤军 on 15/8/11.
 //  Copyright (c) 2015年 wsd. All rights reserved.
-//
+// 
 
 #import "THCoursePlayVC.h"
 #import "Course PlayCell.h"
@@ -17,6 +17,8 @@
 //课程标题cell
 #import "Course PlayCell.h"
 #import "CourePlayTitle.h"
+#import "UIBarButtonItem+DC.h"
+
 
 #define TopViewHeight 44
 //#define BottomViewHeight 72
@@ -42,8 +44,6 @@ typedef NS_ENUM(NSInteger, GestureType){
 - (CGFloat)getProgressByIdentifier:(NSString *)identifier;
 
 @end
-
-
 
 @interface THCoursePlayVC ()<UIAlertViewDelegate,UITableViewDataSource,UITableViewDelegate>
 
@@ -170,6 +170,16 @@ typedef NS_ENUM(NSInteger, GestureType){
 //        [self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
 //    }
 //    self.view.backgroundColor = [UIColor blackColor];
+    
+    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    backBtn.frame = CGRectMake(0, 0, 44, 44);
+    
+    [backBtn setImage:[UIImage imageNamed:@"fanhui"] forState:UIControlStateNormal];
+    [backBtn addTarget:self action:@selector(leftBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+    self.navigationItem.leftBarButtonItem = backItem;
+    
     [self createTopView];
     //    [self createBottomView];
     [self createAvPlayer];
@@ -212,6 +222,7 @@ typedef NS_ENUM(NSInteger, GestureType){
     [self createCourePlay];
     [self createTableView];
 }
+
 #pragma mark -- 添加课程标题列表
 -(void)createCourePlay
 {
@@ -238,7 +249,7 @@ typedef NS_ENUM(NSInteger, GestureType){
 {
     Course_PlayCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ID"];
     if (!cell) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"Course PlayCell" owner:self options:nil] lastObject];
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"Course PlayCell" owner:self options:nil] firstObject];
     }
     
     [cell setOrderValue:(int)indexPath.row];
@@ -271,7 +282,12 @@ typedef NS_ENUM(NSInteger, GestureType){
     [super viewWillDisappear:animated];
     //    [MobClick endLogPageView:@"视频播放"];
     
-    [self popView];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
 }
 
 - (void)createAvPlayer{
@@ -505,7 +521,7 @@ typedef NS_ENUM(NSInteger, GestureType){
     _remainingTimeLable.textAlignment = NSTextAlignmentCenter;
     [_bottomView addSubview:_remainingTimeLable];
     
-    [self.view addSubview:_bottomView];
+//    [self.view addSubview:_bottomView];
     
     [_fastBackwardBtn setHidden:YES];
     [_fastForeardBtn setHidden:YES];
@@ -525,7 +541,7 @@ typedef NS_ENUM(NSInteger, GestureType){
     _brightnessProgress.progressImage = [UIImage imageNamed:@"video_num_front.png"];
     _brightnessProgress.progress = [UIScreen mainScreen].brightness;
     [_brightnessView addSubview:_brightnessProgress];
-    [self.view addSubview:_brightnessView];
+//    [self.view addSubview:_brightnessView];
     _brightnessView.alpha = 0;
 }
 
@@ -549,7 +565,7 @@ typedef NS_ENUM(NSInteger, GestureType){
     _progressTimeLable_bottom.shadowOffset = CGSizeMake(1.0, 1.0);
     [_progressTimeView addSubview:_progressTimeLable_bottom];
     
-    [self.view addSubview:_progressTimeView];
+//    [self.view addSubview:_progressTimeView];
 }
 - (void)updateProfressTimeLable{
     double currentTime = floor(_movieLength *_movieProgressSlider.value);
@@ -830,8 +846,8 @@ typedef NS_ENUM(NSInteger, GestureType){
 - (void)removeObserversFromVideoPlayerItem
 {
     [_player.currentItem removeObserver:self forKeyPath:@"status"];
-    [_player.currentItem removeObserver:self forKeyPath:@"playbackBufferEmpty"];
-    [_player.currentItem removeObserver:self forKeyPath:@"playbackLikelyToKeepUp"];
+//    [_player.currentItem removeObserver:self forKeyPath:@"playbackBufferEmpty"];
+//    [_player.currentItem removeObserver:self forKeyPath:@"playbackLikelyToKeepUp"];
     //    [_player.currentItem removeObserver:self forKeyPath:@"loadedTimeRanges"];
 }
 
@@ -879,6 +895,14 @@ typedef NS_ENUM(NSInteger, GestureType){
     _gestureType = GestureTypeOfNone;
     _progressTimeView.hidden = YES;
     [self scrubberIsScrolling];
+}
+
+- (void)leftBtnClick
+{
+    THLog(@"左侧按钮被点击");
+    [self popView];
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark touch event
@@ -992,6 +1016,10 @@ typedef NS_ENUM(NSInteger, GestureType){
 - (void)returnBtnClick
 {
     THLog(@"returnBtnClick被点击");
+//    CGAffineTransform landscapeTransform = CGAffineTransformMakeRotation(M_PI / 2);
+//    self.PLvideoPlayer.view.transform = landscapeTransform;
+//    self.PLvideoPlayer.view.frame = CGRectMake(0, 0, 320, 568);
+    
 }
 
 - (void)downBtnClick
@@ -999,12 +1027,12 @@ typedef NS_ENUM(NSInteger, GestureType){
     THLog(@"downBtnClick被点击");
 }
 //横屏
-//- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-//    return (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight);
-//}
-//- (NSUInteger)supportedInterfaceOrientations {
-//    return UIInterfaceOrientationMaskLandscapeRight;
-//}
+- (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    return (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight);
+}
+- (NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskLandscapeRight;
+}
 
 //- (void)dealloc{
 //    NSLog(@"dealloc");
