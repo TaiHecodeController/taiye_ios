@@ -10,12 +10,17 @@
 
 @interface TH_RegisterVC ()
 @property(nonatomic,strong)UIScrollView * scro;
+@property(nonatomic,strong)UIButton * securityCodeBtn;
+@property(nonatomic,assign)int count;
+@property (nonatomic, strong) NSTimer *paintingTimer;
 @end
 
 @implementation TH_RegisterVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.count = 60;
+
     [self createScro];
     // Do any additional setup after loading the view.
 }
@@ -100,7 +105,17 @@
     securityCodeRightBgView.backgroundColor = [UIColor greenColor];
     securityCodeRightBgView.layer.cornerRadius = 3;
     securityCodeRightBgView.layer.masksToBounds = YES;
-    
+    UIButton * securityCodeBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, (WIDETH - 40)/4.0*1, 45)];
+     [securityCodeBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
+   
+    [securityCodeBtn setBackgroundImage:[UIImage imageNamed:@"lvs"] forState:UIControlStateNormal];
+
+    securityCodeBtn.titleLabel.font = [UIFont systemFontOfSize:15];
+    securityCodeBtn.titleLabel.textColor = color(255, 255, 255);
+    [securityCodeBtn addTarget:self action:@selector(securityCodeBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    self.securityCodeBtn = securityCodeBtn;
+ 
+    [securityCodeRightBgView addSubview:securityCodeBtn];
     [self.scro addSubview:securityCodeRightBgView];
     
     UIButton * registerBtn =[[UIButton alloc] initWithFrame:CGRectMake(15, 185, WIDETH - 30, 45)];
@@ -113,6 +128,29 @@
     [self.scro addSubview:registerBtn];
     
     
+}
+#pragma mark -- 获取验证码
+-(void)securityCodeBtnClick:(UIButton *)sender
+{
+    [self.securityCodeBtn setTitle:[NSString stringWithFormat:@"%ld'后可重发",(long)self.count] forState:UIControlStateNormal];
+    
+    self.securityCodeBtn.userInteractionEnabled = NO;
+    self.paintingTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(reduceTime) userInfo:nil repeats:YES];
+
+}
+- (void)reduceTime
+{
+    self.count--;
+    [self.securityCodeBtn setTitle:[NSString stringWithFormat:@"%ld'后可重发",(long)self.count] forState:UIControlStateNormal];
+    if (self.count == 0)
+    {
+        [self.paintingTimer invalidate];
+        self.count = nil;
+        [self.securityCodeBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
+        
+        self.securityCodeBtn.userInteractionEnabled = YES;
+        self.count = 60;
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

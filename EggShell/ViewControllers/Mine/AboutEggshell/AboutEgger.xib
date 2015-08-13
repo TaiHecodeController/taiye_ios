@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AboutEggerView">
+            <rect key="frame" x="0.0" y="-1" width="320" height="582"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo板式-确定版-白色" translatesAutoresizingMaskIntoConstraints="NO" id="HkQ-9d-jPV">
+                    <rect key="frame" x="124" y="13" width="72" height="91"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="91" id="qPk-xt-Rro"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="HkQ-9d-jPV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="3u9-pe-3uS"/>
+                <constraint firstItem="HkQ-9d-jPV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="124" id="G9w-ly-TSA"/>
+                <constraint firstAttribute="trailing" secondItem="HkQ-9d-jPV" secondAttribute="trailing" constant="124" id="Ru2-Nk-Djk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="230" y="266"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo板式-确定版-白色" width="62" height="70"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

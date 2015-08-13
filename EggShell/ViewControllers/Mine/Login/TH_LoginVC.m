@@ -10,6 +10,8 @@
 #import "LoginView.h"
 #import "TH_RegisterVC.h"
 #import "TH_ForgotPasswordVC.h"
+#import "AppDelegate.h"
+#import "TH_HomeVC.h"
 @interface TH_LoginVC ()
 
 @end
@@ -71,18 +73,19 @@
     [loginView addSubview:passwordTextFiled];
     
     //登录
-    UIButton * loginBtn =[[UIButton alloc] initWithFrame:CGRectMake(15, 215, WIDETH - 30, 30)];
+    UIButton * loginBtn =[[UIButton alloc] initWithFrame:CGRectMake(15, 215, WIDETH - 30, 45)];
    
     [loginBtn setTitle:@"登录" forState:UIControlStateNormal];
     [loginBtn setBackgroundImage:[UIImage imageNamed:@"hongniu"] forState:UIControlStateNormal];
     loginBtn.titleLabel.textColor = color(255, 255, 255);
+    [loginBtn addTarget:self action:@selector(loginBtbClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:loginBtn];
     
-    UILabel * registerLable = [[UILabel alloc] initWithFrame:CGRectMake(15, 260, 70, 12)];
+    UILabel * registerLable = [[UILabel alloc] initWithFrame:CGRectMake(15, 275, 70, 12)];
     registerLable.text = @"还没有账号?";
     registerLable.font = [UIFont systemFontOfSize:12];
     [self.view addSubview:registerLable];
-    UIButton * registBtn = [[UIButton alloc] initWithFrame:CGRectMake(80, 260, 60, 12)];
+    UIButton * registBtn = [[UIButton alloc] initWithFrame:CGRectMake(80, 275, 60, 12)];
     [registBtn addTarget:self action:@selector(registClick) forControlEvents:UIControlEventTouchUpInside];
     [registBtn setTitle:@"立即注册!" forState:UIControlStateNormal];
     [registBtn setTitleColor:color(244, 67, 54) forState:UIControlStateNormal];
@@ -90,7 +93,7 @@
     [self.view addSubview:registBtn];
     
     //忘记密码
-    UIButton * forgetBtn =[[UIButton alloc] initWithFrame:CGRectMake(WIDETH-70, 260, 55, 12)];
+    UIButton * forgetBtn =[[UIButton alloc] initWithFrame:CGRectMake(WIDETH-70, 275, 55, 12)];
     [forgetBtn setTitle:@"忘记密码?" forState:UIControlStateNormal];
     [forgetBtn setTitleColor:color(244, 67, 54) forState:UIControlStateNormal];
     forgetBtn.titleLabel.font =[UIFont systemFontOfSize:12];
@@ -99,6 +102,16 @@
     
     
     
+}
+-(void)loginBtbClick
+{
+    NSLog(@"登录");
+    self.navigationController.navigationBarHidden = YES;
+    AppDelegate * appDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    appDelegate.mainTabBar = [[TH_MainTabBarController alloc] init];
+
+    appDelegate.mainTabBar.modalTransitionStyle = UIModalPresentationPageSheet;
+    [self presentViewController:appDelegate.mainTabBar animated:YES completion:nil];
 }
 -(void)ForgotPasswordClick
 {

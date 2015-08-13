@@ -11,6 +11,7 @@
 #import "TH_ClassVC.h"
 #import "TH_MineVC.h"
 #import "TH_HomeVC.h"
+#import "TH_PlayFanVC.h"
 @interface TH_MainTabBarController ()
 
 @end
@@ -32,7 +33,7 @@
     TH_HomeVC * main_vc = [[TH_HomeVC alloc] init];
    THCustomNavigationController * nc1 = [[THCustomNavigationController alloc] initWithRootViewController:main_vc];
     
-    TH_SociallyVC * acti_vc = [[TH_SociallyVC alloc] init];
+    TH_PlayFanVC * acti_vc = [[TH_PlayFanVC alloc] init];
     THCustomNavigationController * nc2 = [[THCustomNavigationController alloc] initWithRootViewController:acti_vc];
     
     TH_ClassVC * class_vc = [[TH_ClassVC alloc] init];
