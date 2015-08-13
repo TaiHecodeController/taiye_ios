@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "TH_MainTabBarController.h"
 #import "LoginAndRegisterRequest.h"
-
+#import "WriteResumeViewController.h"
 @interface AppDelegate ()
 {
     NSString * _trackViewUrl;
@@ -23,9 +23,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[TH_MainTabBarController alloc] init];
+//    self.window.rootViewController = [[TH_MainTabBarController alloc] init];
 //    [self checkVersion];
-    
+    self.window.rootViewController = [[WriteResumeViewController alloc] init];
    
     //rk——test
     
