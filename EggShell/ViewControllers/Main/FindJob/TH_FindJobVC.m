@@ -377,14 +377,12 @@
 - (void)closeBtn
 {
     THLog(@"close被点击");
-    
     [self removeCoverAndAlert];
 }
 
 - (void)okBtn
 {
      THLog(@"确定被点击");
-    
     [self removeCoverAndAlert];
 }
 
