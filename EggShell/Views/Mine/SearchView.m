@@ -9,7 +9,7 @@
 #import "SearchView.h"
 
 @implementation SearchView
-alloc_with_xib(SearchView)
+
 -(instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];

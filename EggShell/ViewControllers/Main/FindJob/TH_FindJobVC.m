@@ -58,7 +58,6 @@
 
 - (void)initView
 {
-
     CGFloat y = 0;
     CGFloat margin = 10;
     
@@ -68,7 +67,7 @@
     [self.view addSubview:_segmentedControl];
     
     y += _segmentedControl.frame.size.height;
-    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, y, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - y - bottomH )];
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, y, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height -  66 - 40 - bottomH )];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.backgroundColor = [UIColor clearColor];
@@ -88,7 +87,7 @@
     _apllyBtn = [[UIButton alloc]init];
     CGFloat applyBtnH = 30;
     CGFloat applyBtnW = 150;
-    _apllyBtn.frame = CGRectMake(112.5, 50, applyBtnW, applyBtnH);
+    _apllyBtn.frame = CGRectMake(0.3 * WIDETH, 50, applyBtnW, applyBtnH);
     [_apllyBtn setTitle:@"申请职位" forState:UIControlStateNormal];
     [_apllyBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_apllyBtn addTarget:self action:@selector(apllyBtnClick) forControlEvents:UIControlEventTouchUpInside];
@@ -105,6 +104,7 @@
     [_allSelected setTitle:@"全选" forState:UIControlStateNormal];
     [_allSelected setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     _allSelected.titleLabel.font = [UIFont systemFontOfSize:13];
+    _allSelected.titleEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0);
     [_allSelected setImage:[UIImage imageNamed:@"xuankuang"] forState:UIControlStateNormal];
     [_allSelected setImage:[UIImage imageNamed:@"douyou1"] forState:UIControlStateSelected];
     [_allSelected addTarget:self action:@selector(allClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -377,14 +377,12 @@
 - (void)closeBtn
 {
     THLog(@"close被点击");
-    
     [self removeCoverAndAlert];
 }
 
 - (void)okBtn
 {
      THLog(@"确定被点击");
-    
     [self removeCoverAndAlert];
 }
 

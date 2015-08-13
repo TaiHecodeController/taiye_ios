@@ -26,6 +26,16 @@
 		041650EE1B4D7C4E008C78BE /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041650E81B4D7C4E008C78BE /* MJRefreshFooterView.m */; };
 		041650EF1B4D7C4E008C78BE /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041650EA1B4D7C4E008C78BE /* MJRefreshHeaderView.m */; };
 		04237D901B66456F00768FAD /* LoginAndRegisterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04237D8F1B66456F00768FAD /* LoginAndRegisterRequest.m */; };
+		04718D9F1B7CB129008214CB /* ManagerResumeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718D9D1B7CB129008214CB /* ManagerResumeVC.m */; };
+		04718DA01B7CB129008214CB /* ManagerResumeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04718D9E1B7CB129008214CB /* ManagerResumeVC.xib */; };
+		04718DA31B7CD886008214CB /* WriteResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718DA21B7CD886008214CB /* WriteResumeViewController.m */; };
+		04718DA71B7CDA26008214CB /* ZCControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718DA61B7CDA26008214CB /* ZCControl.m */; };
+		04718DAC1B7CE030008214CB /* WriteResumeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718DAA1B7CE030008214CB /* WriteResumeCell.m */; };
+		04718DAD1B7CE030008214CB /* WriteResumeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04718DAB1B7CE030008214CB /* WriteResumeCell.xib */; };
+		04718DB11B7CEF4A008214CB /* ExceptCityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718DAF1B7CEF4A008214CB /* ExceptCityCell.m */; };
+		04718DB21B7CEF4A008214CB /* ExceptCityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04718DB01B7CEF4A008214CB /* ExceptCityCell.xib */; };
+		04718DB61B7D0408008214CB /* NameAndSexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718DB41B7D0408008214CB /* NameAndSexCell.m */; };
+		04718DB71B7D0408008214CB /* NameAndSexCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04718DB51B7D0408008214CB /* NameAndSexCell.xib */; };
 		048F30A81B7A1562004AA9B2 /* HotSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30A71B7A1562004AA9B2 /* HotSearch.m */; };
 		048F30AA1B7A1577004AA9B2 /* HotSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048F30A91B7A1577004AA9B2 /* HotSearch.xib */; };
 		048F30B71B7A4537004AA9B2 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30AD1B7A4537004AA9B2 /* FMDatabase.m */; };
@@ -47,7 +57,6 @@
 		04EC1F231B791B660009292E /* moreJobTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC1F1D1B791B660009292E /* moreJobTableViewCell.m */; };
 		04EC1F241B791B660009292E /* moreJobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04EC1F1E1B791B660009292E /* moreJobTableViewCell.xib */; };
 		04EC1F251B791B660009292E /* TH_JobDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EC1F201B791B660009292E /* TH_JobDetailVC.m */; };
-		941F0FAF1B79A5A200719F5B /* THCoursePlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F0FAE1B79A5A200719F5B /* THCoursePlayVC.m */; };
 		941F0FC11B79A71700719F5B /* Course PlayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F0FBF1B79A71700719F5B /* Course PlayCell.m */; };
 		941F0FC21B79A71700719F5B /* Course PlayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 941F0FC01B79A71700719F5B /* Course PlayCell.xib */; };
 		941F0FC51B79BF3F00719F5B /* CourePlayTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 941F0FC41B79BF3F00719F5B /* CourePlayTitle.m */; };
@@ -136,6 +145,7 @@
 		F0D7C05B1B79CC6400836DD2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D7C05A1B79CC6400836DD2 /* libz.dylib */; };
 		F0D7C0611B79EB3300836DD2 /* OpenClassVideoListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D7C0601B79EB3300836DD2 /* OpenClassVideoListRequest.m */; };
 		F0D7C06D1B79F92300836DD2 /* OpenClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D7C06C1B79F92300836DD2 /* OpenClassModel.m */; };
+		F0E9825D1B7C665A00898354 /* THCoursePlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E9825C1B7C665A00898354 /* THCoursePlayVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,6 +199,22 @@
 		041650F01B4D7F19008C78BE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		04237D8E1B66456F00768FAD /* LoginAndRegisterRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginAndRegisterRequest.h; sourceTree = "<group>"; };
 		04237D8F1B66456F00768FAD /* LoginAndRegisterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAndRegisterRequest.m; sourceTree = "<group>"; };
+		04718D9C1B7CB129008214CB /* ManagerResumeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerResumeVC.h; sourceTree = "<group>"; };
+		04718D9D1B7CB129008214CB /* ManagerResumeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerResumeVC.m; sourceTree = "<group>"; };
+		04718D9E1B7CB129008214CB /* ManagerResumeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManagerResumeVC.xib; sourceTree = "<group>"; };
+		04718DA11B7CD886008214CB /* WriteResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteResumeViewController.h; sourceTree = "<group>"; };
+		04718DA21B7CD886008214CB /* WriteResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteResumeViewController.m; sourceTree = "<group>"; };
+		04718DA51B7CDA26008214CB /* ZCControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCControl.h; sourceTree = "<group>"; };
+		04718DA61B7CDA26008214CB /* ZCControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCControl.m; sourceTree = "<group>"; };
+		04718DA91B7CE030008214CB /* WriteResumeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteResumeCell.h; sourceTree = "<group>"; };
+		04718DAA1B7CE030008214CB /* WriteResumeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteResumeCell.m; sourceTree = "<group>"; };
+		04718DAB1B7CE030008214CB /* WriteResumeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WriteResumeCell.xib; sourceTree = "<group>"; };
+		04718DAE1B7CEF4A008214CB /* ExceptCityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExceptCityCell.h; sourceTree = "<group>"; };
+		04718DAF1B7CEF4A008214CB /* ExceptCityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExceptCityCell.m; sourceTree = "<group>"; };
+		04718DB01B7CEF4A008214CB /* ExceptCityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExceptCityCell.xib; sourceTree = "<group>"; };
+		04718DB31B7D0408008214CB /* NameAndSexCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameAndSexCell.h; sourceTree = "<group>"; };
+		04718DB41B7D0408008214CB /* NameAndSexCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameAndSexCell.m; sourceTree = "<group>"; };
+		04718DB51B7D0408008214CB /* NameAndSexCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NameAndSexCell.xib; sourceTree = "<group>"; };
 		048F30A61B7A1562004AA9B2 /* HotSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotSearch.h; sourceTree = "<group>"; };
 		048F30A71B7A1562004AA9B2 /* HotSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotSearch.m; sourceTree = "<group>"; };
 		048F30A91B7A1577004AA9B2 /* HotSearch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotSearch.xib; sourceTree = "<group>"; };
@@ -228,8 +254,6 @@
 		04EC1F201B791B660009292E /* TH_JobDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_JobDetailVC.m; sourceTree = "<group>"; };
 		37454D869BE49FA62A71A04C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C8CB3344C41F9F3DBAC076 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		941F0FAD1B79A5A200719F5B /* THCoursePlayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCoursePlayVC.h; sourceTree = "<group>"; };
-		941F0FAE1B79A5A200719F5B /* THCoursePlayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCoursePlayVC.m; sourceTree = "<group>"; };
 		941F0FBE1B79A71700719F5B /* Course PlayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Course PlayCell.h"; sourceTree = "<group>"; };
 		941F0FBF1B79A71700719F5B /* Course PlayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Course PlayCell.m"; sourceTree = "<group>"; };
 		941F0FC01B79A71700719F5B /* Course PlayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Course PlayCell.xib"; sourceTree = "<group>"; };
@@ -395,6 +419,8 @@
 		F0D7C06B1B79F92300836DD2 /* OpenClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenClassModel.h; path = libpolyvSDK/OpenClassModel.h; sourceTree = "<group>"; };
 		F0D7C06C1B79F92300836DD2 /* OpenClassModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenClassModel.m; path = libpolyvSDK/OpenClassModel.m; sourceTree = "<group>"; };
 		F0D7C06E1B7A009A00836DD2 /* libPods-SDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-SDWebImage.a"; path = "Pods/../build/Debug-iphoneos/libPods-SDWebImage.a"; sourceTree = "<group>"; };
+		F0E9825B1B7C665A00898354 /* THCoursePlayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCoursePlayVC.h; sourceTree = "<group>"; };
+		F0E9825C1B7C665A00898354 /* THCoursePlayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCoursePlayVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -500,6 +526,7 @@
 		0416505A1B4D71D4008C78BE /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				04718DA41B7CDA26008214CB /* UI类 */,
 				048F30AB1B7A4537004AA9B2 /* fmdb */,
 				F05440AE1B7848B000127A9B /* HYSegmentedControl */,
 				94CB5B531B74CBBE00B23B9D /* libs */,
@@ -570,6 +597,44 @@
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
+		04718D9B1B7CB0BB008214CB /* writeResume */ = {
+			isa = PBXGroup;
+			children = (
+				04718DA81B7CE008008214CB /* SubViews */,
+				04718D9C1B7CB129008214CB /* ManagerResumeVC.h */,
+				04718D9D1B7CB129008214CB /* ManagerResumeVC.m */,
+				04718D9E1B7CB129008214CB /* ManagerResumeVC.xib */,
+				04718DA11B7CD886008214CB /* WriteResumeViewController.h */,
+				04718DA21B7CD886008214CB /* WriteResumeViewController.m */,
+			);
+			path = writeResume;
+			sourceTree = "<group>";
+		};
+		04718DA41B7CDA26008214CB /* UI类 */ = {
+			isa = PBXGroup;
+			children = (
+				04718DA51B7CDA26008214CB /* ZCControl.h */,
+				04718DA61B7CDA26008214CB /* ZCControl.m */,
+			);
+			path = "UI类";
+			sourceTree = "<group>";
+		};
+		04718DA81B7CE008008214CB /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				04718DA91B7CE030008214CB /* WriteResumeCell.h */,
+				04718DAA1B7CE030008214CB /* WriteResumeCell.m */,
+				04718DAB1B7CE030008214CB /* WriteResumeCell.xib */,
+				04718DAE1B7CEF4A008214CB /* ExceptCityCell.h */,
+				04718DAF1B7CEF4A008214CB /* ExceptCityCell.m */,
+				04718DB01B7CEF4A008214CB /* ExceptCityCell.xib */,
+				04718DB31B7D0408008214CB /* NameAndSexCell.h */,
+				04718DB41B7D0408008214CB /* NameAndSexCell.m */,
+				04718DB51B7D0408008214CB /* NameAndSexCell.xib */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		048F30AB1B7A4537004AA9B2 /* fmdb */ = {
 			isa = PBXGroup;
 			children = (
@@ -627,8 +692,12 @@
 		04A483B51B74FD4D006FDB9D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+
 				94313D811B7C34AD005D0A9A /* PlayFan */,
 				94313D801B7C33BE005D0A9A /* InformationDesk */,
+
+				04718D9B1B7CB0BB008214CB /* writeResume */,
+
 				94313D3A1B7B6C19005D0A9A /* CompanyDetail */,
 				941F0FCC1B7A039F00719F5B /* EnterpriseDetail */,
 				94CB5B9C1B76334000B23B9D /* TH_HomeVC.h */,
@@ -762,9 +831,9 @@
 		941F0FA71B79A58000719F5B /* CoursePlay */ = {
 			isa = PBXGroup;
 			children = (
+				F0E9825B1B7C665A00898354 /* THCoursePlayVC.h */,
+				F0E9825C1B7C665A00898354 /* THCoursePlayVC.m */,
 				941F0FB01B79A5CD00719F5B /* CoursePlayview */,
-				941F0FAD1B79A5A200719F5B /* THCoursePlayVC.h */,
-				941F0FAE1B79A5A200719F5B /* THCoursePlayVC.m */,
 			);
 			path = CoursePlay;
 			sourceTree = "<group>";
@@ -1303,16 +1372,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				941F0FC21B79A71700719F5B /* Course PlayCell.xib in Resources */,
+				04718DB71B7D0408008214CB /* NameAndSexCell.xib in Resources */,
 				041650451B4D7142008C78BE /* LaunchScreen.xib in Resources */,
 				04EC1F241B791B660009292E /* moreJobTableViewCell.xib in Resources */,
 				941F10251B7B3D1D00719F5B /* EditAddressVC.xib in Resources */,
 				04EC1F101B78F5510009292E /* SearchView.xib in Resources */,
+				04718DB21B7CEF4A008214CB /* ExceptCityCell.xib in Resources */,
 				94CB5B911B74F0D500B23B9D /* HomeViews.xib in Resources */,
 				94D9000A1B79996600F6FD36 /* JobDescription.xib in Resources */,
 				941F10171B7B3BCC00719F5B /* JobWishlistCell.xib in Resources */,
 				94CB5B891B74CC0600B23B9D /* LICENSE in Resources */,
 				F05440B91B788DAB00127A9B /* findjobtest.plist in Resources */,
 				941F10151B7B3BCC00719F5B /* JobWishList.xib in Resources */,
+				04718DA01B7CB129008214CB /* ManagerResumeVC.xib in Resources */,
 				94D900051B7998C200F6FD36 /* CompanyProfile.xib in Resources */,
 				041650421B4D7142008C78BE /* Images.xcassets in Resources */,
 				94D900181B799D2F00F6FD36 /* MineView.xib in Resources */,
@@ -1322,7 +1394,11 @@
 				04A0CD451B7A110B00EBCF01 /* HeadView.xib in Resources */,
 				94313D351B7B46C2005D0A9A /* LoginView.xib in Resources */,
 				04EC1F121B78F60C0009292E /* JobAlertView.xib in Resources */,
+
 				94313DA51B7C6B30005D0A9A /* AboutEgger.xib in Resources */,
+
+				04718DAD1B7CE030008214CB /* WriteResumeCell.xib in Resources */,
+
 				048F30AA1B7A1577004AA9B2 /* HotSearch.xib in Resources */,
 				941F10271B7B3D1D00719F5B /* MineEditInfoView.xib in Resources */,
 				94313D921B7C3AE0005D0A9A /* InformationDeskCell.xib in Resources */,
@@ -1378,11 +1454,13 @@
 			files = (
 				94EDD4EA1B78319A00A00A78 /* UIView+Extension.m in Sources */,
 				941F0FC51B79BF3F00719F5B /* CourePlayTitle.m in Sources */,
+				F0E9825D1B7C665A00898354 /* THCoursePlayVC.m in Sources */,
 				94CB5B801B74CC0600B23B9D /* MJMember.m in Sources */,
 				94CB5B821B74CC0600B23B9D /* MJType.m in Sources */,
 				041650EE1B4D7C4E008C78BE /* MJRefreshFooterView.m in Sources */,
 				94CB5B7B1B74CC0600B23B9D /* HomePageModel.m in Sources */,
 				04A483D71B751E77006FDB9D /* Utils.m in Sources */,
+				04718DB61B7D0408008214CB /* NameAndSexCell.m in Sources */,
 				94CB5B8B1B74CC0600B23B9D /* SMPageControl.m in Sources */,
 				94EDD4E81B78319A00A00A78 /* UIBarButtonItem+Extension.m in Sources */,
 				94313D9A1B7C4936005D0A9A /* infDestDetailView.m in Sources */,
@@ -1390,21 +1468,28 @@
 				94CB5B7E1B74CC0600B23B9D /* MJFoundation.m in Sources */,
 				94CB5B9E1B76334000B23B9D /* TH_HomeVC.m in Sources */,
 				041650CA1B4D730F008C78BE /* MBProgressHUD+Show.m in Sources */,
+				04718DB11B7CEF4A008214CB /* ExceptCityCell.m in Sources */,
 				041650DF1B4D795B008C78BE /* AFAppRequest.m in Sources */,
 				F05440B11B7848B000127A9B /* HYSegmentedControl.m in Sources */,
 				94313D401B7B6C19005D0A9A /* CompanyDetailVC.m in Sources */,
 				0416506B1B4D7240008C78BE /* GVarAdapter.m in Sources */,
+
 				94313D961B7C47FC005D0A9A /* TH_InformationDeskDetailVC.m in Sources */,
+
+				04718D9F1B7CB129008214CB /* ManagerResumeVC.m in Sources */,
+
 				941F102C1B7B400D00719F5B /* TH_LoginVC.m in Sources */,
 				94313D7B1B7C1F2A005D0A9A /* TH_ForgotPasswordVC.m in Sources */,
 				048F30B71B7A4537004AA9B2 /* FMDatabase.m in Sources */,
 				04EC1F0F1B78F5510009292E /* SearchView.m in Sources */,
 				941F0FCF1B7A03BE00719F5B /* TH_EnterpriseDetailVC.m in Sources */,
 				94CB5B831B74CC0600B23B9D /* MJTypeEncoding.m in Sources */,
+				04718DA71B7CDA26008214CB /* ZCControl.m in Sources */,
 				94313D7F1B7C24B1005D0A9A /* TH_getCodeNextVC.m in Sources */,
 				94CB5BA41B76343E00B23B9D /* TH_ClassVC.m in Sources */,
 				041650691B4D7240008C78BE /* GObjAdapter.m in Sources */,
 				041650CB1B4D730F008C78BE /* MBProgressHUD.m in Sources */,
+				04718DA31B7CD886008214CB /* WriteResumeViewController.m in Sources */,
 				04A0CD481B7A111D00EBCF01 /* HeadView.m in Sources */,
 				041650671B4D7240008C78BE /* GAdapter.m in Sources */,
 				94CB5B7C1B74CC0600B23B9D /* MJArgument.m in Sources */,
@@ -1422,13 +1507,13 @@
 				94313D391B7B5731005D0A9A /* TH_RegisterVC.m in Sources */,
 				94CB5BAB1B763AAC00B23B9D /* TH_FindJobVC.m in Sources */,
 				94D900061B79992000F6FD36 /* CompanyProfil.m in Sources */,
+				04718DAC1B7CE030008214CB /* WriteResumeCell.m in Sources */,
 				048F30B81B7A4537004AA9B2 /* FMDatabaseAdditions.m in Sources */,
 				0416503A1B4D7141008C78BE /* AppDelegate.m in Sources */,
 				041650371B4D7141008C78BE /* main.m in Sources */,
 				048F30A81B7A1562004AA9B2 /* HotSearch.m in Sources */,
 				94CB5B7F1B74CC0600B23B9D /* MJIvar.m in Sources */,
 				041650ED1B4D7C4E008C78BE /* MJRefreshConst.m in Sources */,
-				941F0FAF1B79A5A200719F5B /* THCoursePlayVC.m in Sources */,
 				04237D901B66456F00768FAD /* LoginAndRegisterRequest.m in Sources */,
 				0416506A1B4D7240008C78BE /* Gson.m in Sources */,
 				94D9000B1B79996600F6FD36 /* JobDescriptionlView.m in Sources */,
