@@ -98,7 +98,7 @@
     
     
     //登录
-    loginBtn =[[UIButton alloc] initWithFrame:CGRectMake(-20, 215, WIDETH - 30, 45)];
+    loginBtn =[[UIButton alloc] initWithFrame:CGRectMake(15,215 + 30, WIDETH - 30, 45)];
    
     [loginBtn setTitle:@"登录" forState:UIControlStateNormal];
     [loginBtn setBackgroundImage:[UIImage imageNamed:@"hongniu"] forState:UIControlStateNormal];
@@ -107,7 +107,7 @@
     loginBtn.alpha = 0;
     [self.view addSubview:loginBtn];
     
-    [UIView animateWithDuration:1 delay:0.85 usingSpringWithDamping:0.5 initialSpringVelocity:20 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+    [UIView animateWithDuration:3 delay:0.85 usingSpringWithDamping:0.1 initialSpringVelocity:0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
         loginBtn.frame = CGRectMake(15, 215, WIDETH - 30, 45);
         self.loginBtn.alpha = 1;
         
