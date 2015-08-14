@@ -18,6 +18,7 @@
 #import "Course PlayCell.h"
 #import "CourePlayTitle.h"
 #import "UIBarButtonItem+DC.h"
+#import "AppDelegate.h"
 
 
 #define TopViewHeight 44
@@ -271,14 +272,16 @@ typedef NS_ENUM(NSInteger, GestureType){
 
 #pragma mark -- ========================================
 - (void)viewWillAppear:(BOOL)animated{
-    
+//    [AppDelegate instance].ori_flag = 1;
     _systemBrightness = [UIScreen mainScreen].brightness;
+    
     //    [MobClick beginLogPageView:@"视频播放"];
     
 }
 
 -(void)viewWillDisappear:(BOOL)animated
 {
+//    [AppDelegate instance].ori_flag = 0;
     [super viewWillDisappear:animated];
     //    [MobClick endLogPageView:@"视频播放"];
     
