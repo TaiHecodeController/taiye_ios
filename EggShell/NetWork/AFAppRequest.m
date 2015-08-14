@@ -43,7 +43,7 @@
 {
     if( [notify isKindOfClass:[MJRefreshBaseView class]]){
         if( _running ){
-            
+            [(MJRefreshBaseView *)notify beginRefreshing];
         }
         else{
             [(MJRefreshBaseView *)notify endRefreshing];
@@ -138,7 +138,7 @@
     
     AFHTTPRequestOperationManager*manager=[self sharedManager];
     
-    [manager GET:url parameters:param success:^(AFHTTPRequestOperation * operation, id responseObject)
+    [manager POST:url parameters:param success:^(AFHTTPRequestOperation * operation, id responseObject)
      {
          [self handleResponse:responseObject Succ:succ Fail:fail Resp:resp State:State];
          NSLog(responseObject[@"msg"]);

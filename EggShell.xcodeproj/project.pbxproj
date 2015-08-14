@@ -136,6 +136,8 @@
 		94EDD4F41B7831DA00A00A78 /* ZXImagePickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDD4F31B7831DA00A00A78 /* ZXImagePickerVC.m */; };
 		94EDD4F81B783FA700A00A78 /* TH_FindPartTimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDD4F71B783FA700A00A78 /* TH_FindPartTimeVC.m */; };
 		94EFC1C11B7D046F00833068 /* TH_featureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EFC1C01B7D046F00833068 /* TH_featureVC.m */; };
+		94EFC1C41B7D8F6900833068 /* TH_AFRequestState.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EFC1C31B7D8F6900833068 /* TH_AFRequestState.m */; };
+		94EFC1C81B7DC65200833068 /* playFanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EFC1C71B7DC65200833068 /* playFanModel.m */; };
 		CA3D16A93CCBDD012A68A6C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37454D869BE49FA62A71A04C /* libPods.a */; };
 		F05440B11B7848B000127A9B /* HYSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F05440B01B7848B000127A9B /* HYSegmentedControl.m */; };
 		F05440B41B7870B800127A9B /* jobTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F05440B31B7870B800127A9B /* jobTableViewCell.m */; };
@@ -400,6 +402,10 @@
 		94EDD4F71B783FA700A00A78 /* TH_FindPartTimeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_FindPartTimeVC.m; sourceTree = "<group>"; };
 		94EFC1BF1B7D046F00833068 /* TH_featureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_featureVC.h; sourceTree = "<group>"; };
 		94EFC1C01B7D046F00833068 /* TH_featureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_featureVC.m; sourceTree = "<group>"; };
+		94EFC1C21B7D8F6900833068 /* TH_AFRequestState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_AFRequestState.h; sourceTree = "<group>"; };
+		94EFC1C31B7D8F6900833068 /* TH_AFRequestState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_AFRequestState.m; sourceTree = "<group>"; };
+		94EFC1C61B7DC65200833068 /* playFanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = playFanModel.h; sourceTree = "<group>"; };
+		94EFC1C71B7DC65200833068 /* playFanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = playFanModel.m; sourceTree = "<group>"; };
 		A209E6A9E258BA344FA95EF1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F05440AF1B7848B000127A9B /* HYSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSegmentedControl.h; sourceTree = "<group>"; };
 		F05440B01B7848B000127A9B /* HYSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSegmentedControl.m; sourceTree = "<group>"; };
@@ -587,6 +593,8 @@
 				04237D8E1B66456F00768FAD /* LoginAndRegisterRequest.h */,
 				F0D7C05F1B79EB3300836DD2 /* OpenClassVideoListRequest.h */,
 				F0D7C0601B79EB3300836DD2 /* OpenClassVideoListRequest.m */,
+				94EFC1C21B7D8F6900833068 /* TH_AFRequestState.h */,
+				94EFC1C31B7D8F6900833068 /* TH_AFRequestState.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -953,6 +961,7 @@
 		94313DAC1B7CAAB5005D0A9A /* PlayFan */ = {
 			isa = PBXGroup;
 			children = (
+				94EFC1C51B7DC40000833068 /* PlayModel */,
 				94313DAD1B7CAAB5005D0A9A /* TH_PlayFanVC.h */,
 				94313DAE1B7CAAB5005D0A9A /* TH_PlayFanVC.m */,
 			);
@@ -1268,6 +1277,15 @@
 			path = feature;
 			sourceTree = "<group>";
 		};
+		94EFC1C51B7DC40000833068 /* PlayModel */ = {
+			isa = PBXGroup;
+			children = (
+				94EFC1C61B7DC65200833068 /* playFanModel.h */,
+				94EFC1C71B7DC65200833068 /* playFanModel.m */,
+			);
+			path = PlayModel;
+			sourceTree = "<group>";
+		};
 		B3CC7EB400379DA8CBAEF017 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1470,6 +1488,7 @@
 				F0E9825D1B7C665A00898354 /* THCoursePlayVC.m in Sources */,
 				94CB5B801B74CC0600B23B9D /* MJMember.m in Sources */,
 				94CB5B821B74CC0600B23B9D /* MJType.m in Sources */,
+				94EFC1C41B7D8F6900833068 /* TH_AFRequestState.m in Sources */,
 				041650EE1B4D7C4E008C78BE /* MJRefreshFooterView.m in Sources */,
 				94CB5B7B1B74CC0600B23B9D /* HomePageModel.m in Sources */,
 				04A483D71B751E77006FDB9D /* Utils.m in Sources */,
@@ -1506,6 +1525,7 @@
 				94EAEAC31B78437A003C19DD /* TH_FindPracticeVC.m in Sources */,
 				94CB5B8F1B74EF3900B23B9D /* HomeView.m in Sources */,
 				94313DE91B7CB5C9005D0A9A /* ManagerResumeVC.m in Sources */,
+				94EFC1C81B7DC65200833068 /* playFanModel.m in Sources */,
 				94CB5BA71B76345D00B23B9D /* TH_MineVC.m in Sources */,
 				94EDD4F01B7831BB00A00A78 /* ZXButton.m in Sources */,
 				94CB5B7D1B74CC0600B23B9D /* MJConst.m in Sources */,

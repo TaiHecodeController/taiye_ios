@@ -10,23 +10,57 @@
 #import "InformationDeskCell.h"
 #import "HYSegmentedControl.h"
 #import "TH_InformationDeskDetailVC.h"
-@interface TH_PlayFanVC ()<UITableViewDataSource,UITableViewDelegate>
+#import "playFanModel.h"
+#import "AFAppRequest.h"
+
+@interface TH_PlayFanVC ()<UITableViewDataSource,UITableViewDelegate,MJRefreshBaseViewDelegate>
 @property(nonatomic,strong)UITableView * tableView;
 @property (nonatomic, strong) HYSegmentedControl *segmentedControl;
 @property (nonatomic, assign) int currentIndex;
+@property(nonatomic,strong)NSMutableArray * dataArray;
+@property(nonatomic,strong)MJRefreshFooterView *  footer;
+@property(nonatomic,strong)MJRefreshHeaderView * header;
+@property(nonatomic,assign)int page;
+@property (nonatomic,strong)AFRequestState * state;
 @end
 
 @implementation TH_PlayFanVC
-
+-(void)dealloc
+{
+    
+    [_header free];
+    [_footer free];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.page = 0;
     self.title = @"玩出范";
     [self createView];
     [self createTbleView];
     [self hySegmentedControlSelectAtIndex:0];
+    [self loadData:_header page:0];
 
     // Do any additional setup after loading the view.
 }
+
+
+
+-(void)loadData:(id)notify page:(int)num
+{
+    if(_state.running)
+    {
+        return;
+    }
+    
+    NSString * pageNumber = [NSString stringWithFormat:@"%d",num];
+    _state = [[TH_AFRequestState playClassrRequestWithSucc:^(NSArray *DataDic) {
+        self.dataArray = [NSMutableArray arrayWithArray:DataDic];
+        
+        [self.tableView reloadData];
+
+    } resp:[playFanModel class] withPage:pageNumber] addNotifaction:notify];
+}
+
 -(void)createView
 {
     
@@ -57,7 +91,7 @@
     {
         _currentIndex = 1;
         NSLog(@"蛋壳儿送福利");
-       
+        
         
         [self.tableView reloadData];
         
@@ -71,10 +105,20 @@
     self.tableView = tableView;
     self.tableView.showsVerticalScrollIndicator = NO;
     [self.view addSubview:tableView];
+    //下拉刷新
+      _header = [MJRefreshHeaderView header];
+        _header.scrollView = self.tableView;
+        _header.delegate = self;
+    
+        _footer = [MJRefreshFooterView footer];
+        _footer.scrollView = self.tableView;
+        _footer.delegate = self;
+    
+    
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 15;
+    return self.dataArray.count;
 }
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -82,6 +126,12 @@
     if (!InforCell) {
         InforCell = [[[NSBundle mainBundle] loadNibNamed:@"InformationDeskCell" owner:self options:nil] lastObject];
     }
+    
+    playFanModel * model = self.dataArray[indexPath.row];
+    [InforCell setValue:model];
+    
+    NSLog(@"%@",model.endtime);
+    
     return InforCell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -95,6 +145,26 @@
     detail.title = @"详情";
     [self.navigationController pushViewController:detail animated:YES];
 }
+#pragma mark -- MJRefresh
+- (void)refreshViewBeginRefreshing:(MJRefreshBaseView *)refreshView
+{
+    if( refreshView == _header ){
+        _page = 0;
+        THLog(@"");
+        self.dataArray = [NSMutableArray arrayWithCapacity:0];
+        [self loadData:refreshView page:_page];
+    }
+    else{
+        self.page++;
+        THLog(@"上拉加载更多");
+        [self.dataArray removeAllObjects];
+        [self loadData:refreshView page:_page];
+        
+        
+    }
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

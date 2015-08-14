@@ -57,7 +57,14 @@
                     <constraint firstItem="J8T-3K-H46" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="CVE-Ii-eH3"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="213" y="201"/>
+            <connections>
+                <outlet property="addressLable" destination="pYd-r2-DNV" id="y5P-PS-zzD"/>
+                <outlet property="homeLable" destination="dWf-zs-nLw" id="rt3-Lf-oOx"/>
+                <outlet property="logoImage" destination="h0I-Tw-I5e" id="D1J-Op-pgg"/>
+                <outlet property="name" destination="NXE-IR-Fla" id="ar9-RD-uOw"/>
+                <outlet property="timeLable" destination="J8T-3K-H46" id="A53-aU-XTk"/>
+            </connections>
+            <point key="canvasLocation" x="56" y="204"/>
         </tableViewCell>
     </objects>
     <resources>
