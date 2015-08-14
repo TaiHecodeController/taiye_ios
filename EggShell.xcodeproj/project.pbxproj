@@ -135,6 +135,7 @@
 		94EDD4F11B7831BB00A00A78 /* ZXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDD4EF1B7831BB00A00A78 /* ZXLabel.m */; };
 		94EDD4F41B7831DA00A00A78 /* ZXImagePickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDD4F31B7831DA00A00A78 /* ZXImagePickerVC.m */; };
 		94EDD4F81B783FA700A00A78 /* TH_FindPartTimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDD4F71B783FA700A00A78 /* TH_FindPartTimeVC.m */; };
+		94EFC1C11B7D046F00833068 /* TH_featureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EFC1C01B7D046F00833068 /* TH_featureVC.m */; };
 		CA3D16A93CCBDD012A68A6C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37454D869BE49FA62A71A04C /* libPods.a */; };
 		F05440B11B7848B000127A9B /* HYSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F05440B01B7848B000127A9B /* HYSegmentedControl.m */; };
 		F05440B41B7870B800127A9B /* jobTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F05440B31B7870B800127A9B /* jobTableViewCell.m */; };
@@ -397,6 +398,8 @@
 		94EDD4F31B7831DA00A00A78 /* ZXImagePickerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXImagePickerVC.m; sourceTree = "<group>"; };
 		94EDD4F61B783FA700A00A78 /* TH_FindPartTimeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_FindPartTimeVC.h; sourceTree = "<group>"; };
 		94EDD4F71B783FA700A00A78 /* TH_FindPartTimeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_FindPartTimeVC.m; sourceTree = "<group>"; };
+		94EFC1BF1B7D046F00833068 /* TH_featureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_featureVC.h; sourceTree = "<group>"; };
+		94EFC1C01B7D046F00833068 /* TH_featureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_featureVC.m; sourceTree = "<group>"; };
 		A209E6A9E258BA344FA95EF1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F05440AF1B7848B000127A9B /* HYSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSegmentedControl.h; sourceTree = "<group>"; };
 		F05440B01B7848B000127A9B /* HYSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSegmentedControl.m; sourceTree = "<group>"; };
@@ -741,9 +744,7 @@
 		04A483D81B78AE00006FDB9D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				04A483DD1B78AE91006FDB9D /* OpenClass */,
 				04A483DC1B78AE77006FDB9D /* Mine */,
-				04A483DB1B78AE4C006FDB9D /* Activity */,
 				04A483D91B78AE19006FDB9D /* Home */,
 			);
 			path = Views;
@@ -759,13 +760,6 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		04A483DB1B78AE4C006FDB9D /* Activity */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Activity;
-			sourceTree = "<group>";
-		};
 		04A483DC1B78AE77006FDB9D /* Mine */ = {
 			isa = PBXGroup;
 			children = (
@@ -774,13 +768,6 @@
 				04EC1F0E1B78F5510009292E /* SearchView.xib */,
 			);
 			path = Mine;
-			sourceTree = "<group>";
-		};
-		04A483DD1B78AE91006FDB9D /* OpenClass */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OpenClass;
 			sourceTree = "<group>";
 		};
 		04EC1F161B791B660009292E /* JobDetails */ = {
@@ -1169,6 +1156,7 @@
 		94CB5B981B761F9A00B23B9D /* BaseController */ = {
 			isa = PBXGroup;
 			children = (
+				94EFC1BE1B7D044500833068 /* feature */,
 				04A483B31B74FD1B006FDB9D /* TH_MainTabBarController.m */,
 				04A483B21B74FD1B006FDB9D /* TH_MainTabBarController.h */,
 				94CB5B991B7632E800B23B9D /* TH_BaseVC.h */,
@@ -1269,6 +1257,15 @@
 				94EDD4F71B783FA700A00A78 /* TH_FindPartTimeVC.m */,
 			);
 			path = FindPartTime;
+			sourceTree = "<group>";
+		};
+		94EFC1BE1B7D044500833068 /* feature */ = {
+			isa = PBXGroup;
+			children = (
+				94EFC1BF1B7D046F00833068 /* TH_featureVC.h */,
+				94EFC1C01B7D046F00833068 /* TH_featureVC.m */,
+			);
+			path = feature;
 			sourceTree = "<group>";
 		};
 		B3CC7EB400379DA8CBAEF017 /* Pods */ = {
@@ -1477,6 +1474,7 @@
 				94CB5B7B1B74CC0600B23B9D /* HomePageModel.m in Sources */,
 				04A483D71B751E77006FDB9D /* Utils.m in Sources */,
 				94CB5B8B1B74CC0600B23B9D /* SMPageControl.m in Sources */,
+				94EFC1C11B7D046F00833068 /* TH_featureVC.m in Sources */,
 				94EDD4E81B78319A00A00A78 /* UIBarButtonItem+Extension.m in Sources */,
 				94EDD4F41B7831DA00A00A78 /* ZXImagePickerVC.m in Sources */,
 				94CB5B7E1B74CC0600B23B9D /* MJFoundation.m in Sources */,

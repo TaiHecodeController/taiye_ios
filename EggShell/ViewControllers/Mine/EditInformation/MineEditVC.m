@@ -22,10 +22,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"编辑资料";
     EdView = [[[NSBundle mainBundle] loadNibNamed:@"MineEditInfoView" owner:self options:nil] firstObject];
     EdView.frame = [UIScreen mainScreen].bounds;
     [self.view addSubview:EdView];
     EdView.contentSize = CGSizeMake(WIDETH / 2, HEIGHT + 60);
+    EdView.showsVerticalScrollIndicator = NO;
     [self createNav];
     // Do any additional setup after loading the view.
 }
@@ -35,8 +37,8 @@
     UIButton * rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [rightBtn addTarget:self action:@selector(rightClick:) forControlEvents:UIControlEventTouchUpInside];
     rightBtn.frame = CGRectMake(0, 0, 40, 40);
-    [rightBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    [rightBtn setTitleColor:[UIColor blueColor] forState:UIControlStateSelected];
+    [rightBtn setTitleColor:color(244, 67, 54) forState:UIControlStateNormal];
+    [rightBtn setTitleColor:color(55, 172, 244) forState:UIControlStateSelected];
     [rightBtn setTitle:@"编辑" forState:UIControlStateNormal];
     [rightBtn setTitle:@"保存" forState:UIControlStateSelected];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];

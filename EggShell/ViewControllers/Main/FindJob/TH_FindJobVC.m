@@ -63,7 +63,7 @@
     
     NSArray *iconArr = @[@[@"quancheng_Unselected",@"quancheng_Selected"],@[@"fujin_unSelected",@"fujin_Selected"]];
     
-    _segmentedControl = [[HYSegmentedControl alloc] initWithOriginY:y Titles:@[@"全程", @"附近"]  IconNames:iconArr delegate:self] ;
+    _segmentedControl = [[HYSegmentedControl alloc] initWithOriginY:y Titles:@[@"全城", @"附近"]  IconNames:iconArr delegate:self] ;
     [self.view addSubview:_segmentedControl];
     
     y += _segmentedControl.frame.size.height;

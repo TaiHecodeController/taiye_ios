@@ -205,11 +205,11 @@
 
 - (void)quereData
 {
-        NSString *str1 = @"http://s13.mogujie.cn/b7/bao/131012/vud8_kqywordekfbgo2dwgfjeg5sckzsew_310x426.jpg_200x999.jpg";
-        NSString *str2 = @"http://s6.mogujie.cn/b7/bao/130928/c7k0_kqyw6vckkfbgeq3wgfjeg5sckzsew_500x750.jpg_200x999.jpg";
-        NSString *str3 = @"http://s6.mogujie.cn/b7/bao/131008/q2o17_kqyvcz3ckfbewv3wgfjeg5sckzsew_330x445.jpg_200x999.jpg";
+//        NSString *str1 = @"http://s13.mogujie.cn/b7/bao/131012/vud8_kqywordekfbgo2dwgfjeg5sckzsew_310x426.jpg_200x999.jpg";
+//        NSString *str2 = @"http://s6.mogujie.cn/b7/bao/130928/c7k0_kqyw6vckkfbgeq3wgfjeg5sckzsew_500x750.jpg_200x999.jpg";
+//        NSString *str3 = @"http://s6.mogujie.cn/b7/bao/131008/q2o17_kqyvcz3ckfbewv3wgfjeg5sckzsew_330x445.jpg_200x999.jpg";
     //包含字典的数组，每个字典key为photo,value为string
-    NSArray *imageArr = [NSArray arrayWithObjects:@{@"photo":str1},@{@"photo":str2},@{@"photo":str3}, nil];
+    NSArray *imageArr = [NSArray arrayWithObjects:@{@"photo":@"lunbotu"},@{@"photo":@"lunbotu"},@{@"photo":@"appbanner"}, nil];
     
     //加载数据
     [_bannerView setImageURLs:imageArr];

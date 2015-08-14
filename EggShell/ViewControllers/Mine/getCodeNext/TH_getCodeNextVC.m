@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = color(243, 243, 243);
     [self createScro];
     [self createView]
     ;    // Do any additional setup after loading the view.
@@ -24,6 +25,7 @@
 -(void)createView
 {
     UIView * newPassworBgView= [[UIView alloc] initWithFrame:CGRectMake(15, 15, WIDETH - 30, 45)];
+    newPassworBgView.backgroundColor = color(255, 255, 255);
     newPassworBgView.layer.borderWidth = 0.5;
     newPassworBgView.layer.borderColor = color(221, 221, 221).CGColor;
     newPassworBgView.layer.cornerRadius = 3;
@@ -45,7 +47,7 @@
     
     //确认密码
     UIView * confirmPassWordBgView = [[UIView alloc] initWithFrame:CGRectMake(15, 70, WIDETH - 30, 45)];
-    
+    confirmPassWordBgView.backgroundColor = color(255, 255, 255);
     confirmPassWordBgView.layer.borderWidth = 0.5;
     confirmPassWordBgView.layer.borderColor = color(221, 221, 221).CGColor;
     confirmPassWordBgView.layer.cornerRadius = 3;
@@ -91,6 +93,7 @@
     UIScrollView * scro =[[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, HEIGHT)];
     [self.view addSubview:scro];
     self.scro = scro;
+    self.scro.backgroundColor = color(243, 243, 241);
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

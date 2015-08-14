@@ -69,6 +69,7 @@
     tableView.dataSource = self;
     tableView.delegate = self;
     self.tableView = tableView;
+    self.tableView.showsVerticalScrollIndicator = NO;
     [self.view addSubview:tableView];
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

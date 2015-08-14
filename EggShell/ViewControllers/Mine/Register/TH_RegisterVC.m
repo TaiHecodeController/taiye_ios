@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.count = 60;
-
+    self.view.backgroundColor = color(243, 243, 241);
     [self createScro];
     // Do any additional setup after loading the view.
 }
@@ -32,6 +32,7 @@
     self.scro = scro;
     
     UIView  * phoneBgView = [[UIView alloc] initWithFrame:CGRectMake(15, 15, WIDETH - 30, 45)];
+    phoneBgView.backgroundColor = color(255, 255, 255);
     phoneBgView.layer.borderWidth = 0.5;
     phoneBgView.layer.borderColor = color(221, 221, 221).CGColor;
     phoneBgView.layer.cornerRadius = 3;
@@ -55,6 +56,7 @@
     [self.scro addSubview:phoneBgView];
     //密码
     UIView * passwordBgView = [[UIView alloc] initWithFrame:CGRectMake(15, 70, WIDETH- 30, 45)];
+    passwordBgView.backgroundColor = color(255, 255, 255);
     passwordBgView.layer.borderWidth = 0.5;
     passwordBgView.layer.borderColor = color(221, 221, 221).CGColor;
     passwordBgView.layer.cornerRadius = 3;
@@ -80,6 +82,7 @@
     
     //验证码
     UIView *securityCodeBgView = [[UIView alloc] initWithFrame:CGRectMake(15, 125, (WIDETH - 40)/4.0*3-10, 45)];
+    securityCodeBgView.backgroundColor = color(255, 255, 255);
     securityCodeBgView.layer.borderColor = color(221, 221, 221).CGColor;
     securityCodeBgView.layer.borderWidth = 0.5;
     securityCodeBgView.layer.cornerRadius = 3;

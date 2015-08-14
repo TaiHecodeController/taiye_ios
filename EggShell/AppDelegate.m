@@ -10,6 +10,7 @@
 #import "TH_MainTabBarController.h"
 #import "LoginAndRegisterRequest.h"
 #import "WriteResumeViewController.h"
+#import "TH_featureVC.h"
 @interface AppDelegate ()
 {
     NSString * _trackViewUrl;
@@ -24,11 +25,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
 
-    self.mainTabBar = [[TH_MainTabBarController alloc] init];
-    self.window.rootViewController = self.mainTabBar;
-
-
-
 //    [self checkVersion];
 //    self.window.rootViewController = [[WriteResumeViewController alloc] init];
    
@@ -38,9 +34,24 @@
 //    [self initPloyVideo];
     
     [self.window makeKeyAndVisible];
+    sleep(3);
+    NSString *key = @"CFBundleVersion";
+    NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:kBundleVersion];
+    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[kBundleVersion];
+    
+    if ([currentVersion isEqualToString:lastVersion])
+    {
+        self.mainTabBar = [[TH_MainTabBarController alloc] init];
+        self.window.rootViewController = self.mainTabBar;
+        
+    }else
+    {
+        self.window.rootViewController = [[TH_featureVC alloc] init];
+        [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:key];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
     
     
-    sleep(1);
     return YES;
 }
 //版本检测

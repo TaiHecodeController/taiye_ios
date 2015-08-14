@@ -28,7 +28,7 @@
 #import "UIView+Extension.h"
 #import "UILabel+Extension.h"
 #import "ZCControl.h"
-
+#define kBundleVersion @"CFBundleVersion"
 #define WIDETH  [UIScreen mainScreen].bounds.size.width
 #define HEIGHT   [UIScreen mainScreen].bounds.size.height
 //iOS7版本的适配

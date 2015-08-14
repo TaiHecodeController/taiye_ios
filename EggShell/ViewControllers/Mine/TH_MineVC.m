@@ -12,6 +12,7 @@
 #import "TH_LoginVC.h"
 #import "TH_AboutEggshellVC.h"
 #import "AppDelegate.h"
+#import "ManagerResumeVC.h"
 @interface TH_MineVC ()<THMineViewDelegate>
 @property(nonatomic,strong)UIScrollView * scro;
 @end
@@ -73,8 +74,8 @@
         }
         case THMineViewButtonTypeResume:
         {NSLog(@"简历管理");
-//            TH_EditInformationVC * edit = [[TH_EditInformationVC alloc] init];
-//            [self.navigationController pushViewController:edit animated:YES];
+            ManagerResumeVC * manager = [[ManagerResumeVC alloc] init];
+            [self.navigationController pushViewController:manager animated:YES];
             break;
         }
         case THMineViewButtonTypeAboutEggshellBtn:

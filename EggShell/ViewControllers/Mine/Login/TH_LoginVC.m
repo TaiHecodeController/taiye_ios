@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"登录";
+    self.view.backgroundColor = color(243, 243, 241);
     [self loginView];
     // Do any additional setup after loading the view.
 }
@@ -34,6 +35,7 @@
     [bgView addSubview:imageView];
     
     UIView * loginView = [[UIView alloc] initWithFrame:CGRectMake(0, 110, WIDETH, 90)];
+    loginView.backgroundColor = color(255, 255, 255);
     [self.view addSubview:loginView];
     UIView * linefirstView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, 0.5)];
     linefirstView.backgroundColor = color(221, 221, 221);

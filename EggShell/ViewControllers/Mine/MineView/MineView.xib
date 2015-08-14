@@ -484,15 +484,9 @@
                         <constraint firstAttribute="height" constant="20" id="L3P-Fc-2oA"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="学习是一种信仰~" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ccz-bG-7xw">
-                    <rect key="frame" x="75" y="48" width="100" height="13"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsv-SR-wx6">
-                    <rect key="frame" x="65" y="21" width="50" height="30"/>
-                    <state key="normal" title="登录">
+                    <rect key="frame" x="73" y="21" width="63" height="30"/>
+                    <state key="normal" title="点击登录">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -533,12 +527,12 @@
                 <outlet property="loginBtn" destination="jsv-SR-wx6" id="PiV-Zz-AQN"/>
                 <outlet property="signOut" destination="Ltt-z5-6v9" id="iFS-oc-O2e"/>
             </connections>
-            <point key="canvasLocation" x="-46" y="18"/>
+            <point key="canvasLocation" x="-250" y="21"/>
         </view>
     </objects>
     <resources>
         <image name="beijing" width="375" height="70"/>
-        <image name="chakanquanbu" width="11" height="6"/>
+        <image name="chakanquanbu" width="6" height="11"/>
         <image name="touxiang1" width="50" height="50"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

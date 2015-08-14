@@ -675,13 +675,13 @@
                                 <constraint firstAttribute="width" constant="96" id="xvT-BI-ZxY"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nh0-bR-HNL" userLabel="FinancialRightContaierView">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nh0-bR-HNL" userLabel="FinancialRightContaierView">
                             <rect key="frame" x="96" y="0.0" width="280" height="80"/>
                             <subviews>
-                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4pp-xV-dPM" userLabel="UpContaierView">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pp-xV-dPM" userLabel="UpContaierView">
                                     <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaZ-Tj-7Dl">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaZ-Tj-7Dl">
                                             <rect key="frame" x="0.0" y="0.0" width="92" height="39"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="39" id="MHX-rJ-OI2"/>
@@ -692,7 +692,7 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEd-tF-sm8">
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEd-tF-sm8">
                                             <rect key="frame" x="93" y="0.0" width="92" height="39"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="39" id="NCc-U3-Esr"/>
@@ -703,7 +703,7 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBo-BB-5lI">
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBo-BB-5lI">
                                             <rect key="frame" x="186" y="0.0" width="94" height="39"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="39" id="dUR-zl-xt0"/>
@@ -714,7 +714,7 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
-                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y6I-6a-9Uz">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y6I-6a-9Uz">
                                             <rect key="frame" x="92.5" y="0.0" width="0.5" height="39"/>
                                             <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
@@ -722,7 +722,7 @@
                                                 <constraint firstAttribute="height" constant="39" id="zxh-aa-amL"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tot-A8-tg4">
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tot-A8-tg4">
                                             <rect key="frame" x="186" y="0.0" width="0.5" height="39"/>
                                             <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
@@ -730,7 +730,7 @@
                                                 <constraint firstAttribute="height" constant="39" id="L1N-60-0Vb"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aCS-77-Avj">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCS-77-Avj">
                                             <rect key="frame" x="0.0" y="39.5" width="280" height="0.5"/>
                                             <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
@@ -760,10 +760,10 @@
                                         <constraint firstItem="aCS-77-Avj" firstAttribute="leading" secondItem="4pp-xV-dPM" secondAttribute="leading" id="xtY-Xe-NB9"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GOK-3J-zgQ" userLabel="DownContaierView">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GOK-3J-zgQ" userLabel="DownContaierView">
                                     <rect key="frame" x="0.0" y="40" width="280" height="40"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xb1-Mr-vVc">
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xb1-Mr-vVc">
                                             <rect key="frame" x="93" y="0.0" width="92" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="Kte-PM-ydy"/>
@@ -774,7 +774,7 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUj-Tb-Tc9">
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUj-Tb-Tc9">
                                             <rect key="frame" x="186" y="0.0" width="94" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="VaO-ps-ag4"/>
@@ -785,7 +785,7 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
-                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RGl-AK-DYc">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RGl-AK-DYc">
                                             <rect key="frame" x="92.5" y="0.0" width="0.5" height="40"/>
                                             <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
@@ -793,7 +793,7 @@
                                                 <constraint firstAttribute="width" constant="0.5" id="fze-j3-Ndt"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zDI-dX-ohB">
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zDI-dX-ohB">
                                             <rect key="frame" x="186" y="0.0" width="0.5" height="40"/>
                                             <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
@@ -801,7 +801,7 @@
                                                 <constraint firstAttribute="width" constant="0.5" id="vgb-8c-O4Z"/>
                                             </constraints>
                                         </view>
-                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AW-v2-Pil">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AW-v2-Pil">
                                             <rect key="frame" x="0.0" y="0.0" width="92" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="SSz-Kv-iZf"/>
@@ -835,6 +835,7 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="0z0-68-usQ"/>
                                 <constraint firstItem="GOK-3J-zgQ" firstAttribute="top" secondItem="4pp-xV-dPM" secondAttribute="bottom" id="1QY-JI-Tnm"/>
                                 <constraint firstAttribute="trailing" secondItem="GOK-3J-zgQ" secondAttribute="trailing" id="LMT-a2-pQf"/>
                                 <constraint firstAttribute="trailing" secondItem="4pp-xV-dPM" secondAttribute="trailing" id="Nnx-wS-cQO"/>
@@ -847,9 +848,12 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="nh0-bR-HNL" firstAttribute="top" secondItem="8Zi-j0-1ca" secondAttribute="top" id="01D-S6-QRZ"/>
                         <constraint firstAttribute="height" constant="80" id="Fdv-9N-xax"/>
                         <constraint firstItem="8nA-ic-tG4" firstAttribute="leading" secondItem="8Zi-j0-1ca" secondAttribute="leading" id="Mm2-zI-1NT"/>
                         <constraint firstAttribute="bottom" secondItem="8nA-ic-tG4" secondAttribute="bottom" id="ZFz-Kt-kwS"/>
+                        <constraint firstItem="nh0-bR-HNL" firstAttribute="leading" secondItem="8nA-ic-tG4" secondAttribute="trailing" id="etA-gf-ztM"/>
+                        <constraint firstAttribute="trailing" secondItem="nh0-bR-HNL" secondAttribute="trailing" constant="-1" id="fZn-b7-Lu1"/>
                         <constraint firstItem="8nA-ic-tG4" firstAttribute="top" secondItem="8Zi-j0-1ca" secondAttribute="top" id="nDb-yR-rfE"/>
                     </constraints>
                 </view>
@@ -863,7 +867,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="apm-Ui-RBm" userLabel="AdvertisingContaierView">
                     <rect key="frame" x="0.0" y="518" width="375" height="80"/>
                     <subviews>
-                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DCf-UK-9Ej" userLabel="AdvertisingLeftView">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DCf-UK-9Ej" userLabel="AdvertisingLeftView">
                             <rect key="frame" x="0.0" y="0.0" width="96" height="80"/>
                             <subviews>
                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qf8-JV-lwU">
@@ -885,17 +889,17 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="80" id="1cY-jd-MmU"/>
-                                <constraint firstAttribute="width" constant="96" id="5IQ-bJ-bhe"/>
+                                <constraint firstAttribute="height" constant="80" id="Mnl-ID-R3v"/>
+                                <constraint firstAttribute="width" constant="96" id="csw-SG-rfr"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VP4-nR-ckm" userLabel="AdvertisingRightView">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VP4-nR-ckm" userLabel="AdvertisingRightView">
                             <rect key="frame" x="96" y="0.0" width="280" height="80"/>
                             <subviews>
-                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qhW-9P-8jS" userLabel="AdvertisingUpRightView">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhW-9P-8jS" userLabel="AdvertisingUpRightView">
                                     <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jL-RJ-YLp">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jL-RJ-YLp">
                                             <rect key="frame" x="0.0" y="0.0" width="92" height="39"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="39" id="V4m-vA-0Nr"/>
@@ -905,7 +909,7 @@
                                                 <color key="titleColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yl6-Wa-aAD">
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yl6-Wa-aAD">
                                             <rect key="frame" x="93" y="0.0" width="92" height="39"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="39" id="JFT-PI-gs4"/>
@@ -916,7 +920,7 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXF-Tt-tsq">
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXF-Tt-tsq">
                                             <rect key="frame" x="186" y="0.0" width="94" height="39"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="39" id="v6z-dl-Zxd"/>
@@ -927,7 +931,7 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
-                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7sG-Fq-XqL">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7sG-Fq-XqL">
                                             <rect key="frame" x="92.5" y="0.0" width="0.5" height="39"/>
                                             <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
@@ -942,7 +946,7 @@
                                                 <constraint firstAttribute="height" constant="39" id="Qmu-Fo-cYb"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YPk-6D-NKM">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPk-6D-NKM">
                                             <rect key="frame" x="0.0" y="39.5" width="280" height="0.5"/>
                                             <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
@@ -972,10 +976,10 @@
                                         <constraint firstAttribute="trailing" secondItem="YPk-6D-NKM" secondAttribute="trailing" id="xQV-Tx-plf"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HbR-1c-ZaD" userLabel="AdvertisingDownView">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HbR-1c-ZaD" userLabel="AdvertisingDownView">
                                     <rect key="frame" x="0.0" y="40" width="280" height="40"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Yl-pt-Zqr">
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Yl-pt-Zqr">
                                             <rect key="frame" x="0.0" y="0.0" width="92" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="es8-54-bj3"/>
@@ -986,7 +990,7 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAr-9t-Hwc">
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAr-9t-Hwc">
                                             <rect key="frame" x="93" y="0.0" width="93" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="YM1-v1-bbB"/>
@@ -997,7 +1001,7 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKu-Mc-QKp">
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKu-Mc-QKp">
                                             <rect key="frame" x="186" y="0.0" width="94" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="6cE-bW-NQC"/>
@@ -1008,7 +1012,7 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                         </button>
-                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GIT-Ex-Y2c">
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GIT-Ex-Y2c">
                                             <rect key="frame" x="92.5" y="0.0" width="0.5" height="39"/>
                                             <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
@@ -1016,7 +1020,7 @@
                                                 <constraint firstAttribute="width" constant="0.5" id="t9N-mD-RU5"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J9f-Ef-4Uv">
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J9f-Ef-4Uv">
                                             <rect key="frame" x="186" y="0.0" width="0.5" height="40"/>
                                             <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
@@ -1054,13 +1058,18 @@
                                 <constraint firstItem="HbR-1c-ZaD" firstAttribute="leading" secondItem="VP4-nR-ckm" secondAttribute="leading" id="UMg-Is-1ip"/>
                                 <constraint firstItem="qhW-9P-8jS" firstAttribute="top" secondItem="VP4-nR-ckm" secondAttribute="top" id="j5u-Nk-7Il"/>
                                 <constraint firstItem="qhW-9P-8jS" firstAttribute="leading" secondItem="VP4-nR-ckm" secondAttribute="leading" id="msH-PA-o6B"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="qc7-DQ-0Af"/>
                             </constraints>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="VP4-nR-ckm" firstAttribute="leading" secondItem="DCf-UK-9Ej" secondAttribute="trailing" id="0bh-YP-GwN"/>
+                        <constraint firstAttribute="trailing" secondItem="VP4-nR-ckm" secondAttribute="trailing" constant="-1" id="0WN-gW-t3A"/>
+                        <constraint firstItem="VP4-nR-ckm" firstAttribute="top" secondItem="apm-Ui-RBm" secondAttribute="top" id="2l2-V6-2H8"/>
                         <constraint firstAttribute="height" constant="80" id="6df-WR-ukF"/>
+                        <constraint firstItem="DCf-UK-9Ej" firstAttribute="leading" secondItem="apm-Ui-RBm" secondAttribute="leading" id="OOt-um-hvk"/>
+                        <constraint firstItem="DCf-UK-9Ej" firstAttribute="top" secondItem="apm-Ui-RBm" secondAttribute="top" id="irf-tn-U8Z"/>
+                        <constraint firstItem="VP4-nR-ckm" firstAttribute="leading" secondItem="DCf-UK-9Ej" secondAttribute="trailing" id="pwm-HM-pdG"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VC3-wm-39v" userLabel="FiveView">

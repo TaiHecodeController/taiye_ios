@@ -118,6 +118,7 @@
     tableView.dataSource = self;
     
     self.tableView = tableView;
+    self.tableView.showsVerticalScrollIndicator = NO;
     [self.scro addSubview:tableView];
     self.scro.contentSize = CGSizeMake(WIDETH, 510+self.tableView.frame.size.height + 44);
 }
@@ -142,24 +143,29 @@
 }
 -(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    UIView  * heatView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, 43)];
+    UIView  * heatView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, 53)];
    
-    UIView * lineVew = [[UIView alloc] initWithFrame:CGRectMake(15, 15, 2, 15)];
+    UIView * lineVew = [[UIView alloc] initWithFrame:CGRectMake(15, 25, 2, 15)];
     lineVew.backgroundColor = color(244, 67, 54);
     [heatView addSubview:lineVew];
-    UILabel * RelatedLable = [[UILabel alloc] initWithFrame:CGRectMake(21, 15, 100, 13)];
+    
+    UIView * bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, 10)];
+    bgView.backgroundColor = color(243, 243, 241);
+    [heatView addSubview:bgView];
+    UILabel * RelatedLable = [[UILabel alloc] initWithFrame:CGRectMake(21, 25, 100, 13)];
     RelatedLable.text = @"该公司更多职位";
     RelatedLable.textColor = color(100, 100, 100);
     RelatedLable.font =[UIFont systemFontOfSize:13];
     [heatView addSubview:RelatedLable];
-    UIView * linebgViw = [[UIView alloc] initWithFrame:CGRectMake(15, 40, WIDETH-15, 0.5)];
+    UIView * linebgViw = [[UIView alloc] initWithFrame:CGRectMake(15, 50, WIDETH-15, 0.5)];
     linebgViw.backgroundColor = color(200, 200, 200);
     [heatView addSubview:linebgViw];
+    heatView.backgroundColor = [UIColor whiteColor];
     return heatView;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 43;
+    return 53;
 }
 -(void)setStatus
 {
