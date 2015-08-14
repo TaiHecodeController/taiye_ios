@@ -17,7 +17,7 @@
 }
 @property (strong, nonatomic) UIWindow *window;
 @property(nonatomic,strong)TH_MainTabBarController * mainTabBar;
-
+@property (assign)int ori_flag;
 +(AppDelegate*)instance;
 
 @end

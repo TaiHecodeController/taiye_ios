@@ -13,11 +13,14 @@
 #import "AppDelegate.h"
 #import "TH_HomeVC.h"
 @interface TH_LoginVC ()
-
+{
+    
+}
+@property (strong,nonatomic)UIButton * loginBtn;
 @end
 
 @implementation TH_LoginVC
-
+@synthesize loginBtn;
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"登录";
@@ -27,12 +30,15 @@
 }
 -(void)loginView
 {
-    UIView * bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, 110)];
+    UIView * bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, 0)];
     bgView.backgroundColor = color(243, 243, 241);
     [self.view addSubview:bgView];
-    UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake((WIDETH-55)/2.0, 15, 55, 77)];
+    UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(-55, 15, 55, 77)];
     imageView.image = [UIImage imageNamed:@"logo"];
     [bgView addSubview:imageView];
+    [UIView animateWithDuration:1 delay:0.0 usingSpringWithDamping:0.5 initialSpringVelocity:20 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+        imageView.frame = CGRectMake((WIDETH-55)/2.0, 15, 55, 77);
+    } completion:nil];
     
     UIView * loginView = [[UIView alloc] initWithFrame:CGRectMake(0, 110, WIDETH, 90)];
     loginView.backgroundColor = color(255, 255, 255);
@@ -50,38 +56,62 @@
     [loginView addSubview:loginThreeView];
     
     
-    UILabel * phoneLable = [[UILabel alloc] initWithFrame:CGRectMake(15, 16, 45, 15)];
+    UILabel * phoneLable = [[UILabel alloc] initWithFrame:CGRectMake(-45, 16, 45, 15)];
     phoneLable.text = @"手机号";
     phoneLable.textColor = [UIColor blackColor];
     phoneLable.font = [UIFont systemFontOfSize:15];
+    
     [loginView addSubview:phoneLable];
     
-    UILabel * passwordLable = [[UILabel alloc] initWithFrame:CGRectMake(15, 16+45, 40, 15)];
+    [UIView animateWithDuration:1 delay:0.5 usingSpringWithDamping:0.5 initialSpringVelocity:20 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+        phoneLable.frame = CGRectMake(15, 16, 45, 15);
+        
+    } completion:nil];
+    
+    UILabel * passwordLable = [[UILabel alloc] initWithFrame:CGRectMake(-55, 16+45, 40, 15)];
     passwordLable.text = @"密码";
     passwordLable.font = [UIFont systemFontOfSize:15];
     [loginView addSubview:passwordLable];
     
+    [UIView animateWithDuration:1 delay:0.65 usingSpringWithDamping:0.5 initialSpringVelocity:20 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+        passwordLable.frame = CGRectMake(15, 16+45, 40, 15);
+    } completion:nil];
     
-    UITextField * phonetextField = [[UITextField alloc] initWithFrame:CGRectMake(80, 0, WIDETH - 80, 45)];
+    
+    UITextField * phonetextField = [[UITextField alloc] initWithFrame:CGRectMake(-WIDETH - 80, 0, WIDETH - 80, 45)];
    phonetextField.placeholder = @"请输入手机号码";
     phonetextField.textColor = color(200, 200, 200);
     phonetextField.font = [UIFont systemFontOfSize:13];
     [loginView addSubview:phonetextField];
+    [UIView animateWithDuration:1 delay:0.6 usingSpringWithDamping:1 initialSpringVelocity:10 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+        phonetextField.frame = CGRectMake(80, 0, WIDETH - 80, 45);
+    } completion:nil];
     
-    UITextField * passwordTextFiled = [[UITextField alloc] initWithFrame:CGRectMake(80, 45, WIDETH - 80, 45)];
+    UITextField * passwordTextFiled = [[UITextField alloc] initWithFrame:CGRectMake(-WIDETH - 80, 45, WIDETH - 80, 45)];
     passwordTextFiled.placeholder =  @"请输入密码";
     passwordTextFiled.font =[UIFont systemFontOfSize:13];
     passwordTextFiled.textColor = color(200, 200, 200);
     [loginView addSubview:passwordTextFiled];
+    [UIView animateWithDuration:1 delay:0.75 usingSpringWithDamping:1 initialSpringVelocity:10 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+        passwordTextFiled.frame = CGRectMake(80, 45, WIDETH - 80, 45);
+    } completion:nil];
+    
     
     //登录
-    UIButton * loginBtn =[[UIButton alloc] initWithFrame:CGRectMake(15, 215, WIDETH - 30, 45)];
+    loginBtn =[[UIButton alloc] initWithFrame:CGRectMake(-20, 215, WIDETH - 30, 45)];
    
     [loginBtn setTitle:@"登录" forState:UIControlStateNormal];
     [loginBtn setBackgroundImage:[UIImage imageNamed:@"hongniu"] forState:UIControlStateNormal];
     loginBtn.titleLabel.textColor = color(255, 255, 255);
     [loginBtn addTarget:self action:@selector(loginBtbClick) forControlEvents:UIControlEventTouchUpInside];
+    loginBtn.alpha = 0;
     [self.view addSubview:loginBtn];
+    
+    [UIView animateWithDuration:1 delay:0.85 usingSpringWithDamping:0.5 initialSpringVelocity:20 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+        loginBtn.frame = CGRectMake(15, 215, WIDETH - 30, 45);
+        self.loginBtn.alpha = 1;
+        
+    } completion:nil];
     
     UILabel * registerLable = [[UILabel alloc] initWithFrame:CGRectMake(15, 275, 70, 12)];
     registerLable.text = @"还没有账号?";
