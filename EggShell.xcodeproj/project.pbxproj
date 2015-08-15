@@ -27,7 +27,6 @@
 		041650EF1B4D7C4E008C78BE /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041650EA1B4D7C4E008C78BE /* MJRefreshHeaderView.m */; };
 		04237D901B66456F00768FAD /* LoginAndRegisterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04237D8F1B66456F00768FAD /* LoginAndRegisterRequest.m */; };
 		04718DA71B7CDA26008214CB /* ZCControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718DA61B7CDA26008214CB /* ZCControl.m */; };
-		04718DC41B7E2AC4008214CB /* WorkingExperienceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718DC31B7E2AC4008214CB /* WorkingExperienceVC.m */; };
 		04718DC91B7E37C2008214CB /* WorkingTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718DC71B7E37C2008214CB /* WorkingTimeCell.m */; };
 		04718DCA1B7E37C2008214CB /* WorkingTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04718DC81B7E37C2008214CB /* WorkingTimeCell.xib */; };
 		048F30A81B7A1562004AA9B2 /* HotSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30A71B7A1562004AA9B2 /* HotSearch.m */; };
@@ -141,6 +140,21 @@
 		94EFC1C11B7D046F00833068 /* TH_featureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EFC1C01B7D046F00833068 /* TH_featureVC.m */; };
 		94EFC1C41B7D8F6900833068 /* TH_AFRequestState.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EFC1C31B7D8F6900833068 /* TH_AFRequestState.m */; };
 		94EFC1C81B7DC65200833068 /* playFanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EFC1C71B7DC65200833068 /* playFanModel.m */; };
+		94EFC1CB1B7ED59600833068 /* WorkingExperienceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EFC1CA1B7ED59600833068 /* WorkingExperienceVC.m */; };
+		94EFC1D51B7EDE2600833068 /* TH_EducationExperienceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EFC1D41B7EDE2600833068 /* TH_EducationExperienceVC.m */; };
+		94EFC1D81B7EE03800833068 /* TH_TrainExperienceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EFC1D71B7EE03800833068 /* TH_TrainExperienceVC.m */; };
+		94EFC1DB1B7EE04C00833068 /* TH_ProfessionalSkillVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EFC1DA1B7EE04C00833068 /* TH_ProfessionalSkillVC.m */; };
+		94EFC1E11B7EE07A00833068 /* TH_CertificateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EFC1E01B7EE07A00833068 /* TH_CertificateVC.m */; };
+		94EFC1E41B7EE08B00833068 /* TH_SelfEvaluationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EFC1E31B7EE08B00833068 /* TH_SelfEvaluationVC.m */; };
+		94EFC1E71B7EE15E00833068 /* TH_ProjectExperienceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EFC1E61B7EE15E00833068 /* TH_ProjectExperienceVC.m */; };
+		94EFC1EC1B7F0FFC00833068 /* EducationTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EFC1EA1B7F0FFC00833068 /* EducationTimeCell.m */; };
+		94EFC1ED1B7F0FFC00833068 /* EducationTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94EFC1EB1B7F0FFC00833068 /* EducationTimeCell.xib */; };
+		94EFC1F11B7F104000833068 /* EducationWriteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EFC1EF1B7F104000833068 /* EducationWriteCell.m */; };
+		94EFC1F21B7F104000833068 /* EducationWriteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94EFC1F01B7F104000833068 /* EducationWriteCell.xib */; };
+		94EFC1F71B7F370F00833068 /* ProfessionalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EFC1F51B7F370F00833068 /* ProfessionalCell.m */; };
+		94EFC1F81B7F370F00833068 /* ProfessionalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94EFC1F61B7F370F00833068 /* ProfessionalCell.xib */; };
+		94EFC1FD1B7F416500833068 /* projectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EFC1FB1B7F416500833068 /* projectTableViewCell.m */; };
+		94EFC1FE1B7F416500833068 /* projectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94EFC1FC1B7F416500833068 /* projectTableViewCell.xib */; };
 		CA3D16A93CCBDD012A68A6C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37454D869BE49FA62A71A04C /* libPods.a */; };
 		F05440B11B7848B000127A9B /* HYSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F05440B01B7848B000127A9B /* HYSegmentedControl.m */; };
 		F05440B41B7870B800127A9B /* jobTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F05440B31B7870B800127A9B /* jobTableViewCell.m */; };
@@ -210,8 +224,6 @@
 		04237D8F1B66456F00768FAD /* LoginAndRegisterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAndRegisterRequest.m; sourceTree = "<group>"; };
 		04718DA51B7CDA26008214CB /* ZCControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCControl.h; sourceTree = "<group>"; };
 		04718DA61B7CDA26008214CB /* ZCControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCControl.m; sourceTree = "<group>"; };
-		04718DC21B7E2AC4008214CB /* WorkingExperienceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkingExperienceVC.h; path = ../../../../../../../Documents/WorkingExperienceVC.h; sourceTree = "<group>"; };
-		04718DC31B7E2AC4008214CB /* WorkingExperienceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkingExperienceVC.m; path = ../../../../../../../Documents/WorkingExperienceVC.m; sourceTree = "<group>"; };
 		04718DC61B7E37C2008214CB /* WorkingTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkingTimeCell.h; sourceTree = "<group>"; };
 		04718DC71B7E37C2008214CB /* WorkingTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkingTimeCell.m; sourceTree = "<group>"; };
 		04718DC81B7E37C2008214CB /* WorkingTimeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkingTimeCell.xib; sourceTree = "<group>"; };
@@ -414,6 +426,32 @@
 		94EFC1C31B7D8F6900833068 /* TH_AFRequestState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_AFRequestState.m; sourceTree = "<group>"; };
 		94EFC1C61B7DC65200833068 /* playFanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = playFanModel.h; sourceTree = "<group>"; };
 		94EFC1C71B7DC65200833068 /* playFanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = playFanModel.m; sourceTree = "<group>"; };
+		94EFC1CA1B7ED59600833068 /* WorkingExperienceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkingExperienceVC.m; sourceTree = "<group>"; };
+		94EFC1CC1B7ED5A500833068 /* WorkingExperienceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkingExperienceVC.h; sourceTree = "<group>"; };
+		94EFC1D31B7EDE2600833068 /* TH_EducationExperienceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_EducationExperienceVC.h; sourceTree = "<group>"; };
+		94EFC1D41B7EDE2600833068 /* TH_EducationExperienceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_EducationExperienceVC.m; sourceTree = "<group>"; };
+		94EFC1D61B7EE03800833068 /* TH_TrainExperienceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_TrainExperienceVC.h; sourceTree = "<group>"; };
+		94EFC1D71B7EE03800833068 /* TH_TrainExperienceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_TrainExperienceVC.m; sourceTree = "<group>"; };
+		94EFC1D91B7EE04C00833068 /* TH_ProfessionalSkillVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_ProfessionalSkillVC.h; sourceTree = "<group>"; };
+		94EFC1DA1B7EE04C00833068 /* TH_ProfessionalSkillVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_ProfessionalSkillVC.m; sourceTree = "<group>"; };
+		94EFC1DF1B7EE07A00833068 /* TH_CertificateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_CertificateVC.h; sourceTree = "<group>"; };
+		94EFC1E01B7EE07A00833068 /* TH_CertificateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_CertificateVC.m; sourceTree = "<group>"; };
+		94EFC1E21B7EE08B00833068 /* TH_SelfEvaluationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_SelfEvaluationVC.h; sourceTree = "<group>"; };
+		94EFC1E31B7EE08B00833068 /* TH_SelfEvaluationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_SelfEvaluationVC.m; sourceTree = "<group>"; };
+		94EFC1E51B7EE15E00833068 /* TH_ProjectExperienceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_ProjectExperienceVC.h; sourceTree = "<group>"; };
+		94EFC1E61B7EE15E00833068 /* TH_ProjectExperienceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_ProjectExperienceVC.m; sourceTree = "<group>"; };
+		94EFC1E91B7F0FFC00833068 /* EducationTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EducationTimeCell.h; sourceTree = "<group>"; };
+		94EFC1EA1B7F0FFC00833068 /* EducationTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EducationTimeCell.m; sourceTree = "<group>"; };
+		94EFC1EB1B7F0FFC00833068 /* EducationTimeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EducationTimeCell.xib; sourceTree = "<group>"; };
+		94EFC1EE1B7F104000833068 /* EducationWriteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EducationWriteCell.h; path = ../../SubViews/EducationWriteCell.h; sourceTree = "<group>"; };
+		94EFC1EF1B7F104000833068 /* EducationWriteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EducationWriteCell.m; path = ../../SubViews/EducationWriteCell.m; sourceTree = "<group>"; };
+		94EFC1F01B7F104000833068 /* EducationWriteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EducationWriteCell.xib; path = ../../SubViews/EducationWriteCell.xib; sourceTree = "<group>"; };
+		94EFC1F41B7F370F00833068 /* ProfessionalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfessionalCell.h; sourceTree = "<group>"; };
+		94EFC1F51B7F370F00833068 /* ProfessionalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfessionalCell.m; sourceTree = "<group>"; };
+		94EFC1F61B7F370F00833068 /* ProfessionalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfessionalCell.xib; sourceTree = "<group>"; };
+		94EFC1FA1B7F416500833068 /* projectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = projectTableViewCell.h; sourceTree = "<group>"; };
+		94EFC1FB1B7F416500833068 /* projectTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = projectTableViewCell.m; sourceTree = "<group>"; };
+		94EFC1FC1B7F416500833068 /* projectTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = projectTableViewCell.xib; sourceTree = "<group>"; };
 		A209E6A9E258BA344FA95EF1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F05440AF1B7848B000127A9B /* HYSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSegmentedControl.h; sourceTree = "<group>"; };
 		F05440B01B7848B000127A9B /* HYSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSegmentedControl.m; sourceTree = "<group>"; };
@@ -636,9 +674,13 @@
 		04718DC11B7E2A20008214CB /* ResumeDetail */ = {
 			isa = PBXGroup;
 			children = (
-				04718DC21B7E2AC4008214CB /* WorkingExperienceVC.h */,
-				04718DC31B7E2AC4008214CB /* WorkingExperienceVC.m */,
-				04718DC51B7E3678008214CB /* SubViews */,
+				94EFC1D21B7ED90B00833068 /* SelfEvaluation */,
+				94EFC1D11B7ED8F100833068 /* Certificate */,
+				94EFC1D01B7ED8D300833068 /* ProjectExperience */,
+				94EFC1CF1B7ED8A600833068 /* ProfessionalSkill */,
+				94EFC1CE1B7ED86600833068 /* TrainExperience */,
+				94EFC1CD1B7ED6DE00833068 /* EducationExperience */,
+				94EFC1C91B7ED41300833068 /* WorkExperience */,
 			);
 			path = ResumeDetail;
 			sourceTree = "<group>";
@@ -650,7 +692,8 @@
 				04718DC71B7E37C2008214CB /* WorkingTimeCell.m */,
 				04718DC81B7E37C2008214CB /* WorkingTimeCell.xib */,
 			);
-			path = SubViews;
+			name = SubViews;
+			path = ../SubViews;
 			sourceTree = "<group>";
 		};
 		048F30AB1B7A4537004AA9B2 /* fmdb */ = {
@@ -1315,6 +1358,106 @@
 			path = PlayModel;
 			sourceTree = "<group>";
 		};
+		94EFC1C91B7ED41300833068 /* WorkExperience */ = {
+			isa = PBXGroup;
+			children = (
+				04718DC51B7E3678008214CB /* SubViews */,
+				94EFC1CC1B7ED5A500833068 /* WorkingExperienceVC.h */,
+				94EFC1CA1B7ED59600833068 /* WorkingExperienceVC.m */,
+			);
+			path = WorkExperience;
+			sourceTree = "<group>";
+		};
+		94EFC1CD1B7ED6DE00833068 /* EducationExperience */ = {
+			isa = PBXGroup;
+			children = (
+				94EFC1E81B7F0FC400833068 /* SubView */,
+				94EFC1D31B7EDE2600833068 /* TH_EducationExperienceVC.h */,
+				94EFC1D41B7EDE2600833068 /* TH_EducationExperienceVC.m */,
+			);
+			path = EducationExperience;
+			sourceTree = "<group>";
+		};
+		94EFC1CE1B7ED86600833068 /* TrainExperience */ = {
+			isa = PBXGroup;
+			children = (
+				94EFC1D61B7EE03800833068 /* TH_TrainExperienceVC.h */,
+				94EFC1D71B7EE03800833068 /* TH_TrainExperienceVC.m */,
+			);
+			path = TrainExperience;
+			sourceTree = "<group>";
+		};
+		94EFC1CF1B7ED8A600833068 /* ProfessionalSkill */ = {
+			isa = PBXGroup;
+			children = (
+				94EFC1F31B7F36E400833068 /* SubView */,
+				94EFC1D91B7EE04C00833068 /* TH_ProfessionalSkillVC.h */,
+				94EFC1DA1B7EE04C00833068 /* TH_ProfessionalSkillVC.m */,
+			);
+			path = ProfessionalSkill;
+			sourceTree = "<group>";
+		};
+		94EFC1D01B7ED8D300833068 /* ProjectExperience */ = {
+			isa = PBXGroup;
+			children = (
+				94EFC1F91B7F415300833068 /* SubView */,
+				94EFC1E51B7EE15E00833068 /* TH_ProjectExperienceVC.h */,
+				94EFC1E61B7EE15E00833068 /* TH_ProjectExperienceVC.m */,
+			);
+			path = ProjectExperience;
+			sourceTree = "<group>";
+		};
+		94EFC1D11B7ED8F100833068 /* Certificate */ = {
+			isa = PBXGroup;
+			children = (
+				94EFC1DF1B7EE07A00833068 /* TH_CertificateVC.h */,
+				94EFC1E01B7EE07A00833068 /* TH_CertificateVC.m */,
+			);
+			path = Certificate;
+			sourceTree = "<group>";
+		};
+		94EFC1D21B7ED90B00833068 /* SelfEvaluation */ = {
+			isa = PBXGroup;
+			children = (
+				94EFC1E21B7EE08B00833068 /* TH_SelfEvaluationVC.h */,
+				94EFC1E31B7EE08B00833068 /* TH_SelfEvaluationVC.m */,
+			);
+			path = SelfEvaluation;
+			sourceTree = "<group>";
+		};
+		94EFC1E81B7F0FC400833068 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				94EFC1EE1B7F104000833068 /* EducationWriteCell.h */,
+				94EFC1EF1B7F104000833068 /* EducationWriteCell.m */,
+				94EFC1F01B7F104000833068 /* EducationWriteCell.xib */,
+				94EFC1E91B7F0FFC00833068 /* EducationTimeCell.h */,
+				94EFC1EA1B7F0FFC00833068 /* EducationTimeCell.m */,
+				94EFC1EB1B7F0FFC00833068 /* EducationTimeCell.xib */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		94EFC1F31B7F36E400833068 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				94EFC1F41B7F370F00833068 /* ProfessionalCell.h */,
+				94EFC1F51B7F370F00833068 /* ProfessionalCell.m */,
+				94EFC1F61B7F370F00833068 /* ProfessionalCell.xib */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		94EFC1F91B7F415300833068 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				94EFC1FA1B7F416500833068 /* projectTableViewCell.h */,
+				94EFC1FB1B7F416500833068 /* projectTableViewCell.m */,
+				94EFC1FC1B7F416500833068 /* projectTableViewCell.xib */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
 		B3CC7EB400379DA8CBAEF017 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1438,6 +1581,8 @@
 				94313DEE1B7CB5C9005D0A9A /* NameAndSexCell.xib in Resources */,
 				04EC1F241B791B660009292E /* moreJobTableViewCell.xib in Resources */,
 				941F10251B7B3D1D00719F5B /* EditAddressVC.xib in Resources */,
+				94EFC1ED1B7F0FFC00833068 /* EducationTimeCell.xib in Resources */,
+				94EFC1F81B7F370F00833068 /* ProfessionalCell.xib in Resources */,
 				04EC1F101B78F5510009292E /* SearchView.xib in Resources */,
 				94CB5B911B74F0D500B23B9D /* HomeViews.xib in Resources */,
 				94D9000A1B79996600F6FD36 /* JobDescription.xib in Resources */,
@@ -1445,6 +1590,7 @@
 				94CB5B891B74CC0600B23B9D /* LICENSE in Resources */,
 				F05440B91B788DAB00127A9B /* findjobtest.plist in Resources */,
 				941F10151B7B3BCC00719F5B /* JobWishList.xib in Resources */,
+				94EFC1F21B7F104000833068 /* EducationWriteCell.xib in Resources */,
 				94D900051B7998C200F6FD36 /* CompanyProfile.xib in Resources */,
 				041650421B4D7142008C78BE /* Images.xcassets in Resources */,
 				94313DC21B7CAAED005D0A9A /* InformationDeskCell.xib in Resources */,
@@ -1460,6 +1606,7 @@
 				94313DD21B7CAD6E005D0A9A /* MineView.xib in Resources */,
 				048F30AA1B7A1577004AA9B2 /* HotSearch.xib in Resources */,
 				941F10271B7B3D1D00719F5B /* MineEditInfoView.xib in Resources */,
+				94EFC1FE1B7F416500833068 /* projectTableViewCell.xib in Resources */,
 				94313DCA1B7CAB62005D0A9A /* AboutEgger.xib in Resources */,
 				94313DEA1B7CB5C9005D0A9A /* ManagerResumeVC.xib in Resources */,
 			);
@@ -1527,12 +1674,14 @@
 				94EDD4E81B78319A00A00A78 /* UIBarButtonItem+Extension.m in Sources */,
 				94EDD4F41B7831DA00A00A78 /* ZXImagePickerVC.m in Sources */,
 				94CB5B7E1B74CC0600B23B9D /* MJFoundation.m in Sources */,
+				94EFC1CB1B7ED59600833068 /* WorkingExperienceVC.m in Sources */,
 				041650CA1B4D730F008C78BE /* MBProgressHUD+Show.m in Sources */,
 				041650DF1B4D795B008C78BE /* AFAppRequest.m in Sources */,
 				F05440B11B7848B000127A9B /* HYSegmentedControl.m in Sources */,
 				94313DC31B7CAAED005D0A9A /* TH_InformationDeskVC.m in Sources */,
 				94313D401B7B6C19005D0A9A /* CompanyDetailVC.m in Sources */,
 				0416506B1B4D7240008C78BE /* GVarAdapter.m in Sources */,
+				94EFC1E41B7EE08B00833068 /* TH_SelfEvaluationVC.m in Sources */,
 				941F102C1B7B400D00719F5B /* TH_LoginVC.m in Sources */,
 				94313D7B1B7C1F2A005D0A9A /* TH_ForgotPasswordVC.m in Sources */,
 				048F30B71B7A4537004AA9B2 /* FMDatabase.m in Sources */,
@@ -1549,6 +1698,8 @@
 				041650691B4D7240008C78BE /* GObjAdapter.m in Sources */,
 				041650CB1B4D730F008C78BE /* MBProgressHUD.m in Sources */,
 				04A0CD481B7A111D00EBCF01 /* HeadView.m in Sources */,
+				94EFC1EC1B7F0FFC00833068 /* EducationTimeCell.m in Sources */,
+				94EFC1FD1B7F416500833068 /* projectTableViewCell.m in Sources */,
 				94313DC11B7CAAED005D0A9A /* InformationDeskCell.m in Sources */,
 				041650671B4D7240008C78BE /* GAdapter.m in Sources */,
 				94CB5B7C1B74CC0600B23B9D /* MJArgument.m in Sources */,
@@ -1564,10 +1715,13 @@
 				04EC1F231B791B660009292E /* moreJobTableViewCell.m in Sources */,
 				048F30BB1B7A4537004AA9B2 /* FMResultSet.m in Sources */,
 				94CB5B881B74CC0600B23B9D /* SGFocusImageItem.m in Sources */,
+				94EFC1DB1B7EE04C00833068 /* TH_ProfessionalSkillVC.m in Sources */,
 				94CB5B841B74CC0600B23B9D /* NSObject+MJCoding.m in Sources */,
 				94313D391B7B5731005D0A9A /* TH_RegisterVC.m in Sources */,
+				94EFC1F71B7F370F00833068 /* ProfessionalCell.m in Sources */,
 				94CB5BAB1B763AAC00B23B9D /* TH_FindJobVC.m in Sources */,
 				94D900061B79992000F6FD36 /* CompanyProfil.m in Sources */,
+				94EFC1D81B7EE03800833068 /* TH_TrainExperienceVC.m in Sources */,
 				048F30B81B7A4537004AA9B2 /* FMDatabaseAdditions.m in Sources */,
 				0416503A1B4D7141008C78BE /* AppDelegate.m in Sources */,
 				041650371B4D7141008C78BE /* main.m in Sources */,
@@ -1588,6 +1742,7 @@
 				941F100A1B7B3BBD00719F5B /* TH_DeliveryJobVC.m in Sources */,
 				941F10261B7B3D1D00719F5B /* MineEditInfoView.m in Sources */,
 				94EDD4F11B7831BB00A00A78 /* ZXLabel.m in Sources */,
+				94EFC1D51B7EDE2600833068 /* TH_EducationExperienceVC.m in Sources */,
 				94313D331B7B46B6005D0A9A /* LoginView.m in Sources */,
 				94EDD4E91B78319A00A00A78 /* UILabel+Extension.m in Sources */,
 				F05440BC1B788FE000127A9B /* jobModel.m in Sources */,
@@ -1603,10 +1758,13 @@
 				94313DF71B7CB610005D0A9A /* TH_HomeVC.m in Sources */,
 				048F30BA1B7A4537004AA9B2 /* FMDatabaseQueue.m in Sources */,
 				94313DF41B7CB5C9005D0A9A /* WriteResumeViewController.m in Sources */,
+				94EFC1F11B7F104000833068 /* EducationWriteCell.m in Sources */,
 				04718DC91B7E37C2008214CB /* WorkingTimeCell.m in Sources */,
+				94EFC1E71B7EE15E00833068 /* TH_ProjectExperienceVC.m in Sources */,
 				041650EC1B4D7C4E008C78BE /* MJRefreshBaseView.m in Sources */,
 				F05440B71B7885F500127A9B /* UIBarButtonItem+DC.m in Sources */,
 				F0D7C06D1B79F92300836DD2 /* OpenClassModel.m in Sources */,
+				94EFC1E11B7EE07A00833068 /* TH_CertificateVC.m in Sources */,
 				04EC1F151B78F6210009292E /* JobAlertView.m in Sources */,
 				94CB5B871B74CC0600B23B9D /* SGFocusImageFrame.m in Sources */,
 				941F0FC11B79A71700719F5B /* Course PlayCell.m in Sources */,
@@ -1617,7 +1775,6 @@
 				04A483B41B74FD1B006FDB9D /* TH_MainTabBarController.m in Sources */,
 				F0D7C0611B79EB3300836DD2 /* OpenClassVideoListRequest.m in Sources */,
 				04EC1F251B791B660009292E /* TH_JobDetailVC.m in Sources */,
-				04718DC41B7E2AC4008214CB /* WorkingExperienceVC.m in Sources */,
 				94CB5B9B1B7632E800B23B9D /* TH_BaseVC.m in Sources */,
 				94CB5B7A1B74CC0600B23B9D /* BaseModel.m in Sources */,
 				941F10161B7B3BCC00719F5B /* JobWishlistCell.m in Sources */,
