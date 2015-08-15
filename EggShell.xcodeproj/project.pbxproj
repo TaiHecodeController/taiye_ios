@@ -27,6 +27,9 @@
 		041650EF1B4D7C4E008C78BE /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041650EA1B4D7C4E008C78BE /* MJRefreshHeaderView.m */; };
 		04237D901B66456F00768FAD /* LoginAndRegisterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04237D8F1B66456F00768FAD /* LoginAndRegisterRequest.m */; };
 		04718DA71B7CDA26008214CB /* ZCControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718DA61B7CDA26008214CB /* ZCControl.m */; };
+		04718DC41B7E2AC4008214CB /* WorkingExperienceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718DC31B7E2AC4008214CB /* WorkingExperienceVC.m */; };
+		04718DC91B7E37C2008214CB /* WorkingTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04718DC71B7E37C2008214CB /* WorkingTimeCell.m */; };
+		04718DCA1B7E37C2008214CB /* WorkingTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04718DC81B7E37C2008214CB /* WorkingTimeCell.xib */; };
 		048F30A81B7A1562004AA9B2 /* HotSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30A71B7A1562004AA9B2 /* HotSearch.m */; };
 		048F30AA1B7A1577004AA9B2 /* HotSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048F30A91B7A1577004AA9B2 /* HotSearch.xib */; };
 		048F30B71B7A4537004AA9B2 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F30AD1B7A4537004AA9B2 /* FMDatabase.m */; };
@@ -207,6 +210,11 @@
 		04237D8F1B66456F00768FAD /* LoginAndRegisterRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAndRegisterRequest.m; sourceTree = "<group>"; };
 		04718DA51B7CDA26008214CB /* ZCControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCControl.h; sourceTree = "<group>"; };
 		04718DA61B7CDA26008214CB /* ZCControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCControl.m; sourceTree = "<group>"; };
+		04718DC21B7E2AC4008214CB /* WorkingExperienceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorkingExperienceVC.h; path = ../../../../../../../Documents/WorkingExperienceVC.h; sourceTree = "<group>"; };
+		04718DC31B7E2AC4008214CB /* WorkingExperienceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorkingExperienceVC.m; path = ../../../../../../../Documents/WorkingExperienceVC.m; sourceTree = "<group>"; };
+		04718DC61B7E37C2008214CB /* WorkingTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkingTimeCell.h; sourceTree = "<group>"; };
+		04718DC71B7E37C2008214CB /* WorkingTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkingTimeCell.m; sourceTree = "<group>"; };
+		04718DC81B7E37C2008214CB /* WorkingTimeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkingTimeCell.xib; sourceTree = "<group>"; };
 		048F30A61B7A1562004AA9B2 /* HotSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotSearch.h; sourceTree = "<group>"; };
 		048F30A71B7A1562004AA9B2 /* HotSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotSearch.m; sourceTree = "<group>"; };
 		048F30A91B7A1577004AA9B2 /* HotSearch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotSearch.xib; sourceTree = "<group>"; };
@@ -623,6 +631,26 @@
 				04718DA61B7CDA26008214CB /* ZCControl.m */,
 			);
 			path = "UI类";
+			sourceTree = "<group>";
+		};
+		04718DC11B7E2A20008214CB /* ResumeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				04718DC21B7E2AC4008214CB /* WorkingExperienceVC.h */,
+				04718DC31B7E2AC4008214CB /* WorkingExperienceVC.m */,
+				04718DC51B7E3678008214CB /* SubViews */,
+			);
+			path = ResumeDetail;
+			sourceTree = "<group>";
+		};
+		04718DC51B7E3678008214CB /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				04718DC61B7E37C2008214CB /* WorkingTimeCell.h */,
+				04718DC71B7E37C2008214CB /* WorkingTimeCell.m */,
+				04718DC81B7E37C2008214CB /* WorkingTimeCell.xib */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 		048F30AB1B7A4537004AA9B2 /* fmdb */ = {
@@ -1043,6 +1071,7 @@
 				94313DE61B7CB5C9005D0A9A /* WriteResumeVC2.m */,
 				94313DE71B7CB5C9005D0A9A /* WriteResumeViewController.h */,
 				94313DE81B7CB5C9005D0A9A /* WriteResumeViewController.m */,
+				04718DC11B7E2A20008214CB /* ResumeDetail */,
 			);
 			path = writeResume;
 			sourceTree = "<group>";
@@ -1427,6 +1456,7 @@
 				94313D351B7B46C2005D0A9A /* LoginView.xib in Resources */,
 				94313DEC1B7CB5C9005D0A9A /* ExceptCityCell.xib in Resources */,
 				04EC1F121B78F60C0009292E /* JobAlertView.xib in Resources */,
+				04718DCA1B7E37C2008214CB /* WorkingTimeCell.xib in Resources */,
 				94313DD21B7CAD6E005D0A9A /* MineView.xib in Resources */,
 				048F30AA1B7A1577004AA9B2 /* HotSearch.xib in Resources */,
 				941F10271B7B3D1D00719F5B /* MineEditInfoView.xib in Resources */,
@@ -1573,6 +1603,7 @@
 				94313DF71B7CB610005D0A9A /* TH_HomeVC.m in Sources */,
 				048F30BA1B7A4537004AA9B2 /* FMDatabaseQueue.m in Sources */,
 				94313DF41B7CB5C9005D0A9A /* WriteResumeViewController.m in Sources */,
+				04718DC91B7E37C2008214CB /* WorkingTimeCell.m in Sources */,
 				041650EC1B4D7C4E008C78BE /* MJRefreshBaseView.m in Sources */,
 				F05440B71B7885F500127A9B /* UIBarButtonItem+DC.m in Sources */,
 				F0D7C06D1B79F92300836DD2 /* OpenClassModel.m in Sources */,
@@ -1586,6 +1617,7 @@
 				04A483B41B74FD1B006FDB9D /* TH_MainTabBarController.m in Sources */,
 				F0D7C0611B79EB3300836DD2 /* OpenClassVideoListRequest.m in Sources */,
 				04EC1F251B791B660009292E /* TH_JobDetailVC.m in Sources */,
+				04718DC41B7E2AC4008214CB /* WorkingExperienceVC.m in Sources */,
 				94CB5B9B1B7632E800B23B9D /* TH_BaseVC.m in Sources */,
 				94CB5B7A1B74CC0600B23B9D /* BaseModel.m in Sources */,
 				941F10161B7B3BCC00719F5B /* JobWishlistCell.m in Sources */,

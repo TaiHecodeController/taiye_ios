@@ -403,10 +403,9 @@ typedef NS_ENUM(NSInteger, GestureType){
     //
     //    });
     
-    
-    
-    
-    
+}
+-(void)startFullScreen
+{
     
 }
 - (void)createTopView{
@@ -1031,6 +1030,7 @@ typedef NS_ENUM(NSInteger, GestureType){
 }
 //横屏
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    [AppDelegate instance].ori_flag = 1;
     return (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight);
 }
 - (NSUInteger)supportedInterfaceOrientations {

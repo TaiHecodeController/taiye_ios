@@ -8,6 +8,7 @@
 
 #import "WriteResumeVC2.h"
 #import "WriteResumeCell2.h"
+#import "WorkingExperienceVC.h"
 
 @interface WriteResumeVC2 ()<UITableViewDataSource,UITableViewDelegate>
 {
@@ -75,6 +76,21 @@
         cell.stateBtn.selected = YES;
     }
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.row) {
+        case 0:
+        {
+            WorkingExperienceVC * wvc = [[WorkingExperienceVC alloc] init];
+            [self.navigationController pushViewController:wvc animated:YES];
+        }
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
