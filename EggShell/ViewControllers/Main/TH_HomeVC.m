@@ -36,7 +36,6 @@
     SearchView * _searchView;
     
 }
-
 @property (nonatomic, strong)SGFocusImageFrame *bannerView;
 @property (nonatomic, strong) NSMutableArray *arr;
 @property(nonatomic,strong)UIScrollView * scro;

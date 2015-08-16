@@ -148,7 +148,6 @@
     }else{
         height=44;
     }
-    
     return height;
 }
 //+(NSString *)platformString{
