@@ -51,8 +51,7 @@
     [loginView addSubview:loginSencondView];
     
     UIView * loginThreeView = [[UIView alloc] initWithFrame:CGRectMake(0, 89.5, WIDETH, 0.5)];
-    loginThreeView
-    .backgroundColor = color(221, 221, 221);
+    loginThreeView.backgroundColor = color(221, 221, 221);
     [loginView addSubview:loginThreeView];
     
     

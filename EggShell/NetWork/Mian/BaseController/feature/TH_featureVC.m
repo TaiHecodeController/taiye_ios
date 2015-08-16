@@ -46,7 +46,7 @@
         imageView.height = scrollH;
         imageView.y = 0;
         imageView.x = i * scrollW;
-        NSString *name = [NSString stringWithFormat:@"newFeature_%d", i];
+        NSString *name = [NSString stringWithFormat:@"guidePage%d", i];
         imageView.image = [UIImage imageNamed:name];
         [scrollView addSubview:imageView];
         
@@ -76,7 +76,7 @@
     UIButton *shareBtn = [[UIButton alloc] init];
     [shareBtn setImage:[UIImage imageNamed:@"new_feature_share_false"] forState:UIControlStateNormal];
     [shareBtn setImage:[UIImage imageNamed:@"new_feature_share_true"] forState:UIControlStateSelected];
-    [shareBtn setTitle:@"进行相关设置" forState:UIControlStateNormal];
+    [shareBtn setTitle:@"进来看看" forState:UIControlStateNormal];
     [shareBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     shareBtn.titleLabel.font = [UIFont systemFontOfSize:15];
     shareBtn.width = 220;
@@ -100,7 +100,7 @@
     [startBtn setBackgroundImage:[UIImage imageNamed:@"hongniu"] forState:UIControlStateNormal
      ];
     startBtn.backgroundColor = color(255, 255, 255);
-    [startBtn setTitle:@"开始" forState:UIControlStateNormal];
+    [startBtn setTitle:@"点击开始" forState:UIControlStateNormal];
     [startBtn addTarget:self action:@selector(startClick) forControlEvents:UIControlEventTouchUpInside];
     [imageView addSubview:startBtn];
 }
