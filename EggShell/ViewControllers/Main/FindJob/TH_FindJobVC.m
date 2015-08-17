@@ -12,6 +12,7 @@
 #import "UIBarButtonItem+DC.h"
 #import "jobModel.h"
 #import "TH_JobDetailVC.h"
+#import "TH_JobScreeningVC.h"
 
 
 #define bottomH 107
@@ -44,9 +45,11 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
   
     
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem barBtnItemWithNormalImageName:@"liebiao" hightImageName:nil action:@selector(rightClick) target:self];
+  self.navigationItem.rightBarButtonItem = [UIBarButtonItem barBtnItemWithNormalImageName:@"liebiao" hightImageName:nil action:@selector(rightClick) target:self];
     
-    [self addRightBtn2_NormalImageName:@"sousuo001" hightImageName:nil action:@selector(rightClick2) target:self];
+    
+    
+//    [self addRightBtn2_NormalImageName:@"sousuo001" hightImageName:nil action:@selector(rightClick2) target:self];
     
     [self initView];
     
@@ -357,6 +360,11 @@
 - (void)rightClick
 {
     THLog(@"条件选择按钮被点击");
+    
+    
+    TH_JobScreeningVC * job = [[TH_JobScreeningVC alloc] init];
+    job.title = @"职位搜索";
+    [self.navigationController pushViewController:job animated:YES];
 }
 
 - (void)rightClick2

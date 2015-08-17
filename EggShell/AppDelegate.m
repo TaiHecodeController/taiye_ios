@@ -34,7 +34,7 @@
 //    [self initPloyVideo];
     
     [self.window makeKeyAndVisible];
-    sleep(3);
+    sleep(1);
     NSString *key = @"CFBundleVersion";
     NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:kBundleVersion];
     NSString *currentVersion = [NSBundle mainBundle].infoDictionary[kBundleVersion];

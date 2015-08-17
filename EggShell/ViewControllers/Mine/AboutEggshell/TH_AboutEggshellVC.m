@@ -9,7 +9,8 @@
 #import "TH_AboutEggshellVC.h"
 #import "AboutEggerView.h"
 @interface TH_AboutEggshellVC ()
-
+@property(nonatomic,strong)UIScrollView * scro;
+@property(strong,nonatomic)UIWebView* webView;
 @end
 
 @implementation TH_AboutEggshellVC
@@ -17,11 +18,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    AboutEggerView * aboutView = [[[NSBundle mainBundle] loadNibNamed:@"AboutEgger" owner:self options:nil] lastObject];
-    aboutView.frame = CGRectMake(0, 0, WIDETH, HEIGHT);
-    [self.view addSubview:aboutView];
+//    AboutEggerView * aboutView = [[[NSBundle mainBundle] loadNibNamed:@"AboutEgger" owner:self options:nil] lastObject];
+//    aboutView.frame = CGRectMake(0, 0, WIDETH, HEIGHT);
+//    [self.view addSubview:aboutView];
+    UIScrollView * scro = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, HEIGHT)];
+    [self.view addSubview:scro];
+    
+    self.scro = scro;
+    
+    [self createLogo];
 }
+-(void)createLogo{
 
+    UIImageView * imageView  = [[UIImageView alloc] initWithFrame:CGRectMake((WIDETH-72)/2.0, 15, 72, 90)];
+    imageView.image = [UIImage imageNamed:@"logo"];
+    [self.scro addSubview:imageView];
+
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"蛋壳儿" ofType:@"doc"];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    
+    self.webView = [[UIWebView alloc]initWithFrame:CGRectMake(-45, 90, WIDETH+90, HEIGHT-120-10-10)];
+    self.webView.scrollView.bounces = NO;
+    [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
+    self.webView.scalesPageToFit = YES;
+    [self.scro addSubview:self.webView];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -24,7 +24,7 @@
 #import "CompanyDetailVC.h"
 
 
-#import "WriteResumeViewController.h"
+#import "ManagerResumeVC.h"
 
 #import "TH_PlayFanVC.h"
 #import "TH_InformationDeskVC.h"
@@ -160,8 +160,8 @@
         }
         case THHomeViewButtonTypeResumeWriting:
         {NSLog(@"写简历");
-            WriteResumeViewController * writeVC = [[WriteResumeViewController alloc] init];
-            [self.navigationController pushViewController:writeVC animated:YES];
+            ManagerResumeVC * manaVC = [[ManagerResumeVC alloc] init];
+            [self.navigationController pushViewController:manaVC animated:YES];
             break;
         }
         case THHomeViewButtonTypePlayFan:

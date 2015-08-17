@@ -7,17 +7,33 @@
 //
 
 #import "ManagerResumeVC.h"
-
+#import "TH_ResumePreviewVC.h"
+#import "WriteResumeViewController.h"
 @interface ManagerResumeVC ()
 
 @end
 
 @implementation ManagerResumeVC
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"简历管理";
     // Do any additional setup after loading the view from its nib.
 }
+
+- (IBAction)CreateResumBtnClick:(UIButton *)sender {
+    
+    WriteResumeViewController * write = [[WriteResumeViewController alloc] init];
+    [self.navigationController pushViewController:write animated:YES];
+}
+
+- (IBAction)previewResumBtn:(UIButton *)sender {
+     TH_ResumePreviewVC  * presum = [[TH_ResumePreviewVC alloc] init];
+    presum.title = @"简历预览";
+    [self.navigationController pushViewController:presum animated:YES];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

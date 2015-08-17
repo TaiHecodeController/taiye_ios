@@ -10,26 +10,40 @@
             <rect key="frame" x="0.0" y="-1" width="320" height="582"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo板式-确定版-白色" translatesAutoresizingMaskIntoConstraints="NO" id="HkQ-9d-jPV">
-                    <rect key="frame" x="124" y="13" width="72" height="91"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="91" id="qPk-xt-Rro"/>
-                    </constraints>
-                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="otA-29-hmL">
+                    <rect key="frame" x="15" y="0.0" width="320" height="500"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <mutableString key="text"> “蛋壳儿”是一个具有社交功能的就业孵化平台。为中国大学生提供线上职位推荐、社交互动，线下职能培训、校园实践项目、助学基金、创业辅导、创业基金扶持等一站式O2O全产业链服务。
+
+培养你的职业技能
+“蛋壳儿”会深入了解每个大学生的特长，通过人才选拔教育，培养其理论知识和实践创造能力，使大学生快速就业。
+
+丰富你的社交体验
+“蛋壳儿”通过与搜索引擎、社交网络合作，锁定大学求职人群，形成“线上+线下+无线”联动的招聘模式。搭建与企业与职场新人交流空间，分享工作感悟。
+
+减轻你的经济负担
+“蛋壳儿”为大学生提供勤工俭学、实习兼职、助学贷款机会，帮助他们用自己的劳动为父母分忧，减轻家庭负担。
+
+解决你的就业困扰
+“蛋壳儿”首创网络招聘电商模式，打破传统网络招聘模式，为用户提供就业能力孵化培训，让求职者和招聘方更加透明了解对方，帮助学生成功迈出职场第一步。
+
+实现你的人生梦想
+“蛋壳儿”完备的职业规划指导，先进的人才孵化体系，帮助大学生建立科学、有价值的人生志趣，指引他们实现人生梦想。
+
+联系我们
+电话：400—0084—111
+邮箱：tiahel@tiahel.com
+邮编：100000
+地址：北京市海淀区中关村南大街数码大厦A座19层</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="HkQ-9d-jPV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="3u9-pe-3uS"/>
-                <constraint firstItem="HkQ-9d-jPV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="124" id="G9w-ly-TSA"/>
-                <constraint firstAttribute="trailing" secondItem="HkQ-9d-jPV" secondAttribute="trailing" constant="124" id="Ru2-Nk-Djk"/>
-            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="230" y="266"/>
+            <point key="canvasLocation" x="143" y="243"/>
         </view>
     </objects>
-    <resources>
-        <image name="logo板式-确定版-白色" width="62" height="70"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

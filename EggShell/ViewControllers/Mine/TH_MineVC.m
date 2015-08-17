@@ -13,6 +13,8 @@
 #import "TH_AboutEggshellVC.h"
 #import "AppDelegate.h"
 #import "ManagerResumeVC.h"
+#import "TH_cooperationVC.h"
+#import "TH_FeedBackVC.h"
 @interface TH_MineVC ()<THMineViewDelegate>
 @property(nonatomic,strong)UIScrollView * scro;
 @end
@@ -91,7 +93,7 @@
         }
         case THMineViewButtonTypeChannelsCooperation :
         {NSLog(@"合作渠道");
-            TH_LoginVC * login = [[TH_LoginVC alloc] init];
+            TH_cooperationVC* login = [[TH_cooperationVC alloc] init];
             [self.navigationController pushViewController:login animated:YES];
             break;
         }
@@ -112,6 +114,15 @@
             
             TH_LoginVC * login = [[TH_LoginVC alloc] init];
             [self.navigationController pushViewController:login animated:YES];
+            break;
+        }
+            case THMineViewButtonTypeFeedback:
+        {
+        
+            NSLog(@"意见反馈");
+            TH_FeedBackVC * feed = [[TH_FeedBackVC alloc] init];
+            feed.title = @"意见反馈";
+            [self.navigationController pushViewController:feed animated:YES];
             break;
         }
             

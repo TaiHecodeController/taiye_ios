@@ -36,6 +36,8 @@
 
 #define WIDETH  [UIScreen mainScreen].bounds.size.width
 #define HEIGHT   [UIScreen mainScreen].bounds.size.height
+#define MYWIDTH  WIDTH / 375
+#define MYHEIGHT HEIGHT / 667
 //iOS7版本的适配
 #define iOS7 [[[UIDevice currentDevice]systemVersion]floatValue]>=7.0
 

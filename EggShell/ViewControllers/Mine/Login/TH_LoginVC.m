@@ -30,14 +30,14 @@
 }
 -(void)loginView
 {
-    UIView * bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, 0)];
-    bgView.backgroundColor = color(243, 243, 241);
-    [self.view addSubview:bgView];
-    UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(-55, 15, 55, 77)];
+//    UIView * bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, 0)];
+//    bgView.backgroundColor = color(243, 243, 241);
+//    [self.view addSubview:bgView];
+    UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(-72, 15, 72, 90)];
     imageView.image = [UIImage imageNamed:@"logo"];
-    [bgView addSubview:imageView];
+    [self.view addSubview:imageView];
     [UIView animateWithDuration:1 delay:0.0 usingSpringWithDamping:0.5 initialSpringVelocity:20 options:UIViewAnimationOptionAllowUserInteraction animations:^{
-        imageView.frame = CGRectMake((WIDETH-55)/2.0, 15, 55, 77);
+        imageView.frame = CGRectMake((WIDETH-72)/2.0, 10, 72,90);
     } completion:nil];
     
     UIView * loginView = [[UIView alloc] initWithFrame:CGRectMake(0, 110, WIDETH, 90)];

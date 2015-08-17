@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ManagerResumeVC">
@@ -30,21 +30,6 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8y-zf-rFu">
-                    <rect key="frame" x="217" y="13" width="68" height="23"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="23" id="lwM-UX-fpA"/>
-                        <constraint firstAttribute="width" constant="68" id="vrW-o0-Kfi"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                    <state key="normal" title="创建新简历" backgroundImage="111">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="createNewResumeClick:" destination="-1" eventType="touchUpInside" id="pnz-Ph-3fG"/>
-                    </connections>
-                </button>
                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MLD-Tx-bm1">
                     <rect key="frame" x="0.0" y="75" width="320" height="145"/>
                     <subviews>
@@ -78,6 +63,9 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="previewResumBtn:" destination="-1" eventType="touchUpInside" id="hFC-rN-Nm7"/>
+                            </connections>
                         </button>
                         <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PSC-Hv-VJ5">
                             <rect key="frame" x="23" y="53" width="300" height="0.5"/>
@@ -155,6 +143,18 @@
                         <action selector="delete:" destination="-1" eventType="touchUpInside" id="4sj-9e-KsM"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8y-zf-rFu">
+                    <rect key="frame" x="239" y="12" width="68" height="23"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <state key="normal" title="创建新简历" backgroundImage="111">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="CreateResumBtnClick:" destination="-1" eventType="touchUpInside" id="yuj-gC-juh"/>
+                        <action selector="createNewResumeClick:" destination="-1" eventType="touchUpInside" id="pnz-Ph-3fG"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -164,18 +164,16 @@
                 <constraint firstItem="MLD-Tx-bm1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="BX6-DD-Rfp"/>
                 <constraint firstAttribute="trailing" secondItem="MLD-Tx-bm1" secondAttribute="trailing" id="CXV-ei-Z45"/>
                 <constraint firstItem="fae-Lt-rQY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="13" id="Gdr-gV-WFZ"/>
-                <constraint firstItem="Z8y-zf-rFu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="9" id="MKd-lZ-lYx"/>
                 <constraint firstItem="xer-fW-hGf" firstAttribute="centerY" secondItem="s3e-Ra-Jyk" secondAttribute="centerY" id="SLs-Um-J1f"/>
                 <constraint firstItem="Nbh-yI-5TU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="UBY-Ci-oC6"/>
                 <constraint firstItem="xer-fW-hGf" firstAttribute="width" secondItem="s3e-Ra-Jyk" secondAttribute="width" id="Upu-x7-Ehr"/>
                 <constraint firstItem="xer-fW-hGf" firstAttribute="width" secondItem="Nbh-yI-5TU" secondAttribute="width" id="cbZ-bJ-nDj"/>
                 <constraint firstAttribute="trailing" secondItem="s3e-Ra-Jyk" secondAttribute="trailing" constant="18" id="eiH-Ur-dln"/>
                 <constraint firstItem="xer-fW-hGf" firstAttribute="leading" secondItem="Nbh-yI-5TU" secondAttribute="trailing" constant="18" id="fXS-re-fMH"/>
-                <constraint firstAttribute="trailing" secondItem="Z8y-zf-rFu" secondAttribute="trailing" constant="35" id="kfW-ZK-Qmv"/>
                 <constraint firstItem="xer-fW-hGf" firstAttribute="centerY" secondItem="Nbh-yI-5TU" secondAttribute="centerY" id="xJi-Vf-yig"/>
                 <constraint firstItem="MLD-Tx-bm1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zbT-XT-bOb"/>
             </constraints>
-            <point key="canvasLocation" x="397" y="328"/>
+            <point key="canvasLocation" x="235" y="325"/>
         </view>
     </objects>
     <resources>

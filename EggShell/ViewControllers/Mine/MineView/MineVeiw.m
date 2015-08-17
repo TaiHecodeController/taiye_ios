@@ -18,6 +18,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *signOut;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
+@property (weak, nonatomic) IBOutlet UIButton *Feedback;
 
 @end
 @implementation MineVeiw
@@ -34,6 +35,7 @@
     self.ChannelsCooperation.tag = THMineViewButtonTypeChannelsCooperation;
     self.signOut.tag =  THMineViewButtonTypesignOut;
     self.loginBtn.tag = THMineViewButtonTypeLogin;
+    self.Feedback.tag = THMineViewButtonTypeFeedback;
    
    
 }
