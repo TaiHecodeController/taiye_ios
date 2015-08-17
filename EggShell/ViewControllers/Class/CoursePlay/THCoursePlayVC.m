@@ -172,6 +172,8 @@ typedef NS_ENUM(NSInteger, GestureType){
 //    }
 //    self.view.backgroundColor = [UIColor blackColor];
     
+    
+    
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     backBtn.frame = CGRectMake(0, 0, 44, 44);
     
@@ -189,6 +191,7 @@ typedef NS_ENUM(NSInteger, GestureType){
 //    [self performSelector:@selector(hidenControlBar) withObject:nil afterDelay:3];
     [self.view bringSubviewToFront:_topView];
     [self.view bringSubviewToFront:_bottomView];
+    
     //监控 app 活动状态，打电话/锁屏 时暂停播放
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(becomeActive)
@@ -198,6 +201,11 @@ typedef NS_ENUM(NSInteger, GestureType){
                                              selector:@selector(resignActive)
                                                  name:UIApplicationWillResignActiveNotification
                                                object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(startFullScreen) name:MPMoviePlayerDidEnterFullscreenNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(exitFullScreen) name:MPMoviePlayerDidExitFullscreenNotification object:nil];
+    
     //    NSUserDefaults *userd = [NSUserDefaults standardUserDefaults];
     //    if (![userd boolForKey:@"isFirstOpenMoviePlayerViewController"]) {
     //        //第一次打开，显示引导页
@@ -406,8 +414,38 @@ typedef NS_ENUM(NSInteger, GestureType){
 }
 -(void)startFullScreen
 {
+    THLog(@"进入全屏状态");
+    
+//    if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
+//        [[UIDevice currentDevice] performSelector:@selector(setOrientation:) withObject:(id)UIInterfaceOrientationPortrait];
+//    }
+    if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
+        SEL selector = NSSelectorFromString(@"setOrientation:");
+        NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:[UIDevice instanceMethodSignatureForSelector:selector]];
+        [invocation setSelector:selector];
+        [invocation setTarget:[UIDevice currentDevice]];
+        int val = UIInterfaceOrientationLandscapeRight;
+        [invocation setArgument:&val atIndex:2];
+        [invocation invoke];
+    }
+}
+
+- (void)exitFullScreen
+{
+    THLog(@"退出全屏状态");
+    if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
+        SEL selector = NSSelectorFromString(@"setOrientation:");
+        NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:[UIDevice instanceMethodSignatureForSelector:selector]];
+        [invocation setSelector:selector];
+        [invocation setTarget:[UIDevice currentDevice]];
+        int val = UIInterfaceOrientationPortrait;
+        [invocation setArgument:&val atIndex:2];
+        [invocation invoke];
+    }
     
 }
+
+
 - (void)createTopView{
     CGFloat titleLableWidth = 400;
     CGFloat margin = 10;
@@ -529,7 +567,6 @@ typedef NS_ENUM(NSInteger, GestureType){
     [_fastForeardBtn setHidden:YES];
     [_forwardBtn setHidden:YES];
     [_backwardBtn setHidden:YES];
-    
     
     
 }
@@ -1030,7 +1067,7 @@ typedef NS_ENUM(NSInteger, GestureType){
 }
 //横屏
 - (BOOL) shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-    [AppDelegate instance].ori_flag = 1;
+//    [AppDelegate instance].ori_flag = 1;
     return (toInterfaceOrientation == UIInterfaceOrientationLandscapeRight);
 }
 - (NSUInteger)supportedInterfaceOrientations {
