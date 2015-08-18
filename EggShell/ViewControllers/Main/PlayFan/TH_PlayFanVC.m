@@ -43,8 +43,6 @@
     // Do any additional setup after loading the view.
 }
 
-
-
 -(void)loadData:(id)notify page:(int)num
 {
     if(_state.running)

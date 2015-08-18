@@ -23,6 +23,7 @@
 
 
 
+
 #define bottomH 107
 
 
@@ -34,6 +35,9 @@
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong)NSMutableArray *openClassList;
 @property (nonatomic, assign)CGFloat headViewMaxY;
+@property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong) UIView *collectionHeadView;
+@property (nonatomic, strong) UIView *headView;
 
 //@property (nonatomic, strong)MJRefreshHeaderView *header;
 //@property (nonatomic, strong)MJRefreshFooterView *footer;
@@ -81,6 +85,13 @@
     _segmentedControl = [[HYSegmentedControl alloc] initWithOriginY:y Titles:@[@"视频课程", @"语音课程"]  IconNames:iconArr delegate:self] ;
     [self.view addSubview:_segmentedControl];
     
+    _scrollView = [[UIScrollView alloc]init];
+    //40为视频课程，语音课程高度，44为标签bar高度，66为navigationBar高度
+    _scrollView.frame = CGRectMake(0, 40, WIDETH, self.view.frame.size.height - 40 - 44 - 66);
+//    _scrollView.backgroundColor = [UIColor blueColor];
+    _scrollView.contentSize = CGSizeMake(WIDETH, self.view.frame.size.height - 40 - 44 - 66);
+    [self.view addSubview:_scrollView];
+    
 }
 
 - (void)querData
@@ -91,6 +102,15 @@
         _openClassList = [NSMutableArray arrayWithArray:DataDic];
         
         [_collectionView reloadData];
+        
+        CGFloat height = (_openClassList.count / 2) * 120;
+        CGRect frame = _collectionView.frame;
+        frame.size = CGSizeMake(WIDETH - 2 * 20, height);
+        _collectionView.frame = frame;
+        //66为导航条高度
+        CGFloat contentheight = _headView.frame.size.height + _collectionView.frame.size.height + 66;
+        _scrollView.contentSize = CGSizeMake(WIDETH, contentheight);
+        
 //     OpenClassModel *model = DataDic[0];
 //     THLog(@"vimage:%@",model.vimage);
 //        OpenClassModel.vimage
@@ -107,12 +127,14 @@
 {
     CGFloat margin = 20;
     CGFloat minimargin = 10;
-    CGFloat y = 40;
+    CGFloat y = 0;
     
     UIView *headView = [[UIView alloc]init];
+    _headView = headView;
     headView.frame = CGRectMake(0, y, WIDETH, 154);
     headView.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:headView];
+//    [self.view addSubview:headView];
+    [_scrollView addSubview:headView];
     
     CGSize msfcSize = [@"名师风采" sizeWithFont:[UIFont systemFontOfSize:15]];
     UILabel *msfcLab = [[UILabel alloc]initWithFrame:CGRectMake(margin, minimargin, msfcSize.width, msfcSize.height)];
@@ -154,12 +176,15 @@
     UIView *marginView = [[UIView alloc]init];
     marginView.backgroundColor = color(243, 243, 241);
     marginView.frame = CGRectMake(0, CGRectGetMaxY(headView.frame), WIDETH, 10);
-    [self.view addSubview:marginView];
+//    [self.view addSubview:marginView];
+    [_scrollView addSubview:marginView];
     
     UIView *collectionHeadView = [[UIView alloc]init];
+    _collectionHeadView = collectionHeadView;
     collectionHeadView.frame = CGRectMake(0, CGRectGetMaxY(marginView.frame), WIDETH, 40);
 //    collectionHeadView.backgroundColor = [UIColor redColor];
-    [self.view addSubview:collectionHeadView];
+//    [self.view addSubview:collectionHeadView];
+    [_scrollView addSubview:collectionHeadView];
     
     UILabel *rmkcLab = [[UILabel alloc]init];
     rmkcLab.text = @"热门课程";
@@ -179,8 +204,10 @@
     _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(margin, CGRectGetMaxY(collectionHeadView.frame), WIDETH - 2 * margin, HEIGHT - CGRectGetMaxY(collectionHeadView.frame) - 44 - 66) collectionViewLayout:flowLayout];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
+    _collectionView.scrollEnabled = NO;
     _collectionView.backgroundColor = [UIColor clearColor];
-    [self.view addSubview:_collectionView];
+//    [self.view addSubview:_collectionView];
+    [_scrollView addSubview:_collectionView];
     
     //注册cell 头视图
     [_collectionView registerClass:[OpenClassCell class] forCellWithReuseIdentifier:@"RK_collectionViewCell"];

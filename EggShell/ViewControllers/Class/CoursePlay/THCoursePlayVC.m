@@ -20,7 +20,6 @@
 #import "UIBarButtonItem+DC.h"
 #import "AppDelegate.h"
 
-
 #define TopViewHeight 44
 //#define BottomViewHeight 72
 #define BottomViewHeight 44
@@ -461,7 +460,7 @@ typedef NS_ENUM(NSInteger, GestureType){
     [_returnBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
     [_returnBtn addTarget:self action:@selector(returnBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    [_topView addSubview:_returnBtn];
+//    [_topView addSubview:_returnBtn];
     
     _titleLable = [[UILabel alloc]initWithFrame:CGRectMake(self.view.bounds.size.width/2-titleLableWidth/2, 0, titleLableWidth, TopViewHeight)];
     _titleLable.backgroundColor = [UIColor clearColor];
@@ -478,7 +477,7 @@ typedef NS_ENUM(NSInteger, GestureType){
     [downBtn setTitleColor:[UIColor colorWithRed:0.01f green:0.48f blue:0.98f alpha:1.00f] forState:UIControlStateNormal];
     [downBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [downBtn addTarget:self action:@selector(downBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    [_topView addSubview:downBtn];
+//    [_topView addSubview:downBtn];
     
     [self.view addSubview:_topView];
 }

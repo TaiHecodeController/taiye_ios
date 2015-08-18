@@ -39,6 +39,7 @@
    
    
 }
+
 +(MineVeiw*)RegisterMineView
 {
     return [[[NSBundle mainBundle] loadNibNamed:@"MineView" owner:self options:nil] lastObject];

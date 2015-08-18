@@ -75,6 +75,7 @@
     _tableView.dataSource = self;
     _tableView.backgroundColor = [UIColor clearColor];
     [_tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+    _tableView.showsVerticalScrollIndicator = NO;
     [self.view addSubview:_tableView];
     
     _bottomView = [[UIView alloc]init];
