@@ -1,20 +1,20 @@
 //
-//  jobTableViewCell.m
+//  jobListCell.m
 //  EggShell
 //
-//  Created by 太和 on 15/8/10.
+//  Created by 太和 on 15/8/18.
 //  Copyright (c) 2015年 wsd. All rights reserved.
 //
 
-#import "jobTableViewCell.h"
+#import "jobListCell.h"
 
-@interface jobTableViewCell ()
+@interface jobListCell ()
 
 @property (nonatomic, strong) UIView *lineView;
 
 @end
 
-@implementation jobTableViewCell
+@implementation jobListCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -26,7 +26,7 @@
         _positionSecBtn = [[UIButton alloc]init];
         [_positionSecBtn setImage:[UIImage imageNamed:@"xuankuang"] forState:UIControlStateNormal];
         [_positionSecBtn setImage:[UIImage imageNamed:@"douyouduihao"] forState:UIControlStateSelected];
-        [_positionSecBtn addTarget:self action:@selector(positionBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+        //        [_positionSecBtn addTarget:self action:@selector(positionBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_positionSecBtn];
         
         _positionLab = [[UILabel alloc]init];
@@ -113,18 +113,19 @@
     _cellHeight = CGRectGetMaxY(_cityLab.frame) + 10;
 }
 
-- (void)positionBtnClick:(UIButton *)sender
-{
-    if (sender.selected == NO)
-    {
-        sender.selected = YES;
-        
-    }
-    else
-    {
-        sender.selected = NO;
-    }
-}
+//- (void)positionBtnClick:(UIButton *)sender
+//{
+//    if (sender.selected == NO)
+//    {
+//        sender.selected = YES;
+//
+//    }
+//    else
+//    {
+//        sender.selected = NO;
+//    }
+//}
+
 
 - (void)awakeFromNib {
     // Initialization code
