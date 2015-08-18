@@ -81,8 +81,6 @@
 		94313DC11B7CAAED005D0A9A /* InformationDeskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DBA1B7CAAED005D0A9A /* InformationDeskCell.m */; };
 		94313DC21B7CAAED005D0A9A /* InformationDeskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94313DBB1B7CAAED005D0A9A /* InformationDeskCell.xib */; };
 		94313DC31B7CAAED005D0A9A /* TH_InformationDeskVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DBD1B7CAAED005D0A9A /* TH_InformationDeskVC.m */; };
-		94313DCA1B7CAB62005D0A9A /* AboutEgger.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94313DC51B7CAB62005D0A9A /* AboutEgger.xib */; };
-		94313DCB1B7CAB62005D0A9A /* AboutEggerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DC71B7CAB62005D0A9A /* AboutEggerView.m */; };
 		94313DCC1B7CAB62005D0A9A /* TH_AboutEggshellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DC91B7CAB62005D0A9A /* TH_AboutEggshellVC.m */; };
 		94313DD11B7CAD6E005D0A9A /* MineVeiw.m in Sources */ = {isa = PBXBuildFile; fileRef = 94313DCF1B7CAD6E005D0A9A /* MineVeiw.m */; };
 		94313DD21B7CAD6E005D0A9A /* MineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94313DD01B7CAD6E005D0A9A /* MineView.xib */; };
@@ -107,8 +105,11 @@
 		94A3647C1B81B42700429210 /* JobScreenDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A3647A1B81B42700429210 /* JobScreenDetailCell.m */; };
 		94A3647D1B81B42700429210 /* JobScreenDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94A3647B1B81B42700429210 /* JobScreenDetailCell.xib */; };
 		94A364811B81CD3500429210 /* TH_cooperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A364801B81CD3500429210 /* TH_cooperationVC.m */; };
-		94A364851B81DC0400429210 /* 蛋壳儿.doc in Resources */ = {isa = PBXBuildFile; fileRef = 94A364841B81DC0400429210 /* 蛋壳儿.doc */; };
 		94A364891B81E4E500429210 /* TH_FeedBackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A364881B81E4E500429210 /* TH_FeedBackVC.m */; };
+		94A3648B1B81F3E200429210 /* 蛋壳儿.doc in Resources */ = {isa = PBXBuildFile; fileRef = 94A3648A1B81F3E200429210 /* 蛋壳儿.doc */; };
+		94A3648D1B82221900429210 /* FindjobView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A3648C1B82221900429210 /* FindjobView.m */; };
+		94A364901B82389000429210 /* HomeViews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94A3648F1B82389000429210 /* HomeViews.xib */; };
+		94A364931B82389B00429210 /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A364921B82389B00429210 /* HomeView.m */; };
 		94CB5B7A1B74CC0600B23B9D /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B561B74CC0600B23B9D /* BaseModel.m */; };
 		94CB5B7B1B74CC0600B23B9D /* HomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B581B74CC0600B23B9D /* HomePageModel.m */; };
 		94CB5B7C1B74CC0600B23B9D /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B5B1B74CC0600B23B9D /* MJArgument.m */; };
@@ -127,8 +128,6 @@
 		94CB5B891B74CC0600B23B9D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 94CB5B761B74CC0600B23B9D /* LICENSE */; };
 		94CB5B8A1B74CC0600B23B9D /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B771B74CC0600B23B9D /* readme.md */; };
 		94CB5B8B1B74CC0600B23B9D /* SMPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B791B74CC0600B23B9D /* SMPageControl.m */; };
-		94CB5B8F1B74EF3900B23B9D /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B8E1B74EF3900B23B9D /* HomeView.m */; };
-		94CB5B911B74F0D500B23B9D /* HomeViews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94CB5B901B74F0D500B23B9D /* HomeViews.xib */; };
 		94CB5B9B1B7632E800B23B9D /* TH_BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B9A1B7632E800B23B9D /* TH_BaseVC.m */; };
 		94CB5BA11B76342300B23B9D /* TH_SociallyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5BA01B76342300B23B9D /* TH_SociallyVC.m */; };
 		94CB5BA41B76343E00B23B9D /* TH_ClassVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5BA31B76343E00B23B9D /* TH_ClassVC.m */; };
@@ -329,9 +328,6 @@
 		94313DBB1B7CAAED005D0A9A /* InformationDeskCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationDeskCell.xib; sourceTree = "<group>"; };
 		94313DBC1B7CAAED005D0A9A /* TH_InformationDeskVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_InformationDeskVC.h; sourceTree = "<group>"; };
 		94313DBD1B7CAAED005D0A9A /* TH_InformationDeskVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_InformationDeskVC.m; sourceTree = "<group>"; };
-		94313DC51B7CAB62005D0A9A /* AboutEgger.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutEgger.xib; sourceTree = "<group>"; };
-		94313DC61B7CAB62005D0A9A /* AboutEggerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutEggerView.h; sourceTree = "<group>"; };
-		94313DC71B7CAB62005D0A9A /* AboutEggerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutEggerView.m; sourceTree = "<group>"; };
 		94313DC81B7CAB62005D0A9A /* TH_AboutEggshellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_AboutEggshellVC.h; sourceTree = "<group>"; };
 		94313DC91B7CAB62005D0A9A /* TH_AboutEggshellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_AboutEggshellVC.m; sourceTree = "<group>"; };
 		94313DCE1B7CAD6E005D0A9A /* MineVeiw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineVeiw.h; sourceTree = "<group>"; };
@@ -372,9 +368,14 @@
 		94A3647B1B81B42700429210 /* JobScreenDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobScreenDetailCell.xib; sourceTree = "<group>"; };
 		94A3647F1B81CD3500429210 /* TH_cooperationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_cooperationVC.h; sourceTree = "<group>"; };
 		94A364801B81CD3500429210 /* TH_cooperationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_cooperationVC.m; sourceTree = "<group>"; };
-		94A364841B81DC0400429210 /* 蛋壳儿.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "蛋壳儿.doc"; sourceTree = "<group>"; };
 		94A364871B81E4E500429210 /* TH_FeedBackVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_FeedBackVC.h; sourceTree = "<group>"; };
 		94A364881B81E4E500429210 /* TH_FeedBackVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_FeedBackVC.m; sourceTree = "<group>"; };
+		94A3648A1B81F3E200429210 /* 蛋壳儿.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "蛋壳儿.doc"; sourceTree = "<group>"; };
+		94A3648C1B82221900429210 /* FindjobView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindjobView.m; sourceTree = "<group>"; };
+		94A3648E1B82222200429210 /* FindjobView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindjobView.h; sourceTree = "<group>"; };
+		94A3648F1B82389000429210 /* HomeViews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViews.xib; sourceTree = "<group>"; };
+		94A364911B82389B00429210 /* HomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
+		94A364921B82389B00429210 /* HomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
 		94CB5B551B74CC0600B23B9D /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		94CB5B561B74CC0600B23B9D /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		94CB5B571B74CC0600B23B9D /* HomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageModel.h; sourceTree = "<group>"; };
@@ -410,9 +411,6 @@
 		94CB5B771B74CC0600B23B9D /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		94CB5B781B74CC0600B23B9D /* SMPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPageControl.h; sourceTree = "<group>"; };
 		94CB5B791B74CC0600B23B9D /* SMPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPageControl.m; sourceTree = "<group>"; };
-		94CB5B8D1B74EF3900B23B9D /* HomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
-		94CB5B8E1B74EF3900B23B9D /* HomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
-		94CB5B901B74F0D500B23B9D /* HomeViews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViews.xib; sourceTree = "<group>"; };
 		94CB5B991B7632E800B23B9D /* TH_BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_BaseVC.h; sourceTree = "<group>"; };
 		94CB5B9A1B7632E800B23B9D /* TH_BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TH_BaseVC.m; sourceTree = "<group>"; };
 		94CB5B9F1B76342300B23B9D /* TH_SociallyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TH_SociallyVC.h; sourceTree = "<group>"; };
@@ -1113,10 +1111,7 @@
 		94313DC41B7CAB62005D0A9A /* AboutEggshell */ = {
 			isa = PBXGroup;
 			children = (
-				94A364841B81DC0400429210 /* 蛋壳儿.doc */,
-				94313DC51B7CAB62005D0A9A /* AboutEgger.xib */,
-				94313DC61B7CAB62005D0A9A /* AboutEggerView.h */,
-				94313DC71B7CAB62005D0A9A /* AboutEggerView.m */,
+				94A3648A1B81F3E200429210 /* 蛋壳儿.doc */,
 				94313DC81B7CAB62005D0A9A /* TH_AboutEggshellVC.h */,
 				94313DC91B7CAB62005D0A9A /* TH_AboutEggshellVC.m */,
 			);
@@ -1306,9 +1301,11 @@
 		94CB5B8C1B74EF1800B23B9D /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
-				94CB5B8D1B74EF3900B23B9D /* HomeView.h */,
-				94CB5B8E1B74EF3900B23B9D /* HomeView.m */,
-				94CB5B901B74F0D500B23B9D /* HomeViews.xib */,
+				94A364911B82389B00429210 /* HomeView.h */,
+				94A364921B82389B00429210 /* HomeView.m */,
+				94A3648F1B82389000429210 /* HomeViews.xib */,
+				94A3648E1B82222200429210 /* FindjobView.h */,
+				94A3648C1B82221900429210 /* FindjobView.m */,
 			);
 			name = HomeView;
 			path = HomeViewS;
@@ -1672,6 +1669,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94313DF21B7CB5C9005D0A9A /* WriteResumeCell2.xib in Resources */,
+				94A364901B82389000429210 /* HomeViews.xib in Resources */,
 				941F0FC21B79A71700719F5B /* Course PlayCell.xib in Resources */,
 				041650451B4D7142008C78BE /* LaunchScreen.xib in Resources */,
 				94313DEE1B7CB5C9005D0A9A /* NameAndSexCell.xib in Resources */,
@@ -1679,11 +1677,9 @@
 				941F10251B7B3D1D00719F5B /* EditAddressVC.xib in Resources */,
 				94A3647D1B81B42700429210 /* JobScreenDetailCell.xib in Resources */,
 				94EFC1ED1B7F0FFC00833068 /* EducationTimeCell.xib in Resources */,
-				94A364851B81DC0400429210 /* 蛋壳儿.doc in Resources */,
 				94A362491B81874500429210 /* JobScreeningCell.xib in Resources */,
 				94EFC1F81B7F370F00833068 /* ProfessionalCell.xib in Resources */,
 				04EC1F101B78F5510009292E /* SearchView.xib in Resources */,
-				94CB5B911B74F0D500B23B9D /* HomeViews.xib in Resources */,
 				94D9000A1B79996600F6FD36 /* JobDescription.xib in Resources */,
 				941F10171B7B3BCC00719F5B /* JobWishlistCell.xib in Resources */,
 				94CB5B891B74CC0600B23B9D /* LICENSE in Resources */,
@@ -1693,6 +1689,7 @@
 				94D900051B7998C200F6FD36 /* CompanyProfile.xib in Resources */,
 				041650421B4D7142008C78BE /* Images.xcassets in Resources */,
 				94313DC21B7CAAED005D0A9A /* InformationDeskCell.xib in Resources */,
+				94A3648B1B81F3E200429210 /* 蛋壳儿.doc in Resources */,
 				94313DBF1B7CAAED005D0A9A /* infDestDetailView.xib in Resources */,
 				94313DF01B7CB5C9005D0A9A /* WriteResumeCell.xib in Resources */,
 				941F0FC71B79BF5E00719F5B /* CourePlaytitle.xib in Resources */,
@@ -1706,7 +1703,6 @@
 				048F30AA1B7A1577004AA9B2 /* HotSearch.xib in Resources */,
 				941F10271B7B3D1D00719F5B /* MineEditInfoView.xib in Resources */,
 				94EFC1FE1B7F416500833068 /* projectTableViewCell.xib in Resources */,
-				94313DCA1B7CAB62005D0A9A /* AboutEgger.xib in Resources */,
 				94313DEA1B7CB5C9005D0A9A /* ManagerResumeVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1805,7 +1801,6 @@
 				041650671B4D7240008C78BE /* GAdapter.m in Sources */,
 				94CB5B7C1B74CC0600B23B9D /* MJArgument.m in Sources */,
 				94EAEAC31B78437A003C19DD /* TH_FindPracticeVC.m in Sources */,
-				94CB5B8F1B74EF3900B23B9D /* HomeView.m in Sources */,
 				94313DE91B7CB5C9005D0A9A /* ManagerResumeVC.m in Sources */,
 				94EFC1C81B7DC65200833068 /* playFanModel.m in Sources */,
 				94CB5BA71B76345D00B23B9D /* TH_MineVC.m in Sources */,
@@ -1832,11 +1827,11 @@
 				94CB5B7F1B74CC0600B23B9D /* MJIvar.m in Sources */,
 				041650ED1B4D7C4E008C78BE /* MJRefreshConst.m in Sources */,
 				04237D901B66456F00768FAD /* LoginAndRegisterRequest.m in Sources */,
+				94A364931B82389B00429210 /* HomeView.m in Sources */,
 				94313DAF1B7CAAB5005D0A9A /* TH_PlayFanVC.m in Sources */,
 				0416506A1B4D7240008C78BE /* Gson.m in Sources */,
 				94313DD11B7CAD6E005D0A9A /* MineVeiw.m in Sources */,
 				94D9000B1B79996600F6FD36 /* JobDescriptionlView.m in Sources */,
-				94313DCB1B7CAB62005D0A9A /* AboutEggerView.m in Sources */,
 				94CB5B851B74CC0600B23B9D /* NSObject+MJKeyValue.m in Sources */,
 				941F10191B7B3BCC00719F5B /* TH_JobWishlistVC.m in Sources */,
 				941F10281B7B3D1D00719F5B /* MineEditVC.m in Sources */,
@@ -1886,6 +1881,7 @@
 				941F10161B7B3BCC00719F5B /* JobWishlistCell.m in Sources */,
 				041650681B4D7240008C78BE /* GArrayAdapter.m in Sources */,
 				941F10181B7B3BCC00719F5B /* JobWishlistHeadView.m in Sources */,
+				94A3648D1B82221900429210 /* FindjobView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1954,9 +1950,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "4b33f401-9d6b-43e7-9125-c77a11b979d9";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1990,8 +1987,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "4b33f401-9d6b-43e7-9125-c77a11b979d9";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2003,11 +2001,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Song xie (ZY7745VUT5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Song xie (ZY7745VUT5)";
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EggShell/PrefixHeader.pch";
 				INFOPLIST_FILE = EggShell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2017,7 +2016,7 @@
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "4b33f401-9d6b-43e7-9125-c77a11b979d9";
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
@@ -2028,11 +2027,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Song xie (ZY7745VUT5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Song xie (ZY7745VUT5)";
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EggShell/PrefixHeader.pch";
 				INFOPLIST_FILE = EggShell/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2042,7 +2042,7 @@
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "4b33f401-9d6b-43e7-9125-c77a11b979d9";
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;

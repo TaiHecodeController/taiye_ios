@@ -7,7 +7,6 @@
 //
 
 #import "TH_AboutEggshellVC.h"
-#import "AboutEggerView.h"
 @interface TH_AboutEggshellVC ()
 @property(nonatomic,strong)UIScrollView * scro;
 @property(strong,nonatomic)UIWebView* webView;
@@ -37,7 +36,8 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"蛋壳儿" ofType:@"doc"];
     NSURL *url = [NSURL fileURLWithPath:path];
     
-    self.webView = [[UIWebView alloc]initWithFrame:CGRectMake(-45, 90, WIDETH+90, HEIGHT-120-10-10)];
+    self.webView = [[UIWebView alloc]initWithFrame:CGRectMake(-45, 105, WIDETH+90, HEIGHT-120-10-10)];
+    
     self.webView.scrollView.bounces = NO;
     [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
     self.webView.scalesPageToFit = YES;

@@ -7,7 +7,7 @@
 //
 
 #import "TH_HomeVC.h"
-#import "HomeView.h"
+
 #import "TH_FindJobVC.h"
 
 #import "SearchView.h"
@@ -28,9 +28,10 @@
 
 #import "TH_PlayFanVC.h"
 #import "TH_InformationDeskVC.h"
+#import "FindjobView.h"
+#import "HomeView.h"
 
-
-@interface TH_HomeVC ()<UIScrollViewDelegate,SGFocusImageFrameDelegate,THHomeVieWDelegate>
+@interface TH_HomeVC ()<UIScrollViewDelegate,SGFocusImageFrameDelegate,THHomeVieWDelegate,THFaousVieWDelegate>
 {
     UIView * _navBackView;
     SearchView * _searchView;
@@ -114,18 +115,34 @@
 #pragma mark - - 创建HomeView
 -(void)createHomeView
 {
-    //注册HomeViews
-    HomeView * homeView       = [HomeView homeViewFinJob] ;
-    homeView.frame            = CGRectMake(0, 160, WIDETH, HEIGHT);
-    homeView.homeViewDelegate  = self;
-       [homeView setHomeViewBtn];
-    [self.scro addSubview:homeView];
-    self.scro.contentSize = CGSizeMake(WIDETH, 160+608+49);                
+    NSLog(@"%f",MyHeight*160);
+    
+    FindjobView * findView = [[FindjobView alloc] initWithFrame:CGRectMake(0, 160*MyHeight, WIDETH,162*MyHeight)];
+    findView.frame = CGRectMake(0, 160*MyHeight, WIDETH, MyHeight * 162);
+    
+//    NSLog(@"%f",findView.frame.origin.y);
+    findView.homeViewDelegate = self;
+    [self.scro addSubview:findView];
+        //注册HomeViews
+        HomeView * homeView   = [HomeView homeViewFinJob] ;
+              homeView.frame  = CGRectMake(0*WIDETH, MyHeight * 322, WIDETH, 456);
+    homeView.famousDelegate = self;
+        [self.scro addSubview:homeView];
+    
+    self.scro.contentSize = CGSizeMake(WIDETH, 322+456+49);
 }
--(void)homeViewFindJob:(HomeView *)homeView DidClickButton:(THHomeViewButtonType )button
+
+-(void)homeViewFindJob:(HomeView *)homeView
+{
+     self.navigationController.navigationBarHidden = NO;
+    CompanyDetailVC * detail = [[CompanyDetailVC alloc] init];
+    [self.navigationController pushViewController:detail animated:YES];
+}
+-(void)findViewFindJob:(FindjobView *)homeView DidClickButton:(THHomeViewButtonType)button
+
 {
     self.navigationController.navigationBarHidden = NO;
-    TH_FindJobVC * home =[[TH_FindJobVC alloc] init];
+//    TH_FindJobVC * home =[[TH_FindJobVC alloc] init];
     switch (button) {
         case THHomeViewButtonTypeFindJob:
         {
@@ -173,8 +190,8 @@
         }
         case THHomeViewButtonTypeMicroSocial:
         {NSLog(@"微社交");
-            CompanyDetailVC * detail = [[CompanyDetailVC alloc] init];
-            [self.navigationController pushViewController:detail animated:YES];
+//            CompanyDetailVC * detail = [[CompanyDetailVC alloc] init];
+//            [self.navigationController pushViewController:detail animated:YES];
             break;
         }
           case THHomeViewButtonTypeOpenClass:
@@ -194,7 +211,7 @@
 - (void)configBannerView
 {
     //建立banner图
-    _bannerView = [[SGFocusImageFrame alloc] initWithFrame:CGRectMake(0, -20, [UIScreen mainScreen].bounds.size.width, 180)];
+    _bannerView = [[SGFocusImageFrame alloc] initWithFrame:CGRectMake(0*MyWideth, -20, WIDETH, 180*MyHeight)];
     _bannerView.isAutoPlay = YES;
     _bannerView.delegate = self;
     _bannerView.changeFocusImageInterval = 2;

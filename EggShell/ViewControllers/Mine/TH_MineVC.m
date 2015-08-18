@@ -49,7 +49,7 @@
           initialSpringVelocity:10 options:UIViewAnimationOptionAllowUserInteraction animations:^{
         minVew.frame = CGRectMake(0, 0, WIDETH, 450);
     } completion:nil];
-    self.scro.contentSize = CGSizeMake(WIDETH,450+44);
+    self.scro.contentSize = CGSizeMake(WIDETH,450+100);
     
 }
 -(void)homeView:(MineVeiw *)mineView DidClickButton:(THMineViewButtonType)button

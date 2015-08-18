@@ -139,7 +139,7 @@
     _allSelected.titleEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0);
     _allSelected.titleLabel.font = [UIFont systemFontOfSize:13];
     [_allSelected setImage:[UIImage imageNamed:@"xuankuang"] forState:UIControlStateNormal];
-    [_allSelected setImage:[UIImage imageNamed:@"douyou1"] forState:UIControlStateSelected];
+    [_allSelected setImage:[UIImage imageNamed:@"douyouduihao"] forState:UIControlStateSelected];
     [_allSelected addTarget:self action:@selector(allClick:) forControlEvents:UIControlEventTouchUpInside];
     [_bottomView addSubview:_allSelected];
     

@@ -7,24 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
-typedef enum
-{   THHomeViewButtonTypeFindJob,
-    THHomeViewButtonTypeFindPartTime,
-    THHomeViewButtonTypeInternshipSearch,
-    THHomeViewButtonTypeInformationDesk,
-    THHomeViewButtonTypeResumeWriting,
-    THHomeViewButtonTypePlayFan,
-    THHomeViewButtonTypeMicroSocial,
-    THHomeViewButtonTypeOpenClass,
-}THHomeViewButtonType;
+//typedef enum
+//{   THHomeViewButtonTypeFindJob,
+//    THHomeViewButtonTypeFindPartTime,
+//    THHomeViewButtonTypeInternshipSearch,
+//    THHomeViewButtonTypeInformationDesk,
+//    THHomeViewButtonTypeResumeWriting,
+//    THHomeViewButtonTypePlayFan,
+//    THHomeViewButtonTypeMicroSocial,
+//    THHomeViewButtonTypeOpenClass,
+//}THHomeViewButtonType;
 @class HomeView;
-@protocol THHomeVieWDelegate <NSObject>
+@protocol THFaousVieWDelegate <NSObject>
 @optional
--(void)homeViewFindJob:(HomeView*)homeView DidClickButton:(THHomeViewButtonType)button;
+-(void)homeViewFindJob:(HomeView*)homeView ;
 @end
 @interface HomeView : UIView
 +(instancetype)homeViewFinJob;
--(void)setHomeViewBtn;
-@property(nonatomic,strong)id<THHomeVieWDelegate>homeViewDelegate;
+//-(void)setHomeViewBtn;
+@property(nonatomic,strong)id<THFaousVieWDelegate>famousDelegate;
 
 @end
