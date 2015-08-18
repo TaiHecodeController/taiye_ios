@@ -15,6 +15,7 @@
 #import "ManagerResumeVC.h"
 #import "TH_cooperationVC.h"
 #import "TH_FeedBackVC.h"
+#import "VersionUpdateView.h"
 @interface TH_MineVC ()<THMineViewDelegate>
 @property(nonatomic,strong)UIScrollView * scro;
 @end
@@ -123,6 +124,23 @@
             TH_FeedBackVC * feed = [[TH_FeedBackVC alloc] init];
             feed.title = @"意见反馈";
             [self.navigationController pushViewController:feed animated:YES];
+            break;
+        }
+            case THMineViewButtonTypeversion:
+        {
+            NSLog(@"skdfjbc");
+            VersionUpdateView * view =[[[NSBundle mainBundle] loadNibNamed:@"VersionUpdate" owner:self options:nil] lastObject];
+            ;
+            view.frame = CGRectMake(0, 0, 250, 151);
+            //    [UIView animateWithDuration:0.5 animations:^{
+            //        view.center = self.view.center;
+            //    }];
+            
+            view.layer.cornerRadius = 5;
+            view.layer.masksToBounds = YES;
+            [self.view addSubview:view];
+            [view showVersonView];
+            
             break;
         }
             

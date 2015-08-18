@@ -198,6 +198,7 @@
     UILabel * findjobLable =[[UILabel alloc] initWithFrame:CGRectMake(findjobLableX*MyWideth, findjobLableY*MyHeight, findjobLableWideth*MyWideth, findjobLableHeight)];
     findjobLable.text = @"找工作";
     findjobLable.font = [UIFont systemFontOfSize:12];
+    findjobLable.textColor = UIColorFromRGB(0x646464);
     findjobLable.textAlignment = NSTextAlignmentCenter;
     self.findjobLable = findjobLable;
     [self addSubview:findjobLable];
@@ -210,6 +211,7 @@
     [self addSubview:FindPartTimeBtn];
     UILabel * FindPartTimeLable = [[UILabel alloc] initWithFrame:CGRectMake(FindPartTimeLableX*MyWideth, FindPartTimeLableY*MyHeight, FindPartTimeLableWideth*MyWideth, FindPartTimeLableHeight)];
     FindPartTimeLable.text = @"找兼职";
+    FindPartTimeLable.textColor = UIColorFromRGB(0x646464);
     FindPartTimeLable.font = [UIFont systemFontOfSize:12];
     FindPartTimeLable.textAlignment = NSTextAlignmentCenter;
     self.FindPartTimeLable = FindPartTimeLable;
@@ -224,6 +226,7 @@
     
     UILabel * InternshipSearchLable = [[UILabel alloc] initWithFrame:CGRectMake(InternshipSearchLableX*MyWideth, InternshipSearchLableY*MyHeight, InternshipSearchLableWideth*MyWideth, InternshipSearchLableHeight)];
     InternshipSearchLable.text = @"找实习";
+    InternshipSearchLable.textColor = UIColorFromRGB(0x646464);
     InternshipSearchLable.font = [UIFont systemFontOfSize:12];
     InternshipSearchLable.textAlignment = NSTextAlignmentCenter;
     self.InternshipSearchLable = InternshipSearchLable;
@@ -238,6 +241,8 @@
     [self addSubview:InformationDeskBtn];
     UILabel * InformationDeskLable = [[UILabel alloc] initWithFrame:CGRectMake(InformationDeskLableX*MyWideth, InformationDeskLableY*MyHeight, InformationDeskLableWideth*MyWideth, InformationDeskLableHeight)];
     InformationDeskLable.text = @"信息台";
+    InformationDeskLable.textColor = UIColorFromRGB(0x646464);
+
     InformationDeskLable.font =  [UIFont systemFontOfSize:12];
     InformationDeskLable.textAlignment = NSTextAlignmentCenter;
     self.InformationDeskLable = InformationDeskLable;
@@ -253,6 +258,7 @@
     [self addSubview:fesumeWritingBtn];
     UILabel * fesumeWritingLable = [[UILabel alloc] initWithFrame:CGRectMake(fesumeWritingLableX*MyWideth, fesumeWritingLableY*MyHeight, fesumeWritingLableWideth*MyWideth, fesumeWritingLableHeight)];
     fesumeWritingLable.text = @"写简历";
+    fesumeWritingLable.textColor = UIColorFromRGB(0x646464);
     fesumeWritingLable.textAlignment = NSTextAlignmentCenter;
     fesumeWritingLable.font = [UIFont systemFontOfSize:12];
     self.fesumeWritingLable = fesumeWritingLable;
@@ -267,6 +273,7 @@
     
     UILabel * PlayFanLable =[[UILabel alloc] initWithFrame:CGRectMake(PlayFanLableX*MyWideth, PlayFanLableY*MyHeight, PlayFanLableWideth*MyWideth, PlayFanLableHeight)];
     PlayFanLable.text = @"玩出范";
+    PlayFanLable.textColor = UIColorFromRGB(0x646464);
     PlayFanLable.textAlignment = NSTextAlignmentCenter;
     
     PlayFanLable.font = [UIFont systemFontOfSize:12];
@@ -282,6 +289,7 @@
     [self addSubview:MicroSocialBtn];
     UILabel * MicroSocialLable = [[UILabel alloc] initWithFrame:CGRectMake(MicroSocialLableX*MyWideth, MicroSocialLableY*MyHeight, MicroSocialLableWideth*MyWideth, MicroSocialLableHeight)];
     MicroSocialLable.text = @"微社交";
+    MicroSocialLable.textColor = UIColorFromRGB(0x646464);
     MicroSocialLable.textAlignment= NSTextAlignmentCenter;
     MicroSocialLable.font = [UIFont systemFontOfSize:12];
     self.MicroSocialLable = MicroSocialLable;
@@ -295,8 +303,8 @@
     [self addSubview:openClassBtn];
     UILabel * openClassLable = [[UILabel alloc] initWithFrame:CGRectMake(openClassLableX*MyWideth, openClassLableY*MyHeight, openClassLableWideth*MyWideth, openClassLableHeight)];
     openClassLable.text = @"公开课";
+     openClassLable.textColor = UIColorFromRGB(0x646464);
     openClassLable.textAlignment= NSTextAlignmentCenter;
-//    openClassLable.backgroundColor = [UIColor redColor];
     openClassLable.font = [UIFont systemFontOfSize:12];
     self.openClassLable = openClassLable;
     [self addSubview:openClassLable];

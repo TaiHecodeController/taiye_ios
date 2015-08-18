@@ -33,12 +33,12 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.page = 0;
+    self.page = 1;
     self.title = @"玩出范";
     [self createView];
     [self createTbleView];
     [self hySegmentedControlSelectAtIndex:0];
-    [self loadData:_header page:0];
+    [self loadData:_header page:2];
 
     // Do any additional setup after loading the view.
 }

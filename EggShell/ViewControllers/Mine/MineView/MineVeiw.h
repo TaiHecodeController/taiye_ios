@@ -18,6 +18,7 @@ typedef enum
     THMineViewButtonTypesignOut,
     THMineViewButtonTypeLogin,
     THMineViewButtonTypeFeedback,
+    THMineViewButtonTypeversion,
         
 }THMineViewButtonType;
 @class MineVeiw;

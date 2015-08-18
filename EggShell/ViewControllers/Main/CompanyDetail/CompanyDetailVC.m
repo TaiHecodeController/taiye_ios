@@ -20,24 +20,30 @@
     CGRect record_tabView;
     
 }
-
+@property(nonatomic,strong)UIScrollView * scro;
 @end
 
 @implementation CompanyDetailVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self createScro];
     [self createUI];
 
     
     // Do any additional setup after loading the view.
 }
-
+-(void)createScro
+{
+    UIScrollView * scro = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, HEIGHT-64)];
+    self.scro = scro;
+    [self.view addSubview:scro];
+}
 -(void)createUI
 {
     UIView * logoBackView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, 140)];
     logoBackView.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:logoBackView];
+    [self.scro addSubview:logoBackView];
     
     //上部logo
     UIImageView * logoView = [[UIImageView alloc] initWithFrame:CGRectMake(WIDETH / 2 - 50,20, 100, 30)];
@@ -77,14 +83,15 @@
         sender.selected = !sender.selected;
     };
     self.CMview.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:self.CMview];
+    [self.scro addSubview:self.CMview];
     
     //tableView
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 348, WIDETH,HEIGHT - 348)];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:_tableView];
+    [self.scro addSubview:_tableView];
+    self.scro.contentSize  = CGSizeMake(WIDETH, 340+_tableView.height+20);
     
 }
 

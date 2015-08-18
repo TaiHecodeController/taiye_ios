@@ -11,7 +11,7 @@
 #import "LoginAndRegisterRequest.h"
 #import "WriteResumeViewController.h"
 #import "TH_featureVC.h"
-
+#import "VersionUpdateView.h"
 @interface AppDelegate ()
 {
     NSString * _trackViewUrl;
@@ -23,6 +23,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSUserDefaults * versionId = [NSUserDefaults standardUserDefaults];
+    [versionId setObject:@"" forKey:@"ver"];
+    [versionId synchronize];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
 
@@ -35,6 +38,7 @@
 //    [self initPloyVideo];
     
     [self.window makeKeyAndVisible];
+    
     sleep(1);
     NSString *key = @"CFBundleVersion";
     NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:kBundleVersion];

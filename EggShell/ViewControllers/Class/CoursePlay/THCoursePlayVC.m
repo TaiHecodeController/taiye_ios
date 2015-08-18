@@ -428,7 +428,6 @@ typedef NS_ENUM(NSInteger, GestureType){
         [invocation invoke];
     }
 }
-
 - (void)exitFullScreen
 {
     THLog(@"退出全屏状态");

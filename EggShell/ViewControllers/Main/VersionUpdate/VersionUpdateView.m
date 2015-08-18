@@ -10,7 +10,7 @@
 #import "AppDelegate.h"
 @interface VersionUpdateView()
 {
-   UIView * _backView;
+   
 }
 @end
 @implementation VersionUpdateView
@@ -39,13 +39,13 @@
 
 
 
--(void)show
+-(void)showVersonView
 {
-    AppDelegate * dele = [UIApplication sharedApplication].delegate;
+    AppDelegate * dele = (AppDelegate*)[UIApplication sharedApplication].delegate;
     
     _backView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     _backView.backgroundColor = [UIColor blackColor];
-    _backView.alpha = 0.5;
+    _backView.alpha = 0.3;
     _backView.layer.cornerRadius = 5;
     _backView.layer.masksToBounds = YES;
     

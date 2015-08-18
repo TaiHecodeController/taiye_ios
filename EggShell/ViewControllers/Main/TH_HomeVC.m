@@ -60,8 +60,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
-    //状态栏
+    
+       //状态栏
     [self setStatus];
     //ScroView
     [self createScro];
@@ -70,22 +70,29 @@
     [self quereData];
     //注册XIB
     [self createHomeView];
-    [self versionNew];
+    NSUserDefaults * versionId = [NSUserDefaults standardUserDefaults];
+      NSString * str = [versionId objectForKey:@"ver"];
+    if ([str isEqualToString:@""]) {
+        [self versionNew];
+        [versionId setObject:@"dd" forKey:@"ver"];
+        
+
+        [versionId synchronize];
+    }
      
 }
 -(void)versionNew
 {
     VersionUpdateView * view =[[[NSBundle mainBundle] loadNibNamed:@"VersionUpdate" owner:self options:nil] lastObject];
-//    view.backgroundColor = [UIColor whiteColor];
+;
     view.frame = CGRectMake(0, 0, 250, 151);
 //    [UIView animateWithDuration:0.5 animations:^{
 //        view.center = self.view.center;
 //    }];
     
-    [self.view addSubview:view];
     view.layer.cornerRadius = 5;
     view.layer.masksToBounds = YES;
-    [view show];
+    [view showVersonView];
 
 }
 #pragma mark - - 搜素
@@ -134,15 +141,16 @@
 {
     NSLog(@"%f",MyHeight*160);
     
-     self.findView = [[FindjobView alloc] initWithFrame:CGRectMake(0, 160*MyHeight, WIDETH,162*MyHeight)];
-    self.findView.frame = CGRectMake(0, 160*MyHeight, WIDETH, MyHeight * 162);
+     self.findView = [[FindjobView alloc] initWithFrame:CGRectMake(0, 160*MyHeight, WIDETH,166*MyHeight)];
+    self.findView.frame = CGRectMake(0, 160*MyHeight, WIDETH, MyHeight * 166);
     
-//    NSLog(@"%f",findView.frame.origin.y);
+    NSLog(@"%f",self.findView.frame.size.height);
+    
     self.findView.homeViewDelegate = self;
     [self.scro addSubview:self.findView];
         //注册HomeViews
         HomeView * homeView   = [HomeView homeViewFinJob] ;
-              homeView.frame  = CGRectMake(0*WIDETH, MyHeight * 322, WIDETH, 456);
+              homeView.frame  = CGRectMake(0*WIDETH, MyHeight * 326, WIDETH, 456);
     homeView.famousDelegate = self;
         [self.scro addSubview:homeView];
     

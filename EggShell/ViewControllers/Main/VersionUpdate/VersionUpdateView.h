@@ -12,5 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *ImmediatelyBtn;
 @property (weak, nonatomic) IBOutlet UIButton *laterBtn;
--(void)show;
+@property(nonatomic,strong)UIView * backView;
+-(void)showVersonView;
 @end

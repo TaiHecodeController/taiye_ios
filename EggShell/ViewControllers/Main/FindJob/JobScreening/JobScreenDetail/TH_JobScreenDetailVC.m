@@ -19,11 +19,17 @@
     [super viewDidLoad];
     self.view.backgroundColor = UIColorFromRGB(0xF3F3F1);
     [self createTableView];
+    [self createjobBtn];
 }
-
+-(void)createjobBtn
+{
+    UIView * jobView = [[UIView alloc] initWithFrame:CGRectMake(0, HEIGHT-60-64, WIDETH, 60)];
+    jobView.backgroundColor = UIColorFromRGB(0xf3f3f1);
+    [self.view addSubview:jobView];
+}
 -(void)createTableView
 {
-    UITableView * tableView = [[UITableView alloc] initWithFrame:CGRectMake(-15, 0, WIDETH+15, HEIGHT-64)];
+    UITableView * tableView = [[UITableView alloc] initWithFrame:CGRectMake(-15, 0, WIDETH+15, HEIGHT-64-60)];
     tableView.dataSource = self;
     tableView.delegate = self;
     tableView.showsVerticalScrollIndicator =  NO;
