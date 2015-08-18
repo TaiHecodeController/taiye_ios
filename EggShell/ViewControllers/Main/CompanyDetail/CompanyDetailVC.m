@@ -35,7 +35,7 @@
 
 -(void)createUI
 {
-    UIView * logoBackView = [[UIView alloc] initWithFrame:CGRectMake(0, 20, WIDETH, 140)];
+    UIView * logoBackView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, 140)];
     logoBackView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:logoBackView];
     

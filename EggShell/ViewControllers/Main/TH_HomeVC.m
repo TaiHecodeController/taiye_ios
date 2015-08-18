@@ -30,6 +30,7 @@
 #import "TH_InformationDeskVC.h"
 #import "FindjobView.h"
 #import "HomeView.h"
+#import "VersionUpdateView.h"
 
 @interface TH_HomeVC ()<UIScrollViewDelegate,SGFocusImageFrameDelegate,THHomeVieWDelegate,THFaousVieWDelegate>
 {
@@ -41,7 +42,7 @@
 @property (nonatomic, strong) NSMutableArray *arr;
 @property(nonatomic,strong)UIScrollView * scro;
 @property(nonatomic,strong)UIView * searChBgView;
-
+@property(nonatomic,strong)FindjobView * findView;
 
 
 @end
@@ -59,7 +60,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+   
     //状态栏
     [self setStatus];
     //ScroView
@@ -69,7 +70,23 @@
     [self quereData];
     //注册XIB
     [self createHomeView];
+    [self versionNew];
      
+}
+-(void)versionNew
+{
+    VersionUpdateView * view =[[[NSBundle mainBundle] loadNibNamed:@"VersionUpdate" owner:self options:nil] lastObject];
+//    view.backgroundColor = [UIColor whiteColor];
+    view.frame = CGRectMake(0, 0, 250, 151);
+//    [UIView animateWithDuration:0.5 animations:^{
+//        view.center = self.view.center;
+//    }];
+    
+    [self.view addSubview:view];
+    view.layer.cornerRadius = 5;
+    view.layer.masksToBounds = YES;
+    [view show];
+
 }
 #pragma mark - - 搜素
 -(void)createSearch
@@ -117,12 +134,12 @@
 {
     NSLog(@"%f",MyHeight*160);
     
-    FindjobView * findView = [[FindjobView alloc] initWithFrame:CGRectMake(0, 160*MyHeight, WIDETH,162*MyHeight)];
-    findView.frame = CGRectMake(0, 160*MyHeight, WIDETH, MyHeight * 162);
+     self.findView = [[FindjobView alloc] initWithFrame:CGRectMake(0, 160*MyHeight, WIDETH,162*MyHeight)];
+    self.findView.frame = CGRectMake(0, 160*MyHeight, WIDETH, MyHeight * 162);
     
 //    NSLog(@"%f",findView.frame.origin.y);
-    findView.homeViewDelegate = self;
-    [self.scro addSubview:findView];
+    self.findView.homeViewDelegate = self;
+    [self.scro addSubview:self.findView];
         //注册HomeViews
         HomeView * homeView   = [HomeView homeViewFinJob] ;
               homeView.frame  = CGRectMake(0*WIDETH, MyHeight * 322, WIDETH, 456);
@@ -190,8 +207,9 @@
         }
         case THHomeViewButtonTypeMicroSocial:
         {NSLog(@"微社交");
-//            CompanyDetailVC * detail = [[CompanyDetailVC alloc] init];
-//            [self.navigationController pushViewController:detail animated:YES];
+//            _findView.MicroSocialBtn.userInteractionEnabled = NO;
+            CompanyDetailVC * detail = [[CompanyDetailVC alloc] init];
+            [self.navigationController pushViewController:detail animated:YES];
             break;
         }
           case THHomeViewButtonTypeOpenClass:
@@ -290,6 +308,7 @@
 //隐藏导航栏,创建搜索视图
 -(void)viewWillAppear:(BOOL)animated
 {
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     self.navigationController.navigationBarHidden = YES;
     //搜索
     [self createSearch];

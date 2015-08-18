@@ -110,6 +110,8 @@
 		94A3648D1B82221900429210 /* FindjobView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A3648C1B82221900429210 /* FindjobView.m */; };
 		94A364901B82389000429210 /* HomeViews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94A3648F1B82389000429210 /* HomeViews.xib */; };
 		94A364931B82389B00429210 /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A364921B82389B00429210 /* HomeView.m */; };
+		94A364971B82D2D300429210 /* VersionUpdateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A364961B82D2D300429210 /* VersionUpdateView.m */; };
+		94A364991B82D2E200429210 /* VersionUpdate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94A364981B82D2E200429210 /* VersionUpdate.xib */; };
 		94CB5B7A1B74CC0600B23B9D /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B561B74CC0600B23B9D /* BaseModel.m */; };
 		94CB5B7B1B74CC0600B23B9D /* HomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B581B74CC0600B23B9D /* HomePageModel.m */; };
 		94CB5B7C1B74CC0600B23B9D /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CB5B5B1B74CC0600B23B9D /* MJArgument.m */; };
@@ -376,6 +378,9 @@
 		94A3648F1B82389000429210 /* HomeViews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViews.xib; sourceTree = "<group>"; };
 		94A364911B82389B00429210 /* HomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
 		94A364921B82389B00429210 /* HomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
+		94A364951B82D2D300429210 /* VersionUpdateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionUpdateView.h; sourceTree = "<group>"; };
+		94A364961B82D2D300429210 /* VersionUpdateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionUpdateView.m; sourceTree = "<group>"; };
+		94A364981B82D2E200429210 /* VersionUpdate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VersionUpdate.xib; sourceTree = "<group>"; };
 		94CB5B551B74CC0600B23B9D /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		94CB5B561B74CC0600B23B9D /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		94CB5B571B74CC0600B23B9D /* HomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageModel.h; sourceTree = "<group>"; };
@@ -777,6 +782,7 @@
 		04A483B51B74FD4D006FDB9D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				94A364941B82D28B00429210 /* VersionUpdate */,
 				94313DF51B7CB610005D0A9A /* TH_HomeVC.m */,
 				94313DF61B7CB610005D0A9A /* TH_HomeVC.h */,
 				94313DD31B7CB5C9005D0A9A /* writeResume */,
@@ -1230,6 +1236,16 @@
 				94A364881B81E4E500429210 /* TH_FeedBackVC.m */,
 			);
 			path = FeedBack;
+			sourceTree = "<group>";
+		};
+		94A364941B82D28B00429210 /* VersionUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				94A364951B82D2D300429210 /* VersionUpdateView.h */,
+				94A364981B82D2E200429210 /* VersionUpdate.xib */,
+				94A364961B82D2D300429210 /* VersionUpdateView.m */,
+			);
+			path = VersionUpdate;
 			sourceTree = "<group>";
 		};
 		94CB5B531B74CBBE00B23B9D /* libs */ = {
@@ -1704,6 +1720,7 @@
 				941F10271B7B3D1D00719F5B /* MineEditInfoView.xib in Resources */,
 				94EFC1FE1B7F416500833068 /* projectTableViewCell.xib in Resources */,
 				94313DEA1B7CB5C9005D0A9A /* ManagerResumeVC.xib in Resources */,
+				94A364991B82D2E200429210 /* VersionUpdate.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1827,6 +1844,7 @@
 				94CB5B7F1B74CC0600B23B9D /* MJIvar.m in Sources */,
 				041650ED1B4D7C4E008C78BE /* MJRefreshConst.m in Sources */,
 				04237D901B66456F00768FAD /* LoginAndRegisterRequest.m in Sources */,
+				94A364971B82D2D300429210 /* VersionUpdateView.m in Sources */,
 				94A364931B82389B00429210 /* HomeView.m in Sources */,
 				94313DAF1B7CAAB5005D0A9A /* TH_PlayFanVC.m in Sources */,
 				0416506A1B4D7240008C78BE /* Gson.m in Sources */,

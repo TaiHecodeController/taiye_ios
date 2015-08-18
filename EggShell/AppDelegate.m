@@ -11,6 +11,7 @@
 #import "LoginAndRegisterRequest.h"
 #import "WriteResumeViewController.h"
 #import "TH_featureVC.h"
+
 @interface AppDelegate ()
 {
     NSString * _trackViewUrl;
@@ -54,6 +55,7 @@
     
     return YES;
 }
+
 //版本检测
 -(void)checkVersion
 {
