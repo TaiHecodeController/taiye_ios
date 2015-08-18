@@ -90,6 +90,7 @@
     _scrollView.frame = CGRectMake(0, 40, WIDETH, self.view.frame.size.height - 40 - 44 - 66);
 //    _scrollView.backgroundColor = [UIColor blueColor];
     _scrollView.contentSize = CGSizeMake(WIDETH, self.view.frame.size.height - 40 - 44 - 66);
+    _scrollView.showsVerticalScrollIndicator = NO;
     [self.view addSubview:_scrollView];
     
 }
@@ -105,11 +106,11 @@
         
         CGFloat height = (_openClassList.count / 2) * 120;
         CGRect frame = _collectionView.frame;
-        frame.size = CGSizeMake(WIDETH - 2 * 20, height);
+        frame.size = CGSizeMake(WIDETH - 2 * 20, height + 50);
         _collectionView.frame = frame;
         //66为导航条高度
         CGFloat contentheight = _headView.frame.size.height + _collectionView.frame.size.height + 66;
-        _scrollView.contentSize = CGSizeMake(WIDETH, contentheight);
+        _scrollView.contentSize = CGSizeMake(WIDETH, contentheight );
         
 //     OpenClassModel *model = DataDic[0];
 //     THLog(@"vimage:%@",model.vimage);

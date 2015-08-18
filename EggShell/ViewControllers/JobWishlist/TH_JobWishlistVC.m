@@ -12,6 +12,7 @@
 #import "UIBarButtonItem+DC.h"
 #import "jobModel.h"
 #import "TH_JobDetailVC.h"
+#import "jobListCell.h"
 
 #define bottomH 107
 
@@ -221,7 +222,7 @@
 #pragma mark tabViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    jobTableViewCell *cell = (jobTableViewCell *)[self tableView:tableView cellForRowAtIndexPath:indexPath];
+    jobListCell *cell = (jobListCell *)[self tableView:tableView cellForRowAtIndexPath:indexPath];
     return cell.cellHeight;
     //        return 50;
 }
@@ -231,11 +232,11 @@
     static NSString *identifier = @"identifier";
     
     //    RKRankCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    jobTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    jobListCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     
     if (cell == nil)
     {
-        cell = [[jobTableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
+        cell = [[jobListCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
     }
     
    [cell.positionSecBtn addTarget:self action:@selector(positionBtnClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -385,7 +386,7 @@
     {
         sender.selected = YES;
         
-      jobTableViewCell *cell = (jobTableViewCell *)[sender superview];
+      jobListCell *cell = (jobListCell *)[sender superview];
       NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
       THLog(@"_cellIndexSet增加%ld",(long)indexPath.row);
       [_cellIndeSet addIndex:indexPath.row];
@@ -394,7 +395,7 @@
     else
     {
         sender.selected = NO;
-        jobTableViewCell *cell = (jobTableViewCell *)[sender superview];
+        jobListCell *cell = (jobListCell *)[sender superview];
         NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
         THLog(@"_cellIndexSet减少%ld",(long)indexPath.row);
         [_cellIndeSet removeIndex:indexPath.row];

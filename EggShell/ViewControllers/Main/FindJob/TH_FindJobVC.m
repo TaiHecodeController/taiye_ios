@@ -29,14 +29,31 @@
 @property (nonatomic, strong) NSMutableArray *jobArr;
 @property (nonatomic, strong) UIView *corverView;
 @property (nonatomic, strong) UIView *alertView;
+@property (nonatomic, strong) UIButton *searchBtn;
 
 @end
 
 @implementation TH_FindJobVC
-//-(void)viewWillAppear:(BOOL)animated
-//{
-//self.navigationController.navigationBar.translucent = YES;
-//}
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:NO];
+    
+    UIButton *searchBtn = [[UIButton alloc] init];
+    [searchBtn setImage:[UIImage imageNamed:@"sousuo001"] forState:UIControlStateNormal];
+    //    [searchBtn setImage:[UIImage imageNamed:@""] forState:UIControlStateHighlighted];
+    searchBtn.frame = CGRectMake(WIDETH - 10 - 50 - 20,0, 44, 44);
+    [searchBtn addTarget:self action:@selector(searchBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.navigationController.navigationBar addSubview:searchBtn];
+    _searchBtn = searchBtn;
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:NO];
+    
+    [_searchBtn removeFromSuperview];
+        
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,8 +61,7 @@
     self.view.backgroundColor =[UIColor whiteColor];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
   
-    
-  self.navigationItem.rightBarButtonItem = [UIBarButtonItem barBtnItemWithNormalImageName:@"liebiao" hightImageName:nil action:@selector(rightClick) target:self];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem barBtnItemWithNormalImageName:@"liebiao" hightImageName:nil action:@selector(rightClick) target:self];
     
     
     
@@ -57,7 +73,6 @@
     
     [self hySegmentedControlSelectAtIndex:0];
 }
-
 
 - (void)initView
 {
@@ -110,7 +125,7 @@
     _allSelected.titleLabel.font = [UIFont systemFontOfSize:13];
     _allSelected.titleEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0);
     [_allSelected setImage:[UIImage imageNamed:@"xuankuang"] forState:UIControlStateNormal];
-    [_allSelected setImage:[UIImage imageNamed:@"douyou1"] forState:UIControlStateSelected];
+    [_allSelected setImage:[UIImage imageNamed:@"douyouduihao"] forState:UIControlStateSelected];
     [_allSelected addTarget:self action:@selector(allClick:) forControlEvents:UIControlEventTouchUpInside];
     [_bottomView addSubview:_allSelected];
     
@@ -393,6 +408,12 @@
 {
      THLog(@"确定被点击");
     [self removeCoverAndAlert];
+}
+
+- (void)searchBtnClick
+{
+    THLog(@"搜索被点击");
+
 }
 
 - (void)didReceiveMemoryWarning {
