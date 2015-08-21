@@ -8,7 +8,7 @@
 
 #import "TH_FeedBackVC.h"
 
-@interface TH_FeedBackVC ()
+@interface TH_FeedBackVC ()<UITextViewDelegate>
 @property(nonatomic,strong)UIScrollView * scro;
 @end
 
@@ -49,6 +49,9 @@
     textView.font =[UIFont systemFontOfSize:12];
     textView.textColor  = UIColorFromRGB(0xC8C8C8);
     [View addSubview:textView];
+    
+//    UILabel * placeHoderLaber = [[UILabel alloc] initWithFrame:CGRectMake(15, 15, textView.width, 12)];
+//    placeHoderLaber.text = @""
     /*留下联系方式**/
     UILabel * ContactTextLable = [[UILabel alloc]
                                   initWithFrame:CGRectMake(30, 215, WIDETH-60, 12)];
