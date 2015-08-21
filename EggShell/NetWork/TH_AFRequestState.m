@@ -16,11 +16,6 @@
     return [self postRequestWithUrl:@"http://195.198.1.122:8066/eggker/phpyun/api/admin/index.php?m=act&c=list" param:param succ:succ resp:resp];
     
 }
-///*信息台详情**/
-//+(AFRequestState*)infomationRequestSucc:(void(^)(NSArray *dataDic)) resp:(Class)resp
-//{
-//
-//return <#expression#>
-//}
+
 
 @end

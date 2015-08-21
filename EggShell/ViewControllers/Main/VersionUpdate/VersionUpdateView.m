@@ -51,7 +51,7 @@
     
     [dele.window addSubview:_backView];
     [dele.window addSubview:self];
-    [UIView animateWithDuration:0.8 animations:^{
+    [UIView animateWithDuration:0.1 animations:^{
         self.center = dele.window.center;
     }];
 }

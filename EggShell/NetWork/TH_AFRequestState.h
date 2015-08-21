@@ -13,6 +13,4 @@
 
 //玩出范
 +(AFRequestState *)playClassrRequestWithSucc:(void(^)(NSArray * DataDic))succ resp:(Class)resp withPage:(NSString *)pageNumber;
-/*信息台详情**/
-+(AFRequestState*)infomationRequestSucc:(void(^)(NSArray *dataDic)) resp:(Class)resp;
 @end

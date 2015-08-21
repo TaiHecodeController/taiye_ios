@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
@@ -64,7 +65,7 @@
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="previewResumBtn:" destination="-1" eventType="touchUpInside" id="hFC-rN-Nm7"/>
+                                <action selector="previewresume:" destination="-1" eventType="touchUpInside" id="6Rm-yY-m5m"/>
                             </connections>
                         </button>
                         <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PSC-Hv-VJ5">
@@ -143,15 +144,19 @@
                         <action selector="delete:" destination="-1" eventType="touchUpInside" id="4sj-9e-KsM"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8y-zf-rFu">
-                    <rect key="frame" x="239" y="12" width="68" height="23"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z8y-zf-rFu">
+                    <rect key="frame" x="239" y="12" width="67" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="67" id="Bvz-uX-KBc"/>
+                        <constraint firstAttribute="height" constant="23" id="h9s-fG-IsD"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                     <state key="normal" title="创建新简历" backgroundImage="111">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="CreateResumBtnClick:" destination="-1" eventType="touchUpInside" id="yuj-gC-juh"/>
+                        <action selector="createNewResume:" destination="-1" eventType="touchUpInside" id="szQ-5V-r6L"/>
                         <action selector="createNewResumeClick:" destination="-1" eventType="touchUpInside" id="pnz-Ph-3fG"/>
                     </connections>
                 </button>
@@ -163,6 +168,7 @@
                 <constraint firstItem="Nbh-yI-5TU" firstAttribute="top" secondItem="MLD-Tx-bm1" secondAttribute="bottom" constant="25" id="8Rp-CF-xOV"/>
                 <constraint firstItem="MLD-Tx-bm1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="BX6-DD-Rfp"/>
                 <constraint firstAttribute="trailing" secondItem="MLD-Tx-bm1" secondAttribute="trailing" id="CXV-ei-Z45"/>
+                <constraint firstItem="Z8y-zf-rFu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="12" id="FAm-no-Wxi"/>
                 <constraint firstItem="fae-Lt-rQY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="13" id="Gdr-gV-WFZ"/>
                 <constraint firstItem="xer-fW-hGf" firstAttribute="centerY" secondItem="s3e-Ra-Jyk" secondAttribute="centerY" id="SLs-Um-J1f"/>
                 <constraint firstItem="Nbh-yI-5TU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="UBY-Ci-oC6"/>
@@ -170,10 +176,11 @@
                 <constraint firstItem="xer-fW-hGf" firstAttribute="width" secondItem="Nbh-yI-5TU" secondAttribute="width" id="cbZ-bJ-nDj"/>
                 <constraint firstAttribute="trailing" secondItem="s3e-Ra-Jyk" secondAttribute="trailing" constant="18" id="eiH-Ur-dln"/>
                 <constraint firstItem="xer-fW-hGf" firstAttribute="leading" secondItem="Nbh-yI-5TU" secondAttribute="trailing" constant="18" id="fXS-re-fMH"/>
+                <constraint firstAttribute="trailing" secondItem="Z8y-zf-rFu" secondAttribute="trailing" constant="14" id="nWv-rG-t0T"/>
                 <constraint firstItem="xer-fW-hGf" firstAttribute="centerY" secondItem="Nbh-yI-5TU" secondAttribute="centerY" id="xJi-Vf-yig"/>
                 <constraint firstItem="MLD-Tx-bm1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zbT-XT-bOb"/>
             </constraints>
-            <point key="canvasLocation" x="235" y="325"/>
+            <point key="canvasLocation" x="135" y="403"/>
         </view>
     </objects>
     <resources>

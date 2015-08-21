@@ -25,7 +25,7 @@
         
         _positionSecBtn = [[UIButton alloc]init];
         [_positionSecBtn setImage:[UIImage imageNamed:@"xuankuang"] forState:UIControlStateNormal];
-        [_positionSecBtn setImage:[UIImage imageNamed:@"douyouduihao"] forState:UIControlStateSelected];
+        [_positionSecBtn setImage:[UIImage imageNamed:@"douyou1"] forState:UIControlStateSelected];
         //        [_positionSecBtn addTarget:self action:@selector(positionBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_positionSecBtn];
         

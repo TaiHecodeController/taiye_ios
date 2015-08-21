@@ -171,8 +171,6 @@ typedef NS_ENUM(NSInteger, GestureType){
 //    }
 //    self.view.backgroundColor = [UIColor blackColor];
     
-    
-    
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     backBtn.frame = CGRectMake(0, 0, 44, 44);
     
@@ -428,6 +426,7 @@ typedef NS_ENUM(NSInteger, GestureType){
         [invocation invoke];
     }
 }
+
 - (void)exitFullScreen
 {
     THLog(@"退出全屏状态");

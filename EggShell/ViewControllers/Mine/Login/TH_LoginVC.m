@@ -12,11 +12,10 @@
 #import "TH_ForgotPasswordVC.h"
 #import "AppDelegate.h"
 #import "TH_HomeVC.h"
-@interface TH_LoginVC ()
-{
-    
-}
+@interface TH_LoginVC ()<UITextFieldDelegate>
 @property (strong,nonatomic)UIButton * loginBtn;
+@property(nonatomic,strong)UITextField * phonetextField;
+@property(nonatomic,strong)UITextField * passwordTextFiled;
 @end
 
 @implementation TH_LoginVC
@@ -30,9 +29,9 @@
 }
 -(void)loginView
 {
-//    UIView * bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, 0)];
-//    bgView.backgroundColor = color(243, 243, 241);
-//    [self.view addSubview:bgView];
+    //    UIView * bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, 0)];
+    //    bgView.backgroundColor = color(243, 243, 241);
+    //    [self.view addSubview:bgView];
     UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(-72, 15, 72, 90)];
     imageView.image = [UIImage imageNamed:@"logo"];
     [self.view addSubview:imageView];
@@ -46,8 +45,8 @@
     UIView * linefirstView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, 0.5)];
     linefirstView.backgroundColor = color(221, 221, 221);
     [loginView addSubview:linefirstView];
-   UIView * loginSencondView = [[UIView alloc] initWithFrame:CGRectMake(15, 45, WIDETH, 0.5)];
-   loginSencondView.backgroundColor =color(221, 221, 221);
+    UIView * loginSencondView = [[UIView alloc] initWithFrame:CGRectMake(15, 45, WIDETH, 0.5)];
+    loginSencondView.backgroundColor =color(221, 221, 221);
     [loginView addSubview:loginSencondView];
     
     UIView * loginThreeView = [[UIView alloc] initWithFrame:CGRectMake(0, 89.5, WIDETH, 0.5)];
@@ -59,7 +58,6 @@
     phoneLable.text = @"手机号";
     phoneLable.textColor = [UIColor blackColor];
     phoneLable.font = [UIFont systemFontOfSize:15];
-    
     [loginView addSubview:phoneLable];
     
     [UIView animateWithDuration:1 delay:0.5 usingSpringWithDamping:0.5 initialSpringVelocity:20 options:UIViewAnimationOptionAllowUserInteraction animations:^{
@@ -76,11 +74,18 @@
         passwordLable.frame = CGRectMake(15, 16+45, 40, 15);
     } completion:nil];
     
-    
+    NSUserDefaults * user = [NSUserDefaults standardUserDefaults];
+    NSString * userName = [user objectForKey:@"username"];
+    NSString * userPassword = [user objectForKey:@"userPassword"];
     UITextField * phonetextField = [[UITextField alloc] initWithFrame:CGRectMake(-WIDETH - 80, 0, WIDETH - 80, 45)];
-   phonetextField.placeholder = @"请输入手机号码";
+    phonetextField.placeholder = @"请输入手机号码";
+    phonetextField.keyboardType = UIKeyboardTypeNumberPad;
+    phonetextField.delegate = self;
+    phonetextField.returnKeyType = UIReturnKeyNext;
     phonetextField.textColor = color(200, 200, 200);
+    phonetextField.textColor = UIColorFromRGB(0x000000);
     phonetextField.font = [UIFont systemFontOfSize:13];
+    self.phonetextField = phonetextField;
     [loginView addSubview:phonetextField];
     [UIView animateWithDuration:1 delay:0.6 usingSpringWithDamping:1 initialSpringVelocity:10 options:UIViewAnimationOptionAllowUserInteraction animations:^{
         phonetextField.frame = CGRectMake(80, 0, WIDETH - 80, 45);
@@ -90,15 +95,36 @@
     passwordTextFiled.placeholder =  @"请输入密码";
     passwordTextFiled.font =[UIFont systemFontOfSize:13];
     passwordTextFiled.textColor = color(200, 200, 200);
+    passwordTextFiled.returnKeyType = UIReturnKeyGo;
+    passwordTextFiled.delegate = self;
+    passwordTextFiled.secureTextEntry = YES;
+    passwordTextFiled.textColor = UIColorFromRGB(0x000000);
     [loginView addSubview:passwordTextFiled];
+    self.passwordTextFiled = passwordTextFiled;
     [UIView animateWithDuration:1 delay:0.75 usingSpringWithDamping:1 initialSpringVelocity:10 options:UIViewAnimationOptionAllowUserInteraction animations:^{
         passwordTextFiled.frame = CGRectMake(80, 45, WIDETH - 80, 45);
     } completion:nil];
     
-    
+    /*手机号密码逻辑处理**/
+    if (userName == nil) {
+        _phonetextField.placeholder = @"请输入账号";
+    }
+    else
+    {
+        _phonetextField.text = userName;
+        
+    }
+    if (userPassword == nil) {
+        _passwordTextFiled.placeholder = @"请输入密码";
+    }
+    else
+    {
+        
+        _passwordTextFiled.text = userPassword;
+    }
     //登录
     loginBtn =[[UIButton alloc] initWithFrame:CGRectMake(15,215 + 30, WIDETH - 30, 45)];
-   
+    
     [loginBtn setTitle:@"登录" forState:UIControlStateNormal];
     [loginBtn setBackgroundImage:[UIImage imageNamed:@"hongniu"] forState:UIControlStateNormal];
     loginBtn.titleLabel.textColor = color(255, 255, 255);
@@ -134,13 +160,28 @@
     
     
 }
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (textField == _passwordTextFiled) {
+        [self loginBtbClick];
+    }
+    else if (textField == _phonetextField)
+    {
+        [_passwordTextFiled becomeFirstResponder];
+    }
+    return YES;
+}
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.view resignFirstResponder];
+}
 -(void)loginBtbClick
 {
     NSLog(@"登录");
     self.navigationController.navigationBarHidden = YES;
     AppDelegate * appDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
     appDelegate.mainTabBar = [[TH_MainTabBarController alloc] init];
-
+    
     appDelegate.mainTabBar.modalTransitionStyle = UIModalPresentationPageSheet;
     [self presentViewController:appDelegate.mainTabBar animated:YES completion:nil];
 }

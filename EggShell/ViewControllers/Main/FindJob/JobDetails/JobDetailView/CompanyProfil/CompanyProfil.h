@@ -19,5 +19,5 @@
 @property(nonatomic,strong)id<comanyProFileDelegate>companyDelegate;
 @property (weak, nonatomic) IBOutlet UIButton *showAll;
 
-
+-(void)companyProfilSelcet;
 @end

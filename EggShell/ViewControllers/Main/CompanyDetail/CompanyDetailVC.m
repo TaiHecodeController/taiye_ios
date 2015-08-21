@@ -27,17 +27,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor =[UIColor whiteColor];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     [self createScro];
     [self createUI];
-
-    
-    // Do any additional setup after loading the view.
+  
 }
 -(void)createScro
 {
-    UIScrollView * scro = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, HEIGHT-64)];
-    self.scro = scro;
+
+    UIScrollView  * scro =[[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, HEIGHT)];
     [self.view addSubview:scro];
+    self.scro = scro;
 }
 -(void)createUI
 {
@@ -91,7 +92,7 @@
     _tableView.dataSource = self;
     _tableView.backgroundColor = [UIColor whiteColor];
     [self.scro addSubview:_tableView];
-    self.scro.contentSize  = CGSizeMake(WIDETH, 340+_tableView.height+20);
+    self.scro.contentSize = CGSizeMake(WIDETH, 348+_tableView.frame.size.height+100);
     
 }
 

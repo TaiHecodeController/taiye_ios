@@ -22,5 +22,10 @@
     }
     
 }
-
+-(void)companyProfilSelcet
+{
+    [self.showAll setTitle:@"点击收起" forState:UIControlStateSelected];
+    [self.showAll setTitleColor:UIColorFromRGB(0xF44336) forState:UIControlStateNormal];
+    
+}
 @end

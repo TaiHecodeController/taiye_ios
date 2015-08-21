@@ -45,18 +45,24 @@
 @end
 
 @implementation TH_ClassVC
-//-(void)viewWillAppear:(BOOL)animated
-//{
-//    self.navigationController.navigationBar.translucent = YES;
-//}
+-(void)viewWillAppear:(BOOL)animated
+{
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    self.navigationController.navigationBar.translucent = NO;
+    
+
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"公开课";
+    self.view.backgroundColor =[UIColor whiteColor];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    self.navigationController.navigationBar.translucent = NO;
+
     // Do any additional setup after loading the view.
 //    self.view.backgroundColor = color(243, 243, 241);
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
-    
+   
     
 //    self.navigationItem.rightBarButtonItem = [UIBarButtonItem barBtnItemWithNormalImageName:@"liebiao" hightImageName:nil action:@selector(rightClick) target:self];
 //    
@@ -172,6 +178,7 @@
         _headViewMaxY = CGRectGetMaxY(qsBtn.frame);
         
     }
+    
     headView.frame = CGRectMake(0, y, WIDETH, _headViewMaxY + 15);
     
     UIView *marginView = [[UIView alloc]init];

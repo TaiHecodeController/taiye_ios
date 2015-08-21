@@ -12,7 +12,6 @@
 #import "TH_InformationDeskDetailVC.h"
 #import "playFanModel.h"
 #import "AFAppRequest.h"
-
 @interface TH_PlayFanVC ()<UITableViewDataSource,UITableViewDelegate,MJRefreshBaseViewDelegate>
 @property(nonatomic,strong)UITableView * tableView;
 @property (nonatomic, strong) HYSegmentedControl *segmentedControl;
@@ -31,17 +30,30 @@
     [_header free];
     [_footer free];
 }
+-(void)viewWillAppear:(BOOL)animated
+{[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    self.navigationController.navigationBar.translucent = NO;
+    
+
+
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.page = 1;
+        self.view.backgroundColor =[UIColor whiteColor];
+        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+        self.navigationController.navigationBar.translucent = NO;
+    
+    self.page = 0;
     self.title = @"玩出范";
     [self createView];
     [self createTbleView];
     [self hySegmentedControlSelectAtIndex:0];
-    [self loadData:_header page:2];
+    [self loadData:_header page:0];
 
     // Do any additional setup after loading the view.
 }
+
+
 
 -(void)loadData:(id)notify page:(int)num
 {
@@ -130,7 +142,7 @@
     
     NSLog(@"%@",model.endtime);
     
-    return InforCell;
+   return InforCell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {

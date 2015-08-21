@@ -30,16 +30,13 @@
     self.view.backgroundColor = [UIColor colorWithRed:243 / 255.0 green:243 / 255.0 blue:241 / 255.0 alpha:1];
     
     [self createUI];
-   [self createData];
+    [self createData];
     // Do any additional setup after loading the view.
 }
 
--(NSArray * )createData
+-(void)createData
 {
-    if (self.nameArray == nil) {
-        self.nameArray = @[@"工作经历",@"教育经历",@"培训经历",@"专业技能",@"项目经验",@"证书",@"自我评价"];
-    }
-    return self.nameArray;
+    self.nameArray = @[@"工作经历",@"教育经历",@"培训经历",@"专业技能",@"项目经验",@"证书",@"自我评价"];
 }
 
 -(void)createUI
@@ -47,7 +44,7 @@
     self.resumeNameLab = [ZCControl createLabelWithFrame:CGRectMake(15, 10, 120, 20) Font:14 Text:@"个人简历001"];
     [self.view addSubview:self.resumeNameLab];
     
-    writeTabView = [[UITableView alloc] initWithFrame:CGRectMake(-15, 42, WIDETH+15, 294)];
+    writeTabView = [[UITableView alloc] initWithFrame:CGRectMake(-15, 42, WIDETH + 15, 294)];
     writeTabView.delegate = self;
     writeTabView.dataSource = self;
     writeTabView.scrollEnabled = NO;
@@ -78,14 +75,13 @@
     cell.nameLab.text = self.nameArray[indexPath.row];
     if(indexPath.row >1)
     {
-        cell.stateBtn.selected = YES;
+        cell.stateBtn.selected = NO;
     }else
     {
-        cell.stateBtn.selected = NO;
+        cell.stateBtn.selected = YES;
     }
     return cell;
 }
-
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     switch (indexPath.row) {
@@ -95,35 +91,35 @@
             [self.navigationController pushViewController:wvc animated:YES];
         }
             break;
-            case 1:
+        case 1:
         {
             TH_EducationExperienceVC * education = [[TH_EducationExperienceVC alloc] init];
             education.title = @"教育经历";
             [self.navigationController pushViewController:education animated:YES];
-        
+            
         }
             break;
-            case 2:
+        case 2:
         {
             TH_TrainExperienceVC * train = [[TH_TrainExperienceVC alloc] init];
             train.title = @"培训经历";
             [self.navigationController pushViewController:train animated:YES];
         }
             break;
-            case 3:
+        case 3:
         {
             TH_ProfessionalSkillVC * skill = [[TH_ProfessionalSkillVC alloc] init];
             skill.title = @"专业技能";
             [self.navigationController pushViewController:skill animated:YES];
         }
             break;
-            case 4:
+        case 4:
         {
             TH_ProjectExperienceVC * project = [[TH_ProjectExperienceVC alloc] init];
             project.title = @"项目经验";
             [self.navigationController pushViewController:project animated:YES];
         }break;
-            case 5:
+        case 5:
         {
             TH_CertificateVC * certificate = [[TH_CertificateVC alloc] init];
             certificate.title = @"自我评价";
@@ -131,7 +127,7 @@
         }
             break ;
             
-            case 6:
+        case 6:
         {
             TH_SelfEvaluationVC * selfEvaluate = [[TH_SelfEvaluationVC alloc] init];
             selfEvaluate.title = @"自我评价";

@@ -1,4 +1,4 @@
-//
+    //
 //  TH_MainTabBarController.m
 //  EggShell
 //
@@ -13,7 +13,6 @@
 #import "TH_HomeVC.h"
 #import "TH_PlayFanVC.h"
 @interface TH_MainTabBarController ()
-
 @end
 
 @implementation TH_MainTabBarController

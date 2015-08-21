@@ -26,7 +26,9 @@
 -(void)mineViewSetButtonTag;
 
 {
-
+    self.HeadPortraitBtn.layer.cornerRadius  = 25;
+    self.HeadPortraitBtn.layer.masksToBounds = YES;
+    
     self.HeadPortraitBtn.tag  = THMineViewButtonTypeHeadPortraitBtn;
     self.EditInformationBtn.tag = THMineViewButtonTypeEditInformationBtn;
     self.DeliveryJobsBtn.tag = THMineViewButtonTypeDeliveryJobsBtn;
@@ -45,13 +47,19 @@
 +(MineVeiw*)RegisterMineView
 {
     return [[[NSBundle mainBundle] loadNibNamed:@"MineView" owner:self options:nil] lastObject];
+    
 }
 
 - (IBAction)mineViewBtnClick:(UIButton*)sender {
     if ([self.mineDelegate respondsToSelector:@selector(homeView:DidClickButton:)]) {
     [self.mineDelegate homeView:self DidClickButton:(THMineViewButtonType)sender.tag];
+        
         }
 }
-
+- (void)setIconImage:(UIImage *)image
+{
+    [self.HeadPortraitBtn setImage:image forState:UIControlStateNormal];
+    
+}
 
 @end

@@ -21,13 +21,18 @@ typedef enum
     THMineViewButtonTypeversion,
         
 }THMineViewButtonType;
+
 @class MineVeiw;
 @protocol THMineViewDelegate <NSObject>
 -(void)homeView:(MineVeiw*)mineView DidClickButton:(THMineViewButtonType)button;
 
 @end
 @interface MineVeiw : UIView
+
+
 +(MineVeiw*)RegisterMineView;
 -(void)mineViewSetButtonTag;
+- (void)setIconImage:(UIImage *)image;
+
 @property(nonatomic,strong)id<THMineViewDelegate> mineDelegate;
 @end

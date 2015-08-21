@@ -13,8 +13,8 @@
 #import "jobModel.h"
 #import "TH_JobDetailVC.h"
 #import "TH_JobScreeningVC.h"
-
-
+#import "SearchJobVC.h"
+#import "TH_SearchVC.h"
 #define bottomH 107
 
 
@@ -36,11 +36,13 @@
 @implementation TH_FindJobVC
 -(void)viewWillAppear:(BOOL)animated
 {
+    
     [super viewWillAppear:NO];
+//    self.navigationController.navigationBarHidden = NO;
     
     UIButton *searchBtn = [[UIButton alloc] init];
     [searchBtn setImage:[UIImage imageNamed:@"sousuo001"] forState:UIControlStateNormal];
-    //    [searchBtn setImage:[UIImage imageNamed:@""] forState:UIControlStateHighlighted];
+      [searchBtn setImage:[UIImage imageNamed:@""] forState:UIControlStateHighlighted];
     searchBtn.frame = CGRectMake(WIDETH - 10 - 50 - 20,0, 44, 44);
     [searchBtn addTarget:self action:@selector(searchBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.navigationController.navigationBar addSubview:searchBtn];
@@ -413,6 +415,8 @@
 - (void)searchBtnClick
 {
     THLog(@"搜索被点击");
+    SearchJobVC * search = [[SearchJobVC alloc] init];
+    [self.navigationController pushViewController:search animated:YES];
 
 }
 

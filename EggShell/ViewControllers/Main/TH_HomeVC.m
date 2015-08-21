@@ -16,7 +16,7 @@
 #import "TH_FindPartTimeVC.h"
 #import "TH_FindPracticeVC.h"
 
-#import "JobAlertView.h"
+
 #import "TH_ClassVC.h"
 
 #import "SearchJobVC.h"
@@ -24,13 +24,15 @@
 #import "CompanyDetailVC.h"
 
 
-#import "ManagerResumeVC.h"
+#import "WriteResumeViewController.h"
 
 #import "TH_PlayFanVC.h"
 #import "TH_InformationDeskVC.h"
 #import "FindjobView.h"
 #import "HomeView.h"
 #import "VersionUpdateView.h"
+#import "ManagerResumeVC.h"
+
 
 @interface TH_HomeVC ()<UIScrollViewDelegate,SGFocusImageFrameDelegate,THHomeVieWDelegate,THFaousVieWDelegate>
 {
@@ -38,11 +40,13 @@
     SearchView * _searchView;
     
 }
+
 @property (nonatomic, strong)SGFocusImageFrame *bannerView;
 @property (nonatomic, strong) NSMutableArray *arr;
 @property(nonatomic,strong)UIScrollView * scro;
 @property(nonatomic,strong)UIView * searChBgView;
 @property(nonatomic,strong)FindjobView * findView;
+
 
 
 @end
@@ -61,7 +65,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-       //状态栏
+    //状态栏
     [self setStatus];
     //ScroView
     [self createScro];
@@ -71,30 +75,32 @@
     //注册XIB
     [self createHomeView];
     NSUserDefaults * versionId = [NSUserDefaults standardUserDefaults];
-      NSString * str = [versionId objectForKey:@"ver"];
+    NSString * str = [versionId objectForKey:@"ver"];
     if ([str isEqualToString:@""]) {
         [self versionNew];
         [versionId setObject:@"dd" forKey:@"ver"];
         
-
+        
         [versionId synchronize];
     }
+
      
 }
 -(void)versionNew
 {
     VersionUpdateView * view =[[[NSBundle mainBundle] loadNibNamed:@"VersionUpdate" owner:self options:nil] lastObject];
-;
+    ;
     view.frame = CGRectMake(0, 0, 250, 151);
-//    [UIView animateWithDuration:0.5 animations:^{
-//        view.center = self.view.center;
-//    }];
+    //    [UIView animateWithDuration:0.5 animations:^{
+    //        view.center = self.view.center;
+    //    }];
     
     view.layer.cornerRadius = 5;
     view.layer.masksToBounds = YES;
     [view showVersonView];
-
+    
 }
+
 #pragma mark - - 搜素
 -(void)createSearch
 {
@@ -102,9 +108,11 @@
     _searchView = [[[NSBundle mainBundle] loadNibNamed:@"SearchView" owner:self options:nil] firstObject];
     _searchView.frame = CGRectMake(0, 0, WIDETH, 64);
     [self.tabBarController.view addSubview:_searchView];
-    
+    _searchView.searchTextField.enabled = NO;
+    [_searchView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)]];
     _searchView.searchClick = ^
     {
+        self.navigationController.navigationBarHidden = NO;
         [self.navigationController pushViewController:[[SearchJobVC alloc] init] animated:YES];
     };
     _searChBgView = [[UIView alloc] initWithFrame:_searchView.bounds];
@@ -120,10 +128,8 @@
 //取消textField编辑状态，收回键盘
 -(void)tap
 {
-    [_searchView.searchTextField endEditing:YES];
-    JobAlertView * jb = [[JobAlertView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
-    [jb show];
-    
+    self.navigationController.navigationBarHidden = NO;
+    [self.navigationController pushViewController:[[SearchJobVC alloc] init] animated:YES];
 }
 
 #pragma mark - - scorView
@@ -132,7 +138,7 @@
     UIScrollView * scro = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, WIDETH, HEIGHT)];
     self.scro           = scro;
     
-    self.scro.showsVerticalScrollIndicator  = NO;
+    self.scro.showsVerticalScrollIndicator  = YES;
     self.scro.delegate  = self;
     [self.view addSubview:scro];
 }
@@ -141,25 +147,25 @@
 {
     NSLog(@"%f",MyHeight*160);
     
-     self.findView = [[FindjobView alloc] initWithFrame:CGRectMake(0, 160*MyHeight, WIDETH,166*MyHeight)];
+    self.findView = [[FindjobView alloc] initWithFrame:CGRectMake(0, 160*MyHeight, WIDETH,166*MyHeight)];
     self.findView.frame = CGRectMake(0, 160*MyHeight, WIDETH, MyHeight * 166);
     
     NSLog(@"%f",self.findView.frame.size.height);
     
     self.findView.homeViewDelegate = self;
     [self.scro addSubview:self.findView];
-        //注册HomeViews
-        HomeView * homeView   = [HomeView homeViewFinJob] ;
-              homeView.frame  = CGRectMake(0*WIDETH, MyHeight * 326, WIDETH, 456);
+    //注册HomeViews
+    HomeView * homeView   = [HomeView homeViewFinJob] ;
+    homeView.frame  = CGRectMake(0*WIDETH, MyHeight * 326, WIDETH, 456);
     homeView.famousDelegate = self;
-        [self.scro addSubview:homeView];
+    [self.scro addSubview:homeView];
     
-    self.scro.contentSize = CGSizeMake(WIDETH, 322+456+49);
+    self.scro.contentSize = CGSizeMake(WIDETH, MyHeight * 326+456+40);
 }
 
 -(void)homeViewFindJob:(HomeView *)homeView
 {
-     self.navigationController.navigationBarHidden = NO;
+    self.navigationController.navigationBarHidden = NO;
     CompanyDetailVC * detail = [[CompanyDetailVC alloc] init];
     [self.navigationController pushViewController:detail animated:YES];
 }
@@ -167,7 +173,7 @@
 
 {
     self.navigationController.navigationBarHidden = NO;
-//    TH_FindJobVC * home =[[TH_FindJobVC alloc] init];
+    TH_FindJobVC * home =[[TH_FindJobVC alloc] init];
     switch (button) {
         case THHomeViewButtonTypeFindJob:
         {
@@ -215,7 +221,6 @@
         }
         case THHomeViewButtonTypeMicroSocial:
         {NSLog(@"微社交");
-//            _findView.MicroSocialBtn.userInteractionEnabled = NO;
             CompanyDetailVC * detail = [[CompanyDetailVC alloc] init];
             [self.navigationController pushViewController:detail animated:YES];
             break;
@@ -223,8 +228,8 @@
           case THHomeViewButtonTypeOpenClass:
         {NSLog(@"公开课");
           TH_ClassVC * class =  [[TH_ClassVC alloc] init];
-            
             [self.navigationController pushViewController:class animated:YES];
+            
             break;
         }
         default:
@@ -242,7 +247,6 @@
     _bannerView.delegate = self;
     _bannerView.changeFocusImageInterval = 2;
     [self.scro addSubview:_bannerView];
-    
 }
 
 - (void)quereData
@@ -316,7 +320,7 @@
 //隐藏导航栏,创建搜索视图
 -(void)viewWillAppear:(BOOL)animated
 {
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     self.navigationController.navigationBarHidden = YES;
     //搜索
     [self createSearch];

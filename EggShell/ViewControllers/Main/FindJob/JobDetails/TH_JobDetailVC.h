@@ -7,7 +7,7 @@
 //
 
 #import "TH_BaseVC.h"
-
+#import "ComPanyProfileView.h"
 @interface TH_JobDetailVC : TH_BaseVC
-
+@property(nonatomic,strong)ComPanyProfileView *  CMview;
 @end

@@ -21,7 +21,8 @@
     navigationBar.titleTextAttributes = @{NSFontAttributeName :[UIFont systemFontOfSize:18]};
     [navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
     navigationBar.shadowImage = [UIImage imageNamed:@"矩形-4"];
-
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    
 
 }
 - (void)viewDidLoad {

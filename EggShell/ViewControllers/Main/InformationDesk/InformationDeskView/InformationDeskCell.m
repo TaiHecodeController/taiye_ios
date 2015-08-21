@@ -9,6 +9,7 @@
 #import "InformationDeskCell.h"
 
 @implementation InformationDeskCell
+
 - (void)awakeFromNib {
     // Initialization code
 }

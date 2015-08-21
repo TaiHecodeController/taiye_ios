@@ -72,13 +72,17 @@
     [self addSubview:self.companyMessage];
     
     self.showAllBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.showAllBtn.frame = CGRectMake(WIDETH / 2 - 45, 218, 90, 30);
+    self.showAllBtn.frame = CGRectMake((WIDETH -100)/2, 218, 100, 30);
     [self.showAllBtn setBackgroundImage:[UIImage imageNamed:@"showallBtn"] forState:UIControlStateNormal];
     [self.showAllBtn setTitle:@"查看全部" forState:UIControlStateNormal];
     [self.showAllBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     self.showAllBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     
     [self.showAllBtn setTitle:@"点击收起" forState:UIControlStateSelected];
+    [self.showAllBtn setImage:[UIImage imageNamed:@"chakan"] forState:UIControlStateNormal ];
+    [self.showAllBtn setImage:[UIImage imageNamed:@"shouqi"] forState:UIControlStateSelected];
+    self.showAllBtn.imageEdgeInsets = UIEdgeInsetsMake(0,0,0,-115);
+    self.showAllBtn.titleEdgeInsets = UIEdgeInsetsMake(0, -33, 0, 0);
     [self.showAllBtn setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
     
     [self.showAllBtn addTarget:self action:@selector(showAllClick:) forControlEvents:UIControlEventTouchUpInside];

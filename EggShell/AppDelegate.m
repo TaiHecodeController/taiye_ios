@@ -11,7 +11,6 @@
 #import "LoginAndRegisterRequest.h"
 #import "WriteResumeViewController.h"
 #import "TH_featureVC.h"
-#import "VersionUpdateView.h"
 @interface AppDelegate ()
 {
     NSString * _trackViewUrl;
@@ -38,7 +37,6 @@
 //    [self initPloyVideo];
     
     [self.window makeKeyAndVisible];
-    
     sleep(1);
     NSString *key = @"CFBundleVersion";
     NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:kBundleVersion];
@@ -58,8 +56,8 @@
     
     
     return YES;
+   
 }
-
 //版本检测
 -(void)checkVersion
 {
@@ -120,17 +118,6 @@
 //    polyvSettings = [[PolyvSettings alloc] init];
 //    [polyvSettings initVideoSettings:@"ylzOkbgQcn" Readtoken:@"AAiK2jiX0t-BAnX4n6CrX-xV0TfqPUML" Writetoken:@"ZDYlp4fGF8g100D-TYug02Z14idkcelP" UserId:@"00018093b1"];
 }
-
-//- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
-//{
-//    if( self.ori_flag == 1){
-//        return UIInterfaceOrientationMaskAll;
-//    }
-//    else{
-//        return UIInterfaceOrientationMaskPortrait;
-//    }
-//}
-
 
 
 +(AppDelegate*)instance

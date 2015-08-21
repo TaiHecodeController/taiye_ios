@@ -42,6 +42,9 @@
     [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
     self.webView.scalesPageToFit = YES;
     [self.scro addSubview:self.webView];
+    self.scro.contentSize = CGSizeMake(WIDETH, 105+self.webView.frame.size.height+100);
+    
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

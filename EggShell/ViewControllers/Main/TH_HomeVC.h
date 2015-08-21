@@ -9,5 +9,5 @@
 #import "TH_BaseVC.h"
 
 @interface TH_HomeVC : TH_BaseVC
-@property(nonatomic,copy) NSString * versionId;
+
 @end

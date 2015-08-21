@@ -130,7 +130,6 @@
 }
 
 
-
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if(tableView.tag == 1555)
@@ -138,6 +137,8 @@
         return 8;
     }
     return 7;
+    UILabel * lable =[[UILabel alloc] initWithFrame:CGRectMake(0, WIDETH, HEIGHT, 100)];
+
     
 }
 

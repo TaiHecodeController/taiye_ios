@@ -24,7 +24,9 @@
 @implementation SearchJobVC
 
 - (void)viewDidLoad {
-    self.navigationController.navigationBarHidden = NO;
+//    self.navigationController.navigationBarHidden = NO;
+    self.view.backgroundColor =[UIColor whiteColor];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     self.navigationController.navigationBar.translucent = YES;
     self.title = @"职位搜索";
     self.view.backgroundColor = [UIColor whiteColor];

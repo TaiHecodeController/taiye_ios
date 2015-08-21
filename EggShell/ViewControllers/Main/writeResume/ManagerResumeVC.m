@@ -15,25 +15,24 @@
 
 @implementation ManagerResumeVC
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"简历管理";
+    self.title =  @"简历管理";
+    self.view.backgroundColor =[UIColor whiteColor];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    
     // Do any additional setup after loading the view from its nib.
 }
-
-- (IBAction)CreateResumBtnClick:(UIButton *)sender {
+- (IBAction)createNewResume:(UIButton *)sender {
     
     WriteResumeViewController * write = [[WriteResumeViewController alloc] init];
     [self.navigationController pushViewController:write animated:YES];
 }
-
-- (IBAction)previewResumBtn:(UIButton *)sender {
-     TH_ResumePreviewVC  * presum = [[TH_ResumePreviewVC alloc] init];
+- (IBAction)previewresume:(id)sender {
+    TH_ResumePreviewVC  * presum = [[TH_ResumePreviewVC alloc] init];
     presum.title = @"简历预览";
     [self.navigationController pushViewController:presum animated:YES];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
